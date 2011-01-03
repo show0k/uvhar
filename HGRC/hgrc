@@ -1,7 +1,0 @@
-ZET DEZE FILE IN JE HOME (dus ~/.hgrc)
-
-[auth]
-bb.prefix = https://uvhar.googlecode.com/hg/
-bb.username = uname
-bb.password = password
-
