@@ -1,0 +1,17 @@
+<package>
+  <description brief="wiimote_utils">
+
+     Utilities to be used with the wiimote
+
+  </description>
+  <author>Nate Roney</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/wiimote_utils</url>
+  <depend package="rospy"/>
+  <depend package="wiimote"/>
+  <depend package="std_msgs"/>
+
+</package>
+
+
