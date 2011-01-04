@@ -1,0 +1,18 @@
+<package>
+  <description brief="marvin">
+
+     marvin
+
+  </description>
+  <author>Nate Roney</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/marvin</url>
+  <depend package="roscpp"/>
+  <depend package="tf"/>
+  <depend package="gmapping"/>
+  <depend package="p2os_driver"/>
+
+</package>
+
+
