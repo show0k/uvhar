@@ -1,0 +1,9 @@
+<stack>
+  <description brief="ardrone">ardrone</description>
+  <author>Maintained by Nate Roney</author>
+  <license>GPL</license>  
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/ardrone</url>
+  <depend stack="ros" />
+
+</stack>
