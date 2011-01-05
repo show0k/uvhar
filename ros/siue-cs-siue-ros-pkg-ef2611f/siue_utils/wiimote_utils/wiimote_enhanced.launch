@@ -1,0 +1,17 @@
+<launch>
+
+    <node name="wiimote" 
+          type="wiimote_node.py"
+           pkg="wiimote"
+        output="screen"/>
+        
+        
+        
+    <node name="wiimote_batt"
+          type="battery_leds.py"
+           pkg="wiimote_utils"
+        output="screen"/>
+        
+        
+</launch>
+        
