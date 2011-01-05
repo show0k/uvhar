@@ -172,14 +172,6 @@ string
 ardrone_driver/ardrone_driver.h
 /home/maarten/uva/uvhar/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/src/ardrone_driver/ardrone_driver.h
 
-/home/maarten/uva/uvhar/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/src/ardrone_node.cpp
-ros/ros.h
--
-geometry_msgs/Twist.h
-/home/maarten/uva/uvhar/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/src/geometry_msgs/Twist.h
-ardrone_driver/ardrone_driver.h
-/home/maarten/uva/uvhar/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/src/ardrone_driver/ardrone_driver.h
-
 /opt/ros/cturtle/ros/3rdparty/xmlrpcpp/src/XmlRpcValue.h
 map
 -
