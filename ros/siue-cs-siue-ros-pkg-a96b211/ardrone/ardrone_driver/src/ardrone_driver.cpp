@@ -56,9 +56,9 @@ ARDroneDriver::ARDroneDriver(ros::NodeHandle n) : nh_(n)
     
     //params
     nh_.param( "drone_ip"    , drone_IP_  , std::string("192.168.1.1") );
-    nh_.param( "drone_port"  , drone_port_, int(5556) );
-    nh_.param( "data_port"   , data_port_ , int(5554) );
-    nh_.param( "video_port"  , video_port_, int(5555) );
+    nh_.param( "drone_port"  , drone_port_, int(5556) ); 
+    nh_.param( "data_port"   , data_port_ , int(5554) ); 
+    nh_.param( "video_port"  , video_port_, int(5555) ); 
     nh_.param( "altitude_max", altitude_  , double(1) );
     nh_.param( "tilt_max"    , tilt_max_  , double(.44) );
     
@@ -968,6 +968,8 @@ bool ARDroneDriver::configSocket()
 		isInitialized_ = true;
 		return true;
 	}
+
+    ROS_DEBUG("Was already initialized");
 	
 	//already initialized
 	return false;
