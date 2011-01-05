@@ -8,7 +8,7 @@ CMakeFiles/ardrone_driver.dir/src/ardrone_driver.o
  ../srv_gen/cpp/include/ardrone_driver/Land.h
  ../srv_gen/cpp/include/ardrone_driver/Reset.h
  ../srv_gen/cpp/include/ardrone_driver/Takeoff.h
- /home/maarten/uva/uvhar/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/src/ardrone_driver.cpp
+ /home/maarten/uva/project/mercurial/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/src/ardrone_driver.cpp
  /opt/ros/cturtle/ros/3rdparty/xmlrpcpp/src/XmlRpcValue.h
  /opt/ros/cturtle/ros/core/rosconsole/include/ros/assert.h
  /opt/ros/cturtle/ros/core/rosconsole/include/ros/console.h
@@ -72,7 +72,7 @@ CMakeFiles/ardrone_driver.dir/src/ardrone_node.o
  ../srv_gen/cpp/include/ardrone_driver/Land.h
  ../srv_gen/cpp/include/ardrone_driver/Reset.h
  ../srv_gen/cpp/include/ardrone_driver/Takeoff.h
- /home/maarten/uva/uvhar/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/src/ardrone_node.cpp
+ /home/maarten/uva/project/mercurial/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/src/ardrone_node.cpp
  /opt/ros/cturtle/ros/3rdparty/xmlrpcpp/src/XmlRpcValue.h
  /opt/ros/cturtle/ros/core/rosconsole/include/ros/assert.h
  /opt/ros/cturtle/ros/core/rosconsole/include/ros/console.h

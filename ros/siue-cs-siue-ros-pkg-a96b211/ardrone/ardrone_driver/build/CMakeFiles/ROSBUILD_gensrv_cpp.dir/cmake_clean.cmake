@@ -1,8 +1,8 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/ROSBUILD_gensrv_cpp"
+  "../srv_gen/cpp/include/ardrone_driver/Land.h"
   "../srv_gen/cpp/include/ardrone_driver/Takeoff.h"
   "../srv_gen/cpp/include/ardrone_driver/Reset.h"
-  "../srv_gen/cpp/include/ardrone_driver/Land.h"
 )
 
 # Per-language clean rules from dependency scanning.

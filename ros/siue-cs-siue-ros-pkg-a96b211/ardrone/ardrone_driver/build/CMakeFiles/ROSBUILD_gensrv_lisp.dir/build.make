@@ -32,22 +32,65 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/maarten/uva/uvhar/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver
+CMAKE_SOURCE_DIR = /home/maarten/uva/project/mercurial/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/maarten/uva/uvhar/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/build
+CMAKE_BINARY_DIR = /home/maarten/uva/project/mercurial/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/build
 
 # Utility rule file for ROSBUILD_gensrv_lisp.
 
+CMakeFiles/ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/Land.lisp
+CMakeFiles/ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/_package.lisp
+CMakeFiles/ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/_package_Land.lisp
 CMakeFiles/ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/Takeoff.lisp
 CMakeFiles/ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/_package.lisp
 CMakeFiles/ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/_package_Takeoff.lisp
 CMakeFiles/ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/Reset.lisp
 CMakeFiles/ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/_package.lisp
 CMakeFiles/ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/_package_Reset.lisp
-CMakeFiles/ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/Land.lisp
-CMakeFiles/ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/_package.lisp
-CMakeFiles/ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/_package_Land.lisp
+
+../srv/lisp/ardrone_driver/Land.lisp: ../srv/Land.srv
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/genmsg_cpp/gensrv_lisp
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/roslib/scripts/gendeps
+../srv/lisp/ardrone_driver/Land.lisp: ../manifest.xml
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/genmsg_cpp/manifest.xml
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/tools/rospack/manifest.xml
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/roslib/manifest.xml
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/roslang/manifest.xml
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/rospy/manifest.xml
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/3rdparty/xmlrpcpp/manifest.xml
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/rosconsole/manifest.xml
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/roscpp/manifest.xml
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/std_msgs/manifest.xml
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/std_srvs/manifest.xml
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/tools/rosclean/manifest.xml
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/tools/rosgraph/manifest.xml
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/rosmaster/manifest.xml
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/rosout/manifest.xml
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/tools/roslaunch/manifest.xml
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/test/rostest/manifest.xml
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/tools/topic_tools/manifest.xml
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/tools/rosbag/manifest.xml
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/tools/rosrecord/manifest.xml
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/tools/rosbagmigration/manifest.xml
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/stacks/common_msgs/geometry_msgs/manifest.xml
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/stacks/common_msgs/sensor_msgs/manifest.xml
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/roslib/msg_gen/generated
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/roscpp/msg_gen/generated
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/roscpp/srv_gen/generated
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/std_msgs/msg_gen/generated
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/std_srvs/srv_gen/generated
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/tools/topic_tools/srv_gen/generated
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/stacks/common_msgs/geometry_msgs/msg_gen/generated
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/stacks/common_msgs/sensor_msgs/msg_gen/generated
+../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/stacks/common_msgs/sensor_msgs/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/maarten/uva/project/mercurial/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv/lisp/ardrone_driver/Land.lisp, ../srv/lisp/ardrone_driver/_package.lisp, ../srv/lisp/ardrone_driver/_package_Land.lisp"
+	/opt/ros/cturtle/ros/core/genmsg_cpp/gensrv_lisp /home/maarten/uva/project/mercurial/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/srv/Land.srv
+
+../srv/lisp/ardrone_driver/_package.lisp: ../srv/lisp/ardrone_driver/Land.lisp
+
+../srv/lisp/ardrone_driver/_package_Land.lisp: ../srv/lisp/ardrone_driver/Land.lisp
 
 ../srv/lisp/ardrone_driver/Takeoff.lisp: ../srv/Takeoff.srv
 ../srv/lisp/ardrone_driver/Takeoff.lisp: /opt/ros/cturtle/ros/core/genmsg_cpp/gensrv_lisp
@@ -84,9 +127,9 @@ CMakeFiles/ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/_package_Land.lisp
 ../srv/lisp/ardrone_driver/Takeoff.lisp: /opt/ros/cturtle/stacks/common_msgs/geometry_msgs/msg_gen/generated
 ../srv/lisp/ardrone_driver/Takeoff.lisp: /opt/ros/cturtle/stacks/common_msgs/sensor_msgs/msg_gen/generated
 ../srv/lisp/ardrone_driver/Takeoff.lisp: /opt/ros/cturtle/stacks/common_msgs/sensor_msgs/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/maarten/uva/uvhar/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/maarten/uva/project/mercurial/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv/lisp/ardrone_driver/Takeoff.lisp, ../srv/lisp/ardrone_driver/_package.lisp, ../srv/lisp/ardrone_driver/_package_Takeoff.lisp"
-	/opt/ros/cturtle/ros/core/genmsg_cpp/gensrv_lisp /home/maarten/uva/uvhar/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/srv/Takeoff.srv
+	/opt/ros/cturtle/ros/core/genmsg_cpp/gensrv_lisp /home/maarten/uva/project/mercurial/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/srv/Takeoff.srv
 
 ../srv/lisp/ardrone_driver/_package.lisp: ../srv/lisp/ardrone_driver/Takeoff.lisp
 
@@ -127,67 +170,24 @@ CMakeFiles/ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/_package_Land.lisp
 ../srv/lisp/ardrone_driver/Reset.lisp: /opt/ros/cturtle/stacks/common_msgs/geometry_msgs/msg_gen/generated
 ../srv/lisp/ardrone_driver/Reset.lisp: /opt/ros/cturtle/stacks/common_msgs/sensor_msgs/msg_gen/generated
 ../srv/lisp/ardrone_driver/Reset.lisp: /opt/ros/cturtle/stacks/common_msgs/sensor_msgs/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/maarten/uva/uvhar/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/maarten/uva/project/mercurial/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv/lisp/ardrone_driver/Reset.lisp, ../srv/lisp/ardrone_driver/_package.lisp, ../srv/lisp/ardrone_driver/_package_Reset.lisp"
-	/opt/ros/cturtle/ros/core/genmsg_cpp/gensrv_lisp /home/maarten/uva/uvhar/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/srv/Reset.srv
+	/opt/ros/cturtle/ros/core/genmsg_cpp/gensrv_lisp /home/maarten/uva/project/mercurial/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/srv/Reset.srv
 
 ../srv/lisp/ardrone_driver/_package.lisp: ../srv/lisp/ardrone_driver/Reset.lisp
 
 ../srv/lisp/ardrone_driver/_package_Reset.lisp: ../srv/lisp/ardrone_driver/Reset.lisp
 
-../srv/lisp/ardrone_driver/Land.lisp: ../srv/Land.srv
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/genmsg_cpp/gensrv_lisp
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/roslib/scripts/gendeps
-../srv/lisp/ardrone_driver/Land.lisp: ../manifest.xml
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/genmsg_cpp/manifest.xml
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/tools/rospack/manifest.xml
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/roslib/manifest.xml
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/roslang/manifest.xml
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/rospy/manifest.xml
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/3rdparty/xmlrpcpp/manifest.xml
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/rosconsole/manifest.xml
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/roscpp/manifest.xml
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/std_msgs/manifest.xml
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/std_srvs/manifest.xml
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/tools/rosclean/manifest.xml
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/tools/rosgraph/manifest.xml
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/rosmaster/manifest.xml
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/rosout/manifest.xml
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/tools/roslaunch/manifest.xml
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/test/rostest/manifest.xml
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/tools/topic_tools/manifest.xml
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/tools/rosbag/manifest.xml
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/tools/rosrecord/manifest.xml
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/tools/rosbagmigration/manifest.xml
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/stacks/common_msgs/geometry_msgs/manifest.xml
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/stacks/common_msgs/sensor_msgs/manifest.xml
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/roslib/msg_gen/generated
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/roscpp/msg_gen/generated
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/core/roscpp/srv_gen/generated
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/std_msgs/msg_gen/generated
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/std_srvs/srv_gen/generated
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/ros/tools/topic_tools/srv_gen/generated
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/stacks/common_msgs/geometry_msgs/msg_gen/generated
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/stacks/common_msgs/sensor_msgs/msg_gen/generated
-../srv/lisp/ardrone_driver/Land.lisp: /opt/ros/cturtle/stacks/common_msgs/sensor_msgs/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/maarten/uva/uvhar/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv/lisp/ardrone_driver/Land.lisp, ../srv/lisp/ardrone_driver/_package.lisp, ../srv/lisp/ardrone_driver/_package_Land.lisp"
-	/opt/ros/cturtle/ros/core/genmsg_cpp/gensrv_lisp /home/maarten/uva/uvhar/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/srv/Land.srv
-
-../srv/lisp/ardrone_driver/_package.lisp: ../srv/lisp/ardrone_driver/Land.lisp
-
-../srv/lisp/ardrone_driver/_package_Land.lisp: ../srv/lisp/ardrone_driver/Land.lisp
-
 ROSBUILD_gensrv_lisp: CMakeFiles/ROSBUILD_gensrv_lisp
+ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/Land.lisp
+ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/_package.lisp
+ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/_package_Land.lisp
 ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/Takeoff.lisp
 ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/_package.lisp
 ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/_package_Takeoff.lisp
 ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/Reset.lisp
 ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/_package.lisp
 ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/_package_Reset.lisp
-ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/Land.lisp
-ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/_package.lisp
-ROSBUILD_gensrv_lisp: ../srv/lisp/ardrone_driver/_package_Land.lisp
 ROSBUILD_gensrv_lisp: CMakeFiles/ROSBUILD_gensrv_lisp.dir/build.make
 .PHONY : ROSBUILD_gensrv_lisp
 
@@ -200,6 +200,6 @@ CMakeFiles/ROSBUILD_gensrv_lisp.dir/clean:
 .PHONY : CMakeFiles/ROSBUILD_gensrv_lisp.dir/clean
 
 CMakeFiles/ROSBUILD_gensrv_lisp.dir/depend:
-	cd /home/maarten/uva/uvhar/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/maarten/uva/uvhar/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver /home/maarten/uva/uvhar/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver /home/maarten/uva/uvhar/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/build /home/maarten/uva/uvhar/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/build /home/maarten/uva/uvhar/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/build/CMakeFiles/ROSBUILD_gensrv_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/maarten/uva/project/mercurial/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/maarten/uva/project/mercurial/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver /home/maarten/uva/project/mercurial/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver /home/maarten/uva/project/mercurial/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/build /home/maarten/uva/project/mercurial/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/build /home/maarten/uva/project/mercurial/ros/siue-cs-siue-ros-pkg-a96b211/ardrone/ardrone_driver/build/CMakeFiles/ROSBUILD_gensrv_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ROSBUILD_gensrv_lisp.dir/depend
 

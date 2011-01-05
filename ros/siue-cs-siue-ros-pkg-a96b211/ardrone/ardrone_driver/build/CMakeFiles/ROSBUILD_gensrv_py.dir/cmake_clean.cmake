@@ -1,9 +1,9 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/ROSBUILD_gensrv_py"
   "../src/ardrone_driver/srv/__init__.py"
+  "../src/ardrone_driver/srv/_Land.py"
   "../src/ardrone_driver/srv/_Takeoff.py"
   "../src/ardrone_driver/srv/_Reset.py"
-  "../src/ardrone_driver/srv/_Land.py"
 )
 
 # Per-language clean rules from dependency scanning.
