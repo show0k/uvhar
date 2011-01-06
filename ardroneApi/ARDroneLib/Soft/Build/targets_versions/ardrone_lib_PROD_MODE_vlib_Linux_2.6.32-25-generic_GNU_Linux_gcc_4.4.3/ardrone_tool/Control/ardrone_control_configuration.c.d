@@ -23,34 +23,28 @@ ardrone_control_configuration.o ../../Soft/Build/targets_versions/ardrone_lib_PR
  /usr/include/wchar.h /usr/lib/gcc/i486-linux-gnu/4.4.3/include/stdarg.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
  /usr/include/bits/stdio.h /usr/include/bits/stdio2.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/ardrone_api.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/ardrone_common_config.h \
- ../ATcodec/ATcodec_api.h ../VP_Os/vp_os_thread.h \
- ..//VP_Os/linux/vp_os_thread_dep.h /usr/include/pthread.h \
- /usr/include/sched.h /usr/include/bits/sched.h /usr/include/signal.h \
- /usr/include/bits/setjmp.h ../ATcodec/ATcodec.h \
+ ../..//Soft/Common/ardrone_api.h \
+ ../..//Soft/Common/ardrone_common_config.h ../ATcodec/ATcodec_api.h \
+ ../VP_Os/vp_os_thread.h ..//VP_Os/linux/vp_os_thread_dep.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
+ /usr/include/signal.h /usr/include/bits/setjmp.h ../ATcodec/ATcodec.h \
  ../ATcodec/ATcodec_Memory.h ../ATcodec/ATcodec_Error.h \
  ../ATcodec/ATcodec_Tree.h ../ATcodec/ATcodec_Buffer.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/navdata_common.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/config.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/generated_custom.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/autoconf.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/vision_common.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/Maths/maths.h \
+ ../..//Soft/Common/navdata_common.h ../..//Soft/Common/config.h \
+ ../..//Soft/Common/generated_custom.h ../..//Soft/Common/autoconf.h \
+ ../..//Soft/Common/vision_common.h ../..//Soft/Lib/Maths/maths.h \
  /usr/include/math.h /usr/include/bits/huge_val.h \
  /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
  /usr/include/bits/inf.h /usr/include/bits/nan.h \
  /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h \
  /usr/include/bits/mathinline.h \
  /usr/lib/gcc/i486-linux-gnu/4.4.3/include/float.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/Maths/matrices.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/led_animation.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/config_keys.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control_configuration.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/iniparser3.0b/src/iniparser.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/iniparser3.0b/src/dictionary.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
- /usr/include/bits/unistd.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control.h \
+ ../..//Soft/Lib/Maths/matrices.h ../..//Soft/Common/led_animation.h \
+ ../..//Soft/Common/config_keys.h \
+ ../..//Soft/Lib/ardrone_tool/Control/ardrone_control_configuration.h \
+ ../..//Soft/Lib/iniparser3.0b/src/iniparser.h \
+ ../..//Soft/Lib/iniparser3.0b/src/dictionary.h /usr/include/unistd.h \
+ /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/getopt.h /usr/include/bits/unistd.h \
+ ../..//Soft/Lib/ardrone_tool/Control/ardrone_control.h \
  ../VP_Api/vp_api_thread_helper.h

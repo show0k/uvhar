@@ -18,14 +18,14 @@ config_serial.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Lin
  /usr/include/termios.h /usr/include/bits/termios.h \
  /usr/include/sys/ttydefaults.h /usr/include/stdint.h \
  /usr/include/bits/wchar.h ../VP_Os/linux/intrin.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/config.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/generated_custom.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/autoconf.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Com/config_com.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Com/config_serial.h \
+ /home/maarten/uva/uvhar/ardroneApi/Uvhar/Build/../../ARDroneLib/Soft/Common/config.h \
+ /home/maarten/uva/uvhar/ardroneApi/Uvhar/Build/../../ARDroneLib/Soft/Common/generated_custom.h \
+ /home/maarten/uva/uvhar/ardroneApi/Uvhar/Build/../../ARDroneLib/Soft/Common/autoconf.h \
+ /home/maarten/uva/uvhar/ardroneApi/Uvhar/Build/../../ARDroneLib/Soft/Lib/ardrone_tool/Com/config_com.h \
+ /home/maarten/uva/uvhar/ardroneApi/Uvhar/Build/../../ARDroneLib/Soft/Lib/ardrone_tool/Com/config_serial.h \
  ../VP_Com/vp_com.h ../VP_Os/vp_os_signal.h \
  ..//VP_Os/linux/vp_os_signal_dep.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/bits/sched.h /usr/include/signal.h \
  /usr/include/bits/setjmp.h ../VP_Api/vp_api_thread_helper.h \
  ../VP_Os/vp_os_thread.h ..//VP_Os/linux/vp_os_thread_dep.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Com/config_wifi.h
+ /home/maarten/uva/uvhar/ardroneApi/Uvhar/Build/../../ARDroneLib/Soft/Lib/ardrone_tool/Com/config_wifi.h

@@ -23,16 +23,15 @@ video_com_stage.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_L
  /usr/include/termios.h /usr/include/bits/termios.h \
  /usr/include/sys/ttydefaults.h /usr/include/stdint.h \
  /usr/include/bits/wchar.h ../VP_Os/linux/intrin.h ../VP_Os/vp_os_delay.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_com_stage.h \
- ../VP_Api/vp_api.h ../VP_Os/vp_os_signal.h \
- ..//VP_Os/linux/vp_os_signal_dep.h /usr/include/pthread.h \
- /usr/include/sched.h /usr/include/bits/sched.h /usr/include/signal.h \
- /usr/include/bits/setjmp.h ../VP_Api/vp_api_config.h \
- ../VP_Api/vp_api_stage.h ../VP_Api/vp_api_supervisor.h \
- ../VP_Com/vp_com.h ../VP_Api/vp_api_thread_helper.h \
- ../VP_Os/vp_os_thread.h ..//VP_Os/linux/vp_os_thread_dep.h \
- ../VP_Com/vp_com_socket.h /usr/include/sys/socket.h \
- /usr/include/sys/uio.h /usr/include/bits/uio.h \
+ ../..//Soft/Lib/ardrone_tool/Video/video_com_stage.h ../VP_Api/vp_api.h \
+ ../VP_Os/vp_os_signal.h ..//VP_Os/linux/vp_os_signal_dep.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
+ /usr/include/signal.h /usr/include/bits/setjmp.h \
+ ../VP_Api/vp_api_config.h ../VP_Api/vp_api_stage.h \
+ ../VP_Api/vp_api_supervisor.h ../VP_Com/vp_com.h \
+ ../VP_Api/vp_api_thread_helper.h ../VP_Os/vp_os_thread.h \
+ ..//VP_Os/linux/vp_os_thread_dep.h ../VP_Com/vp_com_socket.h \
+ /usr/include/sys/socket.h /usr/include/sys/uio.h /usr/include/bits/uio.h \
  /usr/include/bits/socket.h /usr/include/bits/sockaddr.h \
  /usr/include/asm/socket.h /usr/include/asm-generic/socket.h \
  /usr/include/asm/sockios.h /usr/include/asm-generic/sockios.h \

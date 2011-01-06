@@ -18,5 +18,4 @@ ardrone_time.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linu
  /usr/include/termios.h /usr/include/bits/termios.h \
  /usr/include/sys/ttydefaults.h /usr/include/stdint.h \
  /usr/include/bits/wchar.h ../VP_Os/linux/intrin.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/ardrone_time.h \
- /usr/include/sys/time.h
+ ../..//Soft/Lib/ardrone_tool/ardrone_time.h /usr/include/sys/time.h

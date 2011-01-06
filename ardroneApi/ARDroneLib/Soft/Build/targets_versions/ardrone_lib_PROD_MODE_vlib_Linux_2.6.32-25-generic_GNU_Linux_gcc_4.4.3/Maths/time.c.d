@@ -1,5 +1,4 @@
-time.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux_2.6.32-25-generic_GNU_Linux_gcc_4.4.3/Maths/time.c.d: ../..//Soft/Lib/Maths/time.c \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/Maths/time.h \
+time.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux_2.6.32-25-generic_GNU_Linux_gcc_4.4.3/Maths/time.c.d: ../..//Soft/Lib/Maths/time.c ../..//Soft/Lib/Maths/time.h \
  ../VP_Os/vp_os_types.h ../VP_Os/vp_os.h ../VP_Os/vp_os_rtmon.h \
  ..//VP_Os/linux/vp_os_serial.h /usr/include/termios.h \
  /usr/include/features.h /usr/include/bits/predefs.h \

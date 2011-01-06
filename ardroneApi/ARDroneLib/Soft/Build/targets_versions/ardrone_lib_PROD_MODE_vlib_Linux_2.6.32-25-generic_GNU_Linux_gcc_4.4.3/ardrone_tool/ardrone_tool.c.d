@@ -25,38 +25,30 @@ ardrone_tool.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linu
  ../VP_Api/vp_api_thread_helper.h ../VP_Os/vp_os_thread.h \
  ..//VP_Os/linux/vp_os_thread_dep.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/bits/sched.h /usr/include/signal.h \
- /usr/include/bits/setjmp.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/ardrone_tool.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/ardrone_api.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/ardrone_common_config.h \
- ../ATcodec/ATcodec_api.h ../ATcodec/ATcodec.h \
- ../ATcodec/ATcodec_Memory.h ../ATcodec/ATcodec_Error.h \
- ../ATcodec/ATcodec_Tree.h ../ATcodec/ATcodec_Buffer.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/navdata_common.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/config.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/generated_custom.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/autoconf.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/vision_common.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/Maths/maths.h \
- /usr/include/math.h /usr/include/bits/huge_val.h \
- /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
- /usr/include/bits/inf.h /usr/include/bits/nan.h \
- /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h \
- /usr/include/bits/mathinline.h \
+ /usr/include/bits/setjmp.h ../..//Soft/Lib/ardrone_tool/ardrone_tool.h \
+ ../..//Soft/Common/ardrone_api.h \
+ ../..//Soft/Common/ardrone_common_config.h ../ATcodec/ATcodec_api.h \
+ ../ATcodec/ATcodec.h ../ATcodec/ATcodec_Memory.h \
+ ../ATcodec/ATcodec_Error.h ../ATcodec/ATcodec_Tree.h \
+ ../ATcodec/ATcodec_Buffer.h ../..//Soft/Common/navdata_common.h \
+ ../..//Soft/Common/config.h ../..//Soft/Common/generated_custom.h \
+ ../..//Soft/Common/autoconf.h ../..//Soft/Common/vision_common.h \
+ ../..//Soft/Lib/Maths/maths.h /usr/include/math.h \
+ /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
+ /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
+ /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h \
  /usr/lib/gcc/i486-linux-gnu/4.4.3/include/float.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/Maths/matrices.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/led_animation.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/config_keys.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/ardrone_time.h \
- /usr/include/sys/time.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control_ack.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Navdata/ardrone_navdata_client.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_navdata_control.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/UI/ardrone_input.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Com/config_com.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Com/config_serial.h \
- ../VP_Com/vp_com.h ../VP_Os/vp_os_signal.h \
- ..//VP_Os/linux/vp_os_signal_dep.h \
- /home/maarten/uva/uvhar/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Com/config_wifi.h \
- /usr/include/locale.h /usr/include/bits/locale.h
+ ../..//Soft/Lib/Maths/matrices.h ../..//Soft/Common/led_animation.h \
+ ../..//Soft/Common/config_keys.h \
+ ../..//Soft/Lib/ardrone_tool/ardrone_time.h /usr/include/sys/time.h \
+ ../..//Soft/Lib/ardrone_tool/Control/ardrone_control.h \
+ ../..//Soft/Lib/ardrone_tool/Control/ardrone_control_ack.h \
+ ../..//Soft/Lib/ardrone_tool/Navdata/ardrone_navdata_client.h \
+ ../..//Soft/Lib/ardrone_tool/Control/ardrone_navdata_control.h \
+ ../..//Soft/Lib/ardrone_tool/UI/ardrone_input.h \
+ ../..//Soft/Lib/ardrone_tool/Com/config_com.h \
+ ../..//Soft/Lib/ardrone_tool/Com/config_serial.h ../VP_Com/vp_com.h \
+ ../VP_Os/vp_os_signal.h ..//VP_Os/linux/vp_os_signal_dep.h \
+ ../..//Soft/Lib/ardrone_tool/Com/config_wifi.h /usr/include/locale.h \
+ /usr/include/bits/locale.h

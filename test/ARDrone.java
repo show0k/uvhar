@@ -129,6 +129,9 @@ class ARDrone extends Frame implements KeyListener {
 		socket.setSoTimeout(3000);
 
 		send_at_cmd("AT*CONFIG=1,\"control:altitude_max\",\"2000\""); //altitude max 2m
+        // max pitch and roll angles
+        send_at_cmd("AT*CONFIG=2,\"euler_angle_max\",\"1036831949\""); 
+
 
 		if (args.length == 2) { //Commandline mode
 			send_at_cmd(args[1]);
@@ -190,9 +193,12 @@ class ARDrone extends Frame implements KeyListener {
 		else if (yaw != 0) {if (yaw > 0) yaw = speed; else yaw = -speed;}
 	}
 
-	public void send_at_cmd(String at_cmd) throws Exception {
+	public void send_at_cmd(String at_cmd) throws Exception 
+    {
 		System.out.println("AT command: " + at_cmd);    	
 		byte[] buffer = (at_cmd + "\r").getBytes();
+        System.out.print("Byte array length: " + buffer.length + " which is ");
+        System.out.println((buffer.length * 8) + " bit");
 		DatagramPacket packet = new DatagramPacket(buffer, buffer.length, inet_addr, 5556);
 		socket.send(packet);
 		//socket.receive(packet); //AR.Drone does not send back ack message (like "OK")
