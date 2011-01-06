@@ -257,6 +257,7 @@ C_RESULT update_gamepad(void)
     {
       switch( js_e_buffer[idx].number )
       {
+	      PRINT(js_e_buffer[idx].number);
         case PAD_AG :
 		ardrone_tool_set_ui_pad_ag(js_e_buffer[idx].value);
 		break;
