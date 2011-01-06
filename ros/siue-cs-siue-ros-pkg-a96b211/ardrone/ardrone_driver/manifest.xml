@@ -1,0 +1,24 @@
+<package>
+  <description brief="ardrone_driver">
+
+     A hardware driver to interface with the Parrot AR.Drone quadrotor
+     helicopter.
+
+  </description>
+  <author>Nate Roney</author>
+  <license>GPL</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/ardrone_driver</url>
+  <depend package="rospy"/>
+  <depend package="roscpp"/>
+  <depend package="std_msgs"/>
+  <depend package="std_srvs"/>
+  <depend package="sensor_msgs"/>
+  
+  <export>
+    <cpp cflags="-I${prefix}/include -I${prefix}/msg/cpp -I${prefix}/srv/cpp"/>
+  </export>
+
+</package>
+
+

@@ -1,0 +1,17 @@
+<launch>
+
+    <node name="driver_drone" pkg="ardrone_driver" type="ardrone_driver" output="screen"/>
+    
+	<node name="ardrone_teleop"
+		   pkg="ardrone_teleop"
+		  type="ardrone_teleop"
+	/>
+	
+	<!--
+	<node name="wiimote" 
+		   pkg="wiimote"
+		  type="wiimote_node.py"
+		output="screen"
+	/>
+	-->
+</launch>

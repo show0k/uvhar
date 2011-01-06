@@ -1,0 +1,7 @@
+/build/
+/bin/
+/src/ardrone_driver
+/srv_gen/
+/srv/lisp/
+/msg_gen/
+/msg/lisp/
