@@ -58,47 +58,6 @@ input_device_t ps3pad = {
   close_ps3pad
 };
 
-input_device_t joystick = {
-	"Joystick",
-	open_joystick,
-	update_joystick,
-	close_joystick
-};
-
-int current_joystick = JOYSTICK_DEVICE_MAX;
-
-int32_t joystick_device_ids[JOYSTICK_DEVICE_MAX] = {
-	[JOYSTICK_DEVICE_SIDEWINDER] 	= 0x045e001b,
-	[JOYSTICK_DEVICE_CYBORG] 		= 0x06a30836,
-};
-
-int32_t joystick_table_buttons[JOYSTICK_DEVICE_MAX][JOYBTN_NUM] = {
-	[JOYSTICK_DEVICE_SIDEWINDER] = {
-		[JOYBTN_FIRE] = 0,
-		[JOYBTN_SELECT] = 2,
-		[JOYBTN_START] 	= 3,
-	},
-	[JOYSTICK_DEVICE_CYBORG] 	 = {
-		[JOYBTN_FIRE] = 0,
-		[JOYBTN_SELECT] = 1,
-		[JOYBTN_START] 	= 2,
-	},
-};
-
-int32_t joystick_table_axis[JOYSTICK_DEVICE_MAX][JOYAXIS_NUM] = {
-	[JOYSTICK_DEVICE_SIDEWINDER] = {
-		[JOYAXIS_ROLL] 	= 0,
-		[JOYAXIS_PITCH] = 1,
-		[JOYAXIS_YAW] 	= 2,
-		[JOYAXIS_GAZ] 	= 3,
-	},
-	[JOYSTICK_DEVICE_CYBORG] 	 = {
-		[JOYAXIS_ROLL] 	= 0,
-		[JOYAXIS_PITCH] = 1,
-		[JOYAXIS_YAW] 	= 3,
-		[JOYAXIS_GAZ] 	= 6,
-	},
-};
 ///////////////////////////////
 //  RadioGP input functions  //
 ///////////////////////////////
@@ -298,6 +257,7 @@ C_RESULT update_gamepad(void)
     {
       switch( js_e_buffer[idx].number )
       {
+	      PRINT(js_e_buffer[idx].number);
         case PAD_AG :
 		ardrone_tool_set_ui_pad_ag(js_e_buffer[idx].value);
 		break;
@@ -443,149 +403,6 @@ C_RESULT update_gamepad(void)
 }
 
 C_RESULT close_gamepad(void)
-{
-  close( joy_dev );
-
-  return C_OK;
-}
-
-///////////////////////////////
-//  Joystick input functions  //
-///////////////////////////////
-
-C_RESULT open_joystick(void)
-{
-	PRINT("Searching Joystick device ...\n");
-	C_RESULT res = C_FAIL;
-	int device;
-
-	for(device = 0 ; (device < JOYSTICK_DEVICE_MAX) && FAILED(res) ; device++)
-	{
-		FILE* f = fopen("/proc/bus/input/devices", "r");
-
-		if( f != NULL )
-		{
-			res = parse_proc_input_devices( f,  joystick_device_ids[device]);
-
-			fclose( f );
-
-			if( SUCCEED( res ) && strcmp(joystick.name, "Joystick")!=0)
-			{
-				char dev_path[20]="/dev/input/";
-				strcat(dev_path, joystick.name);
-				joy_dev = open(dev_path, O_NONBLOCK | O_RDONLY);
-
-				if (joy_dev)
-				{
-					printf("Joydev %s ouvert\n",dev_path);
-					res = C_OK;
-				}
-				else{
-					printf("Joydev %s pas ouvert\n",dev_path);
-				}
-			}
-			else
-			{
-				PRINT("Joystick device not found.\n");
-				res = C_FAIL;
-			}
-		}
-	}
-
-	if(res == C_OK)
-		current_joystick = device - 1;
-
-	return res;
-}
-
-C_RESULT update_joystick(void)
-{
-	  static int32_t stick1LR = 0, stick1UD = 0, stick2LR = 0, stick2UD = 0;
-	  static bool_t refresh_values = FALSE;
-	  ssize_t res;
-	  static struct js_event js_e_buffer[64];
-	  static int32_t start = 0;
-	  input_state_t* input_state;
-
-	  static int center_x1=0;
-	  static int center_y1=0;
-	  static int center_x2=0;
-	  static int center_y2=0;
-
-	  res = read(joy_dev, js_e_buffer, sizeof(struct js_event) * 64);
-
-	  if( !res || (res < 0 && errno == EAGAIN) )
-	    return C_OK;
-
-
-	  if( res < 0 )
-	    return C_FAIL;
-
-
-	  if (res < (int) sizeof(struct js_event))// If non-complete bloc: ignored
-	    return C_OK;
-
-
-	  int32_t idx = 0;
-	  refresh_values = FALSE;
-	  input_state = ardrone_tool_get_input_state();
-	  for (idx = 0; idx < res / sizeof(struct js_event); idx++)
-	  {
-	    if(js_e_buffer[idx].type & JS_EVENT_INIT )// If Init, the first values are ignored
-	    {
-	      break;
-	    }
-	    else if(js_e_buffer[idx].type & JS_EVENT_BUTTON )// Event Button detected
-	    {
-//	      printf("Button event : %d => %d\n", js_e_buffer[idx].number, js_e_buffer[idx].value);
-
-	      if(js_e_buffer[idx].number == joystick_table_buttons[current_joystick][JOYBTN_START])
-	      {
-	    	  if( js_e_buffer[idx].value )
-	    	  {
-	    		  start ^= 1;
-	    		  ardrone_tool_set_ui_pad_start( start );
-	    	  }
-	      }
-	      else if(js_e_buffer[idx].number == joystick_table_buttons[current_joystick][JOYBTN_SELECT])
-	      {
-    		  start = 0;
-    		  ardrone_tool_set_ui_pad_start( start );
-	    	  ardrone_tool_set_ui_pad_select(js_e_buffer[idx].value);
-	      }
-	    }
-	    else if(js_e_buffer[idx].type & JS_EVENT_AXIS )// Event Axis detected
-	    {
-	     // printf("Axes event : %d => %d\n", js_e_buffer[idx].number, js_e_buffer[idx].value);
-	      refresh_values = TRUE;
-	      if(js_e_buffer[idx].number == joystick_table_axis[current_joystick][JOYAXIS_ROLL])
-	          stick1LR = ( js_e_buffer[idx].value ) ;
-	      else if(js_e_buffer[idx].number == joystick_table_axis[current_joystick][JOYAXIS_PITCH])
-	          stick1UD = ( js_e_buffer[idx].value ) ;
-	      else if(js_e_buffer[idx].number == joystick_table_axis[current_joystick][JOYAXIS_YAW])
-		      stick2LR = ( js_e_buffer[idx].value ) ;
-	      else if(js_e_buffer[idx].number == joystick_table_axis[current_joystick][JOYAXIS_GAZ])
-	        	stick2UD = ( js_e_buffer[idx].value ) ;
-	    }
-	    else
-	    {
-	    	// TODO: default: ERROR (non-supported)
-	    }
-	  }
-
-	  if(refresh_values)// Axis values to refresh
-	    {
-		  int enable = ((stick1LR-center_x1) != 0) || ((stick1UD-center_y1) != 0) || ((stick2UD-center_x2) != 0) || ((stick2LR-center_y2) != 0);
-	      ardrone_at_set_progress_cmd( enable,
-	                                    /*roll*/(float)(stick1LR-center_x1)/32767.0f,
-	                                    /*pitch*/(float)(stick1UD-center_y1)/32767.0f,
-	                                    /*gaz*/-(float)(stick2UD-center_x2)/32767.0f,
-	                                    /*yaw*/(float)(stick2LR-center_y2)/32767.0f );
-	    }
-	  return C_OK;
-}
-
-C_RESULT close_joystick(void)
 {
   close( joy_dev );
 
@@ -786,7 +603,7 @@ static int32_t make_id(device_t* device)
 static C_RESULT add_device(device_t* device, const int32_t id_wanted)
 {
   int32_t id = make_id(device);
-  int device_id;
+
   if( id_wanted == GAMEPAD_LOGICTECH_ID && id == id_wanted)
   {
 		PRINT("Input device %s found\n", device->name);
@@ -794,17 +611,7 @@ static C_RESULT add_device(device_t* device, const int32_t id_wanted)
     return C_OK;
 	}
 
-  for(device_id = 0 ; device_id < JOYSTICK_DEVICE_MAX ; device_id++)
-  {
-	  if( id_wanted == joystick_device_ids[device_id] && id == id_wanted)
-	  {
-		  PRINT("Input device %s found\n", device->name);
-		  strncpy(joystick.name, device->handlers, MAX_NAME_LENGTH);
-		  return C_OK;
-	  }
-  }
-
-  if(id_wanted == RADIO_GP_ID && id==id_wanted)
+	if(id_wanted == RADIO_GP_ID && id==id_wanted)
 	{
 		PRINT("Input device %s found\n", device->name);
     strncpy(radioGP.name, device->handlers, MAX_NAME_LENGTH);
