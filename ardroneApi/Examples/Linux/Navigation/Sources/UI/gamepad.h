@@ -3,7 +3,8 @@
 
 #include "UI/ui.h"
 
-#define GAMEPAD_LOGICTECH_ID 0x046dc21a
+//replaced the original value to our joystick ID 046d:c213
+#define GAMEPAD_LOGICTECH_ID 0x046dc213
 
 typedef enum {
   PAD_X,
@@ -24,47 +25,17 @@ typedef enum {
   PAD_NUM_BUTTONS
 } PAD_BUTTONS;
 
+
+
+
 extern input_device_t gamepad;
 
 C_RESULT open_gamepad(void);
 C_RESULT update_gamepad(void);
 C_RESULT close_gamepad(void);
 
-///////////////////////////////////////////////////
-typedef enum JOYTICK_DEVICES
-{
-	JOYSTICK_DEVICE_SIDEWINDER,
-	JOYSTICK_DEVICE_CYBORG,
-	JOYSTICK_DEVICE_MAX,
-} JOYSTICK_DEVICES;
 
-typedef enum
-{
-	JOYBTN_SELECT=0,
-	JOYBTN_START,
-	JOYBTN_FIRE,
-	JOYBTN_NUM,
-} JOYSTICK_BUTTONS;
 
-/* On Joystick Side winder, buttons can return analogic values (though non-precise) */
-typedef enum
-{
-	JOYAXIS_ROLL,
-	JOYAXIS_PITCH,
-	JOYAXIS_YAW,
-	JOYAXIS_GAZ,
-	JOYAXIS_NUM,
-} JOYSTICK_AXIS;
-
-extern input_device_t joystick;
-
-C_RESULT open_joystick(void);
-C_RESULT update_joystick(void);
-C_RESULT close_joystick(void);
-C_RESULT (*button_callback)(JOYSTICK_BUTTONS button);
-C_RESULT (*axis_callback)(JOYSTICK_AXIS axis);
-
-///////////////////////////////////////////////////////////////
 #define GAMEPAD_PLAYSTATION3_ID 0x054C0268
 
 typedef enum
@@ -118,7 +89,10 @@ C_RESULT update_ps3pad(void);
 C_RESULT close_ps3pad(void);
 
 
-//////////////////////////////////////////////////
+
+
+
+
 #define RADIO_GP_ID 0x061c0010
 
 typedef enum _TYPE
