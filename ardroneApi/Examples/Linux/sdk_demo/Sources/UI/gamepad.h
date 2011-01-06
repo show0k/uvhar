@@ -3,7 +3,8 @@
 
 #include "UI/ui.h"
 
-#define GAMEPAD_LOGICTECH_ID 0x046dc21a
+//replaced the original value to our joystick ID 046d:c213
+#define GAMEPAD_LOGICTECH_ID 0x046dc213
 
 typedef enum {
   PAD_X,
