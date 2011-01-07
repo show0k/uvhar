@@ -70,8 +70,7 @@ all: build_libs $(TARGET)
 
 $(TARGET):
 	@$(MAKE) -C $(SDK_PATH)/VP_SDK/Build $(TMP_SDK_FLAGS) $(SDK_FLAGS) $(MAKECMDGOALS)
-	# deze regel hieronder was eerst niet gecomment
-#mv $(ARDRONE_TARGET_DIR)/uvhar $(TARGET)
+	mv $(ARDRONE_TARGET_DIR)/uvhar $(TARGET)
 	mv $(TARGET) $(ARDRONE_TARGET_DIR)/
 
 $(MAKECMDGOALS): build_libs
