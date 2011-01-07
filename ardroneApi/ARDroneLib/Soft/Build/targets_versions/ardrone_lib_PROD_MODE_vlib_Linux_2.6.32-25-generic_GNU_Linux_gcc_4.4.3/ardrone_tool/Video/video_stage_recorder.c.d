@@ -19,9 +19,11 @@ video_stage_recorder.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_v
  /usr/include/termios.h /usr/include/bits/termios.h \
  /usr/include/sys/ttydefaults.h /usr/include/stdint.h \
  /usr/include/bits/wchar.h ../VP_Os/linux/intrin.h \
- ../VP_Api/vp_api_picture.h ../..//Soft/Common/config.h \
- ../..//Soft/Common/generated_custom.h ../..//Soft/Common/autoconf.h \
- ../..//Soft/Lib/ardrone_tool/Video/video_stage_recorder.h \
+ ../VP_Api/vp_api_picture.h \
+ /home/maarten/uva/uvhar/ardroneApi/Uvhar/Build/../../ARDroneLib/Soft/Common/config.h \
+ /home/maarten/uva/uvhar/ardroneApi/Uvhar/Build/../../ARDroneLib/Soft/Common/generated_custom.h \
+ /home/maarten/uva/uvhar/ardroneApi/Uvhar/Build/../../ARDroneLib/Soft/Common/autoconf.h \
+ /home/maarten/uva/uvhar/ardroneApi/Uvhar/Build/../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_recorder.h \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
  /usr/include/wchar.h /usr/lib/gcc/i486-linux-gnu/4.4.3/include/stdarg.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \

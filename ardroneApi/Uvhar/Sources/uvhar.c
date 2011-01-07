@@ -35,9 +35,10 @@ C_RESULT ardrone_tool_init_custom(int argc, char **argv)
   /* Registering for a new device of game controller */
   ardrone_tool_input_add( &gamepad );
 
+
   /* Start all threads of your application */
   START_THREAD( video_stage, NULL );
-  
+
   return C_OK;
 }
 
@@ -48,7 +49,7 @@ C_RESULT ardrone_tool_shutdown_custom()
   JOIN_THREAD( video_stage );
 
   /* Unregistering for the current device */
-  ardrone_tool_input_remove( &gamepad );
+  //ardrone_tool_input_remove( &gamepad );
 
   return C_OK;
 }
