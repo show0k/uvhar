@@ -46,9 +46,9 @@ navdata.o ../../Soft/Build/targets_versions/uvhar_PROD_MODE_vlib_Linux_2.6.32-25
  /home/maarten/uva/uvhar/ardroneApi/Uvhar/Build/../../ARDroneLib/Soft/Common/led_animation.h \
  /home/maarten/uva/uvhar/ardroneApi/Uvhar/Build/../../ARDroneLib/Soft/Common/config_keys.h \
  /home/maarten/uva/uvhar/ardroneApi/Uvhar/Build/../../ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_navdata_control.h \
- /home/maarten/uva/uvhar/ardroneApi/Uvhar/Build/../../ARDroneLib/Soft/Common/control_states.h \
- ../VP_Os/vp_os_print.h /usr/include/stdio.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/wchar.h \
- /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
- /usr/include/bits/stdio.h /usr/include/bits/stdio2.h \
- /home/maarten/uva/uvhar/ardroneApi/Uvhar/Build/../Sources/Navdata/navdata.h
+ /home/maarten/uva/uvhar/ardroneApi/Uvhar/Build/../Sources/Navdata/navdata.h \
+ /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/wchar.h /usr/include/bits/stdio_lim.h \
+ /usr/include/bits/sys_errlist.h /usr/include/bits/stdio.h \
+ /usr/include/bits/stdio2.h \
+ /home/maarten/uva/uvhar/ardroneApi/Uvhar/Build/../../ARDroneLib/Soft/Common/control_states.h
