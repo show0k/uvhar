@@ -6,7 +6,6 @@
 //replaced the original value to our joystick ID 046d:c213
 #define GAMEPAD_LOGICTECH_ID 0x046dc213
 
-int i;
 
 
 typedef enum {
