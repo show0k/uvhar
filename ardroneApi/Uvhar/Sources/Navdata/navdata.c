@@ -1,5 +1,13 @@
 #include <ardrone_tool/Navdata/ardrone_navdata_client.h>
 
+#include <Navdata/navdata.h>
+
+#include <stdio.h>
+#define CTRL_STATES_STRING
+#include "control_states.h"
+
+/*#include <ardrone_tool/Navdata/ardrone_navdata_client.h>
+
 #include <control_states.h>
 #include <string.h>
 #include <VP_Os/vp_os_malloc.h>
@@ -8,18 +16,12 @@
 
 
 #include <Navdata/navdata.h>
+*/
 
 
-/*============================================================================*/
-/**
-  * Builds a string describing the drone control state.
-  * @param ctrl_state Integer containing the control state from the unpacked navdata.
-  * @return A pointer to the built string. The returned address always points to the last built string.
-  *  // (copied from navdata_ihm from Examples/Linux/Navdata/navdata_client or something
 const char* ctrl_state_str(uint32_t ctrl_state)
 {
-  #define MAX_STR_CTRL_STATE 256;
-
+  #define MAX_STR_CTRL_STATE 256
   static char str_ctrl_state[MAX_STR_CTRL_STATE];
 
   ctrl_string_t* ctrl_string;
@@ -46,7 +48,8 @@ const char* ctrl_state_str(uint32_t ctrl_state)
 
   return str_ctrl_state;
 }
-*/
+
+
 
 /* Initialization local variables before event loop  */
 inline C_RESULT navdata_client_init( void* data )
@@ -58,19 +61,20 @@ inline C_RESULT navdata_client_init( void* data )
 /* Receving navdata during the event loop */
 inline C_RESULT navdata_client_process( const navdata_unpacked_t* const navdata )
 {
-     // retrieves current navdata unpacked
-     const navdata_demo_t* const nd = &navdata->navdata_demo;
-     
-     printf("Navdata for flight demonstrations\n");
-     //printf("control state : %s\n", ctrl_state_str(nd->ctrl_state));
-     printf("battery level : %i/100\n", nd->vbat_flying_percentage);
-     printf("orientation   : [theta] %f [phi] %f [psi] %f\n", nd->theta, nd->phi, nd->psi);
-     printf("altitude      : %i\n", nd->altitude);
-     printf("speed         : [vX] %f [vY] %f\n", nd->vx, nd->vy);
-     
-     printf("\0.33[5a"); // ansi escape to go up 6 lines
 
-     return C_OK;
+     const navdata_demo_t* const nd = &navdata->navdata_demo;
+
+     printf("\n=====================\nNavdata for flight demonstrations\n=====================\n\n");
+
+     printf("Control state : %s                                      \n",ctrl_state_str(nd->ctrl_state));
+     printf("Battery level : %i/100          \n",nd->vbat_flying_percentage);
+     printf("Orientation   : [Theta] %4.3f  [Phi] %4.3f  [Psi] %4.3f          \n",nd->theta,nd->phi,nd->psi);
+     printf("Altitude      : %i          \n",nd->altitude);
+     printf("Speed         : [vX] %4.3f  [vY] %4.3f  [vZ] %4.3f          \n",nd->vx,nd->vy,nd->vz);
+
+     printf("\033[10A");
+
+  return C_OK;
 }
 
 /* Relinquish the local resources after the event loop exit */
