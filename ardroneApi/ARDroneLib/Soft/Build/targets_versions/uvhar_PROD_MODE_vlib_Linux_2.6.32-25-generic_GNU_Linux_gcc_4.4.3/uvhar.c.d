@@ -58,4 +58,5 @@ uvhar.o ../../Soft/Build/targets_versions/uvhar_PROD_MODE_vlib_Linux_2.6.32-25-g
  ..//VP_Os/linux/vp_os_signal_dep.h \
  /home/maarten/uva/uvhar/ardroneApi/Uvhar/Build/../Sources/UI/gamepad.h \
  /home/maarten/uva/uvhar/ardroneApi/Uvhar/Build/../Sources/UI/ui.h \
- /home/maarten/uva/uvhar/ardroneApi/Uvhar/Build/../Sources/Video/video_stage.h
+ /home/maarten/uva/uvhar/ardroneApi/Uvhar/Build/../Sources/Video/video_stage.h \
+ /home/maarten/uva/uvhar/ardroneApi/Uvhar/Build/../Sources/Navdata/navdata.h
