@@ -26,45 +26,92 @@
 #include <Video/video_stage.h>
 
 static int32_t exit_ihm_program = 1;
+int counter = 0;
 
 /* Implementing Custom methods for the main function of an ARDrone application */
 
 /* The delegate object calls this method during initialization of an ARDrone application */
 C_RESULT ardrone_tool_init_custom(int argc, char **argv)
 {
-  /* Registering for a new device of game controller */
-  ardrone_tool_input_add( &gamepad );
+     /* Registering for a new device of game controller */
+     //ardrone_tool_input_add( &gamepad );
+
+     printf("\tardrone_tool_init_custom called\n");
+
+     /* Start all threads of your application */
+     START_THREAD( video_stage, NULL );
+
+     // reset the drone (there is no emergency) and set it to 
+     // land once at the start
+     ardrone_tool_set_ui_pad_select(0);
+     ardrone_tool_set_ui_pad_start(0);
+
+     return C_OK;
+}
 
 
-  /* Start all threads of your application */
-  START_THREAD( video_stage, NULL );
+C_RESULT ardrone_tool_update_custom()
+{
+     counter ++;     
+     if (counter == 1)
+     {
+         // take off
+         ardrone_tool_set_ui_pad_start(1);
+     }
+     else if (counter == 200 )   
+     {        
+         // start rotatin' 
+         ardrone_at_set_progress_cmd(1, 0, 0, 0, 0.5);
+     }
+     else if (counter == 600)
+     {
+         // set to hoover and land
+         ardrone_at_set_progress_cmd(0, 0, 0, 0, 0);
+         ardrone_tool_set_ui_pad_start(0); 
+     }
+     else if (counter == 800)
+     {
+         counter = 0;
+     }
 
-  return C_OK;
+     //printf("\tardrone_tool_update_custom called\n");
+     printf("\tUpdate counter: %d\n", counter);
+       
+     return C_OK;
 }
 
 /* The delegate object calls this method when the event loop exit */
 C_RESULT ardrone_tool_shutdown_custom()
 {
-  /* Relinquish all threads of your application */
-  JOIN_THREAD( video_stage );
+     printf("\tardrone_tool_shutdown_custom called\n");
 
-  /* Unregistering for the current device */
-  //ardrone_tool_input_remove( &gamepad );
+     ardrone_tool_set_ui_pad_start(0);
 
-  return C_OK;
+     /* Relinquish all threads of your application */
+     JOIN_THREAD( video_stage );
+
+
+     /* Unregistering for the current device */
+     //ardrone_tool_input_remove( &gamepad );
+
+     return C_OK;
 }
 
 /* The event loop calls this method for the exit condition */
 bool_t ardrone_tool_exit()
 {
-  return exit_ihm_program == 0;
+     //printf("\tardrone_tool_exit called\n");
+
+     return exit_ihm_program == 0;
 }
 
 C_RESULT signal_exit()
 {
-  exit_ihm_program = 0;
+     printf("\tsignal_exit called\n");
 
-  return C_OK;
+     exit_ihm_program = 0;
+
+     return C_OK;
 }
 
 /* Implementing thread table in which you add routines of your application and those provided by the SDK */

@@ -11,7 +11,16 @@ inline C_RESULT demo_navdata_client_init( void* data )
 /* Receving navdata during the event loop */
 inline C_RESULT demo_navdata_client_process( const navdata_unpacked_t* const navdata )
 {
-  return C_OK;
+     /*
+     iFILE *file; 
+     file = fopen("file.txt","a+"); // apend file (add text to 
+     a file or create a file if it does not exist.
+     fprintf(file,"%s","This is just an example :)"); //writes
+     fclose(file); //done!
+     getchar(); // pause and wait for key 
+     return 0; 
+     */
+     return C_OK;
 }
 
 /* Relinquish the local resources after the event loop exit */

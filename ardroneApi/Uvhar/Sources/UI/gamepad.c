@@ -27,17 +27,17 @@ input_device_t gamepad = {
 };
 
 
-int counter;
 
 C_RESULT open_gamepad(void)
 {
-    counter = 0;
+  //counter = 0;
 
   return C_OK;
 }
 
 C_RESULT update_gamepad(void)
 {
+     /*   
      counter ++;     
      if (counter%200 == 0)   
      {        
@@ -46,6 +46,7 @@ C_RESULT update_gamepad(void)
      }
      //ardrone_tool_set_ui_pad_select // emergency
      //ardrone_at_set_progress(
+     */
 
      return C_OK;
 }
