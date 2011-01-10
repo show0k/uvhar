@@ -45,7 +45,7 @@ C_RESULT ardrone_tool_init_custom(int argc, char **argv)
   ardrone_tool_input_add( &gamepad );
   ardrone_tool_input_add( &radioGP );
   ardrone_tool_input_add( &ps3pad );
-  ardrone_tool_input_add( &joystick );
+  //ardrone_tool_input_add( &joystick );
   ardrone_tool_input_add( &wiimote_device );
 
   START_THREAD(ihm, &cfg);
