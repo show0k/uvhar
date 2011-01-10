@@ -44,8 +44,8 @@ C_RESULT ardrone_tool_init_custom(int argc, char **argv)
 
      // reset the drone (there is no emergency) and set it to 
      // land once at the start
-     //ardrone_tool_set_ui_pad_select(0);
-     //ardrone_tool_set_ui_pad_start(0);
+     ardrone_tool_set_ui_pad_select(0);
+     ardrone_tool_set_ui_pad_start(0);
 
      return C_OK;
 }
@@ -53,7 +53,7 @@ C_RESULT ardrone_tool_init_custom(int argc, char **argv)
 
 C_RESULT ardrone_tool_update_custom()
 {
-    
+     /* 
      counter ++;     
      if (counter == 1)
      {
@@ -75,10 +75,12 @@ C_RESULT ardrone_tool_update_custom()
      {
          counter = 0;
      }
-     
+     */ 
 
      //printf("\tardrone_tool_update_custom called\n");
-     printf("\tUpdate counter: %d\n", counter);
+     //printf("\tUpdate counter: %d\n", counter);
+
+     update_vision();
        
      return C_OK;
 }

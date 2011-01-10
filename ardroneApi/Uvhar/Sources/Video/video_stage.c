@@ -14,6 +14,8 @@
 #include <errno.h>
 #include <unistd.h>
 
+#include <gtk/gtk.h>
+#include <gtk/gtkcontainer.h>
 #include <sys/time.h>
 #include <time.h>
 
@@ -48,29 +50,65 @@
 
 #define NB_STAGES 10
 
+#define FPS2TIME  0.10
+
+#define CAMIF_V_CAMERA_USED CAMIF_CAMERA_CRESYN
+#define CAMIF_H_CAMERA_USED CAMIF_CAMERA_OVTRULY
+
+
 PIPELINE_HANDLE pipeline_handle;
 
+
+static GtkImage *image = NULL;
+static GdkPixbuf *pixbuf = NULL;
+
+static int32_t   pixbuf_width      = 0;
+static int32_t   pixbuf_height     = 0;
+static int32_t   pixbuf_rowstride  = 0;
 static uint8_t*  pixbuf_data       = NULL;
+
+
 static vp_os_mutex_t  video_update_lock = PTHREAD_MUTEX_INITIALIZER;
 
-C_RESULT output_gtk_stage_open( void *cfg, vp_api_io_data_t *in, vp_api_io_data_t *out)
+//C_RESULT output_gtk_stage_open( void *cfg, vp_api_io_data_t *in, vp_api_io_data_t *out)
+C_RESULT output_gtk_stage_open( vp_stages_gtk_config_t *cfg, vp_api_io_data_t *in, vp_api_io_data_t *out)
 {
+  pixbuf = gdk_pixbuf_new(GDK_COLORSPACE_RGB,
+                          FALSE             ,
+                          8                 ,
+                          cfg->width        ,
+                          cfg->height       );
+
+
+
+
+
+
   return (SUCCESS);
 }
 
-C_RESULT output_gtk_stage_transform( void *cfg, vp_api_io_data_t *in, vp_api_io_data_t *out)
+
+//C_RESULT output_gtk_stage_transform( void *cfg, vp_api_io_data_t *in, vp_api_io_data_t *out)
+C_RESULT output_gtk_stage_transform( vp_stages_gtk_config_t *cfg, vp_api_io_data_t *in, vp_api_io_data_t *out)
 {
   vp_os_mutex_lock(&video_update_lock);
  
   /* Get a reference to the last decoded picture */
-  pixbuf_data      = (uint8_t*)in->buffers[0];
+  pixbuf_data = (uint8_t*)in->buffers[0];
+
+  pixbuf_width     = cfg->width;
+  pixbuf_height    = cfg->height;
+  pixbuf_rowstride = cfg->rowstride;
+
+
 
   vp_os_mutex_unlock(&video_update_lock);
 
   return (SUCCESS);
 }
 
-C_RESULT output_gtk_stage_close( void *cfg, vp_api_io_data_t *in, vp_api_io_data_t *out)
+//C_RESULT output_gtk_stage_close( void *cfg, vp_api_io_data_t *in, vp_api_io_data_t *out)
+C_RESULT output_gtk_stage_close( vp_stages_gtk_config_t *cfg, vp_api_io_data_t *in, vp_api_io_data_t *out)
 {
   return (SUCCESS);
 }
@@ -88,6 +126,7 @@ DEFINE_THREAD_ROUTINE(video_stage, data)
 {
   C_RESULT res;
 
+     // SEEMS TO BE LISTING 5.7, the start 
   vp_api_io_pipeline_t    pipeline;
   vp_api_io_data_t        out;
   vp_api_io_stage_t       stages[NB_STAGES];
@@ -100,6 +139,8 @@ DEFINE_THREAD_ROUTINE(video_stage, data)
 #ifdef RECORD_VIDEO
   video_stage_recorder_config_t   vrc;
 #endif
+
+
   /// Picture configuration
   picture.format        = PIX_FMT_YUV420P;
 
@@ -182,6 +223,7 @@ DEFINE_THREAD_ROUTINE(video_stage, data)
       int loop = SUCCESS;
       out.status = VP_API_STATUS_PROCESSING;
 
+     // LISTING 5.8
       while( !ardrone_tool_exit() && (loop == SUCCESS) )
       {
           if( SUCCEED(vp_api_run(&pipeline, &out)) ) {
@@ -200,4 +242,57 @@ DEFINE_THREAD_ROUTINE(video_stage, data)
 
   return (THREAD_RET)0;
 }
+
+
+void update_vision( void )
+{
+
+//  if( image_vision_window_view == WINDOW_VISIBLE) {
+
+    vp_os_mutex_lock(&video_update_lock);
+
+    // Vision state refresh
+    //gtk_label_set_label(label_vision_values, label_vision_state_value);
+
+    if( pixbuf_data != NULL )
+    {
+         pixbuf = gdk_pixbuf_new_from_data(pixbuf_data,
+                                        GDK_COLORSPACE_RGB,
+                                        FALSE,
+                                        8,
+                                        pixbuf_width,
+                                        pixbuf_height,
+                                        pixbuf_rowstride,
+                                        NULL,
+                                        NULL);
+
+         if( image == NULL )
+         {
+            image  = (GtkImage*) gtk_image_new_from_pixbuf( pixbuf );
+            //gtk_container_add( GTK_CONTAINER( ihm_Image_VBox ), (GtkWidget*)image );
+         }
+         else
+         {
+             gtk_image_set_from_pixbuf(image, pixbuf);
+         }
+         g_object_unref(pixbuf);
+   // }
+
+    vp_os_mutex_unlock(&video_update_lock);
+
+    //gtk_widget_show_all( ihm_ImageWin );
+  }
+  else
+  {
+    if( image != NULL )
+    {
+         printf("\tImage is not null in update_vision\n");
+         //if( GTK_IS_CONTAINER( ihm_Image_VBox ) && GTK_IS_WIDGET(image) )
+         //    gtk_container_remove( GTK_CONTAINER( ihm_Image_VBox ), (GtkWidget*)image );
+    }
+    image = NULL;
+  }
+//}
+}
+
 
