@@ -53,7 +53,7 @@ C_RESULT ardrone_tool_init_custom(int argc, char **argv)
 
 C_RESULT ardrone_tool_update_custom()
 {
-     /* 
+     //* 
      counter ++;     
      if (counter == 1)
      {
@@ -75,12 +75,12 @@ C_RESULT ardrone_tool_update_custom()
      {
          counter = 0;
      }
-     */ 
+     //*/ 
 
      //printf("\tardrone_tool_update_custom called\n");
      //printf("\tUpdate counter: %d\n", counter);
 
-     update_vision();
+     //update_vision();
        
      return C_OK;
 }
