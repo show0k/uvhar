@@ -7,7 +7,7 @@
 
 // the global variable that holds a pointer to the "python function object"
 // that is the python function. This is found by the python program 
-static PyObject *my_callback = "printnr";
+static PyObject *my_callback;
 
 static PyObject *
 my_set_callback(PyObject *dummy, PyObject *args)
