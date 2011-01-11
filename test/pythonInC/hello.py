@@ -1,4 +1,9 @@
+import spam;
+
 def ghello():
-     print "what up?"
+     print "wtd?\n"
+     print spam.system("ls -l") 
      return
 
+
+ghello();
