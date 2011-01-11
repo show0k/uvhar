@@ -2,8 +2,11 @@ import spam;
 
 def ghello():
      print "wtd?\n"
-     print spam.system("ls -l") 
      return
 
+def printnr(i):
+     print i
+     return
 
-ghello();
+printnr(123)
+#ghello();
