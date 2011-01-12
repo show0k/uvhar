@@ -46,67 +46,86 @@
 
 #include "Video/video_stage.h"
 
+#include <gtk/gtk.h>
+#include <gtk/gtkcontainer.h>
+
+
 #define NB_STAGES 10
 
 PIPELINE_HANDLE pipeline_handle;
 
+
+static GdkPixbuf *pixbuf = NULL;
 static uint8_t*  pixbuf_data       = NULL;
 static vp_os_mutex_t  video_update_lock = PTHREAD_MUTEX_INITIALIZER;
 
+char imageName[22];
+int imageCounter;
+
 C_RESULT output_gtk_stage_open( void *cfg, vp_api_io_data_t *in, vp_api_io_data_t *out)
 {
-  return (SUCCESS);
+     g_type_init();
+     
+     //ardrone_at_zap(ZAP_CHANNEL_VERT);
+     ardrone_at_zap(ZAP_CHANNEL_HORI);
+    
+    
+     imageCounter = 0; 
+   
+     /* 
+     int cdResult, rmResult; 
+     cdResult = system("cd images");
+     if (cdResult == 1)
+     {
+         rmResult = system("rm frame*.jpg");
+         if (rmResult == 1)
+             return (SUCCESS);
+     }
+     */
+
+     return (SUCCESS);
 }
 
 C_RESULT output_gtk_stage_transform( void *cfg, vp_api_io_data_t *in, vp_api_io_data_t *out)
 {
-  vp_os_mutex_lock(&video_update_lock);
+     vp_os_mutex_lock(&video_update_lock);
  
-  /* Get a reference to the last decoded picture */
-  pixbuf_data      = (uint8_t*)in->buffers[0];
+     /* Get a reference to the last decoded picture */
+     pixbuf_data      = (uint8_t*)in->buffers[0]; // we casten het naar een pointer van type uint8_t!!
+     
 
-/*
+     // returns: A newly-created GdkPixbuf structure with a reference count of 1.
+     pixbuf = gdk_pixbuf_new_from_data(pixbuf_data,  // image data in 8-bit/sample packed format
+                                     GDK_COLORSPACE_RGB, 
+                                     FALSE, // has alpha
+                                     8, // bits per sample
+                                     QVGA_WIDTH, 
+                                     QVGA_HEIGHT,
+                                     QVGA_WIDTH * 3,  // distance in bites between rowstride
+                                     NULL, // GdkPixbufDestroyNotify detroy_fn
+                                     NULL); // gpoint destroy_fn_data); 
 
-         // returns: A newly-created GdkPixbuf structure with a reference count of 1.
-         pixbuf = gdk_pixbuf_new_from_data(pixbuf_data, // image data in 8-bit/sample packed format
-                                        GDK_COLORSPACE_RGB, 
-                                        FALSE, // has alpha
-                                        8, // bits per sample
-                                        pixbuf_width,
-                                        pixbuf_height,
-                                        pixbuf_rowstride, // distance in bites between rowstride
-                                        NULL, // GdkPixbufDestroyNotify destroy_fn,
-                                        NULL); // gpointer destroy_fn_data);
-                                        
+     sprintf(imageName, "images/frame%05d.jpg", ++imageCounter);
 
-         if( image == NULL )
-         {
-            image  = (GtkImage*) gtk_image_new_from_pixbuf( pixbuf );
-            //gtk_container_add( GTK_CONTAINER( ihm_Image_VBox ), (GtkWidget*)image );
-         }
-         else
-         {
-             gtk_image_set_from_pixbuf(image, pixbuf);
-
-*/
+     gdk_pixbuf_save(pixbuf, imageName, "jpeg", NULL, "quality", "100", NULL);
 
 
+     vp_os_mutex_unlock(&video_update_lock);
 
-
-
-
-
-
-  vp_os_mutex_unlock(&video_update_lock);
-
-  return (SUCCESS);
+     return (SUCCESS);
 }
 
 C_RESULT output_gtk_stage_close( void *cfg, vp_api_io_data_t *in, vp_api_io_data_t *out)
 {
+//printf("\tclosing output_gtk_stage\n");
+
   return (SUCCESS);
 }
 
+
+
+
+static 
 
 const vp_api_stage_funcs_t vp_stages_output_gtk_funcs =
 {

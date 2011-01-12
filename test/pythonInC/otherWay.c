@@ -19,15 +19,21 @@ main(int argc, char *argv[])
     pModule = PyImport_Import(pName);
     Py_DECREF(pName);
 
-    if (pModule != NULL) {
+    // start of python method call and data conversion from c to python
+
+    if (pModule != NULL) 
+    {
         pFunc = PyObject_GetAttrString(pModule, argv[2]);
         /* pFunc is a new reference */
 
-        if (pFunc && PyCallable_Check(pFunc)) {
+        if (pFunc && PyCallable_Check(pFunc)) 
+        {
             pArgs = PyTuple_New(argc - 3);
-            for (i = 0; i < argc - 3; ++i) {
+            for (i = 0; i < argc - 3; ++i) 
+            {
                 pValue = PyInt_FromLong(atoi(argv[i + 3]));
-                if (!pValue) {
+                if (!pValue) 
+                {
                     Py_DECREF(pArgs);
                     Py_DECREF(pModule);
                     fprintf(stderr, "Cannot convert argument\n");
@@ -38,11 +44,13 @@ main(int argc, char *argv[])
             }
             pValue = PyObject_CallObject(pFunc, pArgs);
             Py_DECREF(pArgs);
-            if (pValue != NULL) {
+            if (pValue != NULL) 
+            {
                 printf("Result of call: %ld\n", PyInt_AsLong(pValue));
                 Py_DECREF(pValue);
             }
-            else {
+            else 
+            {
                 Py_DECREF(pFunc);
                 Py_DECREF(pModule);
                 PyErr_Print();
@@ -50,7 +58,8 @@ main(int argc, char *argv[])
                 return 1;
             }
         }
-        else {
+        else 
+        {
             if (PyErr_Occurred())
                 PyErr_Print();
             fprintf(stderr, "Cannot find function \"%s\"\n", argv[2]);
@@ -58,11 +67,16 @@ main(int argc, char *argv[])
         Py_XDECREF(pFunc);
         Py_DECREF(pModule);
     }
-    else {
+    else 
+    {
         PyErr_Print();
         fprintf(stderr, "Failed to load \"%s\"\n", argv[1]);
         return 1;
     }
+
+    // end here
+
+
     Py_Finalize();
     return 0;
 }
