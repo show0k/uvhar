@@ -45,7 +45,7 @@ GENERIC_BINARIES_SOURCE_ENTRYPOINTS+=			\
 GENERIC_INCLUDES:=$(addprefix -I,$(GENERIC_INCLUDES))
 
 GENERIC_LIB_PATHS=-L$(GENERIC_TARGET_BINARIES_DIR)
-GENERIC_LIBS=-lpc_ardrone -lgtk-x11-2.0 -lrt
+GENERIC_LIBS=-lpc_ardrone -lgtk-x11-2.0 -lrt -lpython2.6
 
 SDK_FLAGS+="USE_APP=yes"
 # this was "linux_sdk_demo"
@@ -72,6 +72,8 @@ $(TARGET):
 	@$(MAKE) -C $(SDK_PATH)/VP_SDK/Build $(TMP_SDK_FLAGS) $(SDK_FLAGS) $(MAKECMDGOALS)
 	mv $(ARDRONE_TARGET_DIR)/uvhar $(TARGET)
 	mv $(TARGET) $(ARDRONE_TARGET_DIR)/
+	cp $(SRC_DIR)/uvhar.py $(ARDRONE_TARGET_DIR)
+	
 
 $(MAKECMDGOALS): build_libs
 	@$(MAKE) -C $(SDK_PATH)/VP_SDK/Build $(TMP_SDK_FLAGS) $(SDK_FLAGS) $(MAKECMDGOALS)

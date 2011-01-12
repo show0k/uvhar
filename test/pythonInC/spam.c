@@ -75,7 +75,6 @@ main(int argc, char *argv[])
     /* Add a static module */
     initspam();
 
-
     // it is time to call the function? 
     int arg;
     PyObject *arglist;

@@ -61,7 +61,7 @@ inline C_RESULT navdata_client_init( void* data )
 /* Receving navdata during the event loop */
 inline C_RESULT navdata_client_process( const navdata_unpacked_t* const navdata )
 {
-
+     /*
      const navdata_demo_t* const nd = &navdata->navdata_demo;
 
      printf("\n=====================\nNavdata for flight demonstrations\n=====================\n\n");
@@ -73,6 +73,7 @@ inline C_RESULT navdata_client_process( const navdata_unpacked_t* const navdata 
      printf("Speed         : [vX] %4.3f  [vY] %4.3f  [vZ] %4.3f          \n",nd->vx,nd->vy,nd->vz);
 
      printf("\033[10A");
+     */
 
   return C_OK;
 }
