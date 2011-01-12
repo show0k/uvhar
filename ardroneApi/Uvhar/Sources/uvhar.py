@@ -5,10 +5,16 @@ def init():
      counter = -1
      image = None
 
+"""
 def update(newCounter):
      if (counter != newCounter):
          counter = newCounter
          loadNewImage()
+"""
+
+def update(counter):
+     print counter
+     return 1337
       
     
 def loadNewImage():
