@@ -29,30 +29,64 @@
 
 static int32_t exit_ihm_program = 1;
 
+extern int imageCounter;
 int counter = 0;
 // variables needed for python
-PyObject *pName, *pModule, *pDict, *pFunc;
-PyObject *pArgs, *pValue;
+PyObject *pArgument, *pClassInstance, *pResult, *pMethodName;
 
 
 
 C_RESULT python_init()
 {
+    PyObject *pName, *pFunc, *pModule;
 
    	Py_Initialize();
 
+    // create a python string object for the module name
    	pName = PyString_FromString("uvhar");
 
 	if (pName == NULL)
-		return C_FAIL;
+    {
+         printf("\tPython name is null.\n");
+		 return C_FAIL;
+    }
 
 	pModule = PyImport_Import(pName);
 
 	Py_DECREF(pName);
 	if (pModule == NULL)
     {
+         printf("\tPython module is null.\n");
 	     PyErr_Print();
 		 return C_FAIL;
+    }
+
+    // create a callable python object 
+    pFunc = PyObject_GetAttrString(pModule, "Uvhar");
+
+    // check for succes
+    if (pFunc && PyCallable_Check(pFunc))
+    {
+         // create the class
+         pClassInstance = PyObject_CallObject(pFunc, NULL);
+         if (pClassInstance == NULL)
+         {
+             printf("\tPython class constructor FAILED!!!\n");
+             PyErr_Print();
+             return C_FAIL;
+         }
+         printf("\tPython class contructor is done\n");
+         // now we do not need the module and func any longer
+
+         pMethodName = PyString_FromString("update");
+
+         Py_XDECREF(pFunc);
+         Py_XDECREF(pModule);
+    }
+    else
+    {
+         printf("\tpFunc not true or not callable\n");
+         return C_FAIL;
     }
 
     printf("\tPython initialized\n");
@@ -63,71 +97,53 @@ C_RESULT python_init()
 
 C_RESULT python_update()
 {
-     printf("\tAttempting a python call\n");
+     //printf("\tAttempting a python call\n");
 
-     if (pModule == NULL)
+     // putting the last saved image in a python object 
+     pArgument = PyInt_FromLong(imageCounter);
+
+     // pResult will be the fly commands
+     pResult = PyObject_CallMethodObjArgs(pClassInstance, pMethodName, pArgument, NULL);
+
+     if (pResult == NULL)
+     {
+         printf("\tPython update has failed. Printing error:\n");
+         PyErr_Print();
          return C_FAIL;
+     }
 
-	pFunc = PyObject_GetAttrString(pModule, "update");
+     Py_XDECREF(pResult);     
+     Py_DECREF(pArgument);
 
-	if (pFunc && PyCallable_Check(pFunc))
-	{
-		pArgs = PyTuple_New(1);//"HERE GOES THE NUMBER OF ARGUMENTS AS INT");
-
-		pValue = PyString_FromString("testietest");
-		// repeat for more arguments
-
-        /*
-		// we are going to be awesome and not have to check if the arguments
-          //     correctly convert! 
-                if (!pValue)
-                {
-                    Py_DECREF(pArgs);
-                    Py_DECREF(pModule);
-                    printf("Cannot convert argument\n");
-                    return C_FAIL;
-                }   
-        */
-		
-		PyTuple_SetItem(pArgs, 0, pValue);
-		pValue = PyObject_CallObject(pFunc, pArgs);
-		Py_DECREF(pArgs);
-
-
-		if (pValue != NULL) 
-		{
-			// HERE WE RETRIEVE THE RETURN VALUE AS INTEGER FROM THE PYTHON FUNCTION
-			int result = PyInt_AsLong(pValue); 
-            printf("result of python call: %d\n", result); 
-			Py_DECREF(pValue);
-		}
-		else
-		{
-			Py_DECREF(pFunc);
-			//Py_DECREF(pModule);
-			PyErr_Print();
-			printf("\tPYTHON METHOD FAILED:(\n");
-			return C_FAIL;
-		}
-	}
-	else
-	{
-		if (PyErr_Occurred())
-			PyErr_Print();
-
-		printf("\tPYTHON METHOD FAILED, could not find function\n");
-	}
-	Py_XDECREF(pFunc);
-	//Py_DECREF(pModule);
-
-return C_OK; 
+     return C_OK; 
 }
 
 // finalizing python. 
 C_RESULT python_exit()
 {
-	Py_Finalize();
-	return C_OK;
+     printf("\tPython exit called\n");
+
+     PyObject *pExitResult;
+     
+     pExitResult = PyObject_CallMethod(pClassInstance, "exit", NULL); 
+
+     /*
+     if (pResult == NULL)
+     {
+         printf("\tSomething, somewhere, went terribly wrong!?\n");
+     }
+     else
+     {
+         printf("\tResult %d\n", PyInt_AsLong(pResult));
+         Py_DECREF(pResult);
+     }
+     */
+
+     Py_DECREF(pClassInstance);
+     Py_DECREF(pMethodName);
+     Py_DECREF(pArgument);
+	 Py_Finalize();
+	 return C_OK;
 }
 
 
@@ -143,22 +159,21 @@ C_RESULT ardrone_tool_init_custom(int argc, char **argv)
 	/* Start all threads of your application */
 	START_THREAD( video_stage, NULL );
 
- //	C_RESULT pythonCResult = python_init();
+ 	C_RESULT pythonCResult = python_init();
 
 	// reset the drone (there is no emergency) and set it to 
-	// land once at the start
+	// land once at the start... also trim to flat
 	ardrone_tool_set_ui_pad_select(0);
 	ardrone_tool_set_ui_pad_start(0);
+    ardrone_at_set_flat_trim();
 
-	//return pythonCResult;
+	 return pythonCResult;
      return C_OK;
 }
 
 C_RESULT ardrone_tool_update_custom()
 {
-
-     printf("\t tool update\n");
-	//* 
+	/* 
 	counter ++;     
 	if (counter == 1)
 	{
@@ -180,16 +195,16 @@ C_RESULT ardrone_tool_update_custom()
 	{
 		counter = 0;
 	}
-	//*/ 
+	*/ 
 
-    // python_update();
+    python_update();
 
 
-     /*
+    /*   
 	char c = getchar();
 	if (c == -1) // quit on ctrl + c
 		signal_exit();
-     */
+    */ 
 
 	return C_OK;
 }
@@ -199,7 +214,7 @@ C_RESULT ardrone_tool_shutdown_custom()
 {
 	printf("\tardrone_tool_shutdown_custom called\n");
 
-//	python_exit();
+	python_exit();
 
 	ardrone_tool_set_ui_pad_start(0);
 

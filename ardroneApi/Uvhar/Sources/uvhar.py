@@ -9,16 +9,21 @@ class Uvhar:
      image = None
  
      def __init__(self):
-        print "new boobs"
+        print "Uvhar class contructor called.\n"
         pass 
 
 
      def update(self, newCounter):
          if (self.counter != newCounter ):
+             #print "new counter received %d" % newCounter
              self.counter = newCounter
              self.loadNewImage();
          return 1337
-      
+
+     def exit(self):
+         print "exit called\n"
+         destroyWindow("Image");
+         return 0
     
      def loadNewImage(self):
          #if (self.image != None):
@@ -42,5 +47,6 @@ if __name__ == "__main__":
          uvhar.update(i)
          time.sleep(0.10)
          i = i + 1
+     uvhar.exit()
 
          
