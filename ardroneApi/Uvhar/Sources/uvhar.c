@@ -63,6 +63,8 @@ C_RESULT python_init()
 
 C_RESULT python_update()
 {
+     printf("\tAttempting a python call\n");
+
      if (pModule == NULL)
          return C_FAIL;
 
@@ -75,6 +77,7 @@ C_RESULT python_update()
 		pValue = PyString_FromString("testietest");
 		// repeat for more arguments
 
+        /*
 		// we are going to be awesome and not have to check if the arguments
           //     correctly convert! 
                 if (!pValue)
@@ -84,6 +87,7 @@ C_RESULT python_update()
                     printf("Cannot convert argument\n");
                     return C_FAIL;
                 }   
+        */
 		
 		PyTuple_SetItem(pArgs, 0, pValue);
 		pValue = PyObject_CallObject(pFunc, pArgs);
@@ -100,7 +104,7 @@ C_RESULT python_update()
 		else
 		{
 			Py_DECREF(pFunc);
-			Py_DECREF(pModule);
+			//Py_DECREF(pModule);
 			PyErr_Print();
 			printf("\tPYTHON METHOD FAILED:(\n");
 			return C_FAIL;
@@ -114,7 +118,7 @@ C_RESULT python_update()
 		printf("\tPYTHON METHOD FAILED, could not find function\n");
 	}
 	Py_XDECREF(pFunc);
-	Py_DECREF(pModule);
+	//Py_DECREF(pModule);
 
 return C_OK; 
 }
@@ -139,18 +143,21 @@ C_RESULT ardrone_tool_init_custom(int argc, char **argv)
 	/* Start all threads of your application */
 	START_THREAD( video_stage, NULL );
 
-	C_RESULT pythonCResult = python_init();
+ //	C_RESULT pythonCResult = python_init();
 
 	// reset the drone (there is no emergency) and set it to 
 	// land once at the start
 	ardrone_tool_set_ui_pad_select(0);
 	ardrone_tool_set_ui_pad_start(0);
 
-	return pythonCResult;
+	//return pythonCResult;
+     return C_OK;
 }
 
 C_RESULT ardrone_tool_update_custom()
 {
+
+     printf("\t tool update\n");
 	//* 
 	counter ++;     
 	if (counter == 1)
@@ -175,12 +182,14 @@ C_RESULT ardrone_tool_update_custom()
 	}
 	//*/ 
 
-	python_update();
+    // python_update();
 
 
+     /*
 	char c = getchar();
 	if (c == -1) // quit on ctrl + c
 		signal_exit();
+     */
 
 	return C_OK;
 }
@@ -190,7 +199,7 @@ C_RESULT ardrone_tool_shutdown_custom()
 {
 	printf("\tardrone_tool_shutdown_custom called\n");
 
-	python_exit();
+//	python_exit();
 
 	ardrone_tool_set_ui_pad_start(0);
 
