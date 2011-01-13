@@ -4,7 +4,9 @@ int
 main(int argc, char *argv[])
 {
     PyObject *pName, *pModule, *pDict, *pFunc;
-    PyObject *pArgs, *pValue;
+    PyObject *pArgs, *pValue, *pValue2, *pValue3;
+    PyObject *methodName, *methodArgument1;
+
     int i;
 
     if (argc < 3) {
@@ -42,11 +44,21 @@ main(int argc, char *argv[])
                 /* pValue reference stolen here: */
                 PyTuple_SetItem(pArgs, i, pValue);
             }
+
             pValue = PyObject_CallObject(pFunc, pArgs);
+
+            pValue2 = PyObject_CallMethod(pValue, "printieprint", NULL);
+
+            methodName = PyString_FromString("argumentsMethod");
+            methodArgument1 = PyString_FromString("argumenties!");
+
+            pValue2 = PyObject_CallMethod(pValue, "printieprint", NULL);
+            pValue3 = PyObject_CallMethodObjArgs(pValue, methodName, methodArgument1, NULL);
+
             Py_DECREF(pArgs);
             if (pValue != NULL) 
             {
-                printf("Result of call: %ld\n", PyInt_AsLong(pValue));
+                printf("Result of call 1: %ld\n", PyInt_AsLong(pValue));
                 Py_DECREF(pValue);
             }
             else 
@@ -56,6 +68,15 @@ main(int argc, char *argv[])
                 PyErr_Print();
                 fprintf(stderr,"Call failed\n");
                 return 1;
+            }
+            if (pValue2 != NULL)
+            {
+                printf("Result of call 2: %ld\n", PyInt_AsLong(pValue2));
+                Py_DECREF(pValue2);
+            }
+            else
+            {
+                printf("Call 2 was null\n");
             }
         }
         else 

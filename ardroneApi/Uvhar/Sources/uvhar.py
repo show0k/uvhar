@@ -9,6 +9,7 @@ class Uvhar:
      image = None
  
      def __init__(self):
+        print "new boobs"
         pass 
 
 
