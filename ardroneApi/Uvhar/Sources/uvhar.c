@@ -55,7 +55,7 @@ C_RESULT python_init()
 		 return C_FAIL;
     }
 
-     printf("\tPython initialized\n");
+    printf("\tPython initialized\n");
      
 	return C_OK;
 }
