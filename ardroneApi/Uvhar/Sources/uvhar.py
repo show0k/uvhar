@@ -40,14 +40,23 @@ class Uvhar:
          image = cvLoadImage("example.jpg", CV_LOAD_IMAGE_COLOR)
          #cvShowImage("image", image)
          #cvWaitKey(0)
-         imageh = cvCreateImage(cvSize(320, 240), 8, 1)
-         images = cvCreateImage(cvSize(320, 240), 8, 1)
-         imagev = cvCreateImage(cvSize(320, 240), 8, 1)
+         imageH = cvCreateImage(cvSize(320, 240), 8, 1)
+         imageS = cvCreateImage(cvSize(320, 240), 8, 1)
+         imageV = cvCreateImage(cvSize(320, 240), 8, 1)
 
-         hsv_image = cvCloneImage(image) # temporary copy of the frame
-         cvCvtColor(image, hsv_image, CV_BGR2HSV) # convert to HSV
+         # make sure we don't lose the orignal image
+         hsvImage = cvCloneImage(image) 
 
-         cvSplit(image, imageh, images, imagev, None)  
+         # convert to hsv
+         cvCvtColor(image, hsvImage, CV_BGR2HSV) 
+
+         # split the image in h, s and v values
+         cvSplit(hsvImage, imageH, imageS, imageV, None)  
+
+         # only keep those values in range
+         cv.cvInRangeS(imageH, hMin, hMax, imageH)
+         cv.cvInRangeS(imageS, sMin, sMax, imageS)
+         cv.cvInRangeS(imageV, vMin, vMax, imageV)
 
 
 #image = cv.LoadImageM("images/frame00001.jpg")
