@@ -1,7 +1,9 @@
-import Image, ImageDraw, time
+import Image, ImageDraw
+import atexit, time
 from opencv import cv
 from opencv.highgui import *
 
+atexit.register(exit)
 
 class Uvhar:
 
@@ -14,6 +16,10 @@ class Uvhar:
 
 
      def update(self, newCounter):
+         # sometimes c isn't ready with writing the file
+         # so we always take the previous image
+         if (newCounter > 0):
+             newCounter -= 1
          if (self.counter != newCounter ):
              #print "new counter received %d" % newCounter
              self.counter = newCounter
@@ -26,12 +32,8 @@ class Uvhar:
          return 0
     
      def loadNewImage(self):
-         #if (self.image != None):
-         #self.image.close()
          filename = "images/frame%05d.jpg" % (self.counter)
-         print filename
-         #self.image = Image.open(filename)
-         #ImageDraw.Draw(self.image).show() 
+         #print filename
          image = cvLoadImage(filename, CV_LOAD_IMAGE_COLOR)
          cvShowImage("image", image)
          cvWaitKey(2)

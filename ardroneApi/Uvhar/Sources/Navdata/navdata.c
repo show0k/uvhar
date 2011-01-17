@@ -6,18 +6,7 @@
 #define CTRL_STATES_STRING
 #include "control_states.h"
 
-/*#include <ardrone_tool/Navdata/ardrone_navdata_client.h>
-
-#include <control_states.h>
-#include <string.h>
-#include <VP_Os/vp_os_malloc.h>
-#include <VP_Os/vp_os_print.h>
-#include <config.h>
-
-
-#include <Navdata/navdata.h>
-*/
-
+int printNavData;
 
 const char* ctrl_state_str(uint32_t ctrl_state)
 {
@@ -61,8 +50,10 @@ inline C_RESULT navdata_client_init( void* data )
 /* Receving navdata during the event loop */
 inline C_RESULT navdata_client_process( const navdata_unpacked_t* const navdata )
 {
-     /*
+
      const navdata_demo_t* const nd = &navdata->navdata_demo;
+     if (printNavData == 1)
+     {
 
      printf("\n=====================\nNavdata for flight demonstrations\n=====================\n\n");
 
@@ -73,7 +64,8 @@ inline C_RESULT navdata_client_process( const navdata_unpacked_t* const navdata 
      printf("Speed         : [vX] %4.3f  [vY] %4.3f  [vZ] %4.3f          \n",nd->vx,nd->vy,nd->vz);
 
      printf("\033[10A");
-     */
+     }
+
 
   return C_OK;
 }
