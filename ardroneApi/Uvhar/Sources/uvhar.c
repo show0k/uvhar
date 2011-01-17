@@ -29,6 +29,7 @@
 
 static int32_t exit_ihm_program = 1;
 
+extern int printNavData;
 extern int imageCounter;
 int counter = 0;
 // variables needed for python
@@ -124,8 +125,11 @@ C_RESULT python_exit()
      printf("\tPython exit called\n");
 
      PyObject *pExitResult;
-     
-     pExitResult = PyObject_CallMethod(pClassInstance, "exit", NULL); 
+
+     if (pClassInstance != NULL)
+     {
+         pExitResult = PyObject_CallMethod(pClassInstance, "exit", NULL); 
+     }
 
      /*
      if (pResult == NULL)
@@ -151,6 +155,16 @@ C_RESULT python_exit()
 /* The delegate object calls this method during initialization of an ARDrone application */
 C_RESULT ardrone_tool_init_custom(int argc, char **argv)
 {
+     if (argc == 2)
+     {
+         printf("\tWe are going to print nav data!!!!?\n");
+         printNavData = 1;
+     }   
+     else
+     {
+         printf("\tWe are not going to print nav data???!\n");
+     }
+
 	/* Registering for a new device of game controller */
 	//ardrone_tool_input_add( &gamepad );
 
@@ -168,12 +182,10 @@ C_RESULT ardrone_tool_init_custom(int argc, char **argv)
     ardrone_at_set_flat_trim();
 
 	 return pythonCResult;
-     return C_OK;
 }
 
 C_RESULT ardrone_tool_update_custom()
 {
-	/* 
 	counter ++;     
 	if (counter == 1)
 	{
@@ -195,16 +207,15 @@ C_RESULT ardrone_tool_update_custom()
 	{
 		counter = 0;
 	}
-	*/ 
 
     python_update();
 
 
-    /*   
-	char c = getchar();
-	if (c == -1) // quit on ctrl + c
+    /*
+	char c = getch();
+	if (c == 13) // quit on ctrl + c
 		signal_exit();
-    */ 
+    */
 
 	return C_OK;
 }
