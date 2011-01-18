@@ -6,7 +6,7 @@
 #define CTRL_STATES_STRING
 #include "control_states.h"
 
-int printNavData;
+float batteryLevel, theta, phi, psi, altitude, vx, vy, vz;
 
 const char* ctrl_state_str(uint32_t ctrl_state)
 {
@@ -52,9 +52,8 @@ inline C_RESULT navdata_client_process( const navdata_unpacked_t* const navdata 
 {
 
      const navdata_demo_t* const nd = &navdata->navdata_demo;
-     if (printNavData == 1)
-     {
 
+     /*
      printf("\n=====================\nNavdata for flight demonstrations\n=====================\n\n");
 
      printf("Control state : %s                                      \n",ctrl_state_str(nd->ctrl_state));
@@ -64,10 +63,18 @@ inline C_RESULT navdata_client_process( const navdata_unpacked_t* const navdata 
      printf("Speed         : [vX] %4.3f  [vY] %4.3f  [vZ] %4.3f          \n",nd->vx,nd->vy,nd->vz);
 
      printf("\033[10A");
-     }
+     */
 
+     batteryLevel = nd->vbat_flying_percentage;
+     theta = nd->theta;
+     phi = nd->phi;
+     psi = nd->psi;
+     altitude = nd->altitude;
+     vx = nd->vx;
+     vy = nd->vy;
+     vz = nd->vz;
 
-  return C_OK;
+     return C_OK;
 }
 
 /* Relinquish the local resources after the event loop exit */

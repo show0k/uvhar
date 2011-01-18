@@ -28,10 +28,14 @@
 #include <Navdata/navdata.h>
 
 static int32_t exit_ihm_program = 1;
+// our own exit indicator
+int exitOnNextUpdate = 0;
 
-extern int printNavData;
 extern int imageCounter;
 int counter = 0;
+extern float batteryLevel, theta, phi, psi, altitude, vx, vy, vz;
+float roll, pitch, gaz, yaw;
+
 // variables needed for python
 PyObject *pArgument, *pClassInstance, *pResult, *pMethodName;
 
@@ -97,13 +101,22 @@ C_RESULT python_init()
 	return C_OK;
 }
 
-
 C_RESULT python_update()
 {
-     //printf("\tAttempting a python call\n");
+     if (exitOnNextUpdate)
+         return C_OK;
 
      // putting the last saved image in a python object 
-     pArgument = PyInt_FromLong(imageCounter);
+     pArgument = PyTuple_New(9); //PyInt_FromLong(imageCounter);
+     PyTuple_SetItem(pArgument, 0, PyInt_FromLong(imageCounter));
+     PyTuple_SetItem(pArgument, 1, PyFloat_FromDouble(batteryLevel));
+     PyTuple_SetItem(pArgument, 2, PyFloat_FromDouble(altitude));
+     PyTuple_SetItem(pArgument, 3, PyFloat_FromDouble(phi));
+     PyTuple_SetItem(pArgument, 4, PyFloat_FromDouble(psi));
+     PyTuple_SetItem(pArgument, 5, PyFloat_FromDouble(altitude));
+     PyTuple_SetItem(pArgument, 6, PyFloat_FromDouble(vx));
+     PyTuple_SetItem(pArgument, 7, PyFloat_FromDouble(vy));
+     PyTuple_SetItem(pArgument, 8, PyFloat_FromDouble(vz));
 
      // pResult will be the fly commands
      pResult = PyObject_CallMethodObjArgs(pClassInstance, pMethodName, pArgument, NULL);
@@ -112,16 +125,26 @@ C_RESULT python_update()
      {
          printf("\tPython update has failed. Printing error and calling signal_exit():\n");
          PyErr_Print();
-         signal_exit();
+         exitOnNextUpdate = 1;
          Py_XDECREF(pArgument);
          return C_FAIL;
      }
-     else if (42 == PyInt_AsLong(pResult))
+     else
      {
-         printf("\tPython says 42 so we exit\n");
-         signal_exit();
+         pResult = PyList_AsTuple(pResult);
+         if (PyInt_AsLong(PyTuple_GetItem(pResult, 0))) // the first entry indicates if we want to quit
+         {
+             printf("\tc knows python indicates quitin'\n");
+             exitOnNextUpdate = 1;
+         }
+         else
+         {
+             roll = PyFloat_AsDouble(PyTuple_GetItem(pResult, 1));
+             pitch = PyFloat_AsDouble(PyTuple_GetItem(pResult, 2));
+             gaz = PyFloat_AsDouble(PyTuple_GetItem(pResult, 3));
+             yaw = PyFloat_AsDouble(PyTuple_GetItem(pResult, 4));
+         }
      }
-
      Py_XDECREF(pResult);     
      Py_XDECREF(pArgument);
 
@@ -144,26 +167,16 @@ C_RESULT python_exit()
              Py_DECREF(pExitResult);
      }
 
-     /*
-     if (pResult == NULL)
-     {
-         printf("\tSomething, somewhere, went terribly wrong!?\n");
-     }
-     else
-     {
-         printf("\tResult %d\n", PyInt_AsLong(pResult));
-         Py_DECREF(pResult);
-     }
-     */
-
+     printf("\tDecfrefin' ...\n");
      Py_XDECREF(pClassInstance);
      Py_XDECREF(pMethodName);
      Py_XDECREF(pArgument); // this one is already NULL
      Py_XDECREF(pResult);
+     printf("\tFinalizin' ...\n");
 	 Py_Finalize();
+     printf("\tDone finalizin' ...\n");
 	 return C_OK;
 }
-
 
 
 /* The delegate object calls this method during initialization of an ARDrone application */
@@ -184,13 +197,14 @@ C_RESULT ardrone_tool_init_custom(int argc, char **argv)
 	ardrone_tool_set_ui_pad_select(0);
 	ardrone_tool_set_ui_pad_start(0);
     ardrone_at_set_flat_trim();
+    // and now launch this thing
+    ardrone_tool_set_ui_pad_start(1);
 
 	return pythonCResult;
 }
 
 C_RESULT ardrone_tool_update_custom()
 {
-	
     /*
     counter ++;     
 	if (counter == 1)
@@ -216,33 +230,41 @@ C_RESULT ardrone_tool_update_custom()
         signal_exit(); 
 	}
     */
-    counter ++;
-    if (counter > 400)
+     
+     //ardrone_at_set_progress_cmd(1, roll, pitch, gaz, yaw);
+     ardrone_at_set_progress_cmd(1, 0, 0, 0, yaw);
+     
+     if (exitOnNextUpdate)
          signal_exit();
+     
+     counter ++;
+     if (counter > 1000)
+     {
+         printf("\t1000 updates, we're stoppin'!\n");
+         signal_exit();
+     }
+    
 
-    python_update();
+     python_update();
 
-
-    /*
-	char c = getch();
-	if (c == 13) // quit on ctrl + c
-		signal_exit();
-    */
-
-	return C_OK;
+	 return C_OK;
 }
 
 /* The delegate object calls this method when the event loop exit */
 C_RESULT ardrone_tool_shutdown_custom()
 {
-	printf("\tardrone_tool_shutdown_custom called\n");
+	 printf("\tardrone_tool_shutdown_custom called\n");
 
-	python_exit();
+	 python_exit();
 
-	ardrone_tool_set_ui_pad_start(0);
+     printf("\tbefore set uit pad start (0)\n");
 
-	/* Relinquish all threads of your application */
-	JOIN_THREAD( video_stage );
+	 ardrone_tool_set_ui_pad_start(0);
+     printf("\tafter set uit pad start (0) and before join thread video stage \n");
+
+	 /* Relinquish all threads of your application */
+	 JOIN_THREAD( video_stage );
+     printf("\tafter join thread video stage\n");
 
 
 	/* Unregistering for the current device */
