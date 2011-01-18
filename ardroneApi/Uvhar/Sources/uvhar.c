@@ -86,6 +86,8 @@ C_RESULT python_init()
     }
     else
     {
+         Py_DECREF(pModule);
+         Py_XDECREF(pFunc);
          printf("\tpFunc not true or not callable\n");
          return C_FAIL;
     }
@@ -108,13 +110,20 @@ C_RESULT python_update()
 
      if (pResult == NULL)
      {
-         printf("\tPython update has failed. Printing error:\n");
+         printf("\tPython update has failed. Printing error and calling signal_exit():\n");
          PyErr_Print();
+         signal_exit();
+         Py_XDECREF(pArgument);
          return C_FAIL;
+     }
+     else if (42 == PyInt_AsLong(pResult))
+     {
+         printf("\tPython says 42 so we exit\n");
+         signal_exit();
      }
 
      Py_XDECREF(pResult);     
-     Py_DECREF(pArgument);
+     Py_XDECREF(pArgument);
 
      return C_OK; 
 }
@@ -122,13 +131,17 @@ C_RESULT python_update()
 // finalizing python. 
 C_RESULT python_exit()
 {
-     printf("\tPython exit called\n");
+     printf("\tc python exit called\n");
 
      PyObject *pExitResult;
 
      if (pClassInstance != NULL)
      {
          pExitResult = PyObject_CallMethod(pClassInstance, "exit", NULL); 
+         if (pExitResult == NULL)
+             PyErr_Print();
+         else
+             Py_DECREF(pExitResult);
      }
 
      /*
@@ -143,9 +156,10 @@ C_RESULT python_exit()
      }
      */
 
-     Py_DECREF(pClassInstance);
-     Py_DECREF(pMethodName);
-     Py_DECREF(pArgument);
+     Py_XDECREF(pClassInstance);
+     Py_XDECREF(pMethodName);
+     Py_XDECREF(pArgument); // this one is already NULL
+     Py_XDECREF(pResult);
 	 Py_Finalize();
 	 return C_OK;
 }
@@ -155,16 +169,6 @@ C_RESULT python_exit()
 /* The delegate object calls this method during initialization of an ARDrone application */
 C_RESULT ardrone_tool_init_custom(int argc, char **argv)
 {
-     if (argc == 2)
-     {
-         printf("\tWe are going to print nav data!!!!?\n");
-         printNavData = 1;
-     }   
-     else
-     {
-         printf("\tWe are not going to print nav data???!\n");
-     }
-
 	/* Registering for a new device of game controller */
 	//ardrone_tool_input_add( &gamepad );
 
@@ -181,12 +185,14 @@ C_RESULT ardrone_tool_init_custom(int argc, char **argv)
 	ardrone_tool_set_ui_pad_start(0);
     ardrone_at_set_flat_trim();
 
-	 return pythonCResult;
+	return pythonCResult;
 }
 
 C_RESULT ardrone_tool_update_custom()
 {
-	counter ++;     
+	
+    /*
+    counter ++;     
 	if (counter == 1)
 	{
 		// take off
@@ -205,8 +211,14 @@ C_RESULT ardrone_tool_update_custom()
 	}
 	else if (counter == 800)
 	{
-		counter = 0;
+        printf("\tScript has run, exiting?\n");
+		//counter = 0;
+        signal_exit(); 
 	}
+    */
+    counter ++;
+    if (counter > 400)
+         signal_exit();
 
     python_update();
 
