@@ -93,7 +93,8 @@ C_RESULT output_gtk_stage_transform( void *cfg, vp_api_io_data_t *in, vp_api_io_
  
      /* Get a reference to the last decoded picture */
      pixbuf_data      = (uint8_t*)in->buffers[0]; // we casten het naar een pointer van type uint8_t!!
-     
+    
+      
      // returns: A newly-created GdkPixbuf structure with a reference count of 1.
      pixbuf = gdk_pixbuf_new_from_data(pixbuf_data,  // image data in 8-bit/sample packed format
                                      GDK_COLORSPACE_RGB, 
@@ -108,7 +109,7 @@ C_RESULT output_gtk_stage_transform( void *cfg, vp_api_io_data_t *in, vp_api_io_
      sprintf(imageName, "images/frame%05d.jpg", ++imageCounter);
 
      gdk_pixbuf_save(pixbuf, imageName, "jpeg", NULL, "quality", "100", NULL);
-
+     
      vp_os_mutex_unlock(&video_update_lock);
 
      return (SUCCESS);
@@ -116,8 +117,8 @@ C_RESULT output_gtk_stage_transform( void *cfg, vp_api_io_data_t *in, vp_api_io_
 
 C_RESULT output_gtk_stage_close( void *cfg, vp_api_io_data_t *in, vp_api_io_data_t *out)
 {
-
-  return (SUCCESS);
+     printf("\toutput_gtk_stage_close called\n");
+     return (SUCCESS);
 }
 
 
@@ -242,10 +243,11 @@ DEFINE_THREAD_ROUTINE(video_stage, data)
               loop = SUCCESS;
             }
           }
-          else loop = -1; // Finish this thread
-      }
-
-      vp_api_close(&pipeline, &pipeline_handle);
+         else loop = -1; // Finish this thread
+     }
+     printf("\tafter the loop of video stage and before vp_api_close\n");
+     vp_api_close(&pipeline, &pipeline_handle);
+     printf("\tafter the vp_api_close\n");
     }
   }
 

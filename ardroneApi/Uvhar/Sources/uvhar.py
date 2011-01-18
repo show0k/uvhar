@@ -28,9 +28,9 @@ class Uvhar:
      # bounding hsv values to spot something pink
      hMin = 327/2
      hMax = 347/2
-     sMin = 66/0.393
+     sMin = 68/0.393
      sMax = 86/0.393
-     vMin = 88/0.393
+     vMin = 70/0.393
      vMax = 100/0.393 
 
      # window names
@@ -51,27 +51,24 @@ class Uvhar:
          cvNamedWindow(self.processedWindowName)
          cvSetMouseCallback(self.mainWindowName, self.setExitOnNextUpdate, None)
          cvSetMouseCallback(self.processedWindowName, self.setExitOnNextUpdate, None)
+         cvWaitKey(1)
 
-     def update(self, newCounter):
+     def update(self, cTuple):
          # sometimes c isn't ready with writing the file
          # so we always take the previous image
-         if (newCounter > 0):
-             newCounter -= 1
-         if (self.counter != newCounter ):
+         if (self.counter != cTuple[0] - 1):
              #print "new counter received %d" % newCounter
-             self.counter = newCounter
+             self.counter = cTuple[0] - 1
              self.loadNewImage();
-         # return 33 if we want to quit this thing!
-         if (self.exitOnNextUpdate):
-             return 33 
+        
+         #print "navdata: battery level: %4.2f, theta: %4.2f, phi: %4.2f, psi %4.2f, altitude %4.2f, vx %4.2f, vy %4.2f, vz %4.2f" % (cTuple[1], cTuple[2], cTuple[3], cTuple[4], cTuple[5], cTuple[6], cTuple[7], cTuple[8])  
+         
+         return [self.exitOnNextUpdate, 0, 0, 0, 0.5]
 
      # we need to find some way to call this baby when we stop
      def exit(self):
          print "\tpython exit called\n"
          cvDestroyAllWindows()
-         #destroyWindow(self.mainWindowName)
-         #destroyWindow(self.processedWindowName)
-         return 42
    
      # loads image with an image from file using the counter, processes it and 
      # shows the result 
@@ -112,7 +109,7 @@ class Uvhar:
      def setExitOnNextUpdate(self, event, x, y, flags, param):
          if (event == CV_EVENT_RBUTTONDOWN):
              print "\tPython recognizes exit command\n"
-             exitOnNextUpdate = True
+             self.exitOnNextUpdate = True
              if __name__ == "__main__":
                  exit()
 
@@ -126,16 +123,11 @@ class Uvhar:
 
 if __name__ == "__main__":
      uvhar = Uvhar()
-     uvhar.test()
-     # from the range of gimp hsv to the range of opencv hsv      
-     #uvhar.testPicture(230, 260, 60, 80, 128, 150)
-     """
      i = 1;
      while (i < 251):
-         uvhar.update(i)
-         time.sleep(0.10)
+         uvhar.update([i, 0, 0, 0, 0])
+         time.sleep(0.0667)
          i = i + 1
      uvhar.exit()
-     """
 
          
