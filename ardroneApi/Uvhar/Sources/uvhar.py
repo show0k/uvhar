@@ -13,17 +13,17 @@ class Uvhar:
      # keeping track of the image we use
      counter = -1 
      # last known coordinates of a find object in the picture
-     point = (0, 0)
+     point = None
      # steering values
      roll = 0
      pitch = 0
      gaz = 0
      yaw = 0
      # defining a window before we fly towards the object 
-     lowerX = 150
+     lowerX = 135
      upperX = 170
-     lowerY = 40
-     upperY = 90
+     lowerY = 150  
+     upperY = 200  # Higher in the coordinate system, but lower in the image!
 
 
      # Images 
@@ -125,7 +125,7 @@ class Uvhar:
              self.loadNewImage()
              self.findPicture()
              self.thinkAboutPoint() # check if the info in self.point is useful and acts on it
-
+	 print "battery level: %4.2f" % cTuple[1]
          #print "navdata: battery level: %4.2f, theta: %4.2f, phi: %4.2f, psi %4.2f, altitude %4.2f, vx %4.2f, vy %4.2f, vz %4.2f" % (cTuple[1], cTuple[2], cTuple[3], cTuple[4], cTuple[5], cTuple[6], cTuple[7], cTuple[8])  
         
          cvWaitKey(4)
@@ -140,10 +140,12 @@ class Uvhar:
 
 
      def thinkAboutPoint(self):
-         resetSteeringValues()
+         self.resetSteeringValues()
 
          # keep turnin' untill we have more interesting information
-         if (self.point.x == 0 || self.point.y == 0):
+         if (self.point == None):
+             return
+	 if(self.point.x == 0 or self.point.y == 0):
              print "\tNo point found, keep on turnin'!\n"
              self.yaw = 0.3
              return
@@ -152,18 +154,18 @@ class Uvhar:
          # for x with rolling
          if (self.point.x < self.lowerX):
              print "x is too much to the left!"
-             self.yaw = 0.1
-         else if (self.point.x > self.upperX):
-             print "x is too much to the right!"
              self.yaw = -0.1
+         elif (self.point.x > self.upperX):
+             print "x is too much to the right!"
+             self.yaw = 0.1
 
          # for y with gaz
-         else if (self.point.y < self.lowerY):
+         elif (self.point.y < self.lowerY):
              print "y is too low!"
-             self.gaz = 0.1
-         else if (self.point.y > self.upperY):
+             self.gaz = 0.5
+         elif (self.point.y > self.upperY):
              print "y is too high"
-             self.gaz = -0.1
+             self.gaz = -0.5
 
          # otherwise, fly towards the target!
          else: 
@@ -216,7 +218,7 @@ class Uvhar:
          cvMatchTemplate(self.resultImage, self.targetImage, self.matchImage, CV_TM_SQDIFF_NORMED) 
          _, _, self.point, _ = cvMinMaxLoc(self.matchImage)
          #print "%d, %d" % (self.point.x, self.point.y)
-         
+         cvRectangle(self.matchImage, (self.lowerX, self.lowerY), (self.upperX, self.upperY), CV_RGB(255,0,0))
 
      def setExitOnNextUpdate(self, event, x, y, flags, param):
          if (event == CV_EVENT_RBUTTONDOWN):
@@ -236,7 +238,7 @@ class Uvhar:
 if __name__ == "__main__":
      uvhar = Uvhar()
      i = 1;
-     while (i < 251):
+     while (i < 500):
          uvhar.update([i, 0, 0, 0, 0])
          time.sleep(0.0667)
          i = i + 1
