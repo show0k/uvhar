@@ -199,7 +199,7 @@ C_RESULT ardrone_tool_init_custom(int argc, char **argv)
     ardrone_at_set_flat_trim();
     // and now launch this thing
     ardrone_tool_set_ui_pad_start(1);
-
+	sleep(2);
 	return pythonCResult;
 }
 
@@ -231,8 +231,8 @@ C_RESULT ardrone_tool_update_custom()
 	}
     */
      
-     //ardrone_at_set_progress_cmd(1, roll, pitch, gaz, yaw);
-     ardrone_at_set_progress_cmd(1, 0, 0, 0, yaw);
+     ardrone_at_set_progress_cmd(1, roll, pitch, gaz, yaw);
+     //ardrone_at_set_progress_cmd(1, 0, 0, 0, yaw);
      
      if (exitOnNextUpdate)
          signal_exit();
