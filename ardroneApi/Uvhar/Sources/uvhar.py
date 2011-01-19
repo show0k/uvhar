@@ -65,13 +65,13 @@ class Uvhar:
          Ihsv = cvCreateMat(sourceImage.rows, sourceImage.cols, CV_8UC3)
          cvCvtColor(sourceImage, Ihsv, CV_BGR2HSV)
          # extract h, s and v planes
-         hPlane = cvCreateMat(sourceImage.rows, sourceImage.cols, CV_8UC1)
-         sPlane = cvCreateMat(sourceImage.rows, sourceImage.cols, CV_8UC1)
-         vPlane = cvCreateMat(sourceImage.rows, sourceImage.cols, CV_8UC1)
+         hPlane = cvCreateMat(Ihsv.rows, Ihsv.cols, CV_8UC1)
+         sPlane = cvCreateMat(Ihsv.rows, Ihsv.cols, CV_8UC1)
+         vPlane = cvCreateMat(Ihsv.rows, Ihsv.cols, CV_8UC1)
          cvSplit(Ihsv, hPlane, sPlane, None, None)
          planes = [hPlane, sPlane]
          # calculate histogram
-         cvCalcHist(planes, self.sourceHistogram)
+         cvCalcHist([Image.open(i) for i in planes], self.sourceHistogram)
 
          # already open the windows :O
          cvNamedWindow(self.mainWindowName) # if window does not resize automagically add CV_WINDOW_AUTOSIZE

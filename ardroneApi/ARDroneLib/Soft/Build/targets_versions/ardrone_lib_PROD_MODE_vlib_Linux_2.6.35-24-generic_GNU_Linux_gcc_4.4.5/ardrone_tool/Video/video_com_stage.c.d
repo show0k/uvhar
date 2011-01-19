@@ -24,7 +24,7 @@ video_com_stage.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_L
  /usr/include/termios.h /usr/include/bits/termios.h \
  /usr/include/sys/ttydefaults.h /usr/include/stdint.h \
  /usr/include/bits/wchar.h ../VP_Os/linux/intrin.h ../VP_Os/vp_os_delay.h \
- /home/maarten/uva/project/mercurial/ardroneApi/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_com_stage.h \
+ /home/maarten/uva/project/mercurial/ardroneApi/Uvhar/Build/../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_com_stage.h \
  ../VP_Api/vp_api.h ../VP_Os/vp_os_signal.h \
  ..//VP_Os/linux/vp_os_signal_dep.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/bits/sched.h \
