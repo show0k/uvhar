@@ -1,4 +1,5 @@
 import Image, ImageDraw, time
+import sys
 from opencv.cv import *
 from opencv.highgui import *
 
@@ -19,6 +20,19 @@ class Uvhar:
      imageV = None
      tempResultImage = None
      resultImage = None
+     targetImage = None
+     matchImage = None
+
+     # histogram of what we are looking for
+     sourceHistogram = None
+     hBins = 30 # python api example
+     sBins = 32 # python api example
+     vBins = 32 # 32 because.. why not?
+     # hue varies from 0 (~0 deg red) to 180 (~360 deg red again), python api example 
+     hRange = [0, 180]
+     # saturation varies from 0 (black-gray-white) to 255 (pure spectrum color), python api example
+     sRange = [0, 255]
+     vRange = [0, 255] # I think this applies for value as well
 
      # width and height of the image, we might need to change this
      # when we switch to the bottom camera (or we can detect it, somehow)
@@ -36,6 +50,7 @@ class Uvhar:
      # window names
      mainWindowName = "Image"
      processedWindowName = "Processed Image"
+     processedWindowName2 = "Processed Image 2"
 
 
      def __init__(self):
@@ -43,14 +58,50 @@ class Uvhar:
          self.imageH = cvCreateImage(cvSize(self.imageWidth, self.imageHeight), 8, 1)
          self.imageS = cvCreateImage(cvSize(self.imageWidth, self.imageHeight), 8, 1)
          self.imageV = cvCreateImage(cvSize(self.imageWidth, self.imageHeight), 8, 1)
+         self.resultImage= cvCreateImage(cvSize(self.imageWidth, self.imageHeight), 8, 1)
          self.tempResultImage = cvCreateImage(cvSize(self.imageWidth, self.imageHeight), 8, 3)
-         self.resultImage = cvCreateImage(cvSize(self.imageWidth, self.imageHeight), 8, 1)
+
+         cmpw = 27
+         cmph = 25
+
+         self.matchImage = cvCreateImage(cvSize(self.imageWidth - cmpw + 1, self.imageHeight - cmph+ 1), 32, 1)
+
+         self.targetImage = cvCreateImage(cvSize(cmpw, cmph), 8, 1)
+         cvSet(self.targetImage, CV_RGB(255, 255, 255))
+
+         cvShowImage("jfdklas", self.targetImage)
+         cvWaitKey(0)
+
+         #cvShowImage("targetImage", self.targetImage)
+         #cvWaitKey(0)
+    
+         """ 
+         # create histogram
+         self.sourceHistogram = cvCreateHist([self.hBins, self.sBins, self.vBins], CV_HIST_ARRAY, [self.hRange, self.sRange, self.vRange])
+         # load image and convert to hsv
+         sourceImage = cvLoadImage("pinkObject.jpg", CV_LOAD_IMAGE_COLOR)
+         cvCvtColor(sourceImage, sourceImage, CV_BGR2HSV)
+         # extract h, s and v planes
+         hPlane = cvCreateImage(cvSize(30, 18), 8, 1)
+         sPlane = cvCreateImage(cvSize(30, 18), 8, 1)
+         vPlane = cvCreateImage(cvSize(30, 18), 8, 1)
+         cvSplit(sourceImage, hPlane, sPlane, vPlane, None)
+         planes = [hPlane, sPlane, vPlane]
+
+         # calculate histogram
+         cvCalcHist(planes, self.sourceHistogram, 0, None)
+         """
 
          # already open the windows :O
          cvNamedWindow(self.mainWindowName) # if window does not resize automagically add CV_WINDOW_AUTOSIZE
          cvNamedWindow(self.processedWindowName)
+         cvNamedWindow(self.processedWindowName2)
+         cvMoveWindow(self.mainWindowName, 0, 50)
+         cvMoveWindow(self.processedWindowName, 340, 50)
+         cvMoveWindow(self.processedWindowName2, 680, 50)
          cvSetMouseCallback(self.mainWindowName, self.setExitOnNextUpdate, None)
          cvSetMouseCallback(self.processedWindowName, self.setExitOnNextUpdate, None)
+         cvSetMouseCallback(self.processedWindowName2, self.setExitOnNextUpdate, None)
          cvWaitKey(1)
 
      def update(self, cTuple):
@@ -79,6 +130,7 @@ class Uvhar:
          self.findPicture()
          cvShowImage(self.mainWindowName, self.image)
          cvShowImage(self.processedWindowName, self.resultImage)
+         cvShowImage(self.processedWindowName2, self.matchImage)
          cvWaitKey(4)
 
      # processes image and sets the result in resultImage
@@ -90,6 +142,7 @@ class Uvhar:
              print "result image is null\n"
              return None
 
+     
          # convert to hsv
          cvCvtColor(self.image, self.tempResultImage, CV_BGR2HSV) 
 
@@ -105,6 +158,9 @@ class Uvhar:
          # are range on every channel 
          cvAnd(self.imageH, self.imageS, self.resultImage)
          cvAnd(self.resultImage, self.imageV, self.resultImage)
+       
+         cvMatchTemplate(self.resultImage, self.targetImage, self.matchImage, CV_TM_SQDIFF_NORMED) 
+         
 
      def setExitOnNextUpdate(self, event, x, y, flags, param):
          if (event == CV_EVENT_RBUTTONDOWN):
