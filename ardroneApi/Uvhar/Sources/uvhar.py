@@ -12,6 +12,19 @@ class Uvhar:
 
      # keeping track of the image we use
      counter = -1 
+     # last known coordinates of a find object in the picture
+     point = (0, 0)
+     # steering values
+     roll = 0
+     pitch = 0
+     gaz = 0
+     yaw = 0
+     # defining a window before we fly towards the object 
+     lowerX = 150
+     upperX = 170
+     lowerY = 40
+     upperY = 90
+
 
      # Images 
      image = None
@@ -23,6 +36,7 @@ class Uvhar:
      targetImage = None
      matchImage = None
 
+     """ :(
      # histogram of what we are looking for
      sourceHistogram = None
      hBins = 30 # python api example
@@ -33,6 +47,7 @@ class Uvhar:
      # saturation varies from 0 (black-gray-white) to 255 (pure spectrum color), python api example
      sRange = [0, 255]
      vRange = [0, 255] # I think this applies for value as well
+     """
 
      # width and height of the image, we might need to change this
      # when we switch to the bottom camera (or we can detect it, somehow)
@@ -61,16 +76,13 @@ class Uvhar:
          self.resultImage= cvCreateImage(cvSize(self.imageWidth, self.imageHeight), 8, 1)
          self.tempResultImage = cvCreateImage(cvSize(self.imageWidth, self.imageHeight), 8, 3)
 
-         cmpw = 27
-         cmph = 25
+         cmpw = 10
+         cmph = 10
 
          self.matchImage = cvCreateImage(cvSize(self.imageWidth - cmpw + 1, self.imageHeight - cmph+ 1), 32, 1)
 
          self.targetImage = cvCreateImage(cvSize(cmpw, cmph), 8, 1)
          cvSet(self.targetImage, CV_RGB(255, 255, 255))
-
-         cvShowImage("jfdklas", self.targetImage)
-         cvWaitKey(0)
 
          #cvShowImage("targetImage", self.targetImage)
          #cvWaitKey(0)
@@ -110,11 +122,54 @@ class Uvhar:
          if (self.counter != cTuple[0] - 1):
              #print "new counter received %d" % newCounter
              self.counter = cTuple[0] - 1
-             self.loadNewImage();
-        
+             self.loadNewImage()
+             self.findPicture()
+             self.thinkAboutPoint() # check if the info in self.point is useful and acts on it
+
          #print "navdata: battery level: %4.2f, theta: %4.2f, phi: %4.2f, psi %4.2f, altitude %4.2f, vx %4.2f, vy %4.2f, vz %4.2f" % (cTuple[1], cTuple[2], cTuple[3], cTuple[4], cTuple[5], cTuple[6], cTuple[7], cTuple[8])  
-         
-         return [self.exitOnNextUpdate, 0, 0, 0, 0.5]
+        
+         cvWaitKey(4)
+         return [self.exitOnNextUpdate, self.roll, self.pitch, self.gaz, self.yaw]
+
+     def resetSteeringValues(self):
+         self.roll = 0
+         self.pitch = 0
+         self.gaz = 0
+         self.yaw = 0
+
+
+
+     def thinkAboutPoint(self):
+         resetSteeringValues()
+
+         # keep turnin' untill we have more interesting information
+         if (self.point.x == 0 || self.point.y == 0):
+             print "\tNo point found, keep on turnin'!\n"
+             self.yaw = 0.3
+             return
+         print "\tpoint found: "
+         # bring the object to the centre of the screen
+         # for x with rolling
+         if (self.point.x < self.lowerX):
+             print "x is too much to the left!"
+             self.yaw = 0.1
+         else if (self.point.x > self.upperX):
+             print "x is too much to the right!"
+             self.yaw = -0.1
+
+         # for y with gaz
+         else if (self.point.y < self.lowerY):
+             print "y is too low!"
+             self.gaz = 0.1
+         else if (self.point.y > self.upperY):
+             print "y is too high"
+             self.gaz = -0.1
+
+         # otherwise, fly towards the target!
+         else: 
+             print "flyin' towards the target!"
+             self.pitch = -0.1
+         print "\n"
 
      # we need to find some way to call this baby when we stop
      def exit(self):
@@ -127,13 +182,12 @@ class Uvhar:
          filename = "images/frame%05d.jpg" % (self.counter)
          #print filename
          self.image = cvLoadImage(filename, CV_LOAD_IMAGE_COLOR)
-         self.findPicture()
          cvShowImage(self.mainWindowName, self.image)
          cvShowImage(self.processedWindowName, self.resultImage)
          cvShowImage(self.processedWindowName2, self.matchImage)
-         cvWaitKey(4)
 
      # processes image and sets the result in resultImage
+     # also returns a point that contains the found  
      def findPicture(self):
          if (self.image == None):
              print "image is null\n"
@@ -160,6 +214,8 @@ class Uvhar:
          cvAnd(self.resultImage, self.imageV, self.resultImage)
        
          cvMatchTemplate(self.resultImage, self.targetImage, self.matchImage, CV_TM_SQDIFF_NORMED) 
+         _, _, self.point, _ = cvMinMaxLoc(self.matchImage)
+         #print "%d, %d" % (self.point.x, self.point.y)
          
 
      def setExitOnNextUpdate(self, event, x, y, flags, param):
