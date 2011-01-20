@@ -19,11 +19,12 @@ class Uvhar:
      pitch = 0
      gaz = 0
      yaw = 0
+     turnValue = 1
      # defining a window before we fly towards the object 
      lowerX = 135
      upperX = 170
-     lowerY = 150  
-     upperY = 200  # Higher in the coordinate system, but lower in the image!
+     lowerY = 130  
+     upperY = 180  # Higher in the coordinate system, but lower in the image!
 
 
      # Images 
@@ -58,8 +59,8 @@ class Uvhar:
      hMin = 327/2
      hMax = 347/2
      sMin = 68/0.393
-     sMax = 86/0.393
-     vMin = 70/0.393
+     sMax = 95/0.393
+     vMin = 60/0.393
      vMax = 100/0.393 
 
      # window names
@@ -119,12 +120,17 @@ class Uvhar:
      def update(self, cTuple):
          # sometimes c isn't ready with writing the file
          # so we always take the previous image
-         if (self.counter != cTuple[0] - 1):
+         if (cTuple[0]>80):
              #print "new counter received %d" % newCounter
              self.counter = cTuple[0] - 1
              self.loadNewImage()
              self.findPicture()
              self.thinkAboutPoint() # check if the info in self.point is useful and acts on it
+	 elif(self.counter != cTuple[0] - 1):
+             self.counter = cTuple[0] - 1
+             self.loadNewImage()
+             self.findPicture()
+             
 	 print "battery level: %4.2f" % cTuple[1]
          #print "navdata: battery level: %4.2f, theta: %4.2f, phi: %4.2f, psi %4.2f, altitude %4.2f, vx %4.2f, vy %4.2f, vz %4.2f" % (cTuple[1], cTuple[2], cTuple[3], cTuple[4], cTuple[5], cTuple[6], cTuple[7], cTuple[8])  
         
@@ -147,30 +153,34 @@ class Uvhar:
              return
 	 if(self.point.x == 0 or self.point.y == 0):
              print "\tNo point found, keep on turnin'!\n"
-             self.yaw = 0.3
+             self.yaw = 0.3*self.turnValue
              return
          print "\tpoint found: "
          # bring the object to the centre of the screen
          # for x with rolling
          if (self.point.x < self.lowerX):
              print "x is too much to the left!"
-             self.yaw = -0.1
+             self.yaw = -0.08
+	     self.turnValue = -1
          elif (self.point.x > self.upperX):
              print "x is too much to the right!"
-             self.yaw = 0.1
+             self.yaw = 0.08
+	     self.turnValue = 1
 
          # for y with gaz
          elif (self.point.y < self.lowerY):
              print "y is too low!"
              self.gaz = 0.5
+             #there is a error backwards, so we have to go forward 
+	     self.pitch = 0.05
          elif (self.point.y > self.upperY):
              print "y is too high"
-             self.gaz = -0.5
+             self.gaz = -0.2
 
          # otherwise, fly towards the target!
          else: 
              print "flyin' towards the target!"
-             self.pitch = -0.1
+             self.pitch = -0.05
          print "\n"
 
      # we need to find some way to call this baby when we stop

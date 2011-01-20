@@ -135,6 +135,8 @@ C_RESULT python_update()
          if (PyInt_AsLong(PyTuple_GetItem(pResult, 0))) // the first entry indicates if we want to quit
          {
              printf("\tc knows python indicates quitin'\n");
+	     printf("Let's land this thing!");
+	     ardrone_tool_set_ui_pad_start(0);
              exitOnNextUpdate = 1;
          }
          else
@@ -199,7 +201,6 @@ C_RESULT ardrone_tool_init_custom(int argc, char **argv)
     ardrone_at_set_flat_trim();
     // and now launch this thing
     ardrone_tool_set_ui_pad_start(1);
-	sleep(2);
 	return pythonCResult;
 }
 
@@ -258,10 +259,7 @@ C_RESULT ardrone_tool_shutdown_custom()
 	 python_exit();
 
      printf("\tbefore set uit pad start (0)\n");
-
-	 ardrone_tool_set_ui_pad_start(0);
      printf("\tafter set uit pad start (0) and before join thread video stage \n");
-
 	 /* Relinquish all threads of your application */
 	 JOIN_THREAD( video_stage );
      printf("\tafter join thread video stage\n");
