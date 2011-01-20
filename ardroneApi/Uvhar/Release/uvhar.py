@@ -12,6 +12,8 @@ class Uvhar:
 
      # keeping track of the image we use
      counter = -1 
+     # Counter to hover before we fly towards target
+     hoverCounter = 0
      # last known coordinates of a find object in the picture
      point = None
      # steering values
@@ -24,7 +26,7 @@ class Uvhar:
      lowerX = 135
      upperX = 170
      lowerY = 130  
-     upperY = 180  # Higher in the coordinate system, but lower in the image!
+     upperY = 210  # Higher in the coordinate system, but lower in the image!
 
 
      # Images 
@@ -87,23 +89,6 @@ class Uvhar:
 
          #cvShowImage("targetImage", self.targetImage)
          #cvWaitKey(0)
-    
-         """ 
-         # create histogram
-         self.sourceHistogram = cvCreateHist([self.hBins, self.sBins, self.vBins], CV_HIST_ARRAY, [self.hRange, self.sRange, self.vRange])
-         # load image and convert to hsv
-         sourceImage = cvLoadImage("pinkObject.jpg", CV_LOAD_IMAGE_COLOR)
-         cvCvtColor(sourceImage, sourceImage, CV_BGR2HSV)
-         # extract h, s and v planes
-         hPlane = cvCreateImage(cvSize(30, 18), 8, 1)
-         sPlane = cvCreateImage(cvSize(30, 18), 8, 1)
-         vPlane = cvCreateImage(cvSize(30, 18), 8, 1)
-         cvSplit(sourceImage, hPlane, sPlane, vPlane, None)
-         planes = [hPlane, sPlane, vPlane]
-
-         # calculate histogram
-         cvCalcHist(planes, self.sourceHistogram, 0, None)
-         """
 
          # already open the windows :O
          cvNamedWindow(self.mainWindowName) # if window does not resize automagically add CV_WINDOW_AUTOSIZE
@@ -154,6 +139,7 @@ class Uvhar:
 	 if(self.point.x == 0 or self.point.y == 0):
              print "\tNo point found, keep on turnin'!\n"
              self.yaw = 0.3*self.turnValue
+	     self.hoverCounter = 0
              return
          print "\tpoint found: "
          # bring the object to the centre of the screen
@@ -178,9 +164,11 @@ class Uvhar:
              self.gaz = -0.2
 
          # otherwise, fly towards the target!
-         else: 
+         elif (self.hoverCounter < 15):
+	     self.hoverCounter += 1
+	 else:
              print "flyin' towards the target!"
-             self.pitch = -0.05
+             self.pitch = -0.08
          print "\n"
 
      # we need to find some way to call this baby when we stop
