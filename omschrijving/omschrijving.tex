@@ -1,0 +1,57 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=2.5cm, nohead]{geometry}
+\usepackage{palatino, url, multicol}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage[dutch]{babel}
+\newcommand{\Ardrone}{Ar Drone$^{\copyright}$ }
+\title{Opzet van het robotica keuzeproject}
+\author{Maarten Inja \& Maarten de Waard\\\small 5872464 \& 5894883}
+
+\begin{document}
+\maketitle
+
+\section{Inhoud}
+In de vier weken van 3 januari tot en met 30 januari willen we als keuzevak een robotica/computer vision project doen met de Parrot \Ardrone. Dit is een met WiFi bestuurbare quadricopter die beschikt over 2 camera's. Een hiervan is naar voren gericht en een naar onder, zie fig. 1.
+\begin{figure}
+ \centering
+ \includegraphics[width=0.6\textwidth]{ardrone.jpg}
+ \caption{De \Ardrone}
+\end{figure}
+H
+Ons doel is om van de Summer-IMAV 2011 Indoor competition (zie bijlage) een deel van de Exploration Challange te doen. Ons deel houdt in:
+\begin{itemize}
+\item[]\textbf{Pick up object:} We maken zelf een object dat makkelijk te herkennen is en vervolgens met een haakje op te pakken is.
+\item[]\textbf{Exit building:} We zorgen ervoor dat de \Ardrone het gebouw uit kan vliegen.
+\item[]\textbf{Release object:} We zorgen ervoor dat het apparaat op de door ons gespecificeerde plaats het object weer neer kan zetten.
+\end{itemize}
+Een deel van de andere punten zal worden gedaan door Robrecht Jurriaans en Maarten van der Velden in een apart project.
+
+We zullen Robot Operating System (ROS) gebruiken om de \Ardrone aan te sturen.\footnote{De ros besturing voor de Ar Drone is te vinden op http://www.ros.org/news/2010/10/ros-interface-for-the-parrot-ardrone.html} ROS is een framework voor robot software development, waarin met verscheidene programmeertalen gebruik gemaakt kan worden van modules die robots kunnen aansturen. Het voordeel hiervan is dat we een uitgebreide documentatie tot onze beschikking hebben. Het kan echter wel wat moeite kosten, omdat de mensen van de UvA nog niet veel ervaring hebben met ROS en omdat het een erg uitgebreid framework is.
+
+Verder moeten we ons verdiepen in de computer vision (met name ``visual homing''\footnote{Een artikel over visual homing: http://www.springerlink.com/index/8N2916L224717848.pdf}) om het object te localiseren en onze relatieve hoogte in te schatten.
+
+\section{Leerdoelen}
+Bij de uitvoering van het project zijn onze doelen:
+\begin{itemize}
+\item Ervaring opdoen met het gebruiken van en modules maken voor een uitgebreid framework. % Niet ervaring opdoen, maar daadwerkelijk gebruiken.
+\item Het in kaart brengen van eventuele complicaties bij het maken van een autonome robot.
+\item Onze basiskennis van computer vision uitbreiden om visual homing te kunnen realiseren.
+\end{itemize}
+
+\section{De hoeveelheid studiepunten}
+Omdat we 4 weken lang fulltime met dit project bezig zullen zijn, moet hier volgens ons 6 EC voor staan.
+
+\section{Manier van toetsing}
+We zullen onze voortgang documenteren en uiteindelijk verslag doen van onze ervaringen en resultaten in een document en eventueel een presentatie.
+
+\section{Begeleiders}
+Omdat we ons bezig zullen houden met een robot hebben we Arnoud Visser gevraagd om dit project te begeleiden. 
+
+
+
+
+
+
+
+\end{document}

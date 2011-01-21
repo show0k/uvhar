@@ -1,0 +1,21 @@
+<package>
+  <description brief="ardrone_teleop">
+
+     Allows teleoperation of a Parrot AR.Drone quadrotor helicopter 
+     when using the ardrone_driver package.
+
+  </description>
+  <author>Nate Roney</author>
+  <license>GPL</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/ardrone_teleop</url>
+  <depend package="rospy"/>
+  <depend package="roscpp"/>
+  <depend package="std_msgs"/>
+  <depend package="ardrone_driver"/>
+  <depend package="wiimote"/>
+  <depend package="joy"/>
+
+</package>
+
+
