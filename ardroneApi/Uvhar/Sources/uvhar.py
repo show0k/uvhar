@@ -25,7 +25,7 @@ class Uvhar:
     
     
     # the information that c supplies us with
-    cTuple
+    cTuple = None
     # last known coordinates of a find object in the picture
     point = None
     lastKnown = None
@@ -150,6 +150,7 @@ class Uvhar:
             self.counter = cTuple[0] - 1
             self.loadNewImage()
             self.findPicture()
+   
             # check if the info in self.point is useful and acts on it
             if (self.videoSwitch > 0):
                 self.thinkAboutPoint()
@@ -179,12 +180,20 @@ class Uvhar:
 
     def thinkAboutPoint(self):
         self.resetSteeringValues()
+        if(self.lastKnown != None and self.videoSwitch > 0):
+            if(self.lastKnown.x > self.lastKnownLowerX and 
+                    self.lastKnown.x < self.lastKnownUpperX and
+                    self.lastKnown.y > self.lastKnownLowerY and 
+                    self.lastKnown.y < self.lastKnownUpperY):                 
+                self.bottomCameraCounter = 0
+                self.videoSwitch *= -1
+                self.initImages()
 
         # 6: x, 7: y, z: 8
-        if (self.cTuple[6] > 0):
+        if (self.cTuple[6] < 0):
             self.pitch = -0.02
-        if (self.cTuple[7] > 0)
-            self.roll = 0.02
+        if (self.cTuple[7] > 0):
+            self.roll = 0.01
 
         # keep turnin' untill we have more interesting information
         if (self.point == None):
@@ -200,11 +209,11 @@ class Uvhar:
         # for x with rolling
         if (self.point.x < self.lowerX):
             print "x is too much to the left!"
-            self.roll = -0.05
+            self.yaw = -0.1
             self.turnValue = -1
         elif (self.point.x > self.upperX):
             print "x is too much to the right!"
-            self.roll = 0.05
+            self.yaw = 0.1
             self.turnValue = 1
 
         # for y with gaz
@@ -227,16 +236,7 @@ class Uvhar:
     
     def thinkAboutLastKnown(self):
         resetSteeringValues()
-        if(self.lastKnown != None and self.videoSwitch > 0):
-            if(self.lastKnown.x > self.lastKnownLowerX and 
-                    self.lastKnown.x < self.lastKnownUpperX and
-                    self.lastKnown.y > self.lastKnownLowerY and 
-                    self.lastKnown.y < self.lastKnownUpperY):
-                self.bottomCameraCounter = 0
-                self.videoSwitch *= -1
-                self.initImages()
-
-        # what we are going to do here:
+                # what we are going to do here:
         #   fly forward 
         #   check for point, and hoover above it
         #   if, for some time, the point was not found switch back to the
@@ -339,9 +339,9 @@ class Uvhar:
 
 if __name__ == "__main__":
      uvhar = Uvhar()
-     i = 1;
-     while (i < 500):
-         uvhar.update([i, 0, 0, 0, 0])
+     i = 100;
+     while (i < 800):
+         uvhar.update([i, 0, 0, 0, 0, 0, 0, 0, 0, 0])
          time.sleep(0.0667)
          i = i + 1
      uvhar.exit()
