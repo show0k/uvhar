@@ -118,16 +118,15 @@ class Uvhar:
              self.counter = cTuple[0] - 1
              self.loadNewImage()
              self.findPicture()
-             if(!self.thinkAboutPoint()): # check if the info in self.point is useful and acts on it
-		self.thinkAboutBottomCameraPoint()
+         #   if(!self.thinkAboutPoint()): # check if the info in self.point is useful and acts on it
+	     #   self.thinkAboutLastKnown()
 	 
 
-	 elif(self.counter != cTuple[0] - 1):
+         elif(self.counter != cTuple[0] - 1):
              self.counter = cTuple[0] - 1
              self.loadNewImage()
              self.findPicture()
              
-	 print "battery level: %4.2f" % cTuple[1]
          #print "navdata: battery level: %4.2f, theta: %4.2f, phi: %4.2f, psi %4.2f, altitude %4.2f, vx %4.2f, vy %4.2f, vz %4.2f" % (cTuple[1], cTuple[2], cTuple[3], cTuple[4], cTuple[5], cTuple[6], cTuple[7], cTuple[8])  
         
          cvWaitKey(4)
@@ -147,10 +146,10 @@ class Uvhar:
          # keep turnin' untill we have more interesting information
          if (self.point == None):
              return False
-	 if(self.point.x == 0 or self.point.y == 0):
+         if(self.point.x == 0 or self.point.y == 0):
              print "\tNo point found, keep on turnin'!\n"
              self.yaw = 0.3*self.turnValue
-	     self.hoverCounter = 0
+             self.hoverCounter = 0
              return False
          print "\tpoint found: "
          # bring the object to the centre of the screen
@@ -158,26 +157,26 @@ class Uvhar:
          if (self.point.x < self.lowerX):
              print "x is too much to the left!"
              self.yaw = -0.08
-	     self.turnValue = -1
+             self.turnValue = -1
          elif (self.point.x > self.upperX):
              print "x is too much to the right!"
              self.yaw = 0.08
-	     self.turnValue = 1
+             self.turnValue = 1
 
          # for y with gaz
          elif (self.point.y < self.lowerY):
              print "y is too low!"
              self.gaz = 0.5
              #there is a error backwards, so we have to go forward 
-	     self.pitch = 0.05
+             self.pitch = 0.05
          elif (self.point.y > self.upperY):
              print "y is too high"
              self.gaz = -0.2
 
          # otherwise, fly towards the target!
          elif (self.hoverCounter < 15):
-	     self.hoverCounter += 1
-	 else:
+	         self.hoverCounter += 1
+         else:
              print "flyin' towards the target!"
              self.pitch = -0.08
          return True
@@ -185,8 +184,16 @@ class Uvhar:
      
      def thinkAboutLastKnown(self):
      	 resetSteeringValues()
-	 if(self.lastKnown != None):
-		 if(self.lastKnown.x < 
+         if(self.lastKnown != None):
+             if(self.lastKnown.x > self.lastKnownLowerX and self.lastKnown.x < self.lastKnownUpperX and
+                     self.lastKnown.y > self.lastKnownLowerY and self.lastKnown.y < self.lastKnownUpperY):
+                  self.videoSwitch *= -1
+     """
+     def videoSwitch(self):
+         if (self.videoSwitch > 0):
+             self.imageWidth = 
+     """         
+	     
 
 
      # we need to find some way to call this baby when we stop
@@ -234,10 +241,10 @@ class Uvhar:
          cvMatchTemplate(self.resultImage, self.targetImage, self.matchImage, CV_TM_SQDIFF_NORMED) 
          _, _, self.point, _ = cvMinMaxLoc(self.matchImage)
          #print "%d, %d" % (self.point.x, self.point.y)
-	 if (self.point.x != 0 or self.point.y != 0):
-	     self.lastKnown = self.point
+         if (self.point.x != 0 or self.point.y != 0):
+             self.lastKnown = self.point
          cvRectangle(self.matchImage, (self.lowerX, self.lowerY), (self.upperX, self.upperY), CV_RGB(255,0,0))
-	 cvRectangle(self.matchImage, (self.lastSeenLowerX, self.lastSeenLowerY), (self.lastSeenUpperX, self.lastSeenUpperY), CV_RGB(255, 0, 0))
+         cvRectangle(self.matchImage, (self.lastKnownLowerX, self.lastKnownLowerY), (self.lastKnownUpperX, self.lastKnownUpperY), CV_RGB(255, 0, 0))
 
      def setExitOnNextUpdate(self, event, x, y, flags, param):
          if (event == CV_EVENT_RBUTTONDOWN):

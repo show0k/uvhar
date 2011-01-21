@@ -14,8 +14,11 @@ class Uvhar:
      counter = -1 
      # Counter to hover before we fly towards target
      hoverCounter = 0
+     # Switchin' between cameramodes. 0 if it needs to stay the same, 1 to switch
+     videoSwitch = 0
      # last known coordinates of a find object in the picture
      point = None
+     lastKnown = None
      # steering values
      roll = 0
      pitch = 0
@@ -27,6 +30,11 @@ class Uvhar:
      upperX = 170
      lowerY = 130  
      upperY = 210  # Higher in the coordinate system, but lower in the image!
+     # Defining a square where we can lose the object
+     lastKnownLowerX = 120
+     lastKnownUpperX = 185
+     lastKnownLowerY = 210
+     lastKnownUpperY = 230
 
 
      # Images 
@@ -110,17 +118,19 @@ class Uvhar:
              self.counter = cTuple[0] - 1
              self.loadNewImage()
              self.findPicture()
-             self.thinkAboutPoint() # check if the info in self.point is useful and acts on it
-	 elif(self.counter != cTuple[0] - 1):
+         #   if(!self.thinkAboutPoint()): # check if the info in self.point is useful and acts on it
+	     #   self.thinkAboutLastKnown()
+	 
+
+         elif(self.counter != cTuple[0] - 1):
              self.counter = cTuple[0] - 1
              self.loadNewImage()
              self.findPicture()
              
-	 print "battery level: %4.2f" % cTuple[1]
          #print "navdata: battery level: %4.2f, theta: %4.2f, phi: %4.2f, psi %4.2f, altitude %4.2f, vx %4.2f, vy %4.2f, vz %4.2f" % (cTuple[1], cTuple[2], cTuple[3], cTuple[4], cTuple[5], cTuple[6], cTuple[7], cTuple[8])  
         
          cvWaitKey(4)
-         return [self.exitOnNextUpdate, self.roll, self.pitch, self.gaz, self.yaw]
+         return [self.exitOnNextUpdate, self.roll, self.pitch, self.gaz, self.yaw, self.videoSwitch]
 
      def resetSteeringValues(self):
          self.roll = 0
@@ -135,41 +145,56 @@ class Uvhar:
 
          # keep turnin' untill we have more interesting information
          if (self.point == None):
-             return
-	 if(self.point.x == 0 or self.point.y == 0):
+             return False
+         if(self.point.x == 0 or self.point.y == 0):
              print "\tNo point found, keep on turnin'!\n"
              self.yaw = 0.3*self.turnValue
-	     self.hoverCounter = 0
-             return
+             self.hoverCounter = 0
+             return False
          print "\tpoint found: "
          # bring the object to the centre of the screen
          # for x with rolling
          if (self.point.x < self.lowerX):
              print "x is too much to the left!"
              self.yaw = -0.08
-	     self.turnValue = -1
+             self.turnValue = -1
          elif (self.point.x > self.upperX):
              print "x is too much to the right!"
              self.yaw = 0.08
-	     self.turnValue = 1
+             self.turnValue = 1
 
          # for y with gaz
          elif (self.point.y < self.lowerY):
              print "y is too low!"
              self.gaz = 0.5
              #there is a error backwards, so we have to go forward 
-	     self.pitch = 0.05
+             self.pitch = 0.05
          elif (self.point.y > self.upperY):
              print "y is too high"
              self.gaz = -0.2
 
          # otherwise, fly towards the target!
          elif (self.hoverCounter < 15):
-	     self.hoverCounter += 1
-	 else:
+	         self.hoverCounter += 1
+         else:
              print "flyin' towards the target!"
              self.pitch = -0.08
-         print "\n"
+         return True
+
+     
+     def thinkAboutLastKnown(self):
+     	 resetSteeringValues()
+         if(self.lastKnown != None):
+             if(self.lastKnown.x > self.lastKnownLowerX and self.lastKnown.x < self.lastKnownUpperX and
+                     self.lastKnown.y > self.lastKnownLowerY and self.lastKnown.y < self.lastKnownUpperY):
+                  self.videoSwitch *= -1
+     """
+     def videoSwitch(self):
+         if (self.videoSwitch > 0):
+             self.imageWidth = 
+     """         
+	     
+
 
      # we need to find some way to call this baby when we stop
      def exit(self):
@@ -216,7 +241,10 @@ class Uvhar:
          cvMatchTemplate(self.resultImage, self.targetImage, self.matchImage, CV_TM_SQDIFF_NORMED) 
          _, _, self.point, _ = cvMinMaxLoc(self.matchImage)
          #print "%d, %d" % (self.point.x, self.point.y)
+         if (self.point.x != 0 or self.point.y != 0):
+             self.lastKnown = self.point
          cvRectangle(self.matchImage, (self.lowerX, self.lowerY), (self.upperX, self.upperY), CV_RGB(255,0,0))
+         cvRectangle(self.matchImage, (self.lastKnownLowerX, self.lastKnownLowerY), (self.lastKnownUpperX, self.lastKnownUpperY), CV_RGB(255, 0, 0))
 
      def setExitOnNextUpdate(self, event, x, y, flags, param):
          if (event == CV_EVENT_RBUTTONDOWN):
@@ -235,7 +263,7 @@ class Uvhar:
 
 if __name__ == "__main__":
      uvhar = Uvhar()
-     i = 30;
+     i = 1;
      while (i < 500):
          uvhar.update([i, 0, 0, 0, 0])
          time.sleep(0.0667)
