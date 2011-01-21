@@ -61,6 +61,8 @@ static vp_os_mutex_t  video_update_lock = PTHREAD_MUTEX_INITIALIZER;
 
 char imageName[22];
 int imageCounter;
+int videoSwitch = 1;
+int oldVideoSwitch = 1;
 
 C_RESULT output_gtk_stage_open( void *cfg, vp_api_io_data_t *in, vp_api_io_data_t *out)
 {
@@ -112,7 +114,15 @@ C_RESULT output_gtk_stage_transform( void *cfg, vp_api_io_data_t *in, vp_api_io_
      gdk_pixbuf_save(pixbuf, imageName, "jpeg", NULL, "quality", "100", NULL);
      
      vp_os_mutex_unlock(&video_update_lock);
-
+     // Check if we need to switch the video feed to bottom or horizontal camera
+     if(videoSwitch != oldVideoSwitch)
+     {
+	     oldVideoSwitch = videoSwitch;
+	     if(videoSwitch > 0)
+		ardrone_at_zap(ZAP_CHANNEL_LARGE_HORI_SMALL_VERT);
+	     else
+		ardrone_at_zap(ZAP_CHANNEL_VERT);
+     }
      return (SUCCESS);
 }
 
