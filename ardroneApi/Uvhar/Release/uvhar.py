@@ -191,8 +191,10 @@ class Uvhar:
 
         # 6: x, 7: y, z: 8
         if (self.cTuple[6] < 0):
+            print "correcting for backwards moving error" 
             self.pitch = -0.02
         if (self.cTuple[7] > 0):
+            print "correcting for sidewards moving error"
             self.roll = 0.01
 
         # keep turnin' untill we have more interesting information
@@ -232,10 +234,11 @@ class Uvhar:
         else:
             print "flyin' towards the target!"
             self.pitch = -0.08
+            self.roll = 0.03
 
     
     def thinkAboutLastKnown(self):
-        resetSteeringValues()
+        self.resetSteeringValues()
                 # what we are going to do here:
         #   fly forward 
         #   check for point, and hoover above it
@@ -299,8 +302,13 @@ class Uvhar:
         
     
         # convert to hsv
-        cvCvtColor(self.image, self.tempResultImage, CV_BGR2HSV) 
-
+        error = None
+        try:
+            cvCvtColor(self.image, self.tempResultImage, CV_BGR2HSV) 
+        except error:
+            print "wrong size!"
+            return 
+            
         # split the image in h, s and v values
         cvSplit(self.tempResultImage, self.imageH, self.imageS, self.imageV, None)  
 
