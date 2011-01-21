@@ -63,6 +63,8 @@ char imageName[22];
 int imageCounter;
 int videoSwitch = 1;
 int oldVideoSwitch = 1;
+int imageWidth = 320;
+int imageHeight = 240;
 
 C_RESULT output_gtk_stage_open( void *cfg, vp_api_io_data_t *in, vp_api_io_data_t *out)
 {
@@ -103,9 +105,9 @@ C_RESULT output_gtk_stage_transform( void *cfg, vp_api_io_data_t *in, vp_api_io_
                                      GDK_COLORSPACE_RGB, 
                                      FALSE, // has alpha
                                      8, // bits per sample
-                                     QVGA_WIDTH, 
-                                     QVGA_HEIGHT,
-                                     QVGA_WIDTH * 3,  // distance in bites between rowstride
+                                     imageWidth, 
+                                     imageHeight,
+                                     imageWidth * 3,  // distance in bites between rowstride
                                      NULL, // GdkPixbufDestroyNotify detroy_fn
                                      NULL); // gpoint destroy_fn_data); 
 
@@ -119,9 +121,17 @@ C_RESULT output_gtk_stage_transform( void *cfg, vp_api_io_data_t *in, vp_api_io_
      {
 	     oldVideoSwitch = videoSwitch;
 	     if(videoSwitch > 0)
-		ardrone_at_zap(ZAP_CHANNEL_LARGE_HORI_SMALL_VERT);
+         {
+	       	ardrone_at_zap(ZAP_CHANNEL_LARGE_HORI_SMALL_VERT);
+            imageWidth = 320;
+            imageHeight = 240;
+         }
 	     else
-		ardrone_at_zap(ZAP_CHANNEL_VERT);
+         {
+            ardrone_at_zap(ZAP_CHANNEL_VERT);
+            imageWidth = 176;
+            imageHeight = 144;
+         }
      }
      return (SUCCESS);
 }
