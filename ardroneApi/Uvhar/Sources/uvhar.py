@@ -45,7 +45,7 @@ class Uvhar:
     lastKnownLowerX = 120
     lastKnownUpperX = 185
     lastKnownLowerY = 210
-    lastKnownUpperY = 230
+    lastKnownUpperY = 240
 
 
     # Images 
@@ -113,18 +113,18 @@ class Uvhar:
         if (self.videoSwitch < 0):
             self.imageWidth = 176
             self.imageHeight = 144
-            self.lowerX = 135
-            self.upperX = 170
-            self.lowerY = 130  
-            self.upperY = 210 
-        else: 
-            self.imageWidth = 320
-            self.imageHeight = 240
             self.lowerX = 58
             self.upperX = 108
             self.lowerY = 42
             self.upperY = 92
-       # creating the images
+        else: 
+            self.imageWidth = 320
+            self.imageHeight = 240
+            self.lowerX = 135
+            self.upperX = 170
+            self.lowerY = 130  
+            self.upperY = 210 
+# creating the images
         self.imageH = cvCreateImage(cvSize(self.imageWidth, self.imageHeight), 8, 1)
         self.imageS = cvCreateImage(cvSize(self.imageWidth, self.imageHeight), 8, 1)
         self.imageV = cvCreateImage(cvSize(self.imageWidth, self.imageHeight), 8, 1)
@@ -142,7 +142,7 @@ class Uvhar:
 
     def update(self, cTuple):
         # take some time to fully take off before we start doin' things
-        if (cTuple[0]>80):
+        if (cTuple[0]>90):
             #print "new counter received %d" % newCounter
             self.counter = cTuple[0] - 1
             self.loadNewImage()
@@ -150,7 +150,7 @@ class Uvhar:
             # check if the info in self.point is useful and acts on it
             if (self.videoSwitch > 0):
                 self.thinkAboutPoint()
-            else
+            else:
                 self.thinkAboutLastKnown()
     
 
@@ -191,11 +191,11 @@ class Uvhar:
         # for x with rolling
         if (self.point.x < self.lowerX):
             print "x is too much to the left!"
-            self.yaw = -0.08
+            self.roll = -0.05
             self.turnValue = -1
         elif (self.point.x > self.upperX):
             print "x is too much to the right!"
-            self.yaw = 0.08
+            self.roll = 0.05
             self.turnValue = 1
 
         # for y with gaz

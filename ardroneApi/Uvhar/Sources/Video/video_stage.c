@@ -68,9 +68,9 @@ C_RESULT output_gtk_stage_open( void *cfg, vp_api_io_data_t *in, vp_api_io_data_
 {
      g_type_init();
      
-     ardrone_at_zap(ZAP_CHANNEL_VERT);
+     //ardrone_at_zap(ZAP_CHANNEL_VERT);
      //ardrone_at_zap(ZAP_CHANNEL_HORI);
-     //ardrone_at_zap(ZAP_CHANNEL_LARGE_HORI_SMALL_VERT);
+     ardrone_at_zap(ZAP_CHANNEL_LARGE_HORI_SMALL_VERT);
     
     
      imageCounter = 0; 
