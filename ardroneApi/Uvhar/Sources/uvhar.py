@@ -23,7 +23,9 @@ class Uvhar:
     # so we can detect changes to send them to c
     oldVideoSwitch = 1
     
-      
+    
+    # the information that c supplies us with
+    cTuple
     # last known coordinates of a find object in the picture
     point = None
     lastKnown = None
@@ -141,6 +143,7 @@ class Uvhar:
  
 
     def update(self, cTuple):
+        self.cTuple = cTuple
         # take some time to fully take off before we start doin' things
         if (cTuple[0]>90):
             #print "new counter received %d" % newCounter
@@ -176,6 +179,12 @@ class Uvhar:
 
     def thinkAboutPoint(self):
         self.resetSteeringValues()
+
+        # 6: x, 7: y, z: 8
+        if (self.cTuple[6] > 0):
+            self.pitch = -0.02
+        if (self.cTuple[7] > 0)
+            self.roll = 0.02
 
         # keep turnin' untill we have more interesting information
         if (self.point == None):
@@ -287,6 +296,7 @@ class Uvhar:
             print "result image is null\n"
             return None
 
+        
     
         # convert to hsv
         cvCvtColor(self.image, self.tempResultImage, CV_BGR2HSV) 
