@@ -31,7 +31,7 @@ static int32_t exit_ihm_program = 1;
 // our own exit indicator
 int exitOnNextUpdate = 0;
 
-extern int imageCounter;
+extern int imageCounter, videoSwitch;
 int counter = 0;
 extern float batteryLevel, theta, phi, psi, altitude, vx, vy, vz;
 float roll, pitch, gaz, yaw;
@@ -145,6 +145,8 @@ C_RESULT python_update()
              pitch = PyFloat_AsDouble(PyTuple_GetItem(pResult, 2));
              gaz = PyFloat_AsDouble(PyTuple_GetItem(pResult, 3));
              yaw = PyFloat_AsDouble(PyTuple_GetItem(pResult, 4));
+	     if(PyInt_AsLong(PyTuple_GetItem(pResult, 5)))
+	     	videoSwitch *= -1;
          }
      }
      Py_XDECREF(pResult);     
