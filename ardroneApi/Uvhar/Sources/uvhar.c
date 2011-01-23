@@ -49,7 +49,7 @@ C_RESULT python_init()
 
     // create a python string object for the module name
    	pName = PyString_FromString("uvhar");
-
+ 
 	if (pName == NULL)
     {
          printf("\tPython name is null.\n");

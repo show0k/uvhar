@@ -80,9 +80,9 @@ class Uvhar:
     # bounding hsv values to spot something pink
     hMin = 327/2
     hMax = 347/2
-    sMin = 68/0.393
+    sMin = 58/0.393
     sMax = 95/0.393
-    vMin = 60/0.393
+    vMin = 50/0.393
     vMax = 100/0.393 
 
     # window names
@@ -113,7 +113,7 @@ class Uvhar:
     def initImages(self):
         # setting to the right size 
         if (self.videoSwitch < 0):
-            self.imageWidth = 176
+            self.imageWidth = 320
             self.imageHeight = 144
             self.lowerX = 58
             self.upperX = 108
@@ -190,12 +190,14 @@ class Uvhar:
                 self.initImages()
 
         # 6: x, 7: y, z: 8
+        """
         if (self.cTuple[6] < 0):
             print "correcting for backwards moving error" 
             self.pitch = -0.02
         if (self.cTuple[7] > 0):
             print "correcting for sidewards moving error"
             self.roll = 0.01
+        """
 
         # keep turnin' untill we have more interesting information
         if (self.point == None):
@@ -250,23 +252,21 @@ class Uvhar:
             # adjusting for image if we found the object
             if (self.point.x < self.lowerX):
                 print "x is too much to the left!"
-                self.roll = -0.08
+                self.roll = -0.03
             elif (self.point.x > self.upperX):
                 print "x is too much to the right!"
-                self.roll = 0.08
+                self.roll = 0.03
 
             elif (self.point.y < self.lowerY):
-                print "y is too low!"
-                self.gaz = 0.5
-                #there is a error backwards, so we have to go forward 
-                self.pitch = -0.05
+                print "y is too much to the upside!"
+                self.pitch = -0.03
             elif (self.point.y > self.upperY):
-                print "y is too high"
-                self.gaz = -0.2
+                print "y is too the downside!"
+                self.pitch = 0.03
         elif (self.bottomCameraCounter < self.bottomCameraMax):
             # fly forward
             self.bottomCameraCounter += 1 
-            self.pitch = -0.06 
+            self.pitch = -0.03 
         else:
             # ahhh man, start over
             print "\tAhhh man!! We did not find the object :( :( "
@@ -298,16 +298,14 @@ class Uvhar:
         if (self.resultImage == None):
             print "result image is null\n"
             return None
+        if (cvGetSize(self.image).height != cvGetSize(self.tempResultImage).height):
+            print "\tincompatible image sizes in findPicture, ignoring\n"
+            return None
 
         
     
         # convert to hsv
-        error = None
-        try:
-            cvCvtColor(self.image, self.tempResultImage, CV_BGR2HSV) 
-        except error:
-            print "wrong size!"
-            return 
+        cvCvtColor(self.image, self.tempResultImage, CV_BGR2HSV) 
             
         # split the image in h, s and v values
         cvSplit(self.tempResultImage, self.imageH, self.imageS, self.imageV, None)  
@@ -350,7 +348,7 @@ if __name__ == "__main__":
      i = 100;
      while (i < 800):
          uvhar.update([i, 0, 0, 0, 0, 0, 0, 0, 0, 0])
-         time.sleep(0.0667)
+         time.sleep(0.0467)
          i = i + 1
      uvhar.exit()
 

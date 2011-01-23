@@ -129,7 +129,7 @@ C_RESULT output_gtk_stage_transform( void *cfg, vp_api_io_data_t *in, vp_api_io_
 	     else
          {
             ardrone_at_zap(ZAP_CHANNEL_VERT);
-            imageWidth = 176;
+            imageWidth = 320;
             imageHeight = 144;
          }
      }
