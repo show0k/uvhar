@@ -36,6 +36,8 @@ int counter = 0;
 extern float batteryLevel, theta, phi, psi, altitude, vx, vy, vz;
 float roll, pitch, gaz, yaw;
 
+int isTrim = 0;
+
 // variables needed for python
 PyObject *pArgument, *pClassInstance, *pResult, *pMethodName;
 
@@ -110,7 +112,7 @@ C_RESULT python_update()
      pArgument = PyTuple_New(9); //PyInt_FromLong(imageCounter);
      PyTuple_SetItem(pArgument, 0, PyInt_FromLong(imageCounter));
      PyTuple_SetItem(pArgument, 1, PyFloat_FromDouble(batteryLevel));
-     PyTuple_SetItem(pArgument, 2, PyFloat_FromDouble(altitude));
+     PyTuple_SetItem(pArgument, 2, PyFloat_FromDouble(theta));
      PyTuple_SetItem(pArgument, 3, PyFloat_FromDouble(phi));
      PyTuple_SetItem(pArgument, 4, PyFloat_FromDouble(psi));
      PyTuple_SetItem(pArgument, 5, PyFloat_FromDouble(altitude));
@@ -200,14 +202,18 @@ C_RESULT ardrone_tool_init_custom(int argc, char **argv)
 	// land once at the start... also trim to flat
 	ardrone_tool_set_ui_pad_select(0);
 	ardrone_tool_set_ui_pad_start(0);
-    ardrone_at_set_flat_trim();
+    if (isTrim)
+        ardrone_at_set_flat_trim();
     // and now launch this thing
-    ardrone_tool_set_ui_pad_start(1);
+    else
+        ardrone_tool_set_ui_pad_start(1);
 	return pythonCResult;
 }
 
 C_RESULT ardrone_tool_update_custom()
 {
+    if (isTrim)
+        return C_OK;
     /*
     counter ++;     
 	if (counter == 1)
@@ -241,9 +247,9 @@ C_RESULT ardrone_tool_update_custom()
          signal_exit();
      
      counter ++;
-     if (counter > 1000)
+     if (counter > 2000)
      {
-         printf("\t1000 updates, we're stoppin'!\n");
+         printf("\t1500 updates, we're stoppin'!\n");
          signal_exit();
      }
     

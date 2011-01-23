@@ -14,15 +14,23 @@ class Uvhar:
     counter = -1 
     # Counter to hover before we fly towards target
     hoverCounter = 0
+    hoverCounterMax = 15
     # time granted to seek the object with the bottom camera
     bottomCameraCounter = 0
-    bottomCameraMax = 60
+    bottomCameraMax = 120
+    # time after take off before we are start sending commands
+    takeOffTime = 100
 
     # indicator of what camera we are using [..bottom camera, 0, front camera.. ]
     videoSwitch = 1
     # so we can detect changes to send them to c
     oldVideoSwitch = 1
-    
+    # we only want to switch when we know we are in the right position
+    # it is also a switch made out of a can
+    canSwitch = False
+    # we first want to make sure the object is in the centre, and only then
+    # then fly towards it
+    canFly = False
     
     # the information that c supplies us with
     cTuple = None
@@ -35,6 +43,8 @@ class Uvhar:
     gaz = 0
     yaw = 0
     turnValue = 1
+    bottomTurnValueX = 0
+    bottomTurnValueY = 0
     # a window that we want the target in our image to be in. These 
     # are define in initImages
     lowerX = 0
@@ -44,8 +54,8 @@ class Uvhar:
 
     # Defining a square where we can lose the object before we start 
     # hoovering above it
-    lastKnownLowerX = 120
-    lastKnownUpperX = 185
+    lastKnownLowerX = 100
+    lastKnownUpperX = 210
     lastKnownLowerY = 210
     lastKnownUpperY = 240
 
@@ -60,31 +70,26 @@ class Uvhar:
     targetImage = None
     matchImage = None
 
-    """ :(
-    # histogram of what we are looking for
-    sourceHistogram = None
-    hBins = 30 # python api example
-    sBins = 32 # python api example
-    vBins = 32 # 32 because.. why not?
-    # hue varies from 0 (~0 deg red) to 180 (~360 deg red again), python api example 
-    hRange = [0, 180]
-    # saturation varies from 0 (black-gray-white) to 255 (pure spectrum color), python api example
-    sRange = [0, 255]
-    vRange = [0, 255] # I think this applies for value as well
-    """
-
     # width and height of the image
     imageWidth = 320
     imageHeight = 240
 
     # bounding hsv values to spot something pink
-    hMin = 327/2
+    hMin = 313/2
     hMax = 347/2
-    sMin = 58/0.393
-    sMax = 95/0.393
-    vMin = 50/0.393
+    sMin = 40/0.393
+    sMax = 100/0.393
+    vMin = 65/0.393
     vMax = 100/0.393 
 
+    # the height we want to fly at (when looking for the object etc)
+    preferredHeight = 650
+    # when we are flying towards the target we want to increase altitude
+    # to have a bigger chance of finding the object
+    deltaHeightWhenFound = 300
+    # is the target in the square we want it to be in?
+    inSquare = False
+    
     # window names
     mainWindowName = "Image"
     processedWindowName = "Processed Image"
@@ -92,7 +97,7 @@ class Uvhar:
 
 
     def __init__(self):
-        print "Uvhar class contructor called.\n"
+        print "Uvhar class contructor called."
         self.initImages()
        
         #cvShowImage("targetImage", self.targetImage)
@@ -111,6 +116,7 @@ class Uvhar:
         cvWaitKey(1)
 
     def initImages(self):
+        print "\tCalling initImages"
         # setting to the right size 
         if (self.videoSwitch < 0):
             self.imageWidth = 320
@@ -124,8 +130,8 @@ class Uvhar:
             self.imageHeight = 240
             self.lowerX = 135
             self.upperX = 170
-            self.lowerY = 130  
-            self.upperY = 210 
+            self.lowerY = 150  
+            self.upperY = 180 #210 
 # creating the images
         self.imageH = cvCreateImage(cvSize(self.imageWidth, self.imageHeight), 8, 1)
         self.imageS = cvCreateImage(cvSize(self.imageWidth, self.imageHeight), 8, 1)
@@ -143,19 +149,21 @@ class Uvhar:
  
 
     def update(self, cTuple):
+        if (cTuple[1] > 10):
+            print "altitude: %4.2f, battery level: %4.2f" % (cTuple[5], cTuple[1])
+
         self.cTuple = cTuple
         # take some time to fully take off before we start doin' things
-        if (cTuple[0]>90):
+        if (cTuple[0]>self.takeOffTime):
             #print "new counter received %d" % newCounter
             self.counter = cTuple[0] - 1
             self.loadNewImage()
-            self.findPicture()
-   
-            # check if the info in self.point is useful and acts on it
-            if (self.videoSwitch > 0):
-                self.thinkAboutPoint()
-            else:
-                self.thinkAboutLastKnown()
+            if (self.findPicture()):
+                # check if the info in self.point is useful and acts on it
+                if (self.videoSwitch > 0):
+                    self.thinkAboutPoint()
+                else:
+                    self.thinkAboutLastKnown()
     
 
         elif(self.counter != cTuple[0] - 1):
@@ -180,103 +188,120 @@ class Uvhar:
 
     def thinkAboutPoint(self):
         self.resetSteeringValues()
-        if(self.lastKnown != None and self.videoSwitch > 0):
+        if(self.lastKnown != None and self.videoSwitch > 0 and self.canSwitch):
             if(self.lastKnown.x > self.lastKnownLowerX and 
                     self.lastKnown.x < self.lastKnownUpperX and
                     self.lastKnown.y > self.lastKnownLowerY and 
                     self.lastKnown.y < self.lastKnownUpperY):                 
                 self.bottomCameraCounter = 0
+                self.lastKnown = None
+                print "\tSwitching cameras"
                 self.videoSwitch *= -1
                 self.initImages()
-
-        # 6: x, 7: y, z: 8
-        """
-        if (self.cTuple[6] < 0):
-            print "correcting for backwards moving error" 
-            self.pitch = -0.02
-        if (self.cTuple[7] > 0):
-            print "correcting for sidewards moving error"
-            self.roll = 0.01
-        """
+                self.bottomTurnValueX = 0
+                self.bottomTurnValueY = 0
+                self.preferredHeight += self.deltaHeightWhenFound
+                return 
 
         # keep turnin' untill we have more interesting information
         if (self.point == None):
             return 
         if(self.point.x == 0 or self.point.y == 0):
-            print "\tNo point found, keep on turnin'!\n"
+            print "\tFront Camera: no point found, keep on turnin'!"
+            self.canSwitch = False
+            self.canFly = False
             self.yaw = 0.3*self.turnValue
             self.hoverCounter = 0
+            self.goToPreferredHeight()
             return 
-        print "\tpoint found: "
-        # bring the object to the centre of the screen
 
+        self.inSquare = True
+        # bring the object to the centre of the screen
         # for x with rolling
         if (self.point.x < self.lowerX):
-            print "x is too much to the left!"
+            print "\tFront Camera: point found: x is too much to the left!"
             self.yaw = -0.1
             self.turnValue = -1
+            self.inSquare = False
         elif (self.point.x > self.upperX):
-            print "x is too much to the right!"
+            print "\tFront Camera: point found: x is too much to the right!"
             self.yaw = 0.1
             self.turnValue = 1
+            self.inSquare = False
 
         # for y with gaz
-        elif (self.point.y < self.lowerY):
-            print "y is too low!"
+        if (not self.canFly and self.point.y < self.lowerY):
+            print "\tFront Camera: point found: y is too low!"
             self.gaz = 0.5
-            #there is a error backwards, so we have to go forward 
-            self.pitch = -0.05
-        elif (self.point.y > self.upperY):
-            print "y is too high"
+            self.inSquare = False
+        elif (not self.canFly and self.point.y > self.upperY):
+            print "\tFront Camera: point found: y is too high"
             self.gaz = -0.2
+            self.inSquare = False
+        else:
+            self.preferredHeight = self.cTuple[5]
 
         # otherwise, fly towards the target!
-        elif (self.hoverCounter < 15):
+        if (self.inSquare and self.hoverCounter < self.hoverCounterMax):
+            self.canFly = True
             self.hoverCounter += 1
-        else:
-            print "flyin' towards the target!"
+            self.canSwitch = True
+        elif(self.inSquare):
+            print "\tFront Camera: flyin' towards the target!"
             self.pitch = -0.08
-            self.roll = 0.03
-
+            self.canSwitch = True
+        
     
     def thinkAboutLastKnown(self):
         self.resetSteeringValues()
-                # what we are going to do here:
-        #   fly forward 
-        #   check for point, and hoover above it
-        #   if, for some time, the point was not found switch back to the
-        #   front camera and start over
+        self.goToPreferredHeight()
 
         if (self.point != None and (self.point.x != 0 or self.point.y != 0)):
             self.bottomCameraCounter = 0
             # adjusting for image if we found the object
             if (self.point.x < self.lowerX):
-                print "x is too much to the left!"
-                self.roll = -0.03
+                print "\tBottom Camera: x is too much to the left!"
+                self.bottomTurnValueX = -1
+                self.roll = -0.013
             elif (self.point.x > self.upperX):
-                print "x is too much to the right!"
-                self.roll = 0.03
-
-            elif (self.point.y < self.lowerY):
-                print "y is too much to the upside!"
-                self.pitch = -0.03
+                print "\tBottom Camera: x is too much to the right!"
+                self.bottomTurnValueX = 1
+                self.roll = 0.013
+            if (self.point.y < self.lowerY):
+                print "\tBottom Camera: y is too low!"
+                self.bottomTurnValueY = -1
+                self.pitch = -0.013
             elif (self.point.y > self.upperY):
-                print "y is too the downside!"
-                self.pitch = 0.03
+                print "\tBottom Camera: y is too high!"
+                self.bottomTurnValueY = 1
+                self.pitch = 0.013
+            elif (self.point.x < self.lowerX and self.point.x > self.upperX):
+                self.resetSteeringValues()
+                self.gaz = 0
         elif (self.bottomCameraCounter < self.bottomCameraMax):
-            # fly forward
             self.bottomCameraCounter += 1 
-            self.pitch = -0.03 
+            if (self.bottomTurnValueX < 0):
+                self.roll = -0.02
+            elif (self.bottomTurnValueX > 1):
+                self.roll = 0.02
+            elif (self.bottomTurnValueY < 0): 
+                self.pitch = -0.02 
+            elif (self.bottomTurnValueY > 0):
+                self.pitch = 0.02
+            else:
+                print "\tBottom Camera: no point found, keep on flyin'!"
+                self.pitch = -0.03 
         else:
             # ahhh man, start over
-            print "\tAhhh man!! We did not find the object :( :( "
+            print "\tBottom Camera: Ahhh man!! We did not find the object :( :( "
             self.videoSwitch *= -1 
             self.initImages()
+            self.preferredHeight -= self.deltaHeightWhenFound
      
     
     # we need to find some way to call this baby when we stop
     def exit(self):
-        print "\tpython exit called\n"
+        print "\tpython exit called"
         cvDestroyAllWindows()
   
     # loads image with an image from file using the counter, processes it and 
@@ -289,21 +314,36 @@ class Uvhar:
         cvShowImage(self.processedWindowName, self.resultImage)
         cvShowImage(self.processedWindowName2, self.matchImage)
 
+    def goToPreferredHeight(self):
+        if (self.cTuple[5] == 0):
+            return
+        if (self.cTuple[5] < self.preferredHeight):
+            self.gaz = 0.20
+            print "\tgoing up from %4.2f, to %4.2f" % (self.cTuple[5], self.preferredHeight)
+        else:
+            self.gaz = -0.10
+            print "\tgoing down from %4.2f, to %4.2f" % (self.cTuple[5], self.preferredHeight)
+            
+
     # processes image and sets the result in resultImage
     # also returns a point that contains the found  
     def findPicture(self):
         if (self.image == None):
-            print "image is null\n"
-            return None
+            print "\timage is null, skipping frame"
+            return False 
         if (self.resultImage == None):
-            print "result image is null\n"
-            return None
-        if (cvGetSize(self.image).height != cvGetSize(self.tempResultImage).height):
-            print "\tincompatible image sizes in findPicture, ignoring\n"
-            return None
+            print "\tresult image is null, skipping frame"
+            return False 
 
-        
-    
+        oldVideoSwitch = self.videoSwitch
+        if (cvGetSize(self.image).width == 320 and cvGetSize(self.image).height == 240):
+            self.videoSwitch = 1
+        else :
+            self.videoSwitch = -1 
+        if (oldVideoSwitch != self.videoSwitch):
+            self.initImages()
+
+   
         # convert to hsv
         cvCvtColor(self.image, self.tempResultImage, CV_BGR2HSV) 
             
@@ -326,11 +366,13 @@ class Uvhar:
         if (self.point.x != 0 or self.point.y != 0):
             self.lastKnown = self.point
         cvRectangle(self.matchImage, (self.lowerX, self.lowerY), (self.upperX, self.upperY), CV_RGB(255,0,0))
-        cvRectangle(self.matchImage, (self.lastKnownLowerX, self.lastKnownLowerY), (self.lastKnownUpperX, self.lastKnownUpperY), CV_RGB(255, 0, 0))
+        if (self.videoSwitch > 0):
+            cvRectangle(self.matchImage, (self.lastKnownLowerX, self.lastKnownLowerY), (self.lastKnownUpperX, self.lastKnownUpperY), CV_RGB(255, 0, 0))
+        return True
 
     def setExitOnNextUpdate(self, event, x, y, flags, param):
         if (event == CV_EVENT_RBUTTONDOWN):
-            print "\tPython recognizes exit command\n"
+            print "\tPython recognizes exit command"
             self.exitOnNextUpdate = True
             if __name__ == "__main__":
                 exit()
