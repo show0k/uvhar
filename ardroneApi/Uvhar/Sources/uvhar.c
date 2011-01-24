@@ -249,7 +249,7 @@ C_RESULT ardrone_tool_update_custom()
      counter ++;
      if (counter > 2000)
      {
-         printf("\t1500 updates, we're stoppin'!\n");
+         printf("\t2000 updates, we're stoppin'!\n");
          signal_exit();
      }
     
