@@ -1,0 +1,4106 @@
+	Calling initImages
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+	image is null, skipping frame
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+vx, 0.00, vy, 0.00
+altitude: 0.00, battery level: 76.00
+vx, -198.13, vy, -234.73
+altitude: 0.00, battery level: 76.00
+vx, -209.30, vy, -237.74
+altitude: 0.00, battery level: 76.00
+vx, -218.35, vy, -238.30
+altitude: 0.00, battery level: 76.00
+vx, -224.28, vy, -237.70
+altitude: 0.00, battery level: 76.00
+vx, -226.13, vy, -237.70
+altitude: 0.00, battery level: 76.00
+vx, -227.38, vy, -238.19
+altitude: 0.00, battery level: 76.00
+vx, -242.94, vy, -243.47
+altitude: 0.00, battery level: 76.00
+vx, -244.21, vy, -244.25
+altitude: 0.00, battery level: 76.00
+vx, -249.74, vy, -242.12
+altitude: 0.00, battery level: 76.00
+vx, -256.67, vy, -246.38
+altitude: 0.00, battery level: 76.00
+vx, -269.38, vy, -250.34
+altitude: 0.00, battery level: 76.00
+vx, -270.60, vy, -248.66
+altitude: 0.00, battery level: 76.00
+vx, -277.89, vy, -248.94
+altitude: 0.00, battery level: 76.00
+vx, -289.04, vy, -243.99
+altitude: 0.00, battery level: 76.00
+vx, -294.01, vy, -244.28
+altitude: 0.00, battery level: 76.00
+vx, -300.37, vy, -250.23
+altitude: 0.00, battery level: 76.00
+vx, -308.96, vy, -243.15
+altitude: 0.00, battery level: 76.00
+vx, -311.05, vy, -246.26
+altitude: 0.00, battery level: 76.00
+vx, -319.55, vy, -247.29
+altitude: 0.00, battery level: 75.00
+vx, -318.99, vy, -258.36
+altitude: 0.00, battery level: 75.00
+vx, -325.66, vy, -257.95
+altitude: 0.00, battery level: 75.00
+vx, -326.71, vy, -259.79
+altitude: 0.00, battery level: 75.00
+vx, -332.55, vy, -258.10
+altitude: 0.00, battery level: 74.00
+vx, -329.60, vy, -254.49
+altitude: 0.00, battery level: 74.00
+vx, -329.00, vy, -258.15
+altitude: 0.00, battery level: 74.00
+vx, -326.50, vy, -257.20
+altitude: 0.00, battery level: 73.00
+vx, -329.12, vy, -254.69
+altitude: 0.00, battery level: 73.00
+vx, -323.89, vy, -258.52
+altitude: 0.00, battery level: 73.00
+vx, -329.94, vy, -258.75
+altitude: 0.00, battery level: 73.00
+vx, -335.18, vy, -256.74
+altitude: 0.00, battery level: 73.00
+vx, -330.05, vy, -264.42
+altitude: 0.00, battery level: 72.00
+vx, -337.80, vy, -264.48
+altitude: 0.00, battery level: 72.00
+vx, -338.07, vy, -271.41
+altitude: 0.00, battery level: 72.00
+vx, -342.61, vy, -266.71
+altitude: 0.00, battery level: 72.00
+vx, -332.89, vy, -270.80
+altitude: 0.00, battery level: 71.00
+vx, -335.60, vy, -267.84
+altitude: 0.00, battery level: 71.00
+vx, -332.85, vy, -266.07
+altitude: 0.00, battery level: 71.00
+vx, -334.12, vy, -270.00
+altitude: 0.00, battery level: 71.00
+vx, -335.43, vy, -275.01
+altitude: 0.00, battery level: 70.00
+vx, -340.55, vy, -276.07
+altitude: 0.00, battery level: 70.00
+vx, -334.16, vy, -271.43
+altitude: 0.00, battery level: 70.00
+vx, -336.65, vy, -268.74
+altitude: 0.00, battery level: 70.00
+vx, -324.13, vy, -276.47
+altitude: 0.00, battery level: 69.00
+vx, -318.36, vy, -279.20
+altitude: 0.00, battery level: 69.00
+vx, -329.48, vy, -281.10
+altitude: 0.00, battery level: 69.00
+vx, -325.76, vy, -271.60
+altitude: 0.00, battery level: 69.00
+vx, -313.24, vy, -266.83
+altitude: 0.00, battery level: 69.00
+vx, -305.44, vy, -264.50
+altitude: 0.00, battery level: 68.00
+vx, -310.11, vy, -269.05
+altitude: 0.00, battery level: 68.00
+vx, -305.75, vy, -263.93
+altitude: 0.00, battery level: 68.00
+vx, -305.63, vy, -252.20
+altitude: 0.00, battery level: 68.00
+vx, -308.83, vy, -268.26
+altitude: 0.00, battery level: 68.00
+vx, -310.61, vy, -275.41
+altitude: 0.00, battery level: 68.00
+vx, -312.42, vy, -258.05
+altitude: 0.00, battery level: 68.00
+vx, -308.66, vy, -259.72
+altitude: 0.00, battery level: 68.00
+vx, -309.67, vy, -261.07
+altitude: 0.00, battery level: 68.00
+vx, -312.80, vy, -265.78
+altitude: 0.00, battery level: 68.00
+vx, -314.49, vy, -276.97
+altitude: 0.00, battery level: 68.00
+vx, -306.91, vy, -286.26
+altitude: 0.00, battery level: 68.00
+vx, -293.19, vy, -287.66
+altitude: 0.00, battery level: 68.00
+vx, -288.30, vy, -279.30
+altitude: 0.00, battery level: 68.00
+vx, -294.11, vy, -274.55
+altitude: 0.00, battery level: 68.00
+vx, -285.55, vy, -271.03
+altitude: 0.00, battery level: 68.00
+vx, -290.78, vy, -268.41
+altitude: 0.00, battery level: 68.00
+vx, -289.83, vy, -259.92
+altitude: 0.00, battery level: 68.00
+vx, -290.67, vy, -243.11
+altitude: 0.00, battery level: 68.00
+vx, -294.61, vy, -199.39
+altitude: 0.00, battery level: 68.00
+vx, -271.69, vy, -188.36
+altitude: 0.00, battery level: 68.00
+vx, -267.08, vy, -169.92
+altitude: 0.00, battery level: 68.00
+vx, -269.54, vy, -154.64
+altitude: 0.00, battery level: 68.00
+vx, -269.54, vy, -141.57
+altitude: 0.00, battery level: 68.00
+vx, -275.47, vy, -80.23
+altitude: 0.00, battery level: 68.00
+vx, -103.81, vy, -20.01
+altitude: 0.00, battery level: 68.00
+vx, -38.39, vy, -29.51
+altitude: 0.00, battery level: 68.00
+vx, -4.98, vy, -11.99
+altitude: 0.00, battery level: 68.00
+vx, 11.57, vy, 3.20
+altitude: 0.00, battery level: 68.00
+vx, 21.50, vy, 17.82
+altitude: 0.00, battery level: 68.00
+vx, 5.73, vy, 3.60
+altitude: 0.00, battery level: 68.00
+vx, -5.45, vy, 5.29
+altitude: -1.00, battery level: 68.00
+vx, -3.16, vy, 27.23
+altitude: -1.00, battery level: 68.00
+vx, 8.17, vy, 8.97
+altitude: 0.00, battery level: 68.00
+vx, 3.91, vy, 15.55
+altitude: 5.00, battery level: 68.00
+vx, 25.75, vy, 3.10
+altitude: 12.00, battery level: 67.00
+vx, 38.71, vy, 21.59
+altitude: 26.00, battery level: 67.00
+vx, 59.51, vy, 37.94
+altitude: 26.00, battery level: 67.00
+vx, 69.82, vy, 50.45
+altitude: 47.00, battery level: 67.00
+vx, 68.01, vy, 45.01
+altitude: 78.00, battery level: 67.00
+vx, 111.42, vy, 84.28
+altitude: 123.00, battery level: 67.00
+vx, 188.89, vy, 153.41
+altitude: 123.00, battery level: 67.00
+vx, 233.95, vy, 212.83
+altitude: 157.00, battery level: 67.00
+vx, 237.06, vy, 218.69
+altitude: 157.00, battery level: 67.00
+vx, 215.29, vy, 195.71
+altitude: 197.00, battery level: 67.00
+vx, 207.68, vy, 210.48
+altitude: 197.00, battery level: 67.00
+vx, 230.49, vy, 237.76
+altitude: 241.00, battery level: 66.00
+vx, 272.34, vy, 254.44
+altitude: 284.00, battery level: 66.00
+vx, 294.12, vy, 255.05
+altitude: 336.00, battery level: 66.00
+vx, 291.22, vy, 199.62
+altitude: 378.00, battery level: 66.00
+vx, 295.51, vy, 162.18
+altitude: 409.00, battery level: 66.00
+vx, 290.61, vy, 152.97
+altitude: 409.00, battery level: 66.00
+vx, 287.71, vy, 145.91
+altitude: 449.00, battery level: 66.00
+vx, 295.43, vy, 131.17
+altitude: 480.00, battery level: 66.00
+vx, 297.34, vy, 123.98
+altitude: 480.00, battery level: 66.00
+vx, 302.65, vy, 128.77
+altitude: 512.00, battery level: 65.00
+vx, 302.46, vy, 147.70
+altitude: 538.00, battery level: 65.00
+vx, 285.90, vy, 167.31
+altitude: 580.00, battery level: 65.00
+vx, 291.92, vy, 213.14
+altitude: 598.00, battery level: 65.00
+vx, 287.41, vy, 256.90
+altitude: 609.00, battery level: 65.00
+vx, 265.75, vy, 243.79
+altitude: 616.00, battery level: 65.00
+vx, 261.28, vy, 244.88
+altitude: 616.00, battery level: 65.00
+vx, 254.39, vy, 236.50
+altitude: 619.00, battery level: 65.00
+vx, 249.81, vy, 233.61
+altitude: 623.00, battery level: 65.00
+vx, 210.18, vy, 250.76
+altitude: 621.00, battery level: 64.00
+vx, 196.14, vy, 247.18
+altitude: 621.00, battery level: 64.00
+vx, 204.25, vy, 236.54
+altitude: 622.00, battery level: 64.00
+vx, 203.58, vy, 230.83
+altitude: 622.00, battery level: 64.00
+vx, 191.55, vy, 217.91
+altitude: 620.00, battery level: 64.00
+vx, 168.62, vy, 195.28
+altitude: 615.00, battery level: 64.00
+vx, 175.49, vy, 198.61
+altitude: 610.00, battery level: 64.00
+vx, 171.53, vy, 217.81
+altitude: 610.00, battery level: 64.00
+vx, 159.00, vy, 209.49
+altitude: 604.00, battery level: 64.00
+vx, 153.44, vy, 208.50
+altitude: 601.00, battery level: 64.00
+vx, 111.48, vy, 180.39
+altitude: 597.00, battery level: 64.00
+vx, 93.28, vy, 164.90
+altitude: 594.00, battery level: 64.00
+vx, 80.56, vy, 164.46
+altitude: 594.00, battery level: 64.00
+vx, 68.70, vy, 165.40
+altitude: 594.00, battery level: 64.00
+vx, 41.93, vy, 158.78
+altitude: 592.00, battery level: 64.00
+vx, 45.49, vy, 160.41
+altitude: 589.00, battery level: 64.00
+vx, 41.16, vy, 169.29
+altitude: 586.00, battery level: 63.00
+vx, 36.10, vy, 160.90
+altitude: 586.00, battery level: 63.00
+vx, 38.79, vy, 156.94
+altitude: 585.00, battery level: 63.00
+vx, 5.51, vy, 145.60
+altitude: 585.00, battery level: 63.00
+vx, 0.06, vy, 155.18
+altitude: 587.00, battery level: 63.00
+vx, -12.88, vy, 146.81
+altitude: 595.00, battery level: 63.00
+vx, -9.51, vy, 155.81
+altitude: 598.00, battery level: 63.00
+vx, -23.02, vy, 162.61
+altitude: 602.00, battery level: 63.00
+vx, -29.58, vy, 160.93
+altitude: 611.00, battery level: 63.00
+vx, -48.43, vy, 186.47
+altitude: 611.00, battery level: 63.00
+vx, -43.05, vy, 194.56
+altitude: 624.00, battery level: 63.00
+vx, -57.80, vy, 156.23
+altitude: 622.00, battery level: 63.00
+vx, -55.34, vy, 135.66
+altitude: 627.00, battery level: 63.00
+vx, -31.11, vy, 127.57
+altitude: 639.00, battery level: 63.00
+vx, -72.81, vy, 102.59
+altitude: 647.00, battery level: 62.00
+vx, -85.53, vy, 92.37
+altitude: 647.00, battery level: 62.00
+vx, -95.54, vy, 87.88
+altitude: 656.00, battery level: 62.00
+vx, -90.36, vy, 100.81
+altitude: 650.00, battery level: 62.00
+vx, -90.81, vy, 102.93
+altitude: 655.00, battery level: 62.00
+vx, -92.91, vy, 104.12
+altitude: 655.00, battery level: 62.00
+vx, -97.72, vy, 109.23
+altitude: 662.00, battery level: 62.00
+vx, -107.24, vy, 114.97
+altitude: 662.00, battery level: 61.00
+vx, -131.19, vy, 112.05
+altitude: 669.00, battery level: 61.00
+vx, -123.80, vy, 98.65
+altitude: 664.00, battery level: 61.00
+vx, -124.51, vy, 83.07
+altitude: 665.00, battery level: 61.00
+vx, -128.99, vy, 92.45
+altitude: 669.00, battery level: 61.00
+vx, -129.55, vy, 98.35
+altitude: 673.00, battery level: 61.00
+vx, -173.60, vy, 106.69
+altitude: 673.00, battery level: 61.00
+vx, -175.16, vy, 120.95
+altitude: 678.00, battery level: 60.00
+vx, -161.40, vy, 120.98
+altitude: 678.00, battery level: 60.00
+vx, -204.71, vy, 84.80
+altitude: 682.00, battery level: 60.00
+vx, -235.18, vy, 63.63
+	Front Camera: no point found, keep on turnin'!
+	Going from 682.00 to 400 with -0.47
+altitude: 690.00, battery level: 60.00
+vx, -210.04, vy, 90.27
+	Front Camera: no point found, keep on turnin'!
+	Going from 690.00 to 400 with -0.48
+altitude: 690.00, battery level: 60.00
+vx, -187.13, vy, 83.61
+	Front Camera: no point found, keep on turnin'!
+	Going from 690.00 to 400 with -0.48
+altitude: 696.00, battery level: 59.00
+vx, -163.03, vy, 78.46
+	Front Camera: no point found, keep on turnin'!
+	Going from 696.00 to 400 with -0.49
+altitude: 700.00, battery level: 59.00
+vx, -184.31, vy, 92.04
+	Front Camera: no point found, keep on turnin'!
+	Going from 700.00 to 400 with -0.50
+altitude: 704.00, battery level: 59.00
+vx, -197.96, vy, 95.11
+	Front Camera: no point found, keep on turnin'!
+	Going from 704.00 to 400 with -0.50
+altitude: 707.00, battery level: 59.00
+vx, -206.93, vy, 113.81
+	Front Camera: no point found, keep on turnin'!
+	Going from 707.00 to 400 with -0.50
+altitude: 701.00, battery level: 59.00
+vx, -195.05, vy, 123.92
+	Front Camera: no point found, keep on turnin'!
+	Going from 701.00 to 400 with -0.50
+altitude: 692.00, battery level: 58.00
+vx, -203.52, vy, 110.27
+	Front Camera: no point found, keep on turnin'!
+	Going from 692.00 to 400 with -0.49
+altitude: 673.00, battery level: 58.00
+vx, -188.81, vy, 108.59
+	Front Camera: no point found, keep on turnin'!
+	Going from 673.00 to 400 with -0.46
+altitude: 664.00, battery level: 58.00
+vx, -198.47, vy, 121.06
+	Front Camera: no point found, keep on turnin'!
+	Going from 664.00 to 400 with -0.44
+altitude: 653.00, battery level: 58.00
+vx, -199.14, vy, 112.89
+	Front Camera: no point found, keep on turnin'!
+	Going from 653.00 to 400 with -0.42
+altitude: 618.00, battery level: 58.00
+vx, -287.56, vy, 128.60
+	Front Camera: no point found, keep on turnin'!
+	Going from 618.00 to 400 with -0.36
+altitude: 578.00, battery level: 58.00
+vx, -225.99, vy, 128.93
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 556.00, battery level: 58.00
+vx, -231.26, vy, 106.81
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 537.00, battery level: 58.00
+vx, -255.24, vy, 122.24
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 492.00, battery level: 58.00
+vx, -234.79, vy, 131.34
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 475.00, battery level: 58.00
+vx, -172.84, vy, 115.40
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 449.00, battery level: 58.00
+vx, -201.26, vy, 112.26
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 426.00, battery level: 58.00
+vx, -173.31, vy, 93.67
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 413.00, battery level: 58.00
+vx, -171.35, vy, 71.33
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 367.00, battery level: 58.00
+vx, -146.57, vy, 55.89
+	Front Camera: point found: x is too much to the left!
+	Found height: 367
+altitude: 352.00, battery level: 58.00
+vx, -116.91, vy, 63.93
+	Front Camera: point found: x is too much to the left!
+	Found height: 352
+altitude: 340.00, battery level: 58.00
+vx, -132.65, vy, 35.33
+	Front Camera: point found: x is too much to the left!
+	Found height: 340
+altitude: 327.00, battery level: 58.00
+vx, -137.53, vy, 19.09
+	Front Camera: point found: x is too much to the left!
+	Found height: 327
+altitude: 305.00, battery level: 57.00
+vx, -134.08, vy, 16.48
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too low!
+altitude: 301.00, battery level: 57.00
+vx, -101.20, vy, 21.76
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too low!
+altitude: 296.00, battery level: 57.00
+vx, -81.42, vy, 28.52
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too low!
+altitude: 288.00, battery level: 57.00
+vx, -76.29, vy, 20.50
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too low!
+altitude: 286.00, battery level: 57.00
+vx, -71.89, vy, 20.38
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too low!
+altitude: 288.00, battery level: 57.00
+vx, -65.63, vy, 29.38
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too low!
+altitude: 285.00, battery level: 57.00
+vx, -52.40, vy, 57.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too low!
+altitude: 289.00, battery level: 56.00
+vx, -50.00, vy, 68.68
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too low!
+altitude: 301.00, battery level: 56.00
+vx, -80.09, vy, 102.80
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too low!
+altitude: 308.00, battery level: 56.00
+vx, -79.97, vy, 96.26
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too low!
+altitude: 330.00, battery level: 56.00
+vx, -62.35, vy, 92.31
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too low!
+altitude: 340.00, battery level: 56.00
+vx, -41.55, vy, 96.86
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too low!
+altitude: 375.00, battery level: 56.00
+vx, -30.47, vy, 88.24
+	Front Camera: point found: x is too much to the left!
+	Found height: 375
+altitude: 400.00, battery level: 56.00
+vx, -23.94, vy, 107.12
+	Front Camera: point found: x is too much to the left!
+	Found height: 400
+altitude: 423.00, battery level: 55.00
+vx, -3.82, vy, 121.86
+	Front Camera: point found: x is too much to the left!
+	Found height: 423
+altitude: 466.00, battery level: 55.00
+vx, -11.08, vy, 144.49
+	Front Camera: point found: x is too much to the left!
+	Found height: 466
+altitude: 499.00, battery level: 55.00
+vx, 8.08, vy, 156.32
+	Front Camera: point found: x is too much to the left!
+	Found height: 499
+altitude: 519.00, battery level: 55.00
+vx, -2.77, vy, 158.58
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 550.00, battery level: 55.00
+vx, -71.99, vy, 96.95
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 553.00, battery level: 55.00
+vx, -44.34, vy, 108.51
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 571.00, battery level: 55.00
+vx, -20.97, vy, 88.39
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 579.00, battery level: 55.00
+vx, -14.21, vy, 93.13
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 580.00, battery level: 55.00
+vx, -20.07, vy, 89.90
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 585.00, battery level: 55.00
+vx, -3.76, vy, 83.62
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 591.00, battery level: 55.00
+vx, -24.19, vy, 47.33
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 582.00, battery level: 55.00
+vx, -7.68, vy, 48.09
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 581.00, battery level: 55.00
+vx, -13.79, vy, 30.44
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 595.00, battery level: 55.00
+vx, -38.44, vy, 5.87
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 566.00, battery level: 55.00
+vx, -41.75, vy, 5.58
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 542.00, battery level: 55.00
+vx, -21.72, vy, 4.90
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 524.00, battery level: 55.00
+vx, -22.95, vy, -2.54
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 506.00, battery level: 55.00
+vx, -18.04, vy, -9.32
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 492.00, battery level: 55.00
+vx, -19.09, vy, -13.21
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 469.00, battery level: 55.00
+vx, -7.60, vy, -5.94
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 455.00, battery level: 55.00
+vx, -13.83, vy, -6.72
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 448.00, battery level: 55.00
+vx, -6.43, vy, -4.29
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 432.00, battery level: 55.00
+vx, 9.72, vy, 6.07
+	Front Camera: point found: x is too much to the left!
+	Found height: 432
+altitude: 419.00, battery level: 55.00
+vx, 30.19, vy, 4.08
+	Front Camera: point found: x is too much to the left!
+	Found height: 419
+altitude: 399.00, battery level: 55.00
+vx, 77.54, vy, 27.41
+	Front Camera: point found: x is too much to the left!
+	Found height: 399
+altitude: 391.00, battery level: 55.00
+vx, 70.72, vy, 59.28
+	Front Camera: point found: x is too much to the left!
+	Found height: 391
+altitude: 374.00, battery level: 55.00
+vx, 30.33, vy, 21.51
+	Front Camera: point found: x is too much to the left!
+	Found height: 374
+altitude: 371.00, battery level: 55.00
+vx, 6.33, vy, 17.20
+	Front Camera: point found: x is too much to the left!
+	Found height: 371
+altitude: 358.00, battery level: 54.00
+vx, 4.30, vy, 13.15
+	Front Camera: point found: x is too much to the left!
+	Found height: 358
+altitude: 346.00, battery level: 54.00
+vx, 9.90, vy, 12.32
+	Front Camera: point found: x is too much to the left!
+	Found height: 346
+altitude: 340.00, battery level: 54.00
+vx, 10.43, vy, 9.99
+	Front Camera: point found: x is too much to the left!
+	Found height: 340
+altitude: 334.00, battery level: 54.00
+vx, 14.63, vy, 10.41
+	Front Camera: point found: x is too much to the left!
+	Found height: 334
+altitude: 331.00, battery level: 54.00
+vx, 10.18, vy, 10.43
+	Front Camera: point found: x is too much to the left!
+	Found height: 331
+altitude: 326.00, battery level: 54.00
+vx, 9.83, vy, 10.64
+	Front Camera: point found: x is too much to the left!
+	Found height: 326
+altitude: 335.00, battery level: 54.00
+vx, 12.05, vy, -12.74
+	Found height: 335
+	target in square, wait for it!
+altitude: 326.00, battery level: 54.00
+vx, 14.40, vy, -10.45
+	Found height: 326
+	target in square, wait for it!
+altitude: 331.00, battery level: 54.00
+vx, 12.29, vy, -18.89
+	Found height: 331
+	target in square, wait for it!
+altitude: 333.00, battery level: 54.00
+vx, 11.53, vy, -28.34
+	Found height: 333
+	target in square, wait for it!
+altitude: 327.00, battery level: 54.00
+vx, 9.31, vy, -24.91
+	Found height: 327
+	target in square, wait for it!
+altitude: 326.00, battery level: 54.00
+vx, 8.15, vy, -40.45
+	Found height: 326
+	target in square, wait for it!
+altitude: 329.00, battery level: 54.00
+vx, 4.36, vy, -42.42
+	Found height: 329
+	target in square, wait for it!
+altitude: 327.00, battery level: 54.00
+vx, -0.59, vy, -31.21
+	Found height: 327
+	target in square, wait for it!
+altitude: 328.00, battery level: 53.00
+vx, -1.51, vy, -32.86
+	Found height: 328
+	target in square, wait for it!
+altitude: 332.00, battery level: 53.00
+vx, -13.03, vy, -34.51
+	Found height: 332
+	target in square, wait for it!
+altitude: 335.00, battery level: 53.00
+vx, -7.41, vy, -39.76
+	Found height: 335
+	target in square, wait for it!
+altitude: 367.00, battery level: 53.00
+vx, -12.07, vy, -30.30
+	Found height: 367
+	target in square, wait for it!
+altitude: 362.00, battery level: 53.00
+vx, -33.70, vy, -44.84
+	Found height: 362
+	target in square, wait for it!
+altitude: 367.00, battery level: 53.00
+vx, -29.38, vy, -37.35
+	Found height: 367
+	target in square, wait for it!
+altitude: 338.00, battery level: 53.00
+vx, -15.84, vy, -31.50
+	Found height: 338
+	target in square, wait for it!
+altitude: 337.00, battery level: 53.00
+vx, -32.34, vy, -34.77
+	Found height: 337
+	Front Camera: flyin' towards the target!
+altitude: 334.00, battery level: 53.00
+vx, -36.01, vy, -37.11
+	Found height: 334
+	Front Camera: flyin' towards the target!
+altitude: 330.00, battery level: 53.00
+vx, -36.20, vy, -44.39
+	Found height: 330
+	Front Camera: flyin' towards the target!
+altitude: 330.00, battery level: 53.00
+vx, -33.01, vy, -44.46
+	Found height: 330
+	Front Camera: flyin' towards the target!
+altitude: 336.00, battery level: 52.00
+vx, -41.60, vy, -25.96
+	Found height: 336
+	Front Camera: flyin' towards the target!
+altitude: 335.00, battery level: 52.00
+vx, -75.08, vy, -23.66
+	Found height: 335
+	Front Camera: flyin' towards the target!
+altitude: 339.00, battery level: 52.00
+vx, -76.44, vy, -26.56
+	Found height: 339
+	Front Camera: flyin' towards the target!
+altitude: 337.00, battery level: 52.00
+vx, -28.87, vy, -11.77
+	Found height: 337
+	Front Camera: flyin' towards the target!
+altitude: 340.00, battery level: 52.00
+vx, -7.07, vy, -3.22
+	Found height: 340
+	Front Camera: flyin' towards the target!
+altitude: 345.00, battery level: 52.00
+vx, 9.06, vy, 5.10
+	Found height: 345
+	Front Camera: flyin' towards the target!
+altitude: 342.00, battery level: 52.00
+vx, 24.21, vy, -6.43
+	Found height: 342
+	Front Camera: flyin' towards the target!
+altitude: 336.00, battery level: 52.00
+vx, 55.25, vy, -6.35
+	Found height: 336
+	Front Camera: flyin' towards the target!
+altitude: 330.00, battery level: 52.00
+vx, 78.21, vy, -7.10
+	Found height: 330
+	Front Camera: flyin' towards the target!
+altitude: 327.00, battery level: 52.00
+vx, 100.92, vy, -7.98
+	Found height: 327
+	Front Camera: flyin' towards the target!
+altitude: 317.00, battery level: 52.00
+vx, 115.83, vy, -11.82
+	Found height: 317
+	Front Camera: flyin' towards the target!
+altitude: 320.00, battery level: 52.00
+vx, 124.74, vy, -5.91
+	Found height: 320
+	Front Camera: flyin' towards the target!
+altitude: 310.00, battery level: 52.00
+vx, 134.42, vy, 0.69
+	Found height: 310
+	Front Camera: flyin' towards the target!
+altitude: 317.00, battery level: 52.00
+vx, 134.20, vy, -5.18
+	Found height: 317
+	Front Camera: flyin' towards the target!
+altitude: 295.00, battery level: 52.00
+vx, 153.52, vy, -0.22
+	Found height: 295
+	Front Camera: flyin' towards the target!
+altitude: 294.00, battery level: 52.00
+vx, 171.46, vy, -5.44
+	Found height: 294
+	Front Camera: flyin' towards the target!
+altitude: 300.00, battery level: 52.00
+vx, 173.81, vy, -21.82
+	Found height: 300
+	Front Camera: flyin' towards the target!
+altitude: 296.00, battery level: 52.00
+vx, 187.89, vy, -17.98
+	Found height: 296
+	Front Camera: flyin' towards the target!
+altitude: 300.00, battery level: 52.00
+vx, 241.14, vy, -16.12
+	Found height: 300
+	Front Camera: flyin' towards the target!
+altitude: 306.00, battery level: 51.00
+vx, 241.47, vy, -23.57
+	Found height: 306
+	Front Camera: flyin' towards the target!
+altitude: 324.00, battery level: 51.00
+vx, 257.49, vy, -41.36
+	Found height: 324
+	Front Camera: flyin' towards the target!
+altitude: 338.00, battery level: 51.00
+vx, 286.30, vy, -54.73
+	Found height: 338
+	Front Camera: flyin' towards the target!
+altitude: 346.00, battery level: 51.00
+vx, 298.34, vy, -69.48
+	Found height: 346
+	Front Camera: flyin' towards the target!
+altitude: 344.00, battery level: 51.00
+vx, 325.32, vy, -85.15
+	Found height: 344
+	Front Camera: flyin' towards the target!
+altitude: 351.00, battery level: 51.00
+vx, 339.98, vy, -91.46
+	Found height: 351
+	Front Camera: flyin' towards the target!
+altitude: 358.00, battery level: 51.00
+vx, 329.56, vy, -102.58
+	Front Camera: point found: x is too much to the right!
+	Found height: 358
+altitude: 358.00, battery level: 51.00
+vx, 359.05, vy, -127.43
+	Front Camera: point found: x is too much to the right!
+	Found height: 358
+altitude: 358.00, battery level: 51.00
+vx, 348.74, vy, -128.08
+	Front Camera: point found: x is too much to the right!
+	Found height: 358
+altitude: 361.00, battery level: 51.00
+vx, 350.73, vy, -138.66
+	Front Camera: point found: x is too much to the right!
+	Found height: 361
+altitude: 355.00, battery level: 51.00
+vx, 366.86, vy, -175.34
+	Front Camera: point found: x is too much to the right!
+	Found height: 355
+altitude: 359.00, battery level: 51.00
+vx, 399.91, vy, -210.65
+	Front Camera: point found: x is too much to the right!
+	Found height: 359
+altitude: 350.00, battery level: 51.00
+vx, 379.70, vy, -204.61
+	Front Camera: point found: x is too much to the right!
+	Found height: 350
+altitude: 349.00, battery level: 51.00
+vx, 320.50, vy, -177.24
+	Front Camera: point found: x is too much to the right!
+	Found height: 349
+altitude: 348.00, battery level: 51.00
+vx, 286.61, vy, -156.97
+	Front Camera: point found: x is too much to the right!
+	Found height: 348
+altitude: 344.00, battery level: 51.00
+vx, 262.61, vy, -169.80
+	Front Camera: point found: x is too much to the right!
+	Found height: 344
+altitude: 340.00, battery level: 50.00
+vx, 251.53, vy, -173.56
+	Front Camera: point found: x is too much to the right!
+	Found height: 340
+altitude: 341.00, battery level: 50.00
+vx, 221.70, vy, -203.62
+	Front Camera: point found: x is too much to the right!
+	Found height: 341
+altitude: 342.00, battery level: 50.00
+vx, 163.44, vy, -200.68
+	Front Camera: point found: x is too much to the right!
+	Found height: 342
+altitude: 342.00, battery level: 50.00
+vx, 146.57, vy, -236.32
+	Front Camera: point found: x is too much to the right!
+	Found height: 342
+altitude: 339.00, battery level: 50.00
+vx, 178.76, vy, -227.44
+	Front Camera: point found: x is too much to the right!
+	Found height: 339
+altitude: 336.00, battery level: 50.00
+vx, 119.00, vy, -237.79
+	Front Camera: point found: x is too much to the right!
+	Found height: 336
+altitude: 337.00, battery level: 50.00
+vx, 92.67, vy, -248.65
+	Front Camera: point found: x is too much to the right!
+	Found height: 337
+altitude: 333.00, battery level: 50.00
+vx, 64.81, vy, -272.09
+	Front Camera: point found: x is too much to the right!
+	Found height: 333
+altitude: 335.00, battery level: 50.00
+vx, 44.02, vy, -277.92
+	Front Camera: point found: x is too much to the right!
+	Found height: 335
+altitude: 338.00, battery level: 50.00
+vx, 25.06, vy, -267.92
+	Front Camera: point found: x is too much to the right!
+	Found height: 338
+altitude: 333.00, battery level: 50.00
+vx, 6.62, vy, -262.56
+	Front Camera: point found: x is too much to the right!
+	Found height: 333
+altitude: 335.00, battery level: 50.00
+vx, -17.84, vy, -267.86
+	Front Camera: point found: x is too much to the right!
+	Found height: 335
+altitude: 335.00, battery level: 50.00
+vx, -21.00, vy, -253.43
+	Front Camera: point found: x is too much to the right!
+	Found height: 335
+altitude: 338.00, battery level: 49.00
+vx, -36.95, vy, -247.39
+	Front Camera: point found: x is too much to the right!
+	Found height: 338
+altitude: 338.00, battery level: 49.00
+vx, -44.30, vy, -241.15
+	Front Camera: point found: x is too much to the right!
+	Found height: 338
+altitude: 340.00, battery level: 49.00
+vx, -54.38, vy, -245.91
+	Front Camera: point found: x is too much to the right!
+	Found height: 340
+altitude: 341.00, battery level: 49.00
+vx, -52.46, vy, -233.34
+	Front Camera: point found: x is too much to the right!
+	Found height: 341
+altitude: 343.00, battery level: 49.00
+vx, -50.55, vy, -204.80
+	Front Camera: point found: x is too much to the right!
+	Found height: 343
+altitude: 346.00, battery level: 49.00
+vx, -51.20, vy, -195.33
+	Front Camera: point found: x is too much to the right!
+	Found height: 346
+altitude: 346.00, battery level: 49.00
+vx, -57.08, vy, -167.11
+	Front Camera: point found: x is too much to the right!
+	Found height: 346
+altitude: 347.00, battery level: 49.00
+vx, -58.78, vy, -155.26
+	Front Camera: point found: x is too much to the right!
+	Found height: 347
+altitude: 346.00, battery level: 49.00
+vx, -56.60, vy, -148.48
+	Front Camera: point found: x is too much to the right!
+	Found height: 346
+altitude: 351.00, battery level: 49.00
+vx, -85.94, vy, -169.99
+	Front Camera: point found: x is too much to the right!
+	Found height: 351
+altitude: 352.00, battery level: 49.00
+vx, -57.22, vy, -139.24
+	Front Camera: point found: x is too much to the right!
+	Found height: 352
+altitude: 352.00, battery level: 49.00
+vx, -67.25, vy, -138.29
+	Front Camera: point found: x is too much to the right!
+	Found height: 352
+altitude: 353.00, battery level: 49.00
+vx, -37.08, vy, -144.34
+	Front Camera: point found: x is too much to the right!
+	Found height: 353
+altitude: 352.00, battery level: 49.00
+vx, 9.26, vy, -126.11
+	Front Camera: point found: x is too much to the right!
+	Found height: 352
+altitude: 353.00, battery level: 49.00
+vx, -42.20, vy, -100.26
+	Front Camera: point found: x is too much to the right!
+	Found height: 353
+altitude: 360.00, battery level: 49.00
+vx, -48.22, vy, -94.77
+	Front Camera: point found: x is too much to the right!
+	Found height: 360
+altitude: 357.00, battery level: 49.00
+vx, -37.43, vy, -82.44
+	Front Camera: point found: x is too much to the right!
+	Found height: 357
+altitude: 352.00, battery level: 49.00
+vx, -54.30, vy, -75.24
+	Front Camera: point found: x is too much to the right!
+	Found height: 352
+altitude: 352.00, battery level: 49.00
+vx, -41.06, vy, -89.21
+	Front Camera: point found: x is too much to the right!
+	Found height: 352
+altitude: 355.00, battery level: 49.00
+vx, -39.06, vy, -91.76
+	Front Camera: point found: x is too much to the right!
+	Found height: 355
+altitude: 351.00, battery level: 49.00
+vx, -38.48, vy, -72.92
+	Front Camera: point found: x is too much to the right!
+	Found height: 351
+altitude: 346.00, battery level: 49.00
+vx, -10.89, vy, -67.12
+	Front Camera: point found: x is too much to the right!
+	Found height: 346
+altitude: 345.00, battery level: 49.00
+vx, 13.40, vy, -58.86
+	Front Camera: point found: x is too much to the right!
+	Found height: 345
+altitude: 343.00, battery level: 49.00
+vx, -1.49, vy, -50.66
+	Front Camera: point found: x is too much to the right!
+	Found height: 343
+altitude: 343.00, battery level: 49.00
+vx, -12.10, vy, -62.45
+	Front Camera: point found: x is too much to the right!
+	Found height: 343
+altitude: 343.00, battery level: 49.00
+vx, -1.80, vy, -70.70
+	Front Camera: point found: x is too much to the right!
+	Found height: 343
+altitude: 343.00, battery level: 49.00
+vx, 8.33, vy, -56.33
+	Front Camera: point found: x is too much to the right!
+	Found height: 343
+altitude: 344.00, battery level: 49.00
+vx, 17.50, vy, -65.49
+	Front Camera: point found: x is too much to the right!
+	Found height: 344
+altitude: 345.00, battery level: 49.00
+vx, 37.07, vy, -58.54
+	Front Camera: point found: x is too much to the right!
+	Found height: 345
+altitude: 346.00, battery level: 49.00
+vx, 32.43, vy, -57.44
+	Front Camera: point found: x is too much to the right!
+	Found height: 346
+altitude: 347.00, battery level: 49.00
+vx, 17.10, vy, -62.37
+	Front Camera: point found: x is too much to the right!
+	Found height: 347
+altitude: 347.00, battery level: 49.00
+vx, 47.77, vy, -75.92
+	Front Camera: point found: x is too much to the right!
+	Found height: 347
+altitude: 347.00, battery level: 49.00
+vx, 20.61, vy, -47.98
+	Front Camera: point found: x is too much to the right!
+	Found height: 347
+altitude: 348.00, battery level: 49.00
+vx, 16.72, vy, -76.27
+	Front Camera: point found: x is too much to the right!
+	Found height: 348
+altitude: 351.00, battery level: 49.00
+vx, 5.88, vy, -56.12
+	Front Camera: point found: x is too much to the right!
+	Found height: 351
+altitude: 351.00, battery level: 49.00
+vx, -4.20, vy, -72.67
+	Front Camera: point found: x is too much to the right!
+	Found height: 351
+altitude: 351.00, battery level: 49.00
+vx, -19.00, vy, -69.40
+	Front Camera: point found: x is too much to the right!
+	Found height: 351
+altitude: 352.00, battery level: 49.00
+vx, -21.49, vy, -71.84
+	Front Camera: point found: x is too much to the right!
+	Found height: 352
+altitude: 353.00, battery level: 49.00
+vx, -34.70, vy, -60.97
+	Front Camera: point found: x is too much to the right!
+	Found height: 353
+altitude: 354.00, battery level: 49.00
+vx, -34.81, vy, -52.89
+	Front Camera: point found: x is too much to the right!
+	Found height: 354
+altitude: 353.00, battery level: 49.00
+vx, -44.08, vy, -39.39
+	Front Camera: point found: x is too much to the right!
+	Found height: 353
+altitude: 355.00, battery level: 48.00
+vx, -57.06, vy, -45.97
+	Front Camera: point found: x is too much to the right!
+	Found height: 355
+altitude: 357.00, battery level: 48.00
+vx, -55.07, vy, -19.36
+	Front Camera: point found: x is too much to the right!
+	Found height: 357
+altitude: 361.00, battery level: 48.00
+vx, -63.24, vy, -9.25
+	Front Camera: point found: x is too much to the right!
+	Found height: 361
+altitude: 360.00, battery level: 48.00
+vx, -59.06, vy, -28.36
+	Front Camera: point found: x is too much to the right!
+	Found height: 360
+altitude: 359.00, battery level: 48.00
+vx, -73.26, vy, -6.49
+	Front Camera: point found: x is too much to the right!
+	Found height: 359
+altitude: 362.00, battery level: 48.00
+vx, -67.61, vy, 6.50
+	Front Camera: point found: x is too much to the right!
+	Found height: 362
+altitude: 367.00, battery level: 48.00
+vx, -53.80, vy, 20.96
+	Front Camera: point found: x is too much to the right!
+	Found height: 367
+altitude: 368.00, battery level: 48.00
+vx, -52.29, vy, 4.67
+	Front Camera: point found: x is too much to the right!
+	Found height: 368
+altitude: 366.00, battery level: 48.00
+vx, -55.27, vy, -0.65
+	Front Camera: point found: x is too much to the right!
+	Found height: 366
+altitude: 369.00, battery level: 48.00
+vx, -72.29, vy, -0.30
+	Front Camera: point found: x is too much to the right!
+	Found height: 369
+altitude: 368.00, battery level: 48.00
+vx, -56.41, vy, 9.17
+	Front Camera: point found: x is too much to the right!
+	Found height: 368
+altitude: 373.00, battery level: 48.00
+vx, -56.51, vy, 19.52
+	Front Camera: point found: x is too much to the right!
+	Found height: 373
+altitude: 369.00, battery level: 47.00
+vx, -38.57, vy, 24.22
+	Front Camera: point found: x is too much to the right!
+	Found height: 369
+altitude: 371.00, battery level: 47.00
+vx, -36.09, vy, 17.47
+	Found height: 371
+	Front Camera: flyin' towards the target!
+altitude: 371.00, battery level: 47.00
+vx, -26.93, vy, 27.24
+	Found height: 371
+	Front Camera: flyin' towards the target!
+altitude: 374.00, battery level: 47.00
+vx, -25.24, vy, 23.67
+	Found height: 374
+	Front Camera: flyin' towards the target!
+altitude: 373.00, battery level: 47.00
+vx, -19.32, vy, 8.27
+	Front Camera: point found: x is too much to the right!
+	Found height: 373
+altitude: 374.00, battery level: 47.00
+vx, -7.21, vy, 18.52
+	Found height: 374
+	Front Camera: flyin' towards the target!
+altitude: 374.00, battery level: 47.00
+vx, -58.80, vy, 37.25
+	Found height: 374
+	Front Camera: flyin' towards the target!
+altitude: 376.00, battery level: 47.00
+vx, -46.31, vy, 20.56
+	Found height: 376
+	Front Camera: flyin' towards the target!
+altitude: 376.00, battery level: 47.00
+vx, -32.76, vy, 21.92
+	Found height: 376
+	Front Camera: flyin' towards the target!
+altitude: 380.00, battery level: 47.00
+vx, 22.02, vy, 21.81
+	Found height: 380
+	Front Camera: flyin' towards the target!
+altitude: 376.00, battery level: 47.00
+vx, 40.66, vy, 15.33
+	Found height: 376
+	Front Camera: flyin' towards the target!
+altitude: 379.00, battery level: 47.00
+vx, 62.85, vy, 25.20
+	Found height: 379
+	Front Camera: flyin' towards the target!
+altitude: 380.00, battery level: 47.00
+vx, 82.20, vy, 27.29
+	Found height: 380
+	Front Camera: flyin' towards the target!
+altitude: 379.00, battery level: 47.00
+vx, 82.23, vy, 14.15
+	Found height: 379
+	Front Camera: flyin' towards the target!
+altitude: 382.00, battery level: 47.00
+vx, 113.89, vy, 9.13
+	Found height: 382
+	Front Camera: flyin' towards the target!
+altitude: 387.00, battery level: 47.00
+vx, 126.74, vy, 8.08
+	Found height: 387
+	Front Camera: flyin' towards the target!
+altitude: 383.00, battery level: 46.00
+vx, 160.34, vy, 15.29
+	Found height: 383
+	Front Camera: flyin' towards the target!
+altitude: 389.00, battery level: 46.00
+vx, 198.92, vy, 13.41
+	Found height: 389
+	Front Camera: flyin' towards the target!
+altitude: 390.00, battery level: 46.00
+vx, 245.09, vy, 10.79
+	Found height: 390
+	Front Camera: flyin' towards the target!
+altitude: 403.00, battery level: 46.00
+vx, 238.76, vy, 10.04
+	Found height: 403
+	Front Camera: flyin' towards the target!
+altitude: 392.00, battery level: 46.00
+vx, 267.12, vy, -1.72
+	Found height: 392
+	Front Camera: flyin' towards the target!
+altitude: 402.00, battery level: 46.00
+vx, 303.06, vy, 0.36
+	Found height: 402
+	Front Camera: flyin' towards the target!
+altitude: 405.00, battery level: 46.00
+vx, 309.50, vy, -7.30
+	Found height: 405
+	Front Camera: flyin' towards the target!
+altitude: 399.00, battery level: 46.00
+vx, 333.96, vy, 18.40
+	Front Camera: point found: x is too much to the left!
+	Found height: 399
+altitude: 398.00, battery level: 46.00
+vx, 335.47, vy, -7.33
+	Found height: 398
+	Front Camera: flyin' towards the target!
+altitude: 404.00, battery level: 46.00
+vx, 364.66, vy, -7.75
+	Found height: 404
+	Front Camera: flyin' towards the target!
+altitude: 397.00, battery level: 46.00
+vx, 346.60, vy, 3.63
+	Found height: 397
+	Front Camera: flyin' towards the target!
+altitude: 398.00, battery level: 46.00
+vx, 389.04, vy, 0.02
+	Found height: 398
+	Front Camera: flyin' towards the target!
+altitude: 408.00, battery level: 46.00
+vx, 399.13, vy, 16.38
+	Found height: 408
+	Front Camera: flyin' towards the target!
+altitude: 398.00, battery level: 46.00
+vx, 384.93, vy, 35.23
+	Found height: 398
+	Front Camera: flyin' towards the target!
+altitude: 400.00, battery level: 46.00
+vx, 357.93, vy, 10.78
+	Front Camera: point found: x is too much to the left!
+	Found height: 400
+altitude: 399.00, battery level: 46.00
+vx, 363.85, vy, 12.73
+	Found height: 399
+	Front Camera: flyin' towards the target!
+altitude: 407.00, battery level: 46.00
+vx, 361.61, vy, 27.62
+	Front Camera: point found: x is too much to the left!
+	Found height: 407
+altitude: 401.00, battery level: 46.00
+vx, 342.88, vy, 20.22
+	Found height: 401
+	Front Camera: flyin' towards the target!
+altitude: 399.00, battery level: 46.00
+vx, 366.28, vy, 35.32
+	Found height: 399
+	Front Camera: flyin' towards the target!
+altitude: 401.00, battery level: 46.00
+vx, 379.80, vy, 55.44
+	Found height: 401
+	Front Camera: flyin' towards the target!
+altitude: 402.00, battery level: 46.00
+vx, 346.67, vy, 52.16
+	Found height: 402
+	Front Camera: flyin' towards the target!
+altitude: 405.00, battery level: 46.00
+vx, 372.35, vy, 57.84
+	Found height: 405
+	Front Camera: flyin' towards the target!
+altitude: 406.00, battery level: 46.00
+vx, 321.28, vy, 39.86
+	Found height: 406
+	Front Camera: flyin' towards the target!
+altitude: 407.00, battery level: 46.00
+vx, 339.99, vy, 38.36
+	Found height: 407
+	Front Camera: flyin' towards the target!
+altitude: 415.00, battery level: 46.00
+vx, 352.18, vy, 46.57
+	Found height: 415
+	Front Camera: flyin' towards the target!
+altitude: 415.00, battery level: 46.00
+vx, 387.35, vy, 71.48
+	Front Camera: point found: x is too much to the left!
+	Found height: 415
+altitude: 412.00, battery level: 46.00
+vx, 384.55, vy, 52.11
+	Found height: 412
+	Front Camera: flyin' towards the target!
+altitude: 412.00, battery level: 46.00
+vx, 360.28, vy, 38.39
+	Found height: 412
+	Front Camera: flyin' towards the target!
+altitude: 419.00, battery level: 46.00
+vx, 356.07, vy, 44.58
+	Front Camera: point found: x is too much to the left!
+	Found height: 419
+altitude: 419.00, battery level: 46.00
+vx, 366.91, vy, 57.36
+	Front Camera: point found: x is too much to the left!
+	Found height: 419
+altitude: 420.00, battery level: 46.00
+vx, 365.27, vy, 38.39
+	Front Camera: point found: x is too much to the left!
+	Found height: 420
+altitude: 427.00, battery level: 46.00
+vx, 304.05, vy, 52.44
+	Switching cameras
+	Calling initImages
+	New preferred height: 720
+altitude: 433.00, battery level: 46.00
+vx, 286.48, vy, 57.16
+	Calling initImages
+	Switching cameras
+	Calling initImages
+	New preferred height: 720
+altitude: 431.00, battery level: 46.00
+vx, 278.42, vy, 72.25
+	Calling initImages
+	Front Camera: point found: x is too much to the left!
+	Found height: 431
+altitude: 433.00, battery level: 46.00
+vx, 268.27, vy, 94.90
+	Front Camera: point found: x is too much to the left!
+	Found height: 433
+altitude: 437.00, battery level: 46.00
+vx, 234.78, vy, 113.10
+	Calling initImages
+	Going from 437.00 to 720 with 0.47
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 437.00, battery level: 46.00
+vx, 256.30, vy, 124.47
+	Going from 437.00 to 720 with 0.47
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 445.00, battery level: 46.00
+vx, 231.09, vy, 143.02
+	Going from 445.00 to 720 with 0.46
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 451.00, battery level: 46.00
+vx, 210.09, vy, 116.51
+	Calling initImages
+	Front Camera: no point found, keep on turnin'!
+	Going from 451.00 to 720 with 0.45
+altitude: 458.00, battery level: 46.00
+vx, 197.56, vy, 98.81
+	Front Camera: no point found, keep on turnin'!
+	Going from 458.00 to 720 with 0.44
+altitude: 452.00, battery level: 46.00
+vx, 180.05, vy, 89.48
+	Calling initImages
+	Going from 452.00 to 720 with 0.45
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 448.00, battery level: 46.00
+vx, 180.26, vy, 84.51
+	Going from 448.00 to 720 with 0.45
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 448.00, battery level: 46.00
+vx, 176.29, vy, 78.08
+	Calling initImages
+	Front Camera: no point found, keep on turnin'!
+	Going from 448.00 to 720 with 0.45
+altitude: 452.00, battery level: 46.00
+vx, 157.45, vy, 71.19
+	Front Camera: no point found, keep on turnin'!
+	Going from 452.00 to 720 with 0.45
+altitude: 457.00, battery level: 46.00
+vx, 200.69, vy, 54.36
+	Calling initImages
+	Going from 457.00 to 720 with 0.44
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 457.00, battery level: 46.00
+vx, 214.70, vy, 41.01
+	Going from 457.00 to 720 with 0.44
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 471.00, battery level: 46.00
+vx, 177.61, vy, 39.20
+	Calling initImages
+	Front Camera: no point found, keep on turnin'!
+	Going from 471.00 to 720 with 0.42
+altitude: 457.00, battery level: 45.00
+vx, 192.12, vy, 26.98
+	Front Camera: no point found, keep on turnin'!
+	Going from 457.00 to 720 with 0.44
+altitude: 483.00, battery level: 45.00
+vx, 188.82, vy, 12.26
+	Front Camera: no point found, keep on turnin'!
+	Going from 483.00 to 720 with 0.40
+altitude: 475.00, battery level: 45.00
+vx, 140.13, vy, 14.08
+	Calling initImages
+	Going from 475.00 to 720 with 0.41
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 495.00, battery level: 45.00
+vx, 145.28, vy, -2.53
+	Going from 495.00 to 720 with 0.38
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 526.00, battery level: 45.00
+vx, 147.02, vy, -39.63
+	Calling initImages
+	Front Camera: no point found, keep on turnin'!
+	Going from 526.00 to 720 with 0.32
+altitude: 516.00, battery level: 45.00
+vx, 136.05, vy, -16.06
+	Front Camera: no point found, keep on turnin'!
+	Going from 516.00 to 720 with 0.34
+altitude: 512.00, battery level: 45.00
+vx, 133.73, vy, 10.30
+	Front Camera: no point found, keep on turnin'!
+	Going from 512.00 to 720 with 0.35
+altitude: 528.00, battery level: 45.00
+vx, 150.05, vy, 5.45
+	Calling initImages
+	Going from 528.00 to 720 with 0.32
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 545.00, battery level: 45.00
+vx, 122.46, vy, 9.65
+	Calling initImages
+	Front Camera: no point found, keep on turnin'!
+	Going from 545.00 to 720 with 0.29
+altitude: 558.00, battery level: 45.00
+vx, 111.40, vy, 16.61
+	Front Camera: no point found, keep on turnin'!
+	Going from 558.00 to 720 with 0.27
+altitude: 557.00, battery level: 45.00
+vx, 124.55, vy, 27.26
+	Front Camera: no point found, keep on turnin'!
+	Going from 557.00 to 720 with 0.27
+altitude: 568.00, battery level: 45.00
+vx, 132.11, vy, 13.86
+	Calling initImages
+	Going from 568.00 to 720 with 0.25
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 568.00, battery level: 45.00
+vx, 124.65, vy, -4.40
+	Going from 568.00 to 720 with 0.25
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 573.00, battery level: 45.00
+vx, 120.20, vy, 6.70
+	Calling initImages
+	Front Camera: no point found, keep on turnin'!
+	Going from 573.00 to 720 with 0.25
+altitude: 573.00, battery level: 45.00
+vx, 113.11, vy, 9.82
+	Front Camera: no point found, keep on turnin'!
+	Going from 573.00 to 720 with 0.25
+altitude: 577.00, battery level: 45.00
+vx, 129.11, vy, -0.48
+	Calling initImages
+	Going from 577.00 to 720 with 0.24
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 577.00, battery level: 45.00
+vx, 138.10, vy, 5.68
+	Going from 577.00 to 720 with 0.24
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 607.00, battery level: 45.00
+vx, 133.38, vy, 17.57
+	Going from 607.00 to 720 with 0.19
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 585.00, battery level: 45.00
+vx, 131.76, vy, 3.39
+	Going from 585.00 to 720 with 0.23
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 602.00, battery level: 45.00
+vx, 148.46, vy, -0.49
+	Calling initImages
+	Front Camera: no point found, keep on turnin'!
+	Going from 602.00 to 720 with 0.20
+altitude: 608.00, battery level: 45.00
+vx, 156.79, vy, 0.56
+	Calling initImages
+	Going from 608.00 to 720 with 0.19
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 608.00, battery level: 45.00
+vx, 149.22, vy, 3.48
+	Going from 608.00 to 720 with 0.19
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 608.00, battery level: 45.00
+vx, 141.20, vy, 8.20
+	Going from 608.00 to 720 with 0.19
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 608.00, battery level: 45.00
+vx, 151.07, vy, 2.20
+	Going from 608.00 to 720 with 0.19
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 603.00, battery level: 45.00
+vx, 168.99, vy, 5.03
+	Calling initImages
+	Front Camera: no point found, keep on turnin'!
+	Going from 603.00 to 720 with 0.20
+altitude: 616.00, battery level: 44.00
+vx, 178.82, vy, -13.27
+	Calling initImages
+	Going from 616.00 to 720 with 0.17
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 622.00, battery level: 44.00
+vx, 185.32, vy, -15.86
+	Going from 622.00 to 720 with 0.16
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 652.00, battery level: 44.00
+vx, 183.02, vy, -18.09
+	Going from 652.00 to 720 with 0.11
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 652.00, battery level: 44.00
+vx, 174.07, vy, -19.76
+	Going from 652.00 to 720 with 0.11
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 678.00, battery level: 44.00
+vx, 224.95, vy, -35.67
+	Going from 678.00 to 720 with 0.07
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 672.00, battery level: 44.00
+vx, 198.01, vy, -40.21
+	Going from 672.00 to 720 with 0.08
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 689.00, battery level: 44.00
+vx, 166.99, vy, -32.07
+	Calling initImages
+	Front Camera: no point found, keep on turnin'!
+	Going from 689.00 to 720 with 0.05
+altitude: 673.00, battery level: 44.00
+vx, 160.72, vy, -26.67
+	Calling initImages
+	Going from 673.00 to 720 with 0.08
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 673.00, battery level: 44.00
+vx, 153.00, vy, -31.27
+	Going from 673.00 to 720 with 0.08
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 741.00, battery level: 44.00
+vx, 182.31, vy, -41.07
+	Going from 741.00 to 720 with -0.04
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 749.00, battery level: 44.00
+vx, 219.11, vy, -57.04
+	Going from 749.00 to 720 with -0.05
+	Bottom Camera: y is too low!
+altitude: 787.00, battery level: 43.00
+vx, 255.25, vy, -62.79
+	Going from 787.00 to 720 with -0.11
+	Bottom Camera: y is too low!
+altitude: 787.00, battery level: 43.00
+vx, 266.22, vy, -65.57
+	Going from 787.00 to 720 with -0.11
+	Bottom Camera: y is too low!
+altitude: 816.00, battery level: 43.00
+vx, 271.33, vy, -90.37
+	Calling initImages
+	Front Camera: no point found, keep on turnin'!
+	Going from 816.00 to 720 with -0.16
+altitude: 846.00, battery level: 43.00
+vx, 219.61, vy, -52.66
+	Calling initImages
+	Going from 846.00 to 720 with -0.21
+altitude: 869.00, battery level: 43.00
+vx, 268.01, vy, -57.28
+	Going from 869.00 to 720 with -0.25
+altitude: 859.00, battery level: 43.00
+vx, 283.75, vy, -54.90
+	Going from 859.00 to 720 with -0.23
+altitude: 890.00, battery level: 43.00
+vx, 277.99, vy, -60.21
+	Going from 890.00 to 720 with -0.28
+	Bottom Camera: y is too low!
+altitude: 957.00, battery level: 43.00
+vx, 319.87, vy, -47.20
+	Going from 957.00 to 720 with -0.40
+	Bottom Camera: y is too low!
+altitude: 975.00, battery level: 43.00
+vx, 351.63, vy, -45.26
+	Calling initImages
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too low!
+altitude: 996.00, battery level: 43.00
+vx, 302.33, vy, -68.47
+	Calling initImages
+	Going from 996.00 to 720 with -0.46
+altitude: 1013.00, battery level: 42.00
+vx, 290.44, vy, -67.23
+	Going from 1013.00 to 720 with -0.49
+altitude: 1013.00, battery level: 42.00
+vx, 281.06, vy, -78.69
+	Going from 1013.00 to 720 with -0.49
+altitude: 1038.00, battery level: 42.00
+vx, 302.19, vy, -81.21
+	Going from 1038.00 to 720 with -0.50
+altitude: 1026.00, battery level: 42.00
+vx, 329.54, vy, -80.36
+	Going from 1026.00 to 720 with -0.50
+altitude: 1026.00, battery level: 42.00
+vx, 326.36, vy, -80.70
+	Calling initImages
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too low!
+altitude: 1039.00, battery level: 42.00
+vx, 271.72, vy, -82.63
+	Calling initImages
+	Going from 1039.00 to 720 with -0.50
+altitude: 1039.00, battery level: 42.00
+vx, 263.08, vy, -120.12
+	Going from 1039.00 to 720 with -0.50
+altitude: 1040.00, battery level: 42.00
+vx, 289.76, vy, -152.69
+	Going from 1040.00 to 720 with -0.50
+altitude: 1037.00, battery level: 42.00
+vx, 290.11, vy, -162.03
+	Going from 1037.00 to 720 with -0.50
+altitude: 1037.00, battery level: 42.00
+vx, 300.72, vy, -183.69
+	Going from 1037.00 to 720 with -0.50
+	Bottom Camera: x is too much to the right!
+altitude: 1040.00, battery level: 42.00
+vx, 272.61, vy, -175.26
+	Going from 1040.00 to 720 with -0.50
+	Bottom Camera: x is too much to the right!
+altitude: 1018.00, battery level: 42.00
+vx, 244.36, vy, -159.14
+	Calling initImages
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too low!
+altitude: 1012.00, battery level: 42.00
+vx, 217.93, vy, -151.93
+	Calling initImages
+	Going from 1012.00 to 720 with -0.49
+altitude: 1009.00, battery level: 42.00
+vx, 194.98, vy, -113.04
+	Going from 1009.00 to 720 with -0.48
+altitude: 1006.00, battery level: 42.00
+vx, 222.63, vy, -143.85
+	Going from 1006.00 to 720 with -0.48
+	Bottom Camera: x is too much to the right!
+altitude: 979.00, battery level: 42.00
+vx, 245.27, vy, -134.42
+	Going from 979.00 to 720 with -0.43
+	Bottom Camera: x is too much to the right!
+altitude: 979.00, battery level: 42.00
+vx, 216.45, vy, -129.96
+	Calling initImages
+	Front Camera: point found: y is too low!
+altitude: 961.00, battery level: 42.00
+vx, 173.68, vy, -146.39
+	Calling initImages
+	Going from 961.00 to 720 with -0.40
+altitude: 1038.00, battery level: 42.00
+vx, 151.13, vy, -151.05
+	Going from 1038.00 to 720 with -0.50
+altitude: 956.00, battery level: 43.00
+vx, 143.13, vy, -174.49
+	Going from 956.00 to 720 with -0.39
+	Bottom Camera: x is too much to the right!
+	Bottom Camera: y is too high!
+altitude: 956.00, battery level: 43.00
+vx, 151.27, vy, -176.47
+	Going from 956.00 to 720 with -0.39
+	Bottom Camera: x is too much to the right!
+	Bottom Camera: y is too high!
+altitude: 956.00, battery level: 43.00
+vx, 148.84, vy, -173.17
+	Going from 956.00 to 720 with -0.39
+	Bottom Camera: x is too much to the right!
+	Bottom Camera: y is too high!
+altitude: 934.00, battery level: 43.00
+vx, 144.87, vy, -217.12
+	Calling initImages
+	Front Camera: point found: y is too low!
+altitude: 891.00, battery level: 43.00
+vx, 108.21, vy, -187.86
+	Calling initImages
+	Going from 891.00 to 720 with -0.29
+altitude: 867.00, battery level: 43.00
+vx, 101.66, vy, -207.06
+	Going from 867.00 to 720 with -0.25
+altitude: 867.00, battery level: 43.00
+vx, 120.50, vy, -191.40
+	Going from 867.00 to 720 with -0.25
+	Bottom Camera: x is too much to the right!
+	Bottom Camera: y is too high!
+altitude: 842.00, battery level: 43.00
+vx, 98.37, vy, -217.13
+	Going from 842.00 to 720 with -0.20
+	Bottom Camera: x is too much to the right!
+	Bottom Camera: y is too high!
+altitude: 818.00, battery level: 43.00
+vx, 104.64, vy, -284.00
+	Calling initImages
+	Front Camera: no point found, keep on turnin'!
+	Going from 818.00 to 720 with -0.16
+altitude: 796.00, battery level: 43.00
+vx, 127.07, vy, -272.90
+	Calling initImages
+	Going from 796.00 to 720 with -0.13
+altitude: 796.00, battery level: 43.00
+vx, 102.97, vy, -224.29
+	Going from 796.00 to 720 with -0.13
+altitude: 779.00, battery level: 43.00
+vx, 86.24, vy, -253.24
+	Going from 779.00 to 720 with -0.10
+altitude: 779.00, battery level: 43.00
+vx, 123.37, vy, -238.60
+	Going from 779.00 to 720 with -0.10
+altitude: 761.00, battery level: 43.00
+vx, 144.00, vy, -187.48
+	Going from 761.00 to 720 with -0.07
+altitude: 761.00, battery level: 43.00
+vx, 127.12, vy, -126.75
+	Going from 761.00 to 720 with -0.07
+altitude: 748.00, battery level: 44.00
+vx, 126.57, vy, -114.91
+	Going from 748.00 to 720 with -0.05
+altitude: 734.00, battery level: 44.00
+vx, 101.00, vy, -111.12
+	Going from 734.00 to 720 with -0.02
+altitude: 724.00, battery level: 44.00
+vx, 105.48, vy, -91.80
+	Going from 724.00 to 720 with -0.01
+altitude: 715.00, battery level: 44.00
+vx, 97.63, vy, -94.87
+	Going from 715.00 to 720 with 0.01
+altitude: 712.00, battery level: 44.00
+vx, 101.04, vy, -93.12
+	Going from 712.00 to 720 with 0.01
+altitude: 706.00, battery level: 44.00
+vx, 99.75, vy, -95.75
+	Going from 706.00 to 720 with 0.02
+altitude: 706.00, battery level: 44.00
+vx, 100.86, vy, -181.09
+	Going from 706.00 to 720 with 0.02
+altitude: 718.00, battery level: 44.00
+vx, 109.62, vy, -191.25
+	Going from 718.00 to 720 with 0.00
+altitude: 699.00, battery level: 44.00
+vx, 124.02, vy, -147.09
+	Going from 699.00 to 720 with 0.04
+altitude: 700.00, battery level: 44.00
+vx, 95.95, vy, -116.55
+	Going from 700.00 to 720 with 0.03
+altitude: 700.00, battery level: 44.00
+vx, 55.76, vy, -102.88
+	Going from 700.00 to 720 with 0.03
+altitude: 699.00, battery level: 44.00
+vx, 58.65, vy, -77.51
+	Going from 699.00 to 720 with 0.04
+altitude: 712.00, battery level: 44.00
+vx, 58.17, vy, -92.17
+	Going from 712.00 to 720 with 0.01
+altitude: 699.00, battery level: 44.00
+vx, 61.84, vy, -66.96
+	Going from 699.00 to 720 with 0.04
+altitude: 702.00, battery level: 44.00
+vx, 45.99, vy, -56.51
+	Going from 702.00 to 720 with 0.03
+altitude: 702.00, battery level: 44.00
+vx, 33.60, vy, -73.13
+	Going from 702.00 to 720 with 0.03
+altitude: 700.00, battery level: 44.00
+vx, 30.90, vy, -66.80
+	Going from 700.00 to 720 with 0.03
+altitude: 704.00, battery level: 44.00
+vx, 27.27, vy, -85.40
+	Going from 704.00 to 720 with 0.03
+altitude: 704.00, battery level: 43.00
+vx, 22.48, vy, -66.13
+	Going from 704.00 to 720 with 0.03
+altitude: 708.00, battery level: 43.00
+vx, 47.32, vy, -62.66
+	Going from 708.00 to 720 with 0.02
+altitude: 716.00, battery level: 43.00
+vx, 42.72, vy, -60.14
+	Going from 716.00 to 720 with 0.01
+altitude: 716.00, battery level: 43.00
+vx, 31.26, vy, -65.46
+	Going from 716.00 to 720 with 0.01
+altitude: 716.00, battery level: 43.00
+vx, 9.06, vy, -93.92
+	Going from 716.00 to 720 with 0.01
+altitude: 720.00, battery level: 43.00
+vx, 12.94, vy, -82.73
+	Going from 720.00 to 720 with 0.00
+altitude: 733.00, battery level: 43.00
+vx, 15.48, vy, -93.35
+	Going from 733.00 to 720 with -0.02
+altitude: 731.00, battery level: 43.00
+vx, 27.30, vy, -143.86
+	Going from 731.00 to 720 with -0.02
+altitude: 736.00, battery level: 43.00
+vx, 18.38, vy, -117.44
+	Going from 736.00 to 720 with -0.03
+altitude: 746.00, battery level: 43.00
+vx, 3.70, vy, -133.16
+	Going from 746.00 to 720 with -0.04
+altitude: 746.00, battery level: 43.00
+vx, 11.86, vy, -119.89
+	Going from 746.00 to 720 with -0.04
+altitude: 748.00, battery level: 43.00
+vx, -7.04, vy, -141.53
+	Going from 748.00 to 720 with -0.05
+altitude: 751.00, battery level: 43.00
+vx, -8.83, vy, -125.42
+	Going from 751.00 to 720 with -0.05
+altitude: 773.00, battery level: 43.00
+vx, 12.48, vy, -131.44
+	Going from 773.00 to 720 with -0.09
+altitude: 784.00, battery level: 43.00
+vx, -3.04, vy, -122.73
+	Going from 784.00 to 720 with -0.11
+altitude: 784.00, battery level: 43.00
+vx, -6.89, vy, -124.97
+	Going from 784.00 to 720 with -0.11
+altitude: 760.00, battery level: 43.00
+vx, -32.42, vy, -132.79
+	Going from 760.00 to 720 with -0.07
+altitude: 769.00, battery level: 43.00
+vx, -33.22, vy, -125.25
+	Going from 769.00 to 720 with -0.08
+altitude: 760.00, battery level: 43.00
+vx, -9.07, vy, -127.77
+	Going from 760.00 to 720 with -0.07
+altitude: 760.00, battery level: 43.00
+vx, -28.19, vy, -143.60
+	Going from 760.00 to 720 with -0.07
+altitude: 761.00, battery level: 43.00
+vx, -41.09, vy, -124.16
+	Going from 761.00 to 720 with -0.07
+altitude: 754.00, battery level: 43.00
+vx, -36.76, vy, -134.08
+	Going from 754.00 to 720 with -0.06
+altitude: 751.00, battery level: 43.00
+vx, -32.55, vy, -148.31
+	Going from 751.00 to 720 with -0.05
+altitude: 751.00, battery level: 43.00
+vx, -29.70, vy, -131.95
+	Going from 751.00 to 720 with -0.05
+altitude: 754.00, battery level: 43.00
+vx, -40.23, vy, -122.61
+	Going from 754.00 to 720 with -0.06
+altitude: 749.00, battery level: 43.00
+vx, -37.89, vy, -130.84
+	Going from 749.00 to 720 with -0.05
+altitude: 742.00, battery level: 43.00
+vx, -62.34, vy, -141.30
+	Going from 742.00 to 720 with -0.04
+altitude: 742.00, battery level: 43.00
+vx, -64.22, vy, -196.85
+	Going from 742.00 to 720 with -0.04
+altitude: 738.00, battery level: 43.00
+vx, -62.74, vy, -148.35
+	Going from 738.00 to 720 with -0.03
+altitude: 738.00, battery level: 43.00
+vx, -57.82, vy, -137.61
+	Going from 738.00 to 720 with -0.03
+altitude: 736.00, battery level: 44.00
+vx, -63.99, vy, -152.02
+	Going from 736.00 to 720 with -0.03
+altitude: 736.00, battery level: 44.00
+vx, -71.19, vy, -150.58
+	Going from 736.00 to 720 with -0.03
+altitude: 717.00, battery level: 44.00
+vx, -76.33, vy, -132.14
+	Going from 717.00 to 720 with 0.01
+altitude: 723.00, battery level: 44.00
+vx, -76.34, vy, -146.55
+	Going from 723.00 to 720 with -0.01
+altitude: 722.00, battery level: 44.00
+vx, -81.59, vy, -148.94
+	Going from 722.00 to 720 with -0.00
+altitude: 722.00, battery level: 44.00
+vx, -84.31, vy, -149.38
+	Going from 722.00 to 720 with -0.00
+altitude: 684.00, battery level: 44.00
+vx, -72.23, vy, -127.83
+	Going from 684.00 to 720 with 0.06
+altitude: 708.00, battery level: 44.00
+vx, -76.71, vy, -110.67
+	Going from 708.00 to 720 with 0.02
+altitude: 701.00, battery level: 44.00
+vx, -91.18, vy, -122.51
+	Going from 701.00 to 720 with 0.03
+altitude: 701.00, battery level: 44.00
+vx, -81.17, vy, -119.40
+	Going from 701.00 to 720 with 0.03
+altitude: 700.00, battery level: 44.00
+vx, -79.92, vy, -125.97
+	Going from 700.00 to 720 with 0.03
+altitude: 691.00, battery level: 44.00
+vx, -62.81, vy, -109.28
+	Going from 691.00 to 720 with 0.05
+altitude: 700.00, battery level: 44.00
+vx, -70.34, vy, -113.19
+	Going from 700.00 to 720 with 0.03
+altitude: 700.00, battery level: 44.00
+vx, -69.55, vy, -107.06
+	Going from 700.00 to 720 with 0.03
+altitude: 692.00, battery level: 44.00
+vx, -71.04, vy, -109.55
+	Going from 692.00 to 720 with 0.05
+altitude: 687.00, battery level: 44.00
+vx, -87.70, vy, -129.10
+	Going from 687.00 to 720 with 0.06
+altitude: 687.00, battery level: 44.00
+vx, -113.86, vy, -135.70
+	Going from 687.00 to 720 with 0.06
+altitude: 687.00, battery level: 44.00
+vx, -118.83, vy, -113.94
+	Going from 687.00 to 720 with 0.06
+altitude: 687.00, battery level: 44.00
+vx, -102.89, vy, -113.17
+	Going from 687.00 to 720 with 0.06
+altitude: 679.00, battery level: 44.00
+vx, -91.05, vy, -81.32
+	Going from 679.00 to 720 with 0.07
+altitude: 679.00, battery level: 44.00
+vx, -97.92, vy, -92.18
+	Going from 679.00 to 720 with 0.07
+altitude: 686.00, battery level: 44.00
+vx, -85.45, vy, -85.63
+	Going from 686.00 to 720 with 0.06
+altitude: 682.00, battery level: 44.00
+vx, -86.65, vy, -92.20
+	Going from 682.00 to 720 with 0.06
+altitude: 678.00, battery level: 44.00
+vx, -93.35, vy, -74.15
+	Going from 678.00 to 720 with 0.07
+altitude: 695.00, battery level: 44.00
+vx, -81.56, vy, -84.50
+	Going from 695.00 to 720 with 0.04
+altitude: 695.00, battery level: 44.00
+vx, -87.41, vy, -77.92
+	Going from 695.00 to 720 with 0.04
+altitude: 688.00, battery level: 44.00
+vx, -75.50, vy, -78.96
+	Going from 688.00 to 720 with 0.05
+altitude: 694.00, battery level: 44.00
+vx, -71.25, vy, -71.52
+	Going from 694.00 to 720 with 0.04
+altitude: 699.00, battery level: 44.00
+vx, -80.38, vy, -71.36
+	Going from 699.00 to 720 with 0.04
+altitude: 715.00, battery level: 44.00
+vx, -72.97, vy, -78.53
+	Going from 715.00 to 720 with 0.01
+altitude: 715.00, battery level: 44.00
+vx, -77.62, vy, -82.73
+	Going from 715.00 to 720 with 0.01
+altitude: 724.00, battery level: 44.00
+vx, -78.90, vy, -81.70
+	Going from 724.00 to 720 with -0.01
+altitude: 715.00, battery level: 43.00
+vx, -73.29, vy, -58.52
+	Going from 715.00 to 720 with 0.01
+altitude: 718.00, battery level: 43.00
+vx, -66.84, vy, -67.22
+	Going from 718.00 to 720 with 0.00
+altitude: 745.00, battery level: 43.00
+vx, -85.48, vy, -78.28
+	Going from 745.00 to 720 with -0.04
+altitude: 745.00, battery level: 43.00
+vx, -110.09, vy, -82.12
+	Going from 745.00 to 720 with -0.04
+altitude: 725.00, battery level: 43.00
+vx, -87.62, vy, -72.73
+	Going from 725.00 to 720 with -0.01
+altitude: 729.00, battery level: 43.00
+vx, -65.58, vy, -58.92
+	Going from 729.00 to 720 with -0.02
+altitude: 779.00, battery level: 43.00
+vx, -73.10, vy, -55.17
+	Going from 779.00 to 720 with -0.10
+altitude: 738.00, battery level: 43.00
+vx, -89.05, vy, -44.22
+	Going from 738.00 to 720 with -0.03
+altitude: 738.00, battery level: 43.00
+vx, -71.91, vy, -46.80
+	Going from 738.00 to 720 with -0.03
+altitude: 727.00, battery level: 43.00
+vx, -62.94, vy, -55.46
+	Going from 727.00 to 720 with -0.01
+altitude: 727.00, battery level: 43.00
+vx, -64.58, vy, -56.48
+	Going from 727.00 to 720 with -0.01
+altitude: 713.00, battery level: 43.00
+vx, -58.96, vy, -63.52
+	Going from 713.00 to 720 with 0.01
+altitude: 713.00, battery level: 43.00
+vx, -57.49, vy, -53.44
+	Going from 713.00 to 720 with 0.01
+altitude: 713.00, battery level: 43.00
+vx, -68.77, vy, -39.81
+	Going from 713.00 to 720 with 0.01
+altitude: 736.00, battery level: 43.00
+vx, -85.38, vy, -55.29
+	Going from 736.00 to 720 with -0.03
+altitude: 736.00, battery level: 43.00
+vx, -79.45, vy, -66.04
+	Going from 736.00 to 720 with -0.03
+altitude: 727.00, battery level: 43.00
+vx, -78.58, vy, -71.57
+	Going from 727.00 to 720 with -0.01
+altitude: 697.00, battery level: 43.00
+vx, -76.53, vy, -55.73
+	Going from 697.00 to 720 with 0.04
+altitude: 699.00, battery level: 43.00
+vx, -81.16, vy, -48.83
+	Going from 699.00 to 720 with 0.04
+altitude: 688.00, battery level: 43.00
+vx, -77.04, vy, -56.17
+	Going from 688.00 to 720 with 0.05
+altitude: 688.00, battery level: 43.00
+vx, -65.02, vy, -36.83
+	Going from 688.00 to 720 with 0.05
+altitude: 733.00, battery level: 43.00
+vx, -43.43, vy, -35.51
+	Going from 733.00 to 720 with -0.02
+altitude: 724.00, battery level: 43.00
+vx, -74.09, vy, -57.00
+	Going from 724.00 to 720 with -0.01
+altitude: 709.00, battery level: 43.00
+vx, -89.48, vy, -77.50
+	Going from 709.00 to 720 with 0.02
+altitude: 709.00, battery level: 43.00
+vx, -99.87, vy, -79.99
+	Going from 709.00 to 720 with 0.02
+altitude: 714.00, battery level: 43.00
+vx, -105.74, vy, -77.61
+	Going from 714.00 to 720 with 0.01
+altitude: 714.00, battery level: 43.00
+vx, -114.84, vy, -76.37
+	Going from 714.00 to 720 with 0.01
+altitude: 714.00, battery level: 43.00
+vx, -114.84, vy, -76.37
+	Going from 714.00 to 720 with 0.01
+altitude: 714.00, battery level: 43.00
+vx, -114.84, vy, -76.37
+	Going from 714.00 to 720 with 0.01
+altitude: 699.00, battery level: 43.00
+vx, -143.01, vy, -77.25
+	Going from 699.00 to 720 with 0.04
+altitude: 743.00, battery level: 43.00
+vx, -163.10, vy, -97.20
+	Going from 743.00 to 720 with -0.04
+altitude: 702.00, battery level: 43.00
+vx, -163.32, vy, -103.99
+	Going from 702.00 to 720 with 0.03
+altitude: 702.00, battery level: 43.00
+vx, -163.32, vy, -103.99
+	Going from 702.00 to 720 with 0.03
+altitude: 702.00, battery level: 43.00
+vx, -163.32, vy, -103.99
+	Going from 702.00 to 720 with 0.03
+altitude: 702.00, battery level: 43.00
+vx, -163.32, vy, -103.99
+	Going from 702.00 to 720 with 0.03
+altitude: 721.00, battery level: 43.00
+vx, -151.11, vy, -108.21
+	Going from 721.00 to 720 with -0.00
+altitude: 674.00, battery level: 43.00
+vx, -159.83, vy, -91.40
+	Going from 674.00 to 720 with 0.08
+altitude: 685.00, battery level: 43.00
+vx, -167.35, vy, -105.22
+	Going from 685.00 to 720 with 0.06
+altitude: 691.00, battery level: 43.00
+vx, -160.04, vy, -120.03
+	Going from 691.00 to 720 with 0.05
+altitude: 683.00, battery level: 43.00
+vx, -159.27, vy, -133.16
+	Going from 683.00 to 720 with 0.06
+altitude: 683.00, battery level: 43.00
+vx, -159.27, vy, -133.16
+	Going from 683.00 to 720 with 0.06
+altitude: 685.00, battery level: 43.00
+vx, -160.68, vy, -135.07
+	Going from 685.00 to 720 with 0.06
+altitude: 678.00, battery level: 43.00
+vx, -187.94, vy, -134.43
+	Going from 678.00 to 720 with 0.07
+altitude: 678.00, battery level: 43.00
+vx, -185.49, vy, -139.79
+	Going from 678.00 to 720 with 0.07
+altitude: 674.00, battery level: 43.00
+vx, -183.66, vy, -132.91
+	Going from 674.00 to 720 with 0.08
+altitude: 674.00, battery level: 43.00
+vx, -184.27, vy, -127.66
+	Going from 674.00 to 720 with 0.08
+altitude: 674.00, battery level: 43.00
+vx, -184.27, vy, -127.66
+	Going from 674.00 to 720 with 0.08
+altitude: 674.00, battery level: 43.00
+vx, -184.27, vy, -127.66
+	Going from 674.00 to 720 with 0.08
+altitude: 663.00, battery level: 43.00
+vx, -176.43, vy, -150.85
+	Going from 663.00 to 720 with 0.10
+altitude: 671.00, battery level: 43.00
+vx, -163.80, vy, -148.32
+	Going from 671.00 to 720 with 0.08
+	Bottom Camera: Ahhh man!! We did not find the object :( :( 
+	Calling initImages
+	New preferred height: 433
+altitude: 671.00, battery level: 43.00
+vx, -198.78, vy, -129.16
+	Calling initImages
+	Going from 671.00 to 433 with -0.40
+	Bottom Camera: Ahhh man!! We did not find the object :( :( 
+	Calling initImages
+	New preferred height: 433
+altitude: 669.00, battery level: 43.00
+vx, -207.98, vy, -136.01
+	Calling initImages
+	Going from 669.00 to 433 with -0.39
+	Bottom Camera: Ahhh man!! We did not find the object :( :( 
+	Calling initImages
+	New preferred height: 433
+altitude: 669.00, battery level: 43.00
+vx, -207.98, vy, -136.01
+	Calling initImages
+	Going from 669.00 to 433 with -0.39
+	Bottom Camera: Ahhh man!! We did not find the object :( :( 
+	Calling initImages
+	New preferred height: 433
+altitude: 669.00, battery level: 43.00
+vx, -207.98, vy, -136.01
+	Calling initImages
+	Going from 669.00 to 433 with -0.39
+	Bottom Camera: Ahhh man!! We did not find the object :( :( 
+	Calling initImages
+	New preferred height: 433
+altitude: 682.00, battery level: 43.00
+vx, -198.14, vy, -136.07
+	Calling initImages
+	Going from 682.00 to 433 with -0.42
+	Bottom Camera: Ahhh man!! We did not find the object :( :( 
+	Calling initImages
+	New preferred height: 433
+altitude: 709.00, battery level: 43.00
+vx, -222.43, vy, -162.89
+	Calling initImages
+	Going from 709.00 to 433 with -0.46
+	Bottom Camera: Ahhh man!! We did not find the object :( :( 
+	Calling initImages
+	New preferred height: 433
+altitude: 729.00, battery level: 43.00
+vx, -188.58, vy, -158.30
+	Calling initImages
+	Going from 729.00 to 433 with -0.49
+	Bottom Camera: Ahhh man!! We did not find the object :( :( 
+	Calling initImages
+	New preferred height: 433
+altitude: 729.00, battery level: 43.00
+vx, -189.60, vy, -156.13
+	Calling initImages
+	Going from 729.00 to 433 with -0.49
+	Bottom Camera: Ahhh man!! We did not find the object :( :( 
+	Calling initImages
+	New preferred height: 433
+altitude: 729.00, battery level: 43.00
+vx, -189.60, vy, -156.13
+	Calling initImages
+	Going from 729.00 to 433 with -0.49
+	Bottom Camera: Ahhh man!! We did not find the object :( :( 
+	Calling initImages
+	New preferred height: 433
+altitude: 729.00, battery level: 43.00
+vx, -189.60, vy, -156.13
+	Calling initImages
+	Going from 729.00 to 433 with -0.49
+	Bottom Camera: Ahhh man!! We did not find the object :( :( 
+	Calling initImages
+	New preferred height: 433
+altitude: 725.00, battery level: 43.00
+vx, -200.20, vy, -163.37
+	Calling initImages
+	Going from 725.00 to 433 with -0.49
+	Bottom Camera: Ahhh man!! We did not find the object :( :( 
+	Calling initImages
+	New preferred height: 433
+altitude: 725.00, battery level: 43.00
+vx, -201.71, vy, -149.44
+	Front Camera: no point found, keep on turnin'!
+	Going from 725.00 to 433 with -0.49
+altitude: 758.00, battery level: 43.00
+vx, -221.48, vy, -174.38
+	Front Camera: no point found, keep on turnin'!
+	Going from 758.00 to 433 with -0.50
+altitude: 758.00, battery level: 43.00
+vx, -225.29, vy, -180.85
+	Front Camera: no point found, keep on turnin'!
+	Going from 758.00 to 433 with -0.50
+altitude: 758.00, battery level: 43.00
+vx, -225.29, vy, -180.85
+	Front Camera: no point found, keep on turnin'!
+	Going from 758.00 to 433 with -0.50
+altitude: 698.00, battery level: 43.00
+vx, -197.71, vy, -169.80
+	Front Camera: no point found, keep on turnin'!
+	Going from 698.00 to 433 with -0.44
+altitude: 707.00, battery level: 43.00
+vx, -178.06, vy, -167.29
+	Front Camera: no point found, keep on turnin'!
+	Going from 707.00 to 433 with -0.46
+altitude: 659.00, battery level: 43.00
+vx, -175.52, vy, -172.08
+	Front Camera: no point found, keep on turnin'!
+	Going from 659.00 to 433 with -0.38
+altitude: 659.00, battery level: 43.00
+vx, -175.52, vy, -172.08
+	Front Camera: no point found, keep on turnin'!
+	Going from 659.00 to 433 with -0.38
+altitude: 646.00, battery level: 43.00
+vx, -169.79, vy, -159.29
+	Front Camera: no point found, keep on turnin'!
+	Going from 646.00 to 433 with -0.36
+altitude: 638.00, battery level: 43.00
+vx, -171.66, vy, -148.95
+	Front Camera: no point found, keep on turnin'!
+	Going from 638.00 to 433 with -0.34
+altitude: 586.00, battery level: 44.00
+vx, -147.94, vy, -168.56
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 586.00, battery level: 44.00
+vx, -147.94, vy, -168.56
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 586.00, battery level: 44.00
+vx, -143.78, vy, -168.27
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 531.00, battery level: 44.00
+vx, -142.77, vy, -172.31
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 472.00, battery level: 44.00
+vx, -133.06, vy, -158.40
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 472.00, battery level: 44.00
+vx, -133.06, vy, -158.40
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 459.00, battery level: 44.00
+vx, -119.14, vy, -153.46
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 400.00, battery level: 44.00
+vx, -158.73, vy, -188.26
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 351.00, battery level: 44.00
+vx, -161.15, vy, -172.98
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 329.00, battery level: 44.00
+vx, -181.08, vy, -174.47
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 296.00, battery level: 44.00
+vx, -165.61, vy, -146.31
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 284.00, battery level: 44.00
+vx, -164.07, vy, -151.50
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 284.00, battery level: 44.00
+vx, -164.07, vy, -151.50
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+altitude: 241.00, battery level: 44.00
+vx, -150.76, vy, -120.41
+	Front Camera: point found: x is too much to the left!
+	Found height: 241
+altitude: 233.00, battery level: 44.00
+vx, -149.99, vy, -91.49
+	Front Camera: point found: x is too much to the left!
+	Found height: 233
+altitude: 233.00, battery level: 44.00
+vx, -149.99, vy, -91.49
+	Front Camera: point found: x is too much to the left!
+	Found height: 233
+altitude: 230.00, battery level: 44.00
+vx, -142.00, vy, -85.56
+	Front Camera: point found: x is too much to the left!
+	Found height: 230
+altitude: 230.00, battery level: 44.00
+vx, -157.35, vy, -92.96
+	Found height: 230
+	target in square, wait for it!
+altitude: 230.00, battery level: 44.00
+vx, -157.58, vy, -96.57
+	Found height: 230
+	target in square, wait for it!
+altitude: 230.00, battery level: 44.00
+vx, -157.58, vy, -96.57
+	Found height: 230
+	target in square, wait for it!
+altitude: 225.00, battery level: 44.00
+vx, -159.85, vy, -52.06
+	Found height: 225
+	target in square, wait for it!
+altitude: 227.00, battery level: 44.00
+vx, -188.29, vy, -57.67
+	Front Camera: no point found, keep on turnin'!
+	Going from 227.00 to 433 with 0.34
+altitude: 227.00, battery level: 44.00
+vx, -188.29, vy, -57.67
+	Front Camera: no point found, keep on turnin'!
+	Going from 227.00 to 433 with 0.34
+altitude: 227.00, battery level: 44.00
+vx, -188.29, vy, -57.67
+	Front Camera: no point found, keep on turnin'!
+	Going from 227.00 to 433 with 0.34
+altitude: 224.00, battery level: 44.00
+vx, -238.02, vy, -33.43
+	Front Camera: no point found, keep on turnin'!
+	Going from 224.00 to 433 with 0.35
+altitude: 239.00, battery level: 44.00
+vx, -253.77, vy, -39.85
+	Front Camera: no point found, keep on turnin'!
+	Going from 239.00 to 433 with 0.32
+altitude: 239.00, battery level: 44.00
+vx, -253.77, vy, -39.85
+	Front Camera: no point found, keep on turnin'!
+	Going from 239.00 to 433 with 0.32
+altitude: 226.00, battery level: 44.00
+vx, -258.01, vy, -29.10
+	Front Camera: no point found, keep on turnin'!
+	Going from 226.00 to 433 with 0.35
+altitude: 220.00, battery level: 44.00
+vx, -295.78, vy, -12.12
+	Front Camera: no point found, keep on turnin'!
+	Going from 220.00 to 433 with 0.36
+altitude: 225.00, battery level: 43.00
+vx, -298.87, vy, -13.85
+	Front Camera: no point found, keep on turnin'!
+	Going from 225.00 to 433 with 0.35
+altitude: 217.00, battery level: 43.00
+vx, -315.36, vy, -9.70
+	Front Camera: no point found, keep on turnin'!
+	Going from 217.00 to 433 with 0.36
+altitude: 212.00, battery level: 43.00
+vx, -308.83, vy, -14.91
+	Front Camera: no point found, keep on turnin'!
+	Going from 212.00 to 433 with 0.37
+altitude: 211.00, battery level: 43.00
+vx, -269.17, vy, -30.52
+	Front Camera: no point found, keep on turnin'!
+	Going from 211.00 to 433 with 0.37
+altitude: 215.00, battery level: 43.00
+vx, -258.42, vy, -38.76
+	Front Camera: no point found, keep on turnin'!
+	Going from 215.00 to 433 with 0.36
+altitude: 233.00, battery level: 43.00
+vx, -252.89, vy, -24.48
+	Front Camera: no point found, keep on turnin'!
+	Going from 233.00 to 433 with 0.33
+altitude: 247.00, battery level: 43.00
+vx, -263.94, vy, -23.83
+	Front Camera: no point found, keep on turnin'!
+	Going from 247.00 to 433 with 0.31
+altitude: 286.00, battery level: 43.00
+vx, -248.91, vy, -2.24
+	Front Camera: no point found, keep on turnin'!
+	Going from 286.00 to 433 with 0.25
+altitude: 310.00, battery level: 43.00
+vx, -238.89, vy, 11.47
+	Front Camera: point found: x is too much to the right!
+	Found height: 310
+altitude: 331.00, battery level: 43.00
+vx, -243.32, vy, 24.33
+	Front Camera: point found: x is too much to the right!
+	Found height: 331
+altitude: 353.00, battery level: 43.00
+vx, -242.69, vy, 32.84
+	Front Camera: point found: x is too much to the right!
+	Found height: 353
+altitude: 374.00, battery level: 43.00
+vx, -235.74, vy, 29.01
+	Front Camera: point found: x is too much to the right!
+	Found height: 374
+altitude: 404.00, battery level: 43.00
+vx, -241.85, vy, -25.57
+	Front Camera: point found: x is too much to the right!
+	Found height: 404
+altitude: 416.00, battery level: 43.00
+vx, -263.76, vy, -18.84
+	Front Camera: point found: x is too much to the right!
+	Found height: 416
+altitude: 453.00, battery level: 42.00
+vx, -300.66, vy, 4.41
+	Front Camera: point found: x is too much to the right!
+	Found height: 453
+altitude: 452.00, battery level: 42.00
+vx, -291.45, vy, 19.71
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too high
+altitude: 460.00, battery level: 42.00
+vx, -317.83, vy, 12.67
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too high
+altitude: 486.00, battery level: 42.00
+vx, -340.40, vy, -7.84
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too high
+altitude: 524.00, battery level: 42.00
+vx, -348.19, vy, -12.41
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too high
+altitude: 522.00, battery level: 42.00
+vx, -370.99, vy, -0.94
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too high
+altitude: 508.00, battery level: 42.00
+vx, -358.12, vy, 2.22
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too high
+altitude: 498.00, battery level: 42.00
+vx, -391.21, vy, 15.87
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too high
+altitude: 480.00, battery level: 42.00
+vx, -347.42, vy, -13.83
+	Front Camera: point found: x is too much to the right!
+	Found height: 480
+altitude: 476.00, battery level: 42.00
+vx, -352.06, vy, 17.69
+	Front Camera: point found: x is too much to the right!
+	Found height: 476
+altitude: 455.00, battery level: 42.00
+vx, -396.50, vy, 13.59
+	Front Camera: point found: x is too much to the right!
+	Found height: 455
+altitude: 450.00, battery level: 42.00
+vx, -384.73, vy, 23.98
+	Front Camera: point found: x is too much to the right!
+	Found height: 450
+altitude: 424.00, battery level: 42.00
+vx, -358.88, vy, 12.13
+	Front Camera: point found: x is too much to the right!
+	Found height: 424
+altitude: 407.00, battery level: 42.00
+vx, -364.62, vy, 22.00
+	Front Camera: point found: x is too much to the right!
+	Found height: 407
+altitude: 381.00, battery level: 42.00
+vx, -370.97, vy, 33.52
+	Front Camera: no point found, keep on turnin'!
+	Going from 381.00 to 433 with 0.09
+altitude: 370.00, battery level: 42.00
+vx, -358.65, vy, 46.66
+	Front Camera: no point found, keep on turnin'!
+	Going from 370.00 to 433 with 0.11
+altitude: 355.00, battery level: 42.00
+vx, -348.31, vy, 43.75
+	Front Camera: no point found, keep on turnin'!
+	Going from 355.00 to 433 with 0.13
+altitude: 334.00, battery level: 42.00
+vx, -341.24, vy, 55.93
+	Front Camera: no point found, keep on turnin'!
+	Going from 334.00 to 433 with 0.17
+altitude: 323.00, battery level: 42.00
+vx, -339.10, vy, 64.53
+	Front Camera: no point found, keep on turnin'!
+	Going from 323.00 to 433 with 0.18
+altitude: 316.00, battery level: 42.00
+vx, -327.55, vy, 64.19
+	Front Camera: no point found, keep on turnin'!
+	Going from 316.00 to 433 with 0.20
+altitude: 305.00, battery level: 42.00
+vx, -326.26, vy, 122.45
+	Front Camera: no point found, keep on turnin'!
+	Going from 305.00 to 433 with 0.21
+altitude: 301.00, battery level: 42.00
+vx, -332.08, vy, 126.47
+	Front Camera: no point found, keep on turnin'!
+	Going from 301.00 to 433 with 0.22
+altitude: 298.00, battery level: 42.00
+vx, -324.03, vy, 138.89
+	Front Camera: no point found, keep on turnin'!
+	Going from 298.00 to 433 with 0.23
+altitude: 298.00, battery level: 42.00
+vx, -322.37, vy, 147.84
+	Front Camera: no point found, keep on turnin'!
+	Going from 298.00 to 433 with 0.23
+altitude: 300.00, battery level: 42.00
+vx, -321.88, vy, 143.76
+	Front Camera: no point found, keep on turnin'!
+	Going from 300.00 to 433 with 0.22
+altitude: 300.00, battery level: 42.00
+vx, -319.11, vy, 147.97
+	Front Camera: no point found, keep on turnin'!
+	Going from 300.00 to 433 with 0.22
+altitude: 307.00, battery level: 42.00
+vx, -319.08, vy, 158.15
+	Front Camera: no point found, keep on turnin'!
+	Going from 307.00 to 433 with 0.21
+altitude: 311.00, battery level: 42.00
+vx, -313.93, vy, 137.44
+	Front Camera: no point found, keep on turnin'!
+	Going from 311.00 to 433 with 0.20
+altitude: 320.00, battery level: 42.00
+vx, -313.97, vy, 146.50
+	Front Camera: no point found, keep on turnin'!
+	Going from 320.00 to 433 with 0.19
+altitude: 344.00, battery level: 42.00
+vx, -301.08, vy, 124.02
+	Front Camera: no point found, keep on turnin'!
+	Going from 344.00 to 433 with 0.15
+altitude: 346.00, battery level: 42.00
+vx, -297.58, vy, 131.63
+	Front Camera: no point found, keep on turnin'!
+	Going from 346.00 to 433 with 0.15
+altitude: 351.00, battery level: 42.00
+vx, -274.38, vy, 171.36
+	Front Camera: no point found, keep on turnin'!
+	Going from 351.00 to 433 with 0.14
+altitude: 360.00, battery level: 42.00
+vx, -263.79, vy, 159.90
+	Front Camera: no point found, keep on turnin'!
+	Going from 360.00 to 433 with 0.12
+altitude: 369.00, battery level: 42.00
+vx, -284.83, vy, 133.43
+	Front Camera: no point found, keep on turnin'!
+	Going from 369.00 to 433 with 0.11
+altitude: 379.00, battery level: 42.00
+vx, -292.17, vy, 137.27
+	Front Camera: no point found, keep on turnin'!
+	Going from 379.00 to 433 with 0.09
+altitude: 383.00, battery level: 42.00
+vx, -291.67, vy, 148.76
+	Front Camera: no point found, keep on turnin'!
+	Going from 383.00 to 433 with 0.08
+altitude: 395.00, battery level: 42.00
+vx, -275.23, vy, 147.02
+	Front Camera: no point found, keep on turnin'!
+	Going from 395.00 to 433 with 0.06
+altitude: 403.00, battery level: 42.00
+vx, -255.52, vy, 203.15
+	Front Camera: point found: x is too much to the right!
+	Found height: 403
+altitude: 405.00, battery level: 42.00
+vx, -171.89, vy, 211.84
+	Front Camera: point found: x is too much to the right!
+	Found height: 405
+altitude: 409.00, battery level: 42.00
+vx, -167.96, vy, 229.40
+	Front Camera: point found: x is too much to the right!
+	Found height: 409
+altitude: 410.00, battery level: 42.00
+vx, -164.11, vy, 230.22
+	Front Camera: point found: x is too much to the right!
+	Found height: 410
+altitude: 413.00, battery level: 42.00
+vx, -160.16, vy, 258.42
+	Front Camera: point found: x is too much to the right!
+	Found height: 413
+altitude: 415.00, battery level: 42.00
+vx, -222.21, vy, 261.56
+	Front Camera: point found: x is too much to the right!
+	Found height: 415
+altitude: 416.00, battery level: 42.00
+vx, -172.74, vy, 221.00
+	Front Camera: point found: x is too much to the right!
+	Found height: 416
+altitude: 421.00, battery level: 42.00
+vx, -184.36, vy, 214.06
+	Front Camera: point found: x is too much to the right!
+	Found height: 421
+altitude: 422.00, battery level: 42.00
+vx, -144.65, vy, 226.27
+	Front Camera: point found: x is too much to the right!
+	Found height: 422
+altitude: 419.00, battery level: 42.00
+vx, -191.05, vy, 216.22
+	Front Camera: point found: x is too much to the right!
+	Found height: 419
+altitude: 419.00, battery level: 42.00
+vx, -154.42, vy, 245.27
+	Front Camera: point found: x is too much to the right!
+	Found height: 419
+altitude: 421.00, battery level: 42.00
+vx, -197.16, vy, 247.19
+	Front Camera: point found: x is too much to the right!
+	Found height: 421
+altitude: 416.00, battery level: 42.00
+vx, -190.86, vy, 238.10
+	Front Camera: point found: x is too much to the right!
+	Found height: 416
+altitude: 413.00, battery level: 42.00
+vx, -192.98, vy, 248.39
+	Front Camera: point found: x is too much to the right!
+	Found height: 413
+altitude: 413.00, battery level: 42.00
+vx, -172.81, vy, 249.71
+	Front Camera: point found: x is too much to the right!
+	Found height: 413
+altitude: 411.00, battery level: 42.00
+vx, -187.22, vy, 257.10
+	Front Camera: point found: x is too much to the right!
+	Found height: 411
+altitude: 414.00, battery level: 42.00
+vx, -205.38, vy, 229.84
+	Front Camera: point found: x is too much to the right!
+	Found height: 414
+altitude: 412.00, battery level: 42.00
+vx, -197.31, vy, 209.82
+	Found height: 412
+	target in square, wait for it!
+altitude: 409.00, battery level: 42.00
+vx, -188.64, vy, 195.70
+	Found height: 409
+	target in square, wait for it!
+altitude: 406.00, battery level: 42.00
+vx, -182.22, vy, 197.63
+	Found height: 406
+	target in square, wait for it!
+altitude: 405.00, battery level: 42.00
+vx, -185.14, vy, 191.04
+	Found height: 405
+	target in square, wait for it!
+altitude: 410.00, battery level: 42.00
+vx, -167.82, vy, 206.47
+	Found height: 410
+	target in square, wait for it!
+altitude: 403.00, battery level: 42.00
+vx, -190.93, vy, 180.82
+	Found height: 403
+	target in square, wait for it!
+altitude: 403.00, battery level: 42.00
+vx, -208.07, vy, 197.41
+	Found height: 403
+	target in square, wait for it!
+altitude: 404.00, battery level: 42.00
+vx, -208.94, vy, 180.14
+	Found height: 404
+	target in square, wait for it!
+altitude: 405.00, battery level: 42.00
+vx, -238.79, vy, 182.29
+	Found height: 405
+	target in square, wait for it!
+altitude: 407.00, battery level: 42.00
+vx, -211.44, vy, 174.49
+	Front Camera: point found: x is too much to the left!
+	Found height: 407
+altitude: 403.00, battery level: 42.00
+vx, -205.29, vy, 153.95
+	Front Camera: point found: x is too much to the left!
+	Found height: 403
+altitude: 402.00, battery level: 42.00
+vx, -188.59, vy, 171.78
+	Front Camera: point found: x is too much to the left!
+	Found height: 402
+altitude: 400.00, battery level: 42.00
+vx, -189.96, vy, 154.40
+	Front Camera: point found: x is too much to the left!
+	Found height: 400
+altitude: 402.00, battery level: 42.00
+vx, -182.27, vy, 146.67
+	Front Camera: point found: x is too much to the left!
+	Found height: 402
+altitude: 399.00, battery level: 42.00
+vx, -183.02, vy, 129.20
+	Front Camera: point found: x is too much to the left!
+	Found height: 399
+altitude: 396.00, battery level: 42.00
+vx, -184.64, vy, 107.12
+	Front Camera: point found: x is too much to the left!
+	Found height: 396
+altitude: 394.00, battery level: 42.00
+vx, -180.76, vy, 86.48
+	Front Camera: point found: x is too much to the left!
+	Found height: 394
+altitude: 393.00, battery level: 42.00
+vx, -166.59, vy, 77.77
+	Front Camera: point found: x is too much to the left!
+	Found height: 393
+altitude: 390.00, battery level: 42.00
+vx, -176.23, vy, 46.32
+	Front Camera: point found: x is too much to the left!
+	Found height: 390
+altitude: 392.00, battery level: 42.00
+vx, -159.03, vy, 40.76
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too low!
+altitude: 386.00, battery level: 42.00
+vx, -150.36, vy, 10.88
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too low!
+altitude: 380.00, battery level: 42.00
+vx, -154.40, vy, 7.95
+	Front Camera: point found: x is too much to the left!
+	Found height: 380
+altitude: 379.00, battery level: 42.00
+vx, -168.85, vy, -11.70
+	Front Camera: point found: y is too low!
+altitude: 378.00, battery level: 42.00
+vx, -172.90, vy, -67.86
+	Front Camera: point found: y is too low!
+altitude: 385.00, battery level: 42.00
+vx, -165.96, vy, -29.16
+	Front Camera: point found: y is too low!
+altitude: 387.00, battery level: 42.00
+vx, -170.30, vy, -42.51
+	Front Camera: point found: y is too low!
+altitude: 386.00, battery level: 42.00
+vx, -152.89, vy, -68.40
+	Front Camera: point found: y is too low!
+altitude: 397.00, battery level: 42.00
+vx, -157.89, vy, -65.77
+	Front Camera: point found: y is too low!
+altitude: 401.00, battery level: 42.00
+vx, -149.11, vy, -61.94
+	Front Camera: point found: y is too low!
+altitude: 421.00, battery level: 42.00
+vx, -140.08, vy, -73.13
+	Front Camera: point found: y is too low!
+altitude: 426.00, battery level: 42.00
+vx, -135.39, vy, -82.44
+	Found height: 426
+	target in square, wait for it!
+altitude: 434.00, battery level: 42.00
+vx, -139.23, vy, -99.21
+	Found height: 434
+	target in square, wait for it!
+altitude: 448.00, battery level: 42.00
+vx, -129.14, vy, -97.59
+	Found height: 448
+	target in square, wait for it!
+altitude: 466.00, battery level: 42.00
+vx, -115.75, vy, -101.39
+	Found height: 466
+	target in square, wait for it!
+altitude: 486.00, battery level: 43.00
+vx, -100.20, vy, -142.69
+	Found height: 486
+	target in square, wait for it!
+altitude: 529.00, battery level: 43.00
+vx, -85.89, vy, -170.86
+	Found height: 529
+	target in square, wait for it!
+altitude: 537.00, battery level: 43.00
+vx, -100.52, vy, -206.88
+	Found height: 537
+	Front Camera: flyin' towards the target!
+altitude: 587.00, battery level: 43.00
+vx, -79.54, vy, -124.71
+	Found height: 587
+	Front Camera: flyin' towards the target!
+altitude: 594.00, battery level: 43.00
+vx, -90.20, vy, -120.33
+	Found height: 594
+	Front Camera: flyin' towards the target!
+altitude: 604.00, battery level: 43.00
+vx, -44.82, vy, -85.25
+	Found height: 604
+	Front Camera: flyin' towards the target!
+altitude: 637.00, battery level: 43.00
+vx, -69.00, vy, -108.63
+	Found height: 637
+	Front Camera: flyin' towards the target!
+altitude: 622.00, battery level: 43.00
+vx, -87.03, vy, -100.68
+	Found height: 622
+	Front Camera: flyin' towards the target!
+altitude: 610.00, battery level: 43.00
+vx, -66.39, vy, -417.70
+	Found height: 610
+	Front Camera: flyin' towards the target!
+altitude: 619.00, battery level: 43.00
+vx, -60.30, vy, -421.05
+	Found height: 619
+	Front Camera: flyin' towards the target!
+altitude: 611.00, battery level: 43.00
+vx, -28.13, vy, -317.12
+	Found height: 611
+	Front Camera: flyin' towards the target!
+altitude: 600.00, battery level: 43.00
+vx, -26.51, vy, -283.63
+	Found height: 600
+	Front Camera: flyin' towards the target!
+altitude: 599.00, battery level: 43.00
+vx, -15.81, vy, -174.24
+	Found height: 599
+	Front Camera: flyin' towards the target!
+altitude: 599.00, battery level: 43.00
+vx, -6.49, vy, -188.05
+	Found height: 599
+	Front Camera: flyin' towards the target!
+altitude: 591.00, battery level: 43.00
+vx, 1.77, vy, -339.04
+	Found height: 591
+	Front Camera: flyin' towards the target!
+altitude: 625.00, battery level: 43.00
+vx, 22.87, vy, -195.20
+	Found height: 625
+	Front Camera: flyin' towards the target!
+altitude: 620.00, battery level: 43.00
+vx, 43.22, vy, -148.47
+	Found height: 620
+	Front Camera: flyin' towards the target!
+altitude: 619.00, battery level: 43.00
+vx, 31.15, vy, -189.79
+	Found height: 619
+	Front Camera: flyin' towards the target!
+altitude: 610.00, battery level: 43.00
+vx, 60.44, vy, 126.76
+	Found height: 610
+	Front Camera: flyin' towards the target!
+altitude: 610.00, battery level: 43.00
+vx, 41.84, vy, -112.21
+	Found height: 610
+	Front Camera: flyin' towards the target!
+altitude: 573.00, battery level: 43.00
+vx, 83.17, vy, -27.93
+	Found height: 573
+	Front Camera: flyin' towards the target!
+altitude: 567.00, battery level: 43.00
+vx, 73.76, vy, -77.59
+	Found height: 567
+	Front Camera: flyin' towards the target!
+altitude: 572.00, battery level: 43.00
+vx, 103.17, vy, -64.68
+	Front Camera: point found: x is too much to the right!
+	Found height: 572
+altitude: 555.00, battery level: 43.00
+vx, 113.96, vy, -84.90
+	Front Camera: point found: x is too much to the right!
+	Found height: 555
+altitude: 555.00, battery level: 43.00
+vx, 122.36, vy, -30.83
+	Front Camera: point found: x is too much to the right!
+	Found height: 555
+altitude: 543.00, battery level: 43.00
+vx, 132.63, vy, -57.81
+	Front Camera: point found: x is too much to the right!
+	Found height: 543
+altitude: 553.00, battery level: 43.00
+vx, 152.69, vy, -100.83
+	Front Camera: point found: x is too much to the right!
+	Found height: 553
+altitude: 547.00, battery level: 43.00
+vx, 204.24, vy, -117.60
+	Front Camera: point found: x is too much to the right!
+	Found height: 547
+altitude: 545.00, battery level: 43.00
+vx, 229.52, vy, -116.26
+	Front Camera: point found: x is too much to the right!
+	Found height: 545
+altitude: 551.00, battery level: 43.00
+vx, 193.81, vy, -110.24
+	Front Camera: point found: x is too much to the right!
+	Found height: 551
+altitude: 585.00, battery level: 43.00
+vx, 136.47, vy, -77.85
+	Front Camera: point found: x is too much to the right!
+	Found height: 585
+altitude: 606.00, battery level: 43.00
+vx, 137.59, vy, -69.17
+	Front Camera: point found: x is too much to the right!
+	Found height: 606
+altitude: 570.00, battery level: 43.00
+vx, 150.08, vy, -72.26
+	Front Camera: point found: x is too much to the right!
+	Found height: 570
+altitude: 566.00, battery level: 43.00
+vx, 98.37, vy, -91.71
+	Front Camera: point found: x is too much to the right!
+	Found height: 566
+altitude: 568.00, battery level: 43.00
+vx, 84.12, vy, -108.45
+	Front Camera: point found: x is too much to the right!
+	Found height: 568
+altitude: 566.00, battery level: 43.00
+vx, 72.67, vy, -143.25
+	Front Camera: point found: x is too much to the right!
+	Found height: 566
+altitude: 565.00, battery level: 43.00
+vx, 57.89, vy, -138.01
+	Found height: 565
+	Front Camera: flyin' towards the target!
+altitude: 560.00, battery level: 43.00
+vx, 39.52, vy, -128.95
+	Found height: 560
+	Front Camera: flyin' towards the target!
+altitude: 564.00, battery level: 43.00
+vx, 33.75, vy, -116.94
+	Found height: 564
+	Front Camera: flyin' towards the target!
+altitude: 561.00, battery level: 43.00
+vx, 75.37, vy, -97.25
+	Found height: 561
+	Front Camera: flyin' towards the target!
+altitude: 549.00, battery level: 43.00
+vx, 46.39, vy, -112.84
+	Found height: 549
+	Front Camera: flyin' towards the target!
+altitude: 560.00, battery level: 43.00
+vx, 44.96, vy, -115.11
+	Found height: 560
+	Front Camera: flyin' towards the target!
+altitude: 547.00, battery level: 43.00
+vx, 43.24, vy, -142.76
+	Found height: 547
+	Front Camera: flyin' towards the target!
+altitude: 541.00, battery level: 43.00
+vx, 47.64, vy, -146.15
+	Found height: 541
+	Front Camera: flyin' towards the target!
+altitude: 534.00, battery level: 43.00
+vx, 56.62, vy, -142.64
+	Found height: 534
+	Front Camera: flyin' towards the target!
+altitude: 533.00, battery level: 43.00
+vx, 79.34, vy, -153.45
+	Found height: 533
+	Front Camera: flyin' towards the target!
+altitude: 532.00, battery level: 43.00
+vx, 74.80, vy, -170.09
+	Found height: 532
+	Front Camera: flyin' towards the target!
+altitude: 531.00, battery level: 43.00
+vx, 105.12, vy, -187.14
+	Found height: 531
+	Front Camera: flyin' towards the target!
+altitude: 535.00, battery level: 43.00
+vx, 115.55, vy, -148.55
+	Front Camera: point found: x is too much to the right!
+	Found height: 535
+altitude: 533.00, battery level: 43.00
+vx, 136.06, vy, -97.42
+	Front Camera: point found: x is too much to the right!
+	Found height: 533
+altitude: 540.00, battery level: 42.00
+vx, 143.65, vy, -73.73
+	Front Camera: point found: x is too much to the right!
+	Found height: 540
+altitude: 540.00, battery level: 42.00
+vx, 147.16, vy, -54.06
+	Front Camera: point found: x is too much to the right!
+	Found height: 540
+altitude: 545.00, battery level: 42.00
+vx, 167.21, vy, -51.92
+	Front Camera: point found: x is too much to the right!
+	Found height: 545
+altitude: 555.00, battery level: 42.00
+vx, 232.02, vy, -14.85
+	Front Camera: point found: x is too much to the right!
+	Found height: 555
+altitude: 550.00, battery level: 42.00
+vx, 256.66, vy, 26.43
+	Front Camera: point found: x is too much to the right!
+	Found height: 550
+altitude: 550.00, battery level: 42.00
+vx, 247.04, vy, 8.43
+	Front Camera: point found: x is too much to the right!
+	Found height: 550
+altitude: 552.00, battery level: 42.00
+vx, 286.42, vy, 39.01
+	Front Camera: point found: x is too much to the right!
+	Found height: 552
+altitude: 559.00, battery level: 42.00
+vx, 193.36, vy, 50.38
+	Front Camera: point found: x is too much to the right!
+	Found height: 559
+altitude: 558.00, battery level: 42.00
+vx, 127.82, vy, 42.85
+	Front Camera: point found: x is too much to the right!
+	Found height: 558
+altitude: 557.00, battery level: 42.00
+vx, 104.77, vy, 72.82
+	Found height: 557
+	Front Camera: flyin' towards the target!
+altitude: 556.00, battery level: 42.00
+vx, 82.73, vy, 63.80
+	Found height: 556
+	Front Camera: flyin' towards the target!
+altitude: 559.00, battery level: 42.00
+vx, 66.29, vy, 73.79
+	Found height: 559
+	Front Camera: flyin' towards the target!
+altitude: 554.00, battery level: 42.00
+vx, 55.80, vy, 86.05
+	Found height: 554
+	Front Camera: flyin' towards the target!
+altitude: 554.00, battery level: 42.00
+vx, 77.94, vy, 88.90
+	Found height: 554
+	Front Camera: flyin' towards the target!
+altitude: 552.00, battery level: 42.00
+vx, 87.04, vy, 132.62
+	Found height: 552
+	Front Camera: flyin' towards the target!
+altitude: 549.00, battery level: 42.00
+vx, 60.98, vy, 118.04
+	Found height: 549
+	Front Camera: flyin' towards the target!
+altitude: 544.00, battery level: 42.00
+vx, 64.13, vy, 121.39
+	Found height: 544
+	Front Camera: flyin' towards the target!
+altitude: 543.00, battery level: 42.00
+vx, 191.89, vy, 376.27
+	Found height: 543
+	Front Camera: flyin' towards the target!
+altitude: 542.00, battery level: 42.00
+vx, 121.62, vy, 210.33
+	Found height: 542
+	Front Camera: flyin' towards the target!
+altitude: 542.00, battery level: 42.00
+vx, 93.28, vy, 161.16
+	Found height: 542
+	Front Camera: flyin' towards the target!
+altitude: 545.00, battery level: 42.00
+vx, 80.78, vy, 146.81
+	Found height: 545
+	Front Camera: flyin' towards the target!
+altitude: 573.00, battery level: 41.00
+vx, 84.81, vy, 157.05
+	Found height: 573
+	Front Camera: flyin' towards the target!
+altitude: 541.00, battery level: 41.00
+vx, 105.07, vy, 180.39
+	Found height: 541
+	Front Camera: flyin' towards the target!
+altitude: 543.00, battery level: 41.00
+vx, 97.61, vy, 164.51
+	Found height: 543
+	Front Camera: flyin' towards the target!
+altitude: 538.00, battery level: 41.00
+vx, 181.05, vy, 148.61
+	Front Camera: point found: x is too much to the left!
+	Found height: 538
+altitude: 538.00, battery level: 41.00
+vx, 173.40, vy, 151.17
+	Front Camera: point found: x is too much to the left!
+	Found height: 538
+altitude: 527.00, battery level: 41.00
+vx, 137.95, vy, 141.34
+	Front Camera: point found: x is too much to the left!
+	Found height: 527
+altitude: 529.00, battery level: 41.00
+vx, 112.02, vy, 85.22
+	Front Camera: point found: x is too much to the left!
+	Found height: 529
+altitude: 539.00, battery level: 41.00
+vx, 165.86, vy, 126.66
+	Front Camera: point found: x is too much to the left!
+	Found height: 539
+altitude: 538.00, battery level: 41.00
+vx, 217.04, vy, 127.04
+	Front Camera: point found: x is too much to the left!
+	Found height: 538
+altitude: 529.00, battery level: 41.00
+vx, 228.17, vy, 114.58
+	Front Camera: point found: x is too much to the left!
+	Found height: 529
+altitude: 530.00, battery level: 41.00
+vx, 208.85, vy, 107.36
+	Front Camera: point found: x is too much to the left!
+	Found height: 530
+altitude: 522.00, battery level: 41.00
+vx, 173.48, vy, 88.52
+	Front Camera: point found: x is too much to the left!
+	Found height: 522
+altitude: 520.00, battery level: 41.00
+vx, 136.44, vy, 71.31
+	Front Camera: point found: x is too much to the left!
+	Found height: 520
+altitude: 521.00, battery level: 41.00
+vx, 99.35, vy, 79.21
+	Front Camera: point found: x is too much to the left!
+	Found height: 521
+altitude: 520.00, battery level: 41.00
+vx, 81.63, vy, 52.42
+	Front Camera: point found: x is too much to the left!
+	Found height: 520
+altitude: 524.00, battery level: 41.00
+vx, 76.42, vy, 46.65
+	Front Camera: point found: x is too much to the left!
+	Found height: 524
+altitude: 529.00, battery level: 41.00
+vx, 62.73, vy, 56.85
+	Front Camera: point found: x is too much to the left!
+	Found height: 529
+altitude: 526.00, battery level: 41.00
+vx, 68.49, vy, 78.85
+	Front Camera: point found: x is too much to the left!
+	Found height: 526
+altitude: 532.00, battery level: 41.00
+vx, 61.80, vy, 43.73
+	Front Camera: point found: x is too much to the left!
+	Found height: 532
+altitude: 532.00, battery level: 41.00
+vx, 33.64, vy, 10.94
+	Front Camera: point found: x is too much to the left!
+	Found height: 532
+altitude: 533.00, battery level: 41.00
+vx, 19.46, vy, 12.75
+	Front Camera: point found: x is too much to the left!
+	Found height: 533
+altitude: 537.00, battery level: 41.00
+vx, 14.76, vy, -0.81
+	Front Camera: point found: x is too much to the left!
+	Found height: 537
+altitude: 534.00, battery level: 41.00
+vx, 5.56, vy, -5.91
+	Front Camera: point found: x is too much to the left!
+	Found height: 534
+altitude: 536.00, battery level: 41.00
+vx, 7.74, vy, -1.64
+	Found height: 536
+	Front Camera: flyin' towards the target!
+altitude: 535.00, battery level: 41.00
+vx, 10.98, vy, -7.18
+	Found height: 535
+	Front Camera: flyin' towards the target!
+altitude: 536.00, battery level: 41.00
+vx, -2.15, vy, -12.38
+	Found height: 536
+	Front Camera: flyin' towards the target!
+altitude: 540.00, battery level: 41.00
+vx, 15.08, vy, -19.96
+	Found height: 540
+	Front Camera: flyin' towards the target!
+altitude: 536.00, battery level: 41.00
+vx, 2.91, vy, -18.32
+	Found height: 536
+	Front Camera: flyin' towards the target!
+altitude: 531.00, battery level: 41.00
+vx, -2.09, vy, -4.76
+	Found height: 531
+	Front Camera: flyin' towards the target!
+altitude: 532.00, battery level: 41.00
+vx, 34.86, vy, -20.70
+	Found height: 532
+	Front Camera: flyin' towards the target!
+altitude: 533.00, battery level: 41.00
+vx, 43.47, vy, -27.98
+	Found height: 533
+	Front Camera: flyin' towards the target!
+altitude: 531.00, battery level: 41.00
+vx, 66.61, vy, -19.89
+	Found height: 531
+	Front Camera: flyin' towards the target!
+altitude: 531.00, battery level: 41.00
+vx, 75.59, vy, -34.90
+	Found height: 531
+	Front Camera: flyin' towards the target!
+altitude: 537.00, battery level: 41.00
+vx, 89.63, vy, -33.68
+	Found height: 537
+	Front Camera: flyin' towards the target!
+altitude: 526.00, battery level: 41.00
+vx, 100.60, vy, -38.27
+	Found height: 526
+	Front Camera: flyin' towards the target!
+altitude: 527.00, battery level: 41.00
+vx, 122.21, vy, -28.17
+	Found height: 527
+	Front Camera: flyin' towards the target!
+altitude: 525.00, battery level: 41.00
+vx, 137.16, vy, -21.84
+	Found height: 525
+	Front Camera: flyin' towards the target!
+altitude: 523.00, battery level: 41.00
+vx, 154.02, vy, -16.27
+	Found height: 523
+	Front Camera: flyin' towards the target!
+altitude: 524.00, battery level: 41.00
+vx, 176.60, vy, -39.13
+	Found height: 524
+	Front Camera: flyin' towards the target!
+altitude: 523.00, battery level: 41.00
+vx, 204.01, vy, -67.69
+	Found height: 523
+	Front Camera: flyin' towards the target!
+altitude: 521.00, battery level: 41.00
+vx, 245.35, vy, -7.86
+	Found height: 521
+	Front Camera: flyin' towards the target!
+altitude: 524.00, battery level: 41.00
+vx, 235.57, vy, -21.97
+	Found height: 524
+	Front Camera: flyin' towards the target!
+altitude: 526.00, battery level: 41.00
+vx, 232.35, vy, -17.36
+	Found height: 526
+	Front Camera: flyin' towards the target!
+altitude: 527.00, battery level: 41.00
+vx, 252.92, vy, 4.58
+	Found height: 527
+	Front Camera: flyin' towards the target!
+altitude: 532.00, battery level: 41.00
+vx, 263.44, vy, 11.10
+	Found height: 532
+	Front Camera: flyin' towards the target!
+altitude: 527.00, battery level: 41.00
+vx, 267.64, vy, 3.54
+	Found height: 527
+	Front Camera: flyin' towards the target!
+altitude: 532.00, battery level: 41.00
+vx, 302.09, vy, 13.01
+	Found height: 532
+	Front Camera: flyin' towards the target!
+altitude: 537.00, battery level: 41.00
+vx, 347.51, vy, 9.17
+	Found height: 537
+	Front Camera: flyin' towards the target!
+altitude: 535.00, battery level: 41.00
+vx, 397.99, vy, 26.59
+	Found height: 535
+	Front Camera: flyin' towards the target!
+altitude: 545.00, battery level: 41.00
+vx, 396.34, vy, 33.06
+	Found height: 545
+	Front Camera: flyin' towards the target!
+altitude: 543.00, battery level: 41.00
+vx, 405.93, vy, 47.88
+	Found height: 543
+	Front Camera: flyin' towards the target!
+altitude: 533.00, battery level: 41.00
+vx, 435.89, vy, 66.90
+	Found height: 533
+	Front Camera: flyin' towards the target!
+altitude: 535.00, battery level: 41.00
+vx, 411.36, vy, 69.61
+	Found height: 535
+	Front Camera: flyin' towards the target!
+altitude: 538.00, battery level: 41.00
+vx, 429.99, vy, 52.89
+	Found height: 538
+	Front Camera: flyin' towards the target!
+altitude: 543.00, battery level: 41.00
+vx, 432.32, vy, 89.86
+	Found height: 543
+	Front Camera: flyin' towards the target!
+altitude: 538.00, battery level: 41.00
+vx, 440.02, vy, 120.51
+	Found height: 538
+	Front Camera: flyin' towards the target!
+altitude: 542.00, battery level: 41.00
+vx, 458.19, vy, 132.93
+	Found height: 542
+	Front Camera: flyin' towards the target!
+altitude: 537.00, battery level: 41.00
+vx, 449.68, vy, 143.67
+	Found height: 537
+	Front Camera: flyin' towards the target!
+altitude: 538.00, battery level: 41.00
+vx, 456.69, vy, 162.87
+	Found height: 538
+	Front Camera: flyin' towards the target!
+altitude: 535.00, battery level: 41.00
+vx, 461.08, vy, 201.53
+	Found height: 535
+	Front Camera: flyin' towards the target!
+altitude: 536.00, battery level: 41.00
+vx, 454.72, vy, 206.80
+	Found height: 536
+	Front Camera: flyin' towards the target!
+altitude: 543.00, battery level: 41.00
+vx, 441.55, vy, 215.77
+	Found height: 543
+	Front Camera: flyin' towards the target!
+altitude: 534.00, battery level: 41.00
+vx, 483.96, vy, 239.94
+	Front Camera: point found: x is too much to the left!
+	Found height: 534
+altitude: 545.00, battery level: 41.00
+vx, 476.45, vy, 234.29
+	Front Camera: point found: x is too much to the left!
+	Found height: 545
+altitude: 534.00, battery level: 41.00
+vx, 468.48, vy, 234.46
+	Front Camera: point found: x is too much to the left!
+	Found height: 534
+altitude: 530.00, battery level: 41.00
+vx, 467.52, vy, 228.14
+	Front Camera: point found: x is too much to the left!
+	Found height: 530
+altitude: 564.00, battery level: 41.00
+vx, 475.50, vy, 232.52
+	Front Camera: point found: x is too much to the left!
+	Found height: 564
+altitude: 534.00, battery level: 41.00
+vx, 505.13, vy, 208.93
+	Front Camera: point found: x is too much to the left!
+	Found height: 534
+altitude: 536.00, battery level: 41.00
+vx, 535.57, vy, 186.86
+	Switching cameras
+	Calling initImages
+	New preferred height: 834
+altitude: 545.00, battery level: 41.00
+vx, 458.29, vy, 158.28
+	Calling initImages
+	Switching cameras
+	Calling initImages
+	New preferred height: 834
+altitude: 561.00, battery level: 41.00
+vx, 433.65, vy, 142.13
+	Calling initImages
+	Switching cameras
+	Calling initImages
+	New preferred height: 834
+altitude: 545.00, battery level: 41.00
+vx, 383.73, vy, 130.76
+	Going from 545.00 to 834 with 0.48
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 546.00, battery level: 41.00
+vx, 362.57, vy, 154.86
+	Going from 546.00 to 834 with 0.48
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 546.00, battery level: 41.00
+vx, 364.06, vy, 145.94
+	Going from 546.00 to 834 with 0.48
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 548.00, battery level: 41.00
+vx, 355.60, vy, 111.85
+	Going from 548.00 to 834 with 0.48
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 545.00, battery level: 41.00
+vx, 314.20, vy, 87.39
+	Going from 545.00 to 834 with 0.48
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 545.00, battery level: 41.00
+vx, 273.56, vy, 72.88
+	Going from 545.00 to 834 with 0.48
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 543.00, battery level: 41.00
+vx, 254.49, vy, 57.63
+	Going from 543.00 to 834 with 0.49
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 540.00, battery level: 41.00
+vx, 231.70, vy, 51.55
+	Going from 540.00 to 834 with 0.49
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 532.00, battery level: 41.00
+vx, 205.96, vy, 46.92
+	Going from 532.00 to 834 with 0.50
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 532.00, battery level: 41.00
+vx, 186.51, vy, 49.43
+	Going from 532.00 to 834 with 0.50
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 532.00, battery level: 41.00
+vx, 173.41, vy, 46.55
+	Going from 532.00 to 834 with 0.50
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 538.00, battery level: 41.00
+vx, 163.75, vy, 33.96
+	Going from 538.00 to 834 with 0.49
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 533.00, battery level: 41.00
+vx, 196.38, vy, 20.40
+	Going from 533.00 to 834 with 0.50
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 535.00, battery level: 41.00
+vx, 188.92, vy, 3.72
+	Going from 535.00 to 834 with 0.50
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 538.00, battery level: 41.00
+vx, 178.57, vy, -7.32
+	Going from 538.00 to 834 with 0.49
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 538.00, battery level: 41.00
+vx, 173.13, vy, -18.11
+	Going from 538.00 to 834 with 0.49
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 541.00, battery level: 41.00
+vx, 179.91, vy, -23.40
+	Going from 541.00 to 834 with 0.49
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 551.00, battery level: 41.00
+vx, 178.31, vy, -16.22
+	Going from 551.00 to 834 with 0.47
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 562.00, battery level: 41.00
+vx, 181.60, vy, -5.09
+	Going from 562.00 to 834 with 0.45
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 579.00, battery level: 41.00
+vx, 191.41, vy, -4.68
+	Going from 579.00 to 834 with 0.43
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 592.00, battery level: 41.00
+vx, 204.08, vy, -26.08
+	Going from 592.00 to 834 with 0.40
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 592.00, battery level: 41.00
+vx, 182.20, vy, -35.37
+	Going from 592.00 to 834 with 0.40
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 607.00, battery level: 41.00
+vx, 173.42, vy, -47.52
+	Going from 607.00 to 834 with 0.38
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 626.00, battery level: 41.00
+vx, 155.44, vy, -64.60
+	Going from 626.00 to 834 with 0.35
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 626.00, battery level: 41.00
+vx, 143.47, vy, -61.32
+	Going from 626.00 to 834 with 0.35
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 655.00, battery level: 41.00
+vx, 152.17, vy, -67.09
+	Going from 655.00 to 834 with 0.30
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 655.00, battery level: 41.00
+vx, 160.31, vy, -65.79
+	Going from 655.00 to 834 with 0.30
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 678.00, battery level: 41.00
+vx, 165.37, vy, -69.10
+	Going from 678.00 to 834 with 0.26
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 688.00, battery level: 41.00
+vx, 150.03, vy, -66.67
+	Going from 688.00 to 834 with 0.24
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 701.00, battery level: 41.00
+vx, 140.02, vy, -53.40
+	Going from 701.00 to 834 with 0.22
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 701.00, battery level: 41.00
+vx, 128.33, vy, -53.65
+	Going from 701.00 to 834 with 0.22
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 724.00, battery level: 41.00
+vx, 133.49, vy, -57.12
+	Going from 724.00 to 834 with 0.18
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 741.00, battery level: 41.00
+vx, 137.02, vy, -67.80
+	Going from 741.00 to 834 with 0.15
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 741.00, battery level: 41.00
+vx, 136.69, vy, -75.73
+	Going from 741.00 to 834 with 0.15
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 755.00, battery level: 41.00
+vx, 134.43, vy, -75.45
+	Going from 755.00 to 834 with 0.13
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 762.00, battery level: 41.00
+vx, 129.82, vy, -73.14
+	Going from 762.00 to 834 with 0.12
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 770.00, battery level: 41.00
+vx, 129.74, vy, -85.04
+	Going from 770.00 to 834 with 0.11
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 770.00, battery level: 41.00
+vx, 142.76, vy, -90.97
+	Going from 770.00 to 834 with 0.11
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 779.00, battery level: 41.00
+vx, 142.45, vy, -86.48
+	Going from 779.00 to 834 with 0.09
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 792.00, battery level: 41.00
+vx, 128.24, vy, -73.44
+	Going from 792.00 to 834 with 0.07
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 798.00, battery level: 41.00
+vx, 113.28, vy, -65.55
+	Going from 798.00 to 834 with 0.06
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 798.00, battery level: 41.00
+vx, 106.20, vy, -61.80
+	Going from 798.00 to 834 with 0.06
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 805.00, battery level: 41.00
+vx, 103.47, vy, -60.89
+	Going from 805.00 to 834 with 0.05
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 817.00, battery level: 41.00
+vx, 104.15, vy, -48.96
+	Going from 817.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 817.00, battery level: 41.00
+vx, 118.39, vy, -51.33
+	Going from 817.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 817.00, battery level: 41.00
+vx, 118.44, vy, -41.42
+	Going from 817.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 819.00, battery level: 41.00
+vx, 107.41, vy, -62.80
+	Going from 819.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 830.00, battery level: 41.00
+vx, 113.75, vy, -48.15
+	Going from 830.00 to 834 with 0.01
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 819.00, battery level: 41.00
+vx, 110.93, vy, -27.59
+	Going from 819.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 821.00, battery level: 41.00
+vx, 125.81, vy, -23.79
+	Going from 821.00 to 834 with 0.02
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 821.00, battery level: 41.00
+vx, 118.64, vy, -34.53
+	Going from 821.00 to 834 with 0.02
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 817.00, battery level: 41.00
+vx, 99.53, vy, -28.15
+	Going from 817.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 819.00, battery level: 41.00
+vx, 102.91, vy, -35.20
+	Going from 819.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 814.00, battery level: 41.00
+vx, 113.67, vy, -41.71
+	Going from 814.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 814.00, battery level: 41.00
+vx, 123.89, vy, -32.13
+	Going from 814.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 815.00, battery level: 41.00
+vx, 121.68, vy, -34.80
+	Going from 815.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 814.00, battery level: 41.00
+vx, 113.31, vy, -43.50
+	Going from 814.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 814.00, battery level: 41.00
+vx, 120.90, vy, -44.76
+	Going from 814.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 810.00, battery level: 41.00
+vx, 128.22, vy, -35.72
+	Going from 810.00 to 834 with 0.04
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 808.00, battery level: 41.00
+vx, 124.13, vy, -44.95
+	Going from 808.00 to 834 with 0.04
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 808.00, battery level: 41.00
+vx, 121.01, vy, -39.06
+	Going from 808.00 to 834 with 0.04
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 808.00, battery level: 41.00
+vx, 105.11, vy, -30.74
+	Going from 808.00 to 834 with 0.04
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 805.00, battery level: 41.00
+vx, 100.65, vy, -38.31
+	Going from 805.00 to 834 with 0.05
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 805.00, battery level: 41.00
+vx, 94.10, vy, -38.91
+	Going from 805.00 to 834 with 0.05
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 808.00, battery level: 41.00
+vx, 85.85, vy, -39.76
+	Going from 808.00 to 834 with 0.04
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 805.00, battery level: 41.00
+vx, 76.98, vy, -46.10
+	Going from 805.00 to 834 with 0.05
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 805.00, battery level: 41.00
+vx, 67.31, vy, -51.69
+	Going from 805.00 to 834 with 0.05
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 805.00, battery level: 41.00
+vx, 73.47, vy, -52.53
+	Going from 805.00 to 834 with 0.05
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 808.00, battery level: 41.00
+vx, 72.14, vy, -54.84
+	Going from 808.00 to 834 with 0.04
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 808.00, battery level: 41.00
+vx, 71.74, vy, -38.51
+	Going from 808.00 to 834 with 0.04
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 806.00, battery level: 41.00
+vx, 70.66, vy, -38.33
+	Going from 806.00 to 834 with 0.05
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 808.00, battery level: 41.00
+vx, 63.97, vy, -50.77
+	Going from 808.00 to 834 with 0.04
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 809.00, battery level: 41.00
+vx, 63.12, vy, -58.68
+	Going from 809.00 to 834 with 0.04
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 809.00, battery level: 41.00
+vx, 62.17, vy, -65.78
+	Going from 809.00 to 834 with 0.04
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 813.00, battery level: 41.00
+vx, 62.32, vy, -55.47
+	Going from 813.00 to 834 with 0.04
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 811.00, battery level: 41.00
+vx, 51.83, vy, -55.03
+	Going from 811.00 to 834 with 0.04
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 809.00, battery level: 41.00
+vx, 54.52, vy, -72.65
+	Going from 809.00 to 834 with 0.04
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 809.00, battery level: 41.00
+vx, 64.88, vy, -92.78
+	Going from 809.00 to 834 with 0.04
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 807.00, battery level: 41.00
+vx, 69.27, vy, -110.15
+	Going from 807.00 to 834 with 0.05
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 807.00, battery level: 41.00
+vx, 77.56, vy, -103.27
+	Going from 807.00 to 834 with 0.05
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 811.00, battery level: 41.00
+vx, 75.14, vy, -86.55
+	Going from 811.00 to 834 with 0.04
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 828.00, battery level: 41.00
+vx, 64.47, vy, -64.21
+	Going from 828.00 to 834 with 0.01
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 808.00, battery level: 41.00
+vx, 57.69, vy, -70.15
+	Going from 808.00 to 834 with 0.04
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 822.00, battery level: 41.00
+vx, 71.26, vy, -72.34
+	Going from 822.00 to 834 with 0.02
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 817.00, battery level: 41.00
+vx, 82.25, vy, -57.45
+	Going from 817.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 817.00, battery level: 41.00
+vx, 98.77, vy, -66.99
+	Going from 817.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 824.00, battery level: 41.00
+vx, 66.23, vy, -58.51
+	Going from 824.00 to 834 with 0.02
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 828.00, battery level: 41.00
+vx, 71.20, vy, -76.67
+	Going from 828.00 to 834 with 0.01
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 833.00, battery level: 41.00
+vx, 70.31, vy, -71.09
+	Going from 833.00 to 834 with 0.00
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 833.00, battery level: 41.00
+vx, 78.34, vy, -68.57
+	Going from 833.00 to 834 with 0.00
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 846.00, battery level: 41.00
+vx, 86.03, vy, -46.27
+	Going from 846.00 to 834 with -0.02
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 827.00, battery level: 41.00
+vx, 85.65, vy, -56.47
+	Going from 827.00 to 834 with 0.01
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 827.00, battery level: 41.00
+vx, 78.49, vy, -59.50
+	Going from 827.00 to 834 with 0.01
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 824.00, battery level: 41.00
+vx, 79.00, vy, -72.93
+	Going from 824.00 to 834 with 0.02
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 818.00, battery level: 41.00
+vx, 86.28, vy, -59.41
+	Going from 818.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 814.00, battery level: 41.00
+vx, 88.53, vy, -53.85
+	Going from 814.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 814.00, battery level: 41.00
+vx, 58.93, vy, -53.36
+	Going from 814.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 815.00, battery level: 41.00
+vx, 96.52, vy, -61.41
+	Going from 815.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 820.00, battery level: 41.00
+vx, 89.86, vy, -72.60
+	Going from 820.00 to 834 with 0.02
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 842.00, battery level: 41.00
+vx, 85.31, vy, -78.54
+	Going from 842.00 to 834 with -0.01
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 825.00, battery level: 40.00
+vx, 99.56, vy, -63.45
+	Going from 825.00 to 834 with 0.02
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 825.00, battery level: 40.00
+vx, 84.04, vy, -52.94
+	Going from 825.00 to 834 with 0.02
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 828.00, battery level: 40.00
+vx, 87.16, vy, -32.79
+	Going from 828.00 to 834 with 0.01
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 830.00, battery level: 40.00
+vx, 101.12, vy, -35.01
+	Going from 830.00 to 834 with 0.01
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 813.00, battery level: 40.00
+vx, 105.99, vy, -38.47
+	Going from 813.00 to 834 with 0.04
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 813.00, battery level: 40.00
+vx, 108.34, vy, -29.36
+	Going from 813.00 to 834 with 0.04
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 813.00, battery level: 40.00
+vx, 86.12, vy, -41.42
+	Going from 813.00 to 834 with 0.04
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 817.00, battery level: 40.00
+vx, 86.71, vy, -42.96
+	Going from 817.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 802.00, battery level: 40.00
+vx, 94.16, vy, -47.07
+	Going from 802.00 to 834 with 0.05
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 802.00, battery level: 40.00
+vx, 103.47, vy, -48.54
+	Going from 802.00 to 834 with 0.05
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 801.00, battery level: 40.00
+vx, 107.10, vy, -41.46
+	Going from 801.00 to 834 with 0.06
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 800.00, battery level: 40.00
+vx, 92.91, vy, -42.09
+	Going from 800.00 to 834 with 0.06
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 796.00, battery level: 40.00
+vx, 83.72, vy, -50.16
+	Going from 796.00 to 834 with 0.06
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 798.00, battery level: 40.00
+vx, 83.58, vy, -55.16
+	Going from 798.00 to 834 with 0.06
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 798.00, battery level: 40.00
+vx, 101.98, vy, -49.37
+	Going from 798.00 to 834 with 0.06
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 797.00, battery level: 40.00
+vx, 146.63, vy, -48.47
+	Going from 797.00 to 834 with 0.06
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 799.00, battery level: 40.00
+vx, 157.93, vy, -41.92
+	Going from 799.00 to 834 with 0.06
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 798.00, battery level: 40.00
+vx, 134.72, vy, -31.75
+	Going from 798.00 to 834 with 0.06
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 798.00, battery level: 40.00
+vx, 116.42, vy, -24.20
+	Going from 798.00 to 834 with 0.06
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 805.00, battery level: 40.00
+vx, 116.57, vy, -29.21
+	Going from 805.00 to 834 with 0.05
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 804.00, battery level: 40.00
+vx, 114.67, vy, -43.12
+	Going from 804.00 to 834 with 0.05
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 806.00, battery level: 40.00
+vx, 115.51, vy, -49.60
+	Going from 806.00 to 834 with 0.05
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 806.00, battery level: 40.00
+vx, 115.47, vy, -46.38
+	Going from 806.00 to 834 with 0.05
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 805.00, battery level: 40.00
+vx, 114.18, vy, -46.95
+	Going from 805.00 to 834 with 0.05
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 808.00, battery level: 40.00
+vx, 120.91, vy, -42.46
+	Going from 808.00 to 834 with 0.04
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 808.00, battery level: 40.00
+vx, 123.44, vy, -32.94
+	Going from 808.00 to 834 with 0.04
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 811.00, battery level: 40.00
+vx, 120.71, vy, -27.22
+	Going from 811.00 to 834 with 0.04
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 813.00, battery level: 40.00
+vx, 121.65, vy, -28.99
+	Going from 813.00 to 834 with 0.04
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 815.00, battery level: 40.00
+vx, 116.49, vy, -46.24
+	Going from 815.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 815.00, battery level: 40.00
+vx, 114.48, vy, -37.71
+	Going from 815.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 815.00, battery level: 40.00
+vx, 134.72, vy, -36.87
+	Going from 815.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 819.00, battery level: 40.00
+vx, 134.61, vy, -43.45
+	Going from 819.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 819.00, battery level: 40.00
+vx, 131.91, vy, -33.18
+	Going from 819.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 819.00, battery level: 40.00
+vx, 144.27, vy, -23.24
+	Going from 819.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 816.00, battery level: 40.00
+vx, 151.27, vy, -30.95
+	Going from 816.00 to 834 with 0.03
+	Bottom Camera: no point found, keep on flyin'!
+altitude: 811.00, battery level: 40.00
+vx, 166.46, vy, -61.90
+	Going from 811.00 to 834 with 0.04
+	Bottom Camera: Ahhh man!! We did not find the object :( :( 
+	Calling initImages
+	New preferred height: 534
+altitude: 812.00, battery level: 40.00
+vx, 170.94, vy, -38.09
+	Calling initImages
+	Going from 812.00 to 534 with -0.46
+	Bottom Camera: Ahhh man!! We did not find the object :( :( 
+	Calling initImages
+	New preferred height: 534
+altitude: 812.00, battery level: 40.00
+vx, 170.10, vy, -35.78
+	Calling initImages
+	Going from 812.00 to 534 with -0.46
+	Bottom Camera: Ahhh man!! We did not find the object :( :( 
+	Calling initImages
+	New preferred height: 534
+altitude: 812.00, battery level: 40.00
+vx, 142.84, vy, -47.84
+	Calling initImages
+	Going from 812.00 to 534 with -0.46
+	Bottom Camera: Ahhh man!! We did not find the object :( :( 
+	Calling initImages
+	New preferred height: 534
+altitude: 829.00, battery level: 40.00
+vx, 142.58, vy, -46.33
+	Calling initImages
+	Going from 829.00 to 534 with -0.49
+	Bottom Camera: Ahhh man!! We did not find the object :( :( 
+	Calling initImages
+	New preferred height: 534
+altitude: 820.00, battery level: 40.00
+vx, 141.79, vy, -53.38
+	Calling initImages
+	Going from 820.00 to 534 with -0.48
+	Bottom Camera: Ahhh man!! We did not find the object :( :( 
+	Calling initImages
+	New preferred height: 534
+altitude: 815.00, battery level: 40.00
+vx, 152.79, vy, -57.37
+	Calling initImages
+	Going from 815.00 to 534 with -0.47
+	Bottom Camera: Ahhh man!! We did not find the object :( :( 
+	Calling initImages
+	New preferred height: 534
+altitude: 815.00, battery level: 40.00
+vx, 186.57, vy, -46.50
+	Front Camera: point found: x is too much to the left!
+	Found height: 815
+altitude: 833.00, battery level: 40.00
+vx, 223.18, vy, -34.81
+	Front Camera: no point found, keep on turnin'!
+	Going from 833.00 to 534 with -0.50
+altitude: 833.00, battery level: 40.00
+vx, 230.99, vy, -59.14
+	Front Camera: no point found, keep on turnin'!
+	Going from 833.00 to 534 with -0.50
+altitude: 858.00, battery level: 40.00
+vx, 168.97, vy, -60.48
+	Front Camera: no point found, keep on turnin'!
+	Going from 858.00 to 534 with -0.50
+altitude: 858.00, battery level: 40.00
+vx, 148.22, vy, -67.09
+	Front Camera: no point found, keep on turnin'!
+	Going from 858.00 to 534 with -0.50
+altitude: 850.00, battery level: 40.00
+vx, 127.18, vy, -69.37
+	Front Camera: no point found, keep on turnin'!
+	Going from 850.00 to 534 with -0.50
+altitude: 850.00, battery level: 40.00
+vx, 113.36, vy, -59.42
+	Front Camera: no point found, keep on turnin'!
+	Going from 850.00 to 534 with -0.50
+altitude: 860.00, battery level: 40.00
+vx, 116.62, vy, -69.86
+	Front Camera: no point found, keep on turnin'!
+	Going from 860.00 to 534 with -0.50
+altitude: 860.00, battery level: 40.00
+vx, 120.38, vy, -113.32
+	Front Camera: no point found, keep on turnin'!
+	Going from 860.00 to 534 with -0.50
+altitude: 843.00, battery level: 40.00
+vx, 100.49, vy, -141.73
+	Front Camera: no point found, keep on turnin'!
+	Going from 843.00 to 534 with -0.50
+altitude: 790.00, battery level: 40.00
+vx, 128.99, vy, -140.05
+	Front Camera: no point found, keep on turnin'!
+	Going from 790.00 to 534 with -0.43
+altitude: 749.00, battery level: 40.00
+vx, 149.71, vy, -189.01
+	Front Camera: no point found, keep on turnin'!
+	Going from 749.00 to 534 with -0.36
+altitude: 667.00, battery level: 40.00
+vx, 150.24, vy, -191.11
+	Front Camera: no point found, keep on turnin'!
+	Going from 667.00 to 534 with -0.22
+altitude: 637.00, battery level: 40.00
+vx, 125.77, vy, -214.93
+	Front Camera: no point found, keep on turnin'!
+	Going from 637.00 to 534 with -0.17
+altitude: 637.00, battery level: 40.00
+vx, 28.06, vy, -307.82
+	Front Camera: no point found, keep on turnin'!
+	Going from 637.00 to 534 with -0.17
+altitude: 495.00, battery level: 40.00
+vx, -131.44, vy, -503.54
+	Front Camera: no point found, keep on turnin'!
+	Going from 495.00 to 534 with 0.07
+altitude: 419.00, battery level: 40.00
+vx, -82.97, vy, -470.85
+	Front Camera: no point found, keep on turnin'!
+	Going from 419.00 to 534 with 0.19
+altitude: 352.00, battery level: 40.00
+vx, -97.82, vy, -664.25
+	Front Camera: no point found, keep on turnin'!
+	Going from 352.00 to 534 with 0.30
+altitude: 251.00, battery level: 40.00
+vx, 769.41, vy, -13.09
+	Front Camera: no point found, keep on turnin'!
+	Going from 251.00 to 534 with 0.47
+altitude: 228.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 228.00 to 534 with 0.50
+altitude: 239.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 239.00 to 534 with 0.49
+altitude: 210.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 210.00 to 534 with 0.50
+altitude: 211.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 211.00 to 534 with 0.50
+altitude: 212.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 212.00 to 534 with 0.50
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+altitude: 0.00, battery level: 40.00
+vx, 0.00, vy, 0.00
+	Front Camera: no point found, keep on turnin'!
+	Python recognizes exit command
+	python exit called
+870
