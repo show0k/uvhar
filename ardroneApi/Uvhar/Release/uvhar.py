@@ -5,6 +5,15 @@ from opencv.highgui import *
 
 
 
+# BUG
+# - When the object is lost the drone should go to the height on which it 
+# was last seen
+# TODO
+# - keep a log with the commands from c, so the replay shows the data more
+# correctly
+# - remove self.imageHeight and self.imageWidth
+
+
 class Uvhar:
 
 
@@ -17,30 +26,27 @@ class Uvhar:
     counter = -1 
     # Counter to hover before we fly towards target
     hoverCounter = 0
-    hoverCounterMax = 15
+    hoverCounterMax = 10
     # time granted to seek the object with the bottom camera
     bottomCameraCounter = 0
-    bottomCameraMax = 135
+    bottomCameraMax = 70
     # time after take off before we are start sending commands
     takeOffTime = 100
 
     # indicator of what camera we are using [..bottom camera, 0, front camera.. ]
-    videoSwitch = 1
+    videoMode = 1
     # so we can detect changes to send them to c
-    oldVideoSwitch = 1
-    # we only want to switch when we know we are in the right position
-    # it is also a switch made out of a can
-    canSwitch = False
+    videoSwitch = 0
     # we first want to make sure the object is in the centre, and only then
     # then fly towards it
+    # it is also a fly made out of a can
+    # currently not used, deprecated
     canFly = False
     
     # the information that c supplies us with
     cTuple = None
     # the point of the object in the last image
     point = None
-    # the last known non-zero locatio of the point
-    lastKnown = None
     # the amount of pixels in the last frames that represented the object
     objectPixels = -1
 
@@ -59,14 +65,15 @@ class Uvhar:
     lowerY = 0 
     upperY = 0 # Higher in the coordinate system, but lower in the image!
 
+    """"
     # Defining a square where we can lose the object before we start 
     # hoovering above it
     lastKnownLowerX = 100
     lastKnownUpperX = 210
     lastKnownLowerY = 210
     lastKnownUpperY = 240
-
-
+    """
+    
     # Images 
     image = None
     imageH = None
@@ -96,10 +103,9 @@ class Uvhar:
     distanceToObject = -1
     # when we are flying towards the target we want to increase altitude
     # to have a bigger chance of finding the object
-    deltaHeightWhenFound = 00
+    deltaHeightWhenFound = 200
     # is the target in the square we want it to be in?
     inSquare = False
-    
     
     # window names
     mainWindowName = "Image"
@@ -124,8 +130,8 @@ class Uvhar:
         cvNamedWindow(self.processedWindowName)
         cvNamedWindow(self.processedWindowName2)
         cvMoveWindow(self.mainWindowName, 0, 50)
-        cvMoveWindow(self.processedWindowName, 340, 50)
-        cvMoveWindow(self.processedWindowName2, 680, 50)
+        cvMoveWindow(self.processedWindowName, 360, 50)
+        cvMoveWindow(self.processedWindowName2, 700, 50)
         cvSetMouseCallback(self.mainWindowName, self.setExitOnNextUpdate, None)
         cvSetMouseCallback(self.processedWindowName, self.setExitOnNextUpdate, None)
         cvSetMouseCallback(self.processedWindowName2, self.setExitOnNextUpdate, None)
@@ -134,7 +140,13 @@ class Uvhar:
     def initImages(self):
         self.log("\tCalling initImages")
         # setting to the right size 
-        if (self.videoSwitch < 0):
+        if (self.image == None):
+            # creatin' an empty image because self.image cant be None
+            self.image = cvCreateImage(cvSize(320, 144), 8, 3)
+            self.videoMode = 1
+
+        if (cvGetSize(self.image).height == 144):
+            self.videoMode = -1
             self.imageWidth = 320
             self.imageHeight = 144
             self.lowerX = 58
@@ -142,19 +154,22 @@ class Uvhar:
             self.lowerY = 42
             self.upperY = 92
         else: 
+            self.videoMode = 1
             self.imageWidth = 320
             self.imageHeight = 240
             self.lowerX = 135
             self.upperX = 170
             self.lowerY = 150  
-            self.upperY = 180 #210 
-# creating the images
-        self.imageH = cvCreateImage(cvSize(self.imageWidth, self.imageHeight), 8, 1)
-        self.imageS = cvCreateImage(cvSize(self.imageWidth, self.imageHeight), 8, 1)
-        self.imageV = cvCreateImage(cvSize(self.imageWidth, self.imageHeight), 8, 1)
-        self.resultImage= cvCreateImage(cvSize(self.imageWidth, self.imageHeight), 8, 1)
-        self.tempResultImage = cvCreateImage(cvSize(self.imageWidth, self.imageHeight), 8, 3)
+            self.upperY = 180 
+        # creating the images
+        self.imageH = cvCreateImage(cvGetSize(self.image), 8, 1)
+        self.imageS = cvCreateImage(cvGetSize(self.image), 8, 1)
+        self.imageV = cvCreateImage(cvGetSize(self.image), 8, 1)
+        self.resultImage= cvCreateImage(cvGetSize(self.image), 8, 1)
+        self.tempResultImage = cvCreateImage(cvGetSize(self.image), 8, 3)
 
+
+        # size of the target image used to template match
         cmpw = 10
         cmph = 10
 
@@ -166,14 +181,10 @@ class Uvhar:
         self.targetImage = cvCreateImage(cvSize(cmpw, cmph), 8, 1)
         cvSet(self.targetImage, CV_RGB(255, 255, 255))
 
- 
-
     def update(self, cTuple):
         if (cTuple[1] > 10):
             self.log("altitude: %4.2f, battery level: %4.2f" % (cTuple[5], cTuple[1]))
-
-
-        self.log("vx, %4.2f, vy, %4.2f" % (cTuple[6], cTuple[7]))
+            self.log("vx, %4.2f, vy, %4.2f" % (cTuple[6], cTuple[7]))
 
         self.cTuple = cTuple
         # take some time to fully take off before we start doin' things
@@ -183,11 +194,10 @@ class Uvhar:
             self.loadNewImage()
             if (self.findPicture()):
                 #check if the info in self.point is useful and acts on it
-                if (self.videoSwitch > 0):
-                    self.thinkAboutPoint()
+                if (self.videoMode > 0):
+                    self.thinkAboutFrontCamera()
                 else:
-                    self.thinkAboutLastKnown()
-    
+                    self.thinkAboutBottomCamera()
 
         elif(self.counter != cTuple[0] - 1):
             self.counter = cTuple[0] - 1
@@ -195,11 +205,10 @@ class Uvhar:
             self.findPicture()
             
         #self.log("navdata: battery level: %4.2f, theta: %4.2f, phi: %4.2f, psi %4.2f, altitude %4.2f, vx %4.2f, vy %4.2f, vz %4.2f" % (cTuple[1], cTuple[2], cTuple[3], cTuple[4], cTuple[5], cTuple[6], cTuple[7], cTuple[8])  )
-       
 
         cvWaitKey(4)
-        returnArray = [self.exitOnNextUpdate, self.roll, self.pitch, self.gaz, self.yaw, self.oldVideoSwitch != self.videoSwitch]
-        self.oldVideoSwitch = self.videoSwitch
+        returnArray = [self.exitOnNextUpdate, self.roll, self.pitch, self.gaz, self.yaw, self.videoSwitch == 1]
+        self.videoSwitch = 0
         return returnArray
 
     def resetSteeringValues(self):
@@ -212,23 +221,18 @@ class Uvhar:
         self.preferredHeight = newHeight
         self.log("\tNew preferred height: %d" % self.preferredHeight)
 
-    def thinkAboutPoint(self):
+    def thinkAboutFrontCamera(self):
         self.resetSteeringValues()
-        """
-        if(self.lastKnown != None and self.videoSwitch > 0 and self.canSwitch):
-            if(self.lastKnown.x > self.lastKnownLowerX and 
-                    self.lastKnown.x < self.lastKnownUpperX and
-                    self.lastKnown.y > self.lastKnownLowerY and 
-                    self.lastKnown.y < self.lastKnownUpperY):                 
-        """
-        if (self.distanceToObject > 0 and self.distanceToObject < 0.6):
+
+        # if we have hovered we know we can switch to the bottom camera
+        if (self.hoverCounter > self.hoverCounterMax):
+                self.hoverCounter = 0
                 self.bottomCameraCounter = 0
-                self.lastKnown = None
                 self.log("\tSwitching cameras")
-                self.videoSwitch *= -1
-                self.initImages()
+                self.videoSwitch = 1
                 self.bottomTurnValueX = 0
                 self.bottomTurnValueY = 0
+                self.foundHeight = self.cTuple[5]
                 self.setPreferredHeight(self.foundHeight + self.deltaHeightWhenFound)
                 return 
             
@@ -238,15 +242,16 @@ class Uvhar:
             return 
         if(self.point.x == 0 or self.point.y == 0):
             self.log("\tFront Camera: no point found, keep on turnin'!")
-            self.canSwitch = False
-            self.canFly = False
             self.yaw = 0.3*self.turnValue
             self.hoverCounter = 0
             self.goToPreferredHeight()
             return 
 
+        # assume we are focused in the square (centre of the screen)
+        #and change it if we later find out we aren't
         self.inSquare = True
-        # bring the object to the centre of the screen
+
+        # bring the object to the centre of the screen if it isn't already
         # for x with rolling
         if (self.point.x < self.lowerX):
             self.log("\tFront Camera: point found: x is too much to the left!")
@@ -260,33 +265,32 @@ class Uvhar:
             self.inSquare = False
 
         # for y with gaz
-        if (not self.canFly and self.point.y < self.lowerY):
+        if (self.point.y < self.lowerY):
             self.log("\tFront Camera: point found: y is too low!")
             self.gaz = 0.5
-            self.inSquare = False
-        elif (not self.canFly and self.point.y > self.upperY):
+            #self.inSquare = False
+        elif (self.point.y > self.upperY):
             self.log("\tFront Camera: point found: y is too high")
             self.gaz = -0.2
-            self.inSquare = False
+            #self.inSquare = False
         else:
             self.foundHeight = self.cTuple[5]
+            self.setPreferredHeight(self.foundHeight)
             self.log("\tFound height: %d" % self.foundHeight)
 
         # checkin' if we have been hoovering with the target in the square
         # if this happened we can continue with flying forward and ignore
         # the y axes of the square (canFly is actually, ignore y axes)
-        if (self.inSquare and self.hoverCounter < self.hoverCounterMax):
-            self.log("\ttarget in square, wait for it!")
-            self.hoverCounter += 1
-        elif(self.inSquare):
-            self.canSwitch = True
-            self.canFly = True
-            self.log("\tFront Camera: flyin' towards the target!")
-            self.pitch = -0.08
-            self.canSwitch = True
-        
+        if (self.inSquare):
+            if (self.distanceToObject > 0 and self.distanceToObject < 0.6 and self.inSquare):
+                self.hoverCounter += 1
+            else:
+                self.log("\tFront Camera: flyin' towards the target!")
+                self.pitch = -0.08
+        else:
+            self.hoverCounter = 0
     
-    def thinkAboutLastKnown(self):
+    def thinkAboutBottomCamera(self):
         self.resetSteeringValues()
         self.goToPreferredHeight()
 
@@ -325,7 +329,7 @@ class Uvhar:
             elif(self.roll<0):
                 self.roll = -0.05 + self.roll
 
-            self.pitch = self.cTuple[6]/-7000.          
+            self.pitch = self.cTuple[6]/7000.          
             if(self.bottomTurnValueY * self.cTuple[6] < 0):
                 if (self.pitch > 0.05):
                     self.pitch = 0.05
@@ -342,8 +346,7 @@ class Uvhar:
         else:
             # ahhh man, start over
             self.log("\tBottom Camera: Ahhh man!! We did not find the object :( :( ")
-            self.videoSwitch *= -1 
-            self.initImages()
+            self.videoSwitch = 1
             self.setPreferredHeight(self.foundHeight)
 
 
@@ -380,12 +383,8 @@ class Uvhar:
             self.log("\tresult image is null, skipping frame")
             return False 
 
-        oldVideoSwitch = self.videoSwitch
-        if (cvGetSize(self.image).width == 320 and cvGetSize(self.image).height == 240):
-            self.videoSwitch = 1
-        else :
-            self.videoSwitch = -1 
-        if (oldVideoSwitch != self.videoSwitch):
+
+        if (cvGetSize(self.image).height != cvGetSize(self.tempResultImage).height):
             self.initImages()
 
    
@@ -410,25 +409,17 @@ class Uvhar:
 
         cvSub(self.onesImage, self.matchImage, self.matchImage)
 
-        #self.objectPixels = (cvGetSize(self.matchImage).width * cvGetSize(self.matchImage).height) - cvCountNonZero(self.matchImageInverted)
-
-
-      
+        # counting the pixels we have discovered to calculate the distance
         self.objectPixels = cvCountNonZero(self.matchImage)
         if (self.objectPixels > 0):
             self.distanceToObject = self.distanceFromPixels(self.objectPixels) 
         else:
             print "\tToo few pixels to calculate a distance"
             self.distanceToObject = -1
-        
        
         print "\tobject pixels: %d, guessed distance: %f" % (self.objectPixels, self.distanceToObject)
-        #self.log("%d, %d" % (self.point.x, self.point.y)
-        if (self.point.x != 0 or self.point.y != 0):
-            self.lastKnown = self.point
+
         cvRectangle(self.matchImage, (self.lowerX, self.lowerY), (self.upperX, self.upperY), CV_RGB(1,1,1))
-        if (self.videoSwitch > 0):
-            cvRectangle(self.matchImage, (self.lastKnownLowerX, self.lastKnownLowerY), (self.lastKnownUpperX, self.lastKnownUpperY), CV_RGB(1, 1, 1))
         return True
 
     def setExitOnNextUpdate(self, event, x, y, flags, param):
@@ -493,7 +484,7 @@ if __name__ == "__main__":
      while (i < maxCounter):
          uvhar.update([i, 0, 0, 0, 0, 0, 0, 0, 0, 0])
          #time.sleep(0.0467)
-         time.sleep(0.04)
+         #time.sleep(0.04)
          i = i + 1
      uvhar.exit()
 
