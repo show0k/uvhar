@@ -1,5 +1,5 @@
 import Image, ImageDraw, time
-import sys
+import sys, math
 from opencv.cv import *
 from opencv.highgui import *
 
@@ -37,9 +37,13 @@ class Uvhar:
     
     # the information that c supplies us with
     cTuple = None
-    # last known coordinates of a find object in the picture
+    # the point of the object in the last image
     point = None
+    # the last known non-zero locatio of the point
     lastKnown = None
+    # the amount of pixels in the last frames that represented the object
+    objectPixels = -1
+
     # steering values
     roll = 0
     pitch = 0
@@ -72,6 +76,7 @@ class Uvhar:
     resultImage = None
     targetImage = None
     matchImage = None
+    onesImage = None
 
     # width and height of the image
     imageWidth = 320
@@ -88,11 +93,13 @@ class Uvhar:
     # the height we want to fly at (when looking for the object etc)
     preferredHeight = 400
     foundHeight = -1
+    distanceToObject = -1
     # when we are flying towards the target we want to increase altitude
     # to have a bigger chance of finding the object
-    deltaHeightWhenFound = 300
+    deltaHeightWhenFound = 00
     # is the target in the square we want it to be in?
     inSquare = False
+    
     
     # window names
     mainWindowName = "Image"
@@ -103,7 +110,8 @@ class Uvhar:
     def __init__(self):
         print "Uvhar class contructor called."
 
-        self.logFile = open("log.txt", "w")
+        if (__name__ != "__main__"):
+            self.logFile = open("log.txt", "w")
     
 
         self.initImages()
@@ -151,9 +159,13 @@ class Uvhar:
         cmph = 10
 
         self.matchImage = cvCreateImage(cvSize(self.imageWidth - cmpw + 1, self.imageHeight - cmph+ 1), 32, 1)
+        
+        self.onesImage = cvCreateImage(cvSize(self.imageWidth - cmpw + 1, self.imageHeight - cmph+ 1), 32, 1)
+        cvSet(self.onesImage, CV_RGB(1, 1, 1))
 
         self.targetImage = cvCreateImage(cvSize(cmpw, cmph), 8, 1)
         cvSet(self.targetImage, CV_RGB(255, 255, 255))
+
  
 
     def update(self, cTuple):
@@ -202,11 +214,14 @@ class Uvhar:
 
     def thinkAboutPoint(self):
         self.resetSteeringValues()
+        """
         if(self.lastKnown != None and self.videoSwitch > 0 and self.canSwitch):
             if(self.lastKnown.x > self.lastKnownLowerX and 
                     self.lastKnown.x < self.lastKnownUpperX and
                     self.lastKnown.y > self.lastKnownLowerY and 
                     self.lastKnown.y < self.lastKnownUpperY):                 
+        """
+        if (self.distanceToObject > 0 and self.distanceToObject < 0.6):
                 self.bottomCameraCounter = 0
                 self.lastKnown = None
                 self.log("\tSwitching cameras")
@@ -216,6 +231,7 @@ class Uvhar:
                 self.bottomTurnValueY = 0
                 self.setPreferredHeight(self.foundHeight + self.deltaHeightWhenFound)
                 return 
+            
 
         # keep turnin' untill we have more interesting information
         if (self.point == None):
@@ -298,18 +314,27 @@ class Uvhar:
                 self.gaz = 0
         elif (self.bottomCameraCounter < self.bottomCameraMax):
             self.bottomCameraCounter += 1 
-
             self.roll = self.cTuple[7]/-7000.
-            if (self.roll > 0.05):
-                self.roll = 0.05
-            elif (self.roll < -0.05):
-                self.roll = -0.05
+            if(self.bottomTurnValueX * self.cTuple[7] < 0):
+                if (self.roll > 0.05):
+                    self.roll = 0.05
+                elif (self.roll < -0.05):
+                    self.roll = -0.05
+            elif(self.roll>0):
+                self.roll = 0.05 - self.roll
+            elif(self.roll<0):
+                self.roll = -0.05 + self.roll
 
             self.pitch = self.cTuple[6]/-7000.          
-            if (self.pitch > 0.05):
-                self.pitch = 0.05
-            elif (self.pitch < -0.05):
-                self.pitch = -0.05
+            if(self.bottomTurnValueY * self.cTuple[6] < 0):
+                if (self.pitch > 0.05):
+                    self.pitch = 0.05
+                elif (self.pitch < -0.05):
+                    self.pitch = -0.05
+            if (self.pitch > 0):
+                self.pitch = 0.05 - self.pitch
+            elif (self.pitch < -0):
+                self.pitch = -0.05 + self.pitch
 
             if (self.bottomTurnValueX == 0 and self.bottomTurnValueY == 0):
                 self.log("\tBottom Camera: no point found, keep on flyin'!")
@@ -382,12 +407,28 @@ class Uvhar:
       
         cvMatchTemplate(self.resultImage, self.targetImage, self.matchImage, CV_TM_SQDIFF_NORMED) 
         _, _, self.point, _ = cvMinMaxLoc(self.matchImage)
+
+        cvSub(self.onesImage, self.matchImage, self.matchImage)
+
+        #self.objectPixels = (cvGetSize(self.matchImage).width * cvGetSize(self.matchImage).height) - cvCountNonZero(self.matchImageInverted)
+
+
+      
+        self.objectPixels = cvCountNonZero(self.matchImage)
+        if (self.objectPixels > 0):
+            self.distanceToObject = self.distanceFromPixels(self.objectPixels) 
+        else:
+            print "\tToo few pixels to calculate a distance"
+            self.distanceToObject = -1
+        
+       
+        print "\tobject pixels: %d, guessed distance: %f" % (self.objectPixels, self.distanceToObject)
         #self.log("%d, %d" % (self.point.x, self.point.y)
         if (self.point.x != 0 or self.point.y != 0):
             self.lastKnown = self.point
-        cvRectangle(self.matchImage, (self.lowerX, self.lowerY), (self.upperX, self.upperY), CV_RGB(255,0,0))
+        cvRectangle(self.matchImage, (self.lowerX, self.lowerY), (self.upperX, self.upperY), CV_RGB(1,1,1))
         if (self.videoSwitch > 0):
-            cvRectangle(self.matchImage, (self.lastKnownLowerX, self.lastKnownLowerY), (self.lastKnownUpperX, self.lastKnownUpperY), CV_RGB(255, 0, 0))
+            cvRectangle(self.matchImage, (self.lastKnownLowerX, self.lastKnownLowerY), (self.lastKnownUpperX, self.lastKnownUpperY), CV_RGB(1, 1, 1))
         return True
 
     def setExitOnNextUpdate(self, event, x, y, flags, param):
@@ -403,14 +444,35 @@ class Uvhar:
         print string
 
     
+
+    # the function from zunzun.com to calculate the
+    # distance given a number of pixels
+    def distanceFromPixels(self, x_in):
+       temp = 0.0
+
+       # coefficients
+       a = 7.6315999175901217E-01
+       b = -6.4523069253280248E-04
+       c = 8.3189620080930808E+01
+       d = -1.5517143254934185E-01
+       f = 1.4487053946697799E+00
+       g = -4.6478934298555246E-03
+       Offset = 2.1482272389707244E-01
+
+       temp = a * math.exp(b*x_in) + c * math.exp(d*x_in) + f * math.exp(g*x_in)
+       temp = temp + Offset
+       return temp
+
+    
     # we need to find some way to call this baby when we stop
     def exit(self):
         self.log("\tpython exit called")
         self.log(self.counter)
-        self.logFile.close()
         cvDestroyAllWindows()
         if __name__ == "__main__":
             exit()
+        else:
+            self.logFile.close()
 
 
 #image = cv.LoadImageM("images/frame00001.jpg")
@@ -430,7 +492,8 @@ if __name__ == "__main__":
      i = 100;
      while (i < maxCounter):
          uvhar.update([i, 0, 0, 0, 0, 0, 0, 0, 0, 0])
-         time.sleep(0.0467)
+         #time.sleep(0.0467)
+         time.sleep(0.04)
          i = i + 1
      uvhar.exit()
 

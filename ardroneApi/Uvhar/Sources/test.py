@@ -55,7 +55,7 @@ class Test:
 
          # decrease thresholds
 
-         self.gaussianImage = cvCreateImage(cvSize(self.windowWidth, self.windowHeight), 8, 1)
+         self.gaussianImage = cvLoadImage("gaus2d.jpg", CV_LOAD_IMAGE_GRAYSCALE)
          
          for x in range(0, self.windowWidth):
              for y in range(0, self.windowHeight):
