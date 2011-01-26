@@ -59,7 +59,7 @@ class Uvhar:
     bottomTurnValueX = 0
     bottomTurnValueY = 0
     # a window that we want the target in our image to be in. These 
-    # are define in initImages
+    # are defined in initImages
     lowerX = 0
     upperX = 0
     lowerY = 0 
@@ -103,7 +103,7 @@ class Uvhar:
     distanceToObject = -1
     # when we are flying towards the target we want to increase altitude
     # to have a bigger chance of finding the object
-    deltaHeightWhenFound = 200
+    deltaHeightWhenFound = 300
     # is the target in the square we want it to be in?
     inSquare = False
     
@@ -113,11 +113,27 @@ class Uvhar:
     processedWindowName2 = "Processed Image 2"
 
 
+    #files
+    logFile = None
+    dataFile = None
+    # file names
+    logFileName = "log.txt"
+    dataFileName = "data.txt"
+    # for reading back
+    dataCounter = 0
+    dataLines = None
+
+
     def __init__(self):
         print "Uvhar class contructor called."
 
         if (__name__ != "__main__"):
-            self.logFile = open("log.txt", "w")
+           self.logFile = open(self.logFileName, "w")
+           self.dataFile = open(self.dataFileName, "w")
+        else:
+            self.dataFile = open(self.dataFileName, "r")
+            self.dataLines = self.dataFile.readlines()
+
     
 
         self.initImages()
@@ -159,8 +175,8 @@ class Uvhar:
             self.imageHeight = 240
             self.lowerX = 135
             self.upperX = 170
-            self.lowerY = 150  
-            self.upperY = 180 
+            self.lowerY = 130  
+            self.upperY = 160 
         # creating the images
         self.imageH = cvCreateImage(cvGetSize(self.image), 8, 1)
         self.imageS = cvCreateImage(cvGetSize(self.image), 8, 1)
@@ -181,7 +197,25 @@ class Uvhar:
         self.targetImage = cvCreateImage(cvSize(cmpw, cmph), 8, 1)
         cvSet(self.targetImage, CV_RGB(255, 255, 255))
 
+
+    def logData(self, cTuple):
+       for i in range(0, 9):
+           self.dataFile.write("%f\n" % cTuple[i])
+
+    def getLoggedData(self):
+        cTuple = (0, )*9
+        for i in range(0, 9):
+            cTuple[i] = self.dataLines[self.dataCounter]
+            self.dataCounter += 1
+        return cTuple   
+                
+
     def update(self, cTuple):
+        if (__name__ != "__main__"):
+            self.logData(cTuple)
+        else:
+            cTuple = self.getLoggedData()
+
         if (cTuple[1] > 10):
             self.log("altitude: %4.2f, battery level: %4.2f" % (cTuple[5], cTuple[1]))
             self.log("vx, %4.2f, vy, %4.2f" % (cTuple[6], cTuple[7]))
@@ -235,7 +269,8 @@ class Uvhar:
                 self.foundHeight = self.cTuple[5]
                 self.setPreferredHeight(self.foundHeight + self.deltaHeightWhenFound)
                 return 
-            
+           
+        self.changeBoundries() 
 
         # keep turnin' untill we have more interesting information
         if (self.point == None):
@@ -247,6 +282,8 @@ class Uvhar:
             self.goToPreferredHeight()
             return 
 
+
+
         # assume we are focused in the square (centre of the screen)
         #and change it if we later find out we aren't
         self.inSquare = True
@@ -255,40 +292,71 @@ class Uvhar:
         # for x with rolling
         if (self.point.x < self.lowerX):
             self.log("\tFront Camera: point found: x is too much to the left!")
-            self.yaw = -0.1
+            self.yaw = -0.002 * 155 - self.point.x
+            if (self.yaw > -0.05):
+                self.yaw = -0.05
             self.turnValue = -1
             self.inSquare = False
         elif (self.point.x > self.upperX):
             self.log("\tFront Camera: point found: x is too much to the right!")
-            self.yaw = 0.1
+            self.yaw = -0.002 * 155 - self.point.x
+            if (self.yaw < 0.05):
+                self.yaw = 0.05
             self.turnValue = 1
             self.inSquare = False
 
         # for y with gaz
         if (self.point.y < self.lowerY):
             self.log("\tFront Camera: point found: y is too low!")
-            self.gaz = 0.5
-            #self.inSquare = False
+            self.gaz = 0.15 * self.distanceToObject
+            if(self.gaz > 0.4):
+                self.gaz = 0.5
         elif (self.point.y > self.upperY):
             self.log("\tFront Camera: point found: y is too high")
-            self.gaz = -0.2
-            #self.inSquare = False
+            self.gaz = -0.075 * self.distanceToObject
+            if(self.gaz < 0.3):
+                self.gaz = -0.3
         else:
             self.foundHeight = self.cTuple[5]
             self.setPreferredHeight(self.foundHeight)
-            self.log("\tFound height: %d" % self.foundHeight)
+            self.log("\tFound height set in prefferedHeight with value: %d" % self.foundHeight)
 
         # checkin' if we have been hoovering with the target in the square
         # if this happened we can continue with flying forward and ignore
         # the y axes of the square (canFly is actually, ignore y axes)
         if (self.inSquare):
-            if (self.distanceToObject > 0 and self.distanceToObject < 0.6 and self.inSquare):
+            if (self.distanceToObject > 0 and self.distanceToObject < 0.3 and self.inSquare):
                 self.hoverCounter += 1
             else:
                 self.log("\tFront Camera: flyin' towards the target!")
-                self.pitch = -0.08
+                self.pitch = -0.10 * self.distanceToObject 
+                if(self.pitch < -0.08):
+                    self.pitch = -0.08
         else:
             self.hoverCounter = 0
+
+    def changeBoundries(self):
+        difference = 40 - 40 * self.distanceToObject
+        self.lowerX = 135 - difference
+        if (self.lowerX > 135):
+            self.lowerX = 135
+        if (self.lowerX < 100):
+            self.lowerX = 100
+        self.upperX = 170 + difference
+        if (self.upperX < 170):
+            self.upperX = 170
+        if (self.upperX > 205):
+            self.upperX = 205
+        self.lowerY = 130 - difference
+        if (self.lowerY > 130):
+            self.lowerY = 130
+        if (self.lowerY < 95):
+            self.lowerY = 95
+        self.upperY = 160 + difference
+        if (self.upperY < 160):
+            self.upperY = 160
+        if (self.upperY > 195):
+            self.upperY = 195
     
     def thinkAboutBottomCamera(self):
         self.resetSteeringValues()
@@ -342,7 +410,7 @@ class Uvhar:
 
             if (self.bottomTurnValueX == 0 and self.bottomTurnValueY == 0):
                 self.log("\tBottom Camera: no point found, keep on flyin'!")
-                self.pitch = -0.04
+                self.pitch = -0.07
         else:
             # ahhh man, start over
             self.log("\tBottom Camera: Ahhh man!! We did not find the object :( :( ")
