@@ -122,7 +122,7 @@ C_RESULT output_gtk_stage_transform( void *cfg, vp_api_io_data_t *in, vp_api_io_
 	     oldVideoSwitch = videoSwitch;
 	     if(videoSwitch > 0)
          {
-	       	ardrone_at_zap(ZAP_CHANNEL_LARGE_HORI_SMALL_VERT);
+	       	ardrone_at_zap(ZAP_CHANNEL_HORI);
             imageWidth = 320;
             imageHeight = 240;
          }
