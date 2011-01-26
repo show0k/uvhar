@@ -40,31 +40,31 @@ class Test:
          cvMoveWindow(self.twoWindowName, 300, 50)
          cvMoveWindow(self.threeWindowName, 680, 50)
 
-         self.mainImage1 = cvLoadImage("images/frame00098.jpg", CV_LOAD_IMAGE_COLOR)
+         self.mainImage1 = cvLoadImage("1.jpg", CV_LOAD_IMAGE_COLOR)
          self.doImage(self.mainImage1)
-         self.mainImage2 = cvLoadImage("images/frame00099.jpg", CV_LOAD_IMAGE_COLOR)
+         self.mainImage2 = cvLoadImage("2.jpg", CV_LOAD_IMAGE_COLOR)
          self.doImage(self.mainImage2)
                   
          
      def doImage(self, image):
          matchImage = self.find(image)
 
-         widthOffset = self.windowWidth /2
+         widthOffset = self.windowWidth / 2
          heightOffset = self.windowHeight / 2
-         cvRectangle(matchImage, (self.point.x - widthOffset, self.point.y - heightOffset), (self.point.x + widthOffset, self.point.y + heightOffset), CV_RGB(255,0,0))
 
-         # decrease thresholds
+         #cvRectangle(matchImage, (self.point.x - widthOffset, self.point.y - heightOffset), (self.point.x + widthOffset, self.point.y + heightOffset), CV_RGB(255,0,0))
 
-         self.gaussianImage = cvLoadImage("gaus2d.jpg", CV_LOAD_IMAGE_GRAYSCALE)
-         
-         for x in range(0, self.windowWidth):
-             for y in range(0, self.windowHeight):
-                 cvSet(self.gaussianImage, sqrt((x-25)*(x-25)+(y-25)*(y-25)))
+         self.gaussianImage = cvLoadImage("gaus2d.jpg", CV_LOAD_IMAGE_R)
 
+         cvConvertScale(self.gaussianImage, self.gaussianImage, 1./255.)
+
+         #minVal, maxVal, self.point, maxPoint = cvMinMaxLoc(self.gaussianImage)
+        
+         #cvShowImage("ga", self.gaussianImage) 
          cvShowImage(self.oneWindowName, image)
          cvShowImage(self.twoWindowName, matchImage) 
          cvWaitKey(0) 
-
+    
 
 
      def find(self, inImage):
@@ -107,6 +107,9 @@ class Test:
  
          cvMatchTemplate(resultImage, targetImage, matchImage, CV_TM_SQDIFF_NORMED) 
          minValue, maxValue, self.point, _ = cvMinMaxLoc(matchImage)
+
+
+
          if (self.point.x != 0 and self.point.y != 0):
              print "min value: %f, max value: %f" % (minValue, maxValue)
          else:

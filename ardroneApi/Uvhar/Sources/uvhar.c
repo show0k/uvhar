@@ -202,11 +202,9 @@ C_RESULT ardrone_tool_init_custom(int argc, char **argv)
 	// land once at the start... also trim to flat
 	ardrone_tool_set_ui_pad_select(0);
 	ardrone_tool_set_ui_pad_start(0);
-    if (isTrim)
-        ardrone_at_set_flat_trim();
+    ardrone_at_set_flat_trim();
     // and now launch this thing
-    else
-        ardrone_tool_set_ui_pad_start(1);
+    ardrone_tool_set_ui_pad_start(1);
 	return pythonCResult;
 }
 
