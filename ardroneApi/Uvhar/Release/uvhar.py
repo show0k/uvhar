@@ -73,6 +73,8 @@ class Uvhar:
     lastKnownLowerY = 210
     lastKnownUpperY = 240
     """
+   
+    logLines = None 
     
     # Images 
     image = None
@@ -203,10 +205,10 @@ class Uvhar:
            self.dataFile.write("%f\n" % cTuple[i])
 
     def getLoggedData(self):
-        cTuple = (0, )*9
+        cTuple = [0, ]*9 # tuple isn't actually tuple, but rather a list
         for i in range(0, 9):
-            cTuple[i] = self.dataLines[self.dataCounter]
-            self.dataCounter += 1
+            cTuple[i] = eval(self.dataLines[self.dataCounter])
+        self.dataCounter += 1
         return cTuple   
                 
 
@@ -216,9 +218,8 @@ class Uvhar:
         else:
             cTuple = self.getLoggedData()
 
-        if (cTuple[1] > 10):
-            self.log("altitude: %4.2f, battery level: %4.2f" % (cTuple[5], cTuple[1]))
-            self.log("vx, %4.2f, vy, %4.2f" % (cTuple[6], cTuple[7]))
+        #self.log("altitude: %4.2f, battery level: %4.2f" % (cTuple[5], cTuple[1]))
+        #self.log("vx, %4.2f, vy, %4.2f" % (cTuple[6], cTuple[7]))
 
         self.cTuple = cTuple
         # take some time to fully take off before we start doin' things
@@ -552,7 +553,7 @@ if __name__ == "__main__":
      while (i < maxCounter):
          uvhar.update([i, 0, 0, 0, 0, 0, 0, 0, 0, 0])
          #time.sleep(0.0467)
-         #time.sleep(0.04)
+         time.sleep(0.04)
          i = i + 1
      uvhar.exit()
 
