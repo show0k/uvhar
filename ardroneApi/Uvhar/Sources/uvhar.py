@@ -181,24 +181,28 @@ class Uvhar:
         self.imageV = cvCreateImage(cvGetSize(self.image), 8, 1)
         self.resultImage= cvCreateImage(cvGetSize(self.image), 8, 1)
         self.tempResultImage = cvCreateImage(cvGetSize(self.image), 8, 3)
+        self.finalMatchImage = cvCreateImage(cvGetSize(self.image), 32, 1)
+        #self.finalMatchImage = cvCreateImage(cvGetSize(self.image), 8, 1)
 
-    def createMatchImage
+    def createMatchImage(self):
         # size of the target image used to template match
-        difference = 40 - abs(40 * self.distanceToObject)
-        cmpw = 10 * difference
+        cmpw = int(100 - abs(90 * self.distanceToObject))
         if (cmpw < 10):
             cmpw = 10
-        cmph = 10 * difference
+        if (cmpw > 100):
+            cmpw = 100
+        cmph = int(100 - abs(90 * self.distanceToObject))
         if (cmph < 10):
             cmph = 10
-
+        if (cmph > 100):
+            cmph = 100
+            
         imageWidth = cvGetSize(self.image).width
         imageHeight = cvGetSize(self.image).height
 
         self.matchImage = cvCreateImage(cvSize(imageWidth - cmpw + 1, imageHeight - cmph+ 1), 32, 1)
         
-        self.onesImage = cvCreateImage(cvSize(imageWidth - cmpw + 1, imageHeight - cmph+ 1), 32, 1)
-        cvSet(self.onesImage, CV_RGB(1, 1, 1))
+        self.onesImage = cvCreateImage(cvGetSize(self.image), 32, 1)
 
         self.targetImage = cvCreateImage(cvSize(cmpw, cmph), 8, 1)
         cvSet(self.targetImage, CV_RGB(255, 255, 255))
@@ -222,7 +226,7 @@ class Uvhar:
         else:
             cTuple = self.getLoggedData()
 
-        self.log("altitude: %4.2f, battery level: %4.2f" % (cTuple[5], cTuple[1]))
+        #self.log("altitude: %4.2f, battery level: %4.2f" % (cTuple[5], cTuple[1]))
         #self.log("vx, %4.2f, vy, %4.2f" % (cTuple[6], cTuple[7]))
 
         self.cTuple = cTuple
@@ -247,7 +251,10 @@ class Uvhar:
 
         cvShowImage(self.mainWindowName, self.image)
         cvShowImage(self.processedWindowName, self.resultImage)
-        cvShowImage(self.processedWindowName2, self.matchImage)
+        cvShowImage(self.processedWindowName2, self.finalMatchImage)
+        if(self.finalMatchImage != None):
+            self.log("finalMatchImage width: %d, finalMatchImage height: %d" % (cvGetSize(self.finalMatchImage).width, cvGetSize(self.finalMatchImage).height))
+
         
 
         cvWaitKey(4)
@@ -486,14 +493,17 @@ class Uvhar:
         # are range on every channel 
         cvAnd(self.imageH, self.imageS, self.resultImage)
         cvAnd(self.resultImage, self.imageV, self.resultImage)
-      
+        self.createMatchImage()
         cvMatchTemplate(self.resultImage, self.targetImage, self.matchImage, CV_TM_SQDIFF_NORMED) 
-        _, _, self.point, _ = cvMinMaxLoc(self.matchImage)
+        if(self.matchImage != None):
+            offset = cvPoint((cvGetSize(self.finalMatchImage).width - cvGetSize(self.matchImage).width)/2, (cvGetSize(self.finalMatchImage).height - cvGetSize(self.matchImage).height)/2)
+            cvCopyMakeBorder(self.matchImage, self.finalMatchImage, offset, IPL_BORDER_CONSTANT, 0)
+            _, _, self.point, _ = cvMinMaxLoc(self.finalMatchImage)
 
-        cvSub(self.onesImage, self.matchImage, self.matchImage)
+        cvSub(self.onesImage, self.finalMatchImage, self.finalMatchImage)
 
         # counting the pixels we have discovered to calculate the distance
-        self.objectPixels = cvCountNonZero(self.matchImage)
+        self.objectPixels = cvCountNonZero(self.finalMatchImage)
         if (self.objectPixels > 0):
             self.distanceToObject = self.distanceFromPixels(self.objectPixels) 
         else:
@@ -502,7 +512,7 @@ class Uvhar:
        
         print "\tobject pixels: %d, guessed distance: %f" % (self.objectPixels, self.distanceToObject)
 
-        cvRectangle(self.matchImage, (self.lowerX, self.lowerY), (self.upperX, self.upperY), CV_RGB(1,1,1))
+        #cvRectangle(self.matchImage, (self.lowerX, self.lowerY), (self.upperX, self.upperY), CV_RGB(1,1,1))
         return True
 
     def setExitOnNextUpdate(self, event, x, y, flags, param):
