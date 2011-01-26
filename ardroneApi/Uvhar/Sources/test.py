@@ -1,5 +1,6 @@
 import Image, ImageDraw, time
-import sys
+import sys, cv
+
 from opencv.cv import *
 from opencv.highgui import *
 from math import sqrt
@@ -54,15 +55,19 @@ class Test:
 
          #cvRectangle(matchImage, (self.point.x - widthOffset, self.point.y - heightOffset), (self.point.x + widthOffset, self.point.y + heightOffset), CV_RGB(255,0,0))
 
-         self.gaussianImage = cvLoadImage("gaus2d.jpg", CV_LOAD_IMAGE_R)
+         self.gaussianImage = cvLoadImage("gaus2dsmall.jpg", CV_LOAD_IMAGE_COLOR)
 
-         cvConvertScale(self.gaussianImage, self.gaussianImage, 1./255.)
+         #cvConvertScale(self.gaussianImage, self.gaussianImage, 1./255.)
 
          #minVal, maxVal, self.point, maxPoint = cvMinMaxLoc(self.gaussianImage)
+
+         cvSetImageROI(image, cvRect(0, 0, 50, 50))
+
         
          #cvShowImage("ga", self.gaussianImage) 
-         cvShowImage(self.oneWindowName, image)
-         cvShowImage(self.twoWindowName, matchImage) 
+         cvShowImage("original", image)
+         cvShowImage("gaus thingy", self.gaussianImage) 
+         #cvShowImage("result", resultImage) 
          cvWaitKey(0) 
     
 
