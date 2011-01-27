@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.9.1)  26 JAN 2011 17:39
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.12.15)  27 JAN 2011 14:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,7 +6,7 @@ entering extended mode
 (./presentatie.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
+yphenation, dutch, loaded.
 (/usr/share/texmf/tex/latex/beamer/base/beamer.cls
 (/usr/share/texmf/tex/latex/beamer/base/beamerbasercs.sty
 Package: beamerbasercs 2007/01/28 (rcs-revision 1.4)
@@ -93,7 +93,7 @@ File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
 (/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
 \Gread@gobject=\count102
 ))
 \Gin@req@height=\dimen119
@@ -297,7 +297,8 @@ Package ifvtex Info: VTeX not detected.
 \Gm@odd@mp=\dimen155
 \Gm@even@mp=\dimen156
 \Gm@dimlist=\toks20
-)
+
+(/usr/share/texmf-texlive/tex/xelatex/xetexconfig/geometry.cfg))
 (/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
 
@@ -329,7 +330,7 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )
-(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
+(/etc/texmf/tex/latex/config/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 (/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
@@ -693,7 +694,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
- (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+ (/usr/share/texmf/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count156
 \scratchdimen=\dimen181
@@ -869,12 +870,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 13101 strings out of 495061
- 233143 string characters out of 1182622
- 331037 words of memory out of 3000000
- 15897 multiletter control sequences out of 15000+50000
+ 13108 strings out of 495006
+ 233315 string characters out of 1181409
+ 331394 words of memory out of 3000000
+ 15903 multiletter control sequences out of 15000+50000
  15226 words of font info for 57 fonts, out of 3000000 for 9000
- 28 hyphenation exceptions out of 8191
+ 68 hyphenation exceptions out of 8191
  45i,27n,59p,347b,783s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-te
@@ -882,9 +883,9 @@ xlive/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-texlive/fonts/
 type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/publi
 c/amsfonts/cm/cmsy5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb>
-Output written on presentatie.pdf (7 pages, 110126 bytes).
+Output written on presentatie.pdf (7 pages, 110315 bytes).
 PDF statistics:
- 253 PDF objects out of 1000 (max. 8388607)
- 16 named destinations out of 1000 (max. 500000)
+ 254 PDF objects out of 1000 (max. 8388607)
+ 17 named destinations out of 1000 (max. 500000)
  83 words of extra memory for PDF output out of 10000 (max. 10000000)
 
