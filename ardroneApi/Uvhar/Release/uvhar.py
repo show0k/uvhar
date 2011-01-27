@@ -19,17 +19,15 @@ class Uvhar:
 
     exitOnNextUpdate = False
 
-    #loggin' output
-    logFile = None
 
     # keeping track of the image we use
     counter = -1 
     # Counter to hover before we fly towards target
     hoverCounter = 0
-    hoverCounterMax = 10
+    hoverCounterMax = 7
     # time granted to seek the object with the bottom camera
     bottomCameraCounter = 0
-    bottomCameraMax = 100
+    bottomCameraMax = 130
     # time after take off before we are start sending commands
     takeOffTime = 100
 
@@ -64,17 +62,6 @@ class Uvhar:
     upperX = 0
     lowerY = 0 
     upperY = 0 # Higher in the coordinate system, but lower in the image!
-
-    """"
-    # Defining a square where we can lose the object before we start 
-    # hoovering above it
-    lastKnownLowerX = 100
-    lastKnownUpperX = 210
-    lastKnownLowerY = 210
-    lastKnownUpperY = 240
-    """
-   
-    logLines = None 
     
     # Images 
     image = None
@@ -103,6 +90,7 @@ class Uvhar:
     preferredHeight = 400
     foundHeight = -1
     distanceToObject = -1
+    lastDistanceToObject = -1 
     # when we are flying towards the target we want to increase altitude
     # to have a bigger chance of finding the object
     deltaHeightWhenFound = 160
@@ -114,7 +102,6 @@ class Uvhar:
     processedWindowName = "Processed Image"
     processedWindowName2 = "Processed Image 2"
 
-
     #files
     logFile = None
     dataFile = None
@@ -124,7 +111,8 @@ class Uvhar:
     # for reading back
     dataCounter = 0
     dataLines = None
-
+    # for when he have read back
+    logLines = None 
 
     def __init__(self):
         print "Uvhar class contructor called."
@@ -147,6 +135,7 @@ class Uvhar:
         cvNamedWindow(self.mainWindowName) # if window does not resize automagically add CV_WINDOW_AUTOSIZE
         cvNamedWindow(self.processedWindowName)
         cvNamedWindow(self.processedWindowName2)
+        #temporary debug window
         cvMoveWindow(self.mainWindowName, 0, 50)
         cvMoveWindow(self.processedWindowName, 360, 50)
         cvMoveWindow(self.processedWindowName2, 700, 50)
@@ -171,10 +160,10 @@ class Uvhar:
             self.upperY = 92
         else: 
             #self.videoMode = 1
-            self.lowerX = 135
-            self.upperX = 170
-            self.lowerY = 130  
-            self.upperY = 160 
+            self.lowerX = 140
+            self.upperX = 180
+            self.lowerY = 135  
+            self.upperY = 170 
         # creating the images
         self.imageH = cvCreateImage(cvGetSize(self.image), 8, 1)
         self.imageS = cvCreateImage(cvGetSize(self.image), 8, 1)
@@ -182,7 +171,6 @@ class Uvhar:
         self.resultImage= cvCreateImage(cvGetSize(self.image), 8, 1)
         self.tempResultImage = cvCreateImage(cvGetSize(self.image), 8, 3)
         self.finalMatchImage = cvCreateImage(cvGetSize(self.image), 32, 1)
-        #self.finalMatchImage = cvCreateImage(cvGetSize(self.image), 8, 1)
 
     def createMatchImage(self):
         # size of the target image used to template match
@@ -203,9 +191,11 @@ class Uvhar:
         self.matchImage = cvCreateImage(cvSize(imageWidth - cmpw + 1, imageHeight - cmph+ 1), 32, 1)
         
         self.onesImage = cvCreateImage(cvGetSize(self.image), 32, 1)
+        cvWaitKey
 
         self.targetImage = cvCreateImage(cvSize(cmpw, cmph), 8, 1)
         cvSet(self.targetImage, CV_RGB(255, 255, 255))
+        cvSet(self.onesImage, CV_RGB(1,1,1))
 
 
     def logData(self, cTuple):
@@ -226,7 +216,7 @@ class Uvhar:
         else:
             cTuple = self.getLoggedData()
 
-        #self.log("altitude: %4.2f, battery level: %4.2f" % (cTuple[5], cTuple[1]))
+        self.log("altitude: %4.2f, battery level: %4.2f" % (cTuple[5], cTuple[1]))
         #self.log("vx, %4.2f, vy, %4.2f" % (cTuple[6], cTuple[7]))
 
         self.cTuple = cTuple
@@ -252,8 +242,6 @@ class Uvhar:
         cvShowImage(self.mainWindowName, self.image)
         cvShowImage(self.processedWindowName, self.resultImage)
         cvShowImage(self.processedWindowName2, self.finalMatchImage)
-        if(self.finalMatchImage != None):
-            self.log("finalMatchImage width: %d, finalMatchImage height: %d" % (cvGetSize(self.finalMatchImage).width, cvGetSize(self.finalMatchImage).height))
 
         
 
@@ -289,7 +277,7 @@ class Uvhar:
             self.setPreferredHeight(self.foundHeight + self.deltaHeightWhenFound)
             return 
            
-        self.changeBoundries() 
+        #self.changeBoundries() 
 
         # keep turnin' untill we have more interesting information
         if (self.point == None):
@@ -309,7 +297,7 @@ class Uvhar:
 
         # bring the object to the centre of the screen if it isn't already
         # for x with rolling
-        self.yaw = -0.0015 * (155 - self.point.x)
+        self.yaw = -0.0025 * (155 - self.point.x)
 
         if (self.point.x < self.lowerX):
             self.log("\tFront Camera: point found: x is too much to the left!")
@@ -332,7 +320,7 @@ class Uvhar:
                 self.gaz = 0.4
         elif (self.point.y > self.upperY):
             self.log("\tFront Camera: point found: y is too high")
-            self.gaz = -0.075 * self.distanceToObject
+            self.gaz = -0.04 * self.distanceToObject
             if(self.gaz < 0.3):
                 self.gaz = -0.3
         else:
@@ -344,13 +332,13 @@ class Uvhar:
         # if this happened we can continue with flying forward and ignore
         # the y axes of the square (canFly is actually, ignore y axes)
         if (self.inSquare):
-            if (self.distanceToObject > 0 and self.distanceToObject < 0.3 and self.inSquare):
+            if (self.distanceToObject > 0 and self.distanceToObject < 0.7 and self.inSquare):
                 self.hoverCounter += 1
             else:
                 self.log("\tFront Camera: flyin' towards the target!")
                 self.pitch = -0.08 * self.distanceToObject 
-                if(self.pitch < -0.08):
-                    self.pitch = -0.08
+                if(self.pitch < -0.06):
+                    self.pitch = -0.06
         else:
             self.hoverCounter = 0
 
@@ -495,24 +483,27 @@ class Uvhar:
         cvAnd(self.resultImage, self.imageV, self.resultImage)
         self.createMatchImage()
         cvMatchTemplate(self.resultImage, self.targetImage, self.matchImage, CV_TM_SQDIFF_NORMED) 
-        if(self.matchImage != None):
-            offset = cvPoint((cvGetSize(self.finalMatchImage).width - cvGetSize(self.matchImage).width)/2, (cvGetSize(self.finalMatchImage).height - cvGetSize(self.matchImage).height)/2)
-            cvCopyMakeBorder(self.matchImage, self.finalMatchImage, offset, IPL_BORDER_CONSTANT, 0)
-            _, _, self.point, _ = cvMinMaxLoc(self.finalMatchImage)
+        #if(self.matchImage != None):
+        offset = cvPoint((cvGetSize(self.finalMatchImage).width - cvGetSize(self.matchImage).width)/2, (cvGetSize(self.finalMatchImage).height - cvGetSize(self.matchImage).height)/2)
+        cvCopyMakeBorder(self.matchImage, self.finalMatchImage, offset, IPL_BORDER_CONSTANT, 1)
 
         cvSub(self.onesImage, self.finalMatchImage, self.finalMatchImage)
 
+        _, _, _, self.point = cvMinMaxLoc(self.finalMatchImage)
+        print self.point
         # counting the pixels we have discovered to calculate the distance
         self.objectPixels = cvCountNonZero(self.finalMatchImage)
         if (self.objectPixels > 0):
-            self.distanceToObject = self.distanceFromPixels(self.objectPixels) 
+            self.distanceToObject = (self.distanceFromPixels(self.objectPixels) + self.lastDistanceToObject) / 2.
+            if ((self.counter % 10) == 9):
+                self.lastDistanceToObject = self.distanceToObject
         else:
-            print "\tToo few pixels to calculate a distance"
+            print "\tNot enough pixels to calculate a distance"
             self.distanceToObject = -1
        
         print "\tobject pixels: %d, guessed distance: %f" % (self.objectPixels, self.distanceToObject)
 
-        #cvRectangle(self.matchImage, (self.lowerX, self.lowerY), (self.upperX, self.upperY), CV_RGB(1,1,1))
+        cvRectangle(self.finalMatchImage, (self.lowerX, self.lowerY), (self.upperX, self.upperY), CV_RGB(1, 1, 1))
         return True
 
     def setExitOnNextUpdate(self, event, x, y, flags, param):
