@@ -19,15 +19,17 @@ class Uvhar:
 
     exitOnNextUpdate = False
 
+    #loggin' output
+    logFile = None
 
     # keeping track of the image we use
     counter = -1 
     # Counter to hover before we fly towards target
     hoverCounter = 0
-    hoverCounterMax = 7
+    hoverCounterMax = 10
     # time granted to seek the object with the bottom camera
     bottomCameraCounter = 0
-    bottomCameraMax = 130
+    bottomCameraMax = 100
     # time after take off before we are start sending commands
     takeOffTime = 100
 
@@ -62,6 +64,17 @@ class Uvhar:
     upperX = 0
     lowerY = 0 
     upperY = 0 # Higher in the coordinate system, but lower in the image!
+
+    """"
+    # Defining a square where we can lose the object before we start 
+    # hoovering above it
+    lastKnownLowerX = 100
+    lastKnownUpperX = 210
+    lastKnownLowerY = 210
+    lastKnownUpperY = 240
+    """
+   
+    logLines = None 
     
     # Images 
     image = None
@@ -90,7 +103,6 @@ class Uvhar:
     preferredHeight = 400
     foundHeight = -1
     distanceToObject = -1
-    lastDistanceToObject = -1 
     # when we are flying towards the target we want to increase altitude
     # to have a bigger chance of finding the object
     deltaHeightWhenFound = 160
@@ -102,6 +114,7 @@ class Uvhar:
     processedWindowName = "Processed Image"
     processedWindowName2 = "Processed Image 2"
 
+
     #files
     logFile = None
     dataFile = None
@@ -111,8 +124,7 @@ class Uvhar:
     # for reading back
     dataCounter = 0
     dataLines = None
-    # for when he have read back
-    logLines = None 
+
 
     def __init__(self):
         print "Uvhar class contructor called."
@@ -297,7 +309,7 @@ class Uvhar:
 
         # bring the object to the centre of the screen if it isn't already
         # for x with rolling
-        self.yaw = -0.0025 * (155 - self.point.x)
+        self.yaw = -0.0015 * (155 - self.point.x)
 
         if (self.point.x < self.lowerX):
             self.log("\tFront Camera: point found: x is too much to the left!")
@@ -332,13 +344,13 @@ class Uvhar:
         # if this happened we can continue with flying forward and ignore
         # the y axes of the square (canFly is actually, ignore y axes)
         if (self.inSquare):
-            if (self.distanceToObject > 0 and self.distanceToObject < 0.7 and self.inSquare):
+            if (self.distanceToObject > 0 and self.distanceToObject < 0.5 and self.inSquare):
                 self.hoverCounter += 1
             else:
                 self.log("\tFront Camera: flyin' towards the target!")
                 self.pitch = -0.08 * self.distanceToObject 
-                if(self.pitch < -0.06):
-                    self.pitch = -0.06
+                if(self.pitch < -0.08):
+                    self.pitch = -0.08
         else:
             self.hoverCounter = 0
 
@@ -494,11 +506,9 @@ class Uvhar:
         # counting the pixels we have discovered to calculate the distance
         self.objectPixels = cvCountNonZero(self.finalMatchImage)
         if (self.objectPixels > 0):
-            self.distanceToObject = (self.distanceFromPixels(self.objectPixels) + self.lastDistanceToObject) / 2.
-            if ((self.counter % 10) == 9):
-                self.lastDistanceToObject = self.distanceToObject
+            self.distanceToObject = self.distanceFromPixels(self.objectPixels) 
         else:
-            print "\tNot enough pixels to calculate a distance"
+            print "\tToo few pixels to calculate a distance"
             self.distanceToObject = -1
        
         print "\tobject pixels: %d, guessed distance: %f" % (self.objectPixels, self.distanceToObject)
