@@ -1,0 +1,7 @@
+<launch>
+
+	<include file="$(find siue_pioneer2_configs)/peoplebot_laser.launch" />
+	
+	<include file="$(find siue_pioneer2_configs)/pioneer_slam.launch" />
+
+</launch>	

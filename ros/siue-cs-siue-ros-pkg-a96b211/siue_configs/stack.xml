@@ -1,0 +1,12 @@
+<stack>
+  <description brief="siue_configs">siue_configs</description>
+  <author>Maintained by Nate Roney</author>
+  <license>BSD</license>  
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/siue_configs</url>
+  <depend stack="geometry" /> <!-- tf -->
+  <depend stack="p2os" /> <!-- p2os_driver -->
+  <depend stack="ros" /> <!-- roscpp -->
+  <depend stack="slam_gmapping" /> <!-- gmapping -->
+
+</stack>

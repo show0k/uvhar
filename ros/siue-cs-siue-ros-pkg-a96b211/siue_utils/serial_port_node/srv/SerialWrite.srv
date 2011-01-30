@@ -1,0 +1,5 @@
+string data
+int16 length
+---
+int16 bytesWritten
+bool status

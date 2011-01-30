@@ -1,0 +1,1095 @@
+	Calling initImages
+altitude: 0.00, battery level: 0.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 0.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 0.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 0.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 0.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 0.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 0.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 0.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 0.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 0.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 0.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 0.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 0.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 0.00
+	image is null, skipping frame
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 0.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 0.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 0.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 0.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: -1.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 0.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 60.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 259.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 489.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 639.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 694.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 677.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 632.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 592.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 581.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 581.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 597.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 625.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 649.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 708.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 703.00, battery level: 47.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 689.00, battery level: 47.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 695.00, battery level: 47.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 704.00, battery level: 47.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 704.00, battery level: 47.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 703.00, battery level: 47.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 683.00, battery level: 47.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 657.00, battery level: 47.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 619.00, battery level: 47.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 560.00, battery level: 47.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 524.00, battery level: 47.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 476.00, battery level: 47.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 431.00, battery level: 47.00
+	Front Camera: point found: x is too much to the left!
+	New preferred height: 431
+	Found height set in prefferedHeight with value: 431
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 388.00, battery level: 47.00
+	Front Camera: point found: x is too much to the left!
+	New preferred height: 388
+	Found height set in prefferedHeight with value: 388
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 360.00, battery level: 47.00
+	Front Camera: point found: x is too much to the left!
+	New preferred height: 360
+	Found height set in prefferedHeight with value: 360
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 317.00, battery level: 47.00
+	Front Camera: point found: x is too much to the left!
+	New preferred height: 317
+	Found height set in prefferedHeight with value: 317
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 289.00, battery level: 47.00
+	New preferred height: 289
+	Found height set in prefferedHeight with value: 289
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 278.00, battery level: 47.00
+	New preferred height: 278
+	Found height set in prefferedHeight with value: 278
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 294.00, battery level: 47.00
+	New preferred height: 294
+	Found height set in prefferedHeight with value: 294
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 325.00, battery level: 47.00
+	New preferred height: 325
+	Found height set in prefferedHeight with value: 325
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 364.00, battery level: 47.00
+	New preferred height: 364
+	Found height set in prefferedHeight with value: 364
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 385.00, battery level: 47.00
+	New preferred height: 385
+	Found height set in prefferedHeight with value: 385
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 388.00, battery level: 47.00
+	New preferred height: 388
+	Found height set in prefferedHeight with value: 388
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 388.00, battery level: 47.00
+	New preferred height: 388
+	Found height set in prefferedHeight with value: 388
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 389.00, battery level: 47.00
+	New preferred height: 389
+	Found height set in prefferedHeight with value: 389
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 378.00, battery level: 47.00
+	New preferred height: 378
+	Found height set in prefferedHeight with value: 378
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 381.00, battery level: 47.00
+	New preferred height: 381
+	Found height set in prefferedHeight with value: 381
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 384.00, battery level: 47.00
+	New preferred height: 384
+	Found height set in prefferedHeight with value: 384
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 384.00, battery level: 47.00
+	New preferred height: 384
+	Found height set in prefferedHeight with value: 384
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 383.00, battery level: 47.00
+	New preferred height: 383
+	Found height set in prefferedHeight with value: 383
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 382.00, battery level: 47.00
+	New preferred height: 382
+	Found height set in prefferedHeight with value: 382
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 385.00, battery level: 47.00
+	New preferred height: 385
+	Found height set in prefferedHeight with value: 385
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 381.00, battery level: 47.00
+	Front Camera: point found: x is too much to the right!
+	New preferred height: 381
+	Found height set in prefferedHeight with value: 381
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 384.00, battery level: 47.00
+	Front Camera: point found: x is too much to the right!
+	New preferred height: 384
+	Found height set in prefferedHeight with value: 384
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 397.00, battery level: 47.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 424.00, battery level: 47.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 414.00, battery level: 47.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 420.00, battery level: 47.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 417.00, battery level: 47.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 374.00, battery level: 47.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 334.00, battery level: 47.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 295.00, battery level: 47.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 256.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 256.00 to 384 with 0.21
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 198.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 198.00 to 384 with 0.31
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 165.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 165.00 to 384 with 0.37
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 152.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 152.00 to 384 with 0.39
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 141.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 141.00 to 384 with 0.41
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 151.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 151.00 to 384 with 0.39
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 182.00, battery level: 47.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too low!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 210.00, battery level: 47.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too low!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 250.00, battery level: 47.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too low!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 300.00, battery level: 47.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too low!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 350.00, battery level: 47.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 371.00, battery level: 47.00
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 383.00, battery level: 47.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 383.00, battery level: 47.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 385.00, battery level: 47.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 350.00, battery level: 47.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 327.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 327.00 to 384 with 0.10
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 283.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 283.00 to 384 with 0.17
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 219.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 219.00 to 384 with 0.28
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 179.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 179.00 to 384 with 0.34
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 157.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 157.00 to 384 with 0.38
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 148.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 148.00 to 384 with 0.39
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 166.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 166.00 to 384 with 0.36
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 207.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 207.00 to 384 with 0.30
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 243.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 243.00 to 384 with 0.24
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 303.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 303.00 to 384 with 0.14
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 361.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 361.00 to 384 with 0.04
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 424.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 424.00 to 384 with -0.07
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 472.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 472.00 to 384 with -0.15
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 502.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 502.00 to 384 with -0.20
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 512.00, battery level: 46.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 512.00 to 384 with -0.21
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 515.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 515.00 to 384 with -0.22
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 499.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 499.00 to 384 with -0.19
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 482.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 482.00 to 384 with -0.16
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 447.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 447.00 to 384 with -0.11
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 418.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 418.00 to 384 with -0.06
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 371.00, battery level: 47.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 371.00 to 384 with 0.02
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 332.00, battery level: 47.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 308.00, battery level: 47.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 227.00, battery level: 47.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 159.00, battery level: 46.00
+	New preferred height: 159
+	Found height set in prefferedHeight with value: 159
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 158.00, battery level: 46.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 158.00 to 159 with 0.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 177.00, battery level: 46.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 177.00 to 159 with -0.03
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 212.00, battery level: 46.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 212.00 to 159 with -0.09
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 246.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 246.00 to 159 with -0.15
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 266.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 266.00 to 159 with -0.18
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 274.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 274.00 to 159 with -0.19
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 230.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 230.00 to 159 with -0.12
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 261.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 261.00 to 159 with -0.17
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 256.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 256.00 to 159 with -0.16
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 232.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 232.00 to 159 with -0.12
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 206.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 206.00 to 159 with -0.08
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 199.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 199.00 to 159 with -0.07
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 152.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 152.00 to 159 with 0.01
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 93.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 93.00 to 159 with 0.11
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 71.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 71.00 to 159 with 0.15
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 78.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 78.00 to 159 with 0.14
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 93.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 93.00 to 159 with 0.11
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 110.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 110.00 to 159 with 0.08
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 123.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 123.00 to 159 with 0.06
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 135.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 135.00 to 159 with 0.04
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 146.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 146.00 to 159 with 0.02
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 158.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 158.00 to 159 with 0.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 168.00, battery level: 46.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 168.00 to 159 with -0.02
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 176.00, battery level: 46.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 176.00 to 159 with -0.03
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 181.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 181.00 to 159 with -0.04
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 186.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 186.00 to 159 with -0.05
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 172.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 172.00 to 159 with -0.02
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 157.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 157.00 to 159 with 0.00
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 148.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 148.00 to 159 with 0.02
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 144.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 144.00 to 159 with 0.03
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 147.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 147.00 to 159 with 0.02
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 142.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 142.00 to 159 with 0.03
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 141.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 141.00 to 159 with 0.03
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 145.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 145.00 to 159 with 0.02
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 152.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 152.00 to 159 with 0.01
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 175.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 175.00 to 159 with -0.03
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 180.00, battery level: 44.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 180.00 to 159 with -0.04
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 178.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 178.00 to 159 with -0.03
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 174.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 174.00 to 159 with -0.03
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 172.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 172.00 to 159 with -0.02
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 170.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 170.00 to 159 with -0.02
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 162.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 162.00 to 159 with -0.01
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 151.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 151.00 to 159 with 0.01
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 140.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 140.00 to 159 with 0.03
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 121.00, battery level: 45.00
+	Front Camera: no point found, keep on turnin'!
+	Going from 121.00 to 159 with 0.06
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 126.00, battery level: 45.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 117.00, battery level: 45.00
+	Front Camera: point found: x is too much to the left!
+	New preferred height: 117
+	Found height set in prefferedHeight with value: 117
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 133.00, battery level: 45.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 145.00, battery level: 45.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 147.00, battery level: 45.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 135.00, battery level: 45.00
+	Front Camera: point found: x is too much to the left!
+	New preferred height: 135
+	Found height set in prefferedHeight with value: 135
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 110.00, battery level: 45.00
+	New preferred height: 110
+	Found height set in prefferedHeight with value: 110
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 65.00, battery level: 45.00
+	New preferred height: 65
+	Found height set in prefferedHeight with value: 65
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 14.00, battery level: 45.00
+	New preferred height: 14
+	Found height set in prefferedHeight with value: 14
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: -34.00, battery level: 45.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too low!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: -59.00, battery level: 45.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too low!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: -53.00, battery level: 44.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too low!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: -28.00, battery level: 44.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too low!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 2.00, battery level: 44.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too low!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 53.00, battery level: 44.00
+	Front Camera: point found: x is too much to the right!
+	New preferred height: 53
+	Found height set in prefferedHeight with value: 53
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 102.00, battery level: 43.00
+	Front Camera: point found: x is too much to the right!
+	New preferred height: 102
+	Found height set in prefferedHeight with value: 102
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 112.00, battery level: 43.00
+	Front Camera: point found: x is too much to the right!
+	New preferred height: 112
+	Found height set in prefferedHeight with value: 112
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 115.00, battery level: 43.00
+	Front Camera: point found: x is too much to the right!
+	New preferred height: 115
+	Found height set in prefferedHeight with value: 115
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 117.00, battery level: 43.00
+	Front Camera: point found: x is too much to the right!
+	New preferred height: 117
+	Found height set in prefferedHeight with value: 117
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 120.00, battery level: 43.00
+	Front Camera: point found: x is too much to the right!
+	New preferred height: 120
+	Found height set in prefferedHeight with value: 120
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 119.00, battery level: 43.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 124.00, battery level: 43.00
+	Front Camera: point found: x is too much to the right!
+	New preferred height: 124
+	Found height set in prefferedHeight with value: 124
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 91.00, battery level: 43.00
+	Front Camera: point found: x is too much to the right!
+	New preferred height: 91
+	Found height set in prefferedHeight with value: 91
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 93.00, battery level: 43.00
+	Front Camera: point found: x is too much to the right!
+	New preferred height: 93
+	Found height set in prefferedHeight with value: 93
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 37.00, battery level: 43.00
+	Front Camera: point found: x is too much to the right!
+	New preferred height: 37
+	Found height set in prefferedHeight with value: 37
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 5.00, battery level: 43.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too low!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: -16.00, battery level: 43.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too low!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: -24.00, battery level: 44.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too low!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: -16.00, battery level: 44.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too low!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: -1.00, battery level: 44.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too low!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 19.00, battery level: 44.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too low!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 37.00, battery level: 44.00
+	Front Camera: point found: x is too much to the right!
+	New preferred height: 37
+	Found height set in prefferedHeight with value: 37
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 52.00, battery level: 44.00
+	Front Camera: point found: x is too much to the right!
+	New preferred height: 52
+	Found height set in prefferedHeight with value: 52
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 66.00, battery level: 43.00
+	Front Camera: point found: x is too much to the right!
+	New preferred height: 66
+	Found height set in prefferedHeight with value: 66
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 76.00, battery level: 43.00
+	Front Camera: point found: x is too much to the right!
+	New preferred height: 76
+	Found height set in prefferedHeight with value: 76
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 73.00, battery level: 43.00
+	Front Camera: point found: x is too much to the right!
+	New preferred height: 73
+	Found height set in prefferedHeight with value: 73
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 73.00, battery level: 43.00
+	Front Camera: point found: x is too much to the right!
+	New preferred height: 73
+	Found height set in prefferedHeight with value: 73
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 79.00, battery level: 43.00
+	Front Camera: point found: x is too much to the right!
+	New preferred height: 79
+	Found height set in prefferedHeight with value: 79
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 80.00, battery level: 43.00
+	Front Camera: point found: x is too much to the right!
+	New preferred height: 80
+	Found height set in prefferedHeight with value: 80
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 77.00, battery level: 43.00
+	Front Camera: point found: x is too much to the right!
+	New preferred height: 77
+	Found height set in prefferedHeight with value: 77
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 79.00, battery level: 43.00
+	Front Camera: point found: x is too much to the right!
+	New preferred height: 79
+	Found height set in prefferedHeight with value: 79
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 71.00, battery level: 42.00
+	Front Camera: point found: x is too much to the right!
+	New preferred height: 71
+	Found height set in prefferedHeight with value: 71
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 62.00, battery level: 42.00
+	New preferred height: 62
+	Found height set in prefferedHeight with value: 62
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 53.00, battery level: 42.00
+	New preferred height: 53
+	Found height set in prefferedHeight with value: 53
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 46.00, battery level: 42.00
+	New preferred height: 46
+	Found height set in prefferedHeight with value: 46
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 55.00, battery level: 42.00
+	Front Camera: point found: x is too much to the left!
+	New preferred height: 55
+	Found height set in prefferedHeight with value: 55
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 55.00, battery level: 42.00
+	Front Camera: point found: x is too much to the left!
+	New preferred height: 55
+	Found height set in prefferedHeight with value: 55
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 53.00, battery level: 42.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too low!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 53.00, battery level: 42.00
+	Front Camera: point found: x is too much to the left!
+	New preferred height: 53
+	Found height set in prefferedHeight with value: 53
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 51.00, battery level: 42.00
+	Front Camera: point found: x is too much to the left!
+	New preferred height: 51
+	Found height set in prefferedHeight with value: 51
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 48.00, battery level: 42.00
+	Front Camera: point found: x is too much to the left!
+	New preferred height: 48
+	Found height set in prefferedHeight with value: 48
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 46.00, battery level: 42.00
+	Front Camera: point found: x is too much to the left!
+	New preferred height: 46
+	Found height set in prefferedHeight with value: 46
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 46.00, battery level: 41.00
+	Front Camera: point found: x is too much to the left!
+	New preferred height: 46
+	Found height set in prefferedHeight with value: 46
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 99.00, battery level: 41.00
+	Front Camera: point found: x is too much to the left!
+	New preferred height: 99
+	Found height set in prefferedHeight with value: 99
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 60.00, battery level: 41.00
+	Front Camera: point found: x is too much to the left!
+	New preferred height: 60
+	Found height set in prefferedHeight with value: 60
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 50.00, battery level: 41.00
+	Front Camera: point found: x is too much to the left!
+	New preferred height: 50
+	Found height set in prefferedHeight with value: 50
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 61.00, battery level: 41.00
+	Front Camera: point found: x is too much to the left!
+	New preferred height: 61
+	Found height set in prefferedHeight with value: 61
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 42.00, battery level: 42.00
+	New preferred height: 42
+	Found height set in prefferedHeight with value: 42
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 42.00, battery level: 42.00
+	Front Camera: point found: x is too much to the left!
+	New preferred height: 42
+	Found height set in prefferedHeight with value: 42
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 42.00, battery level: 42.00
+	New preferred height: 42
+	Found height set in prefferedHeight with value: 42
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 42.00, battery level: 42.00
+	Front Camera: point found: x is too much to the left!
+	New preferred height: 42
+	Found height set in prefferedHeight with value: 42
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 42.00, battery level: 42.00
+	New preferred height: 42
+	Found height set in prefferedHeight with value: 42
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 42.00, battery level: 42.00
+	Front Camera: point found: x is too much to the left!
+	New preferred height: 42
+	Found height set in prefferedHeight with value: 42
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 42.00, battery level: 42.00
+	New preferred height: 42
+	Found height set in prefferedHeight with value: 42
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 36.00, battery level: 42.00
+	Front Camera: point found: x is too much to the left!
+	New preferred height: 36
+	Found height set in prefferedHeight with value: 36
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 50.00, battery level: 43.00
+	Front Camera: point found: y is too low!
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 48.00, battery level: 43.00
+	Front Camera: point found: y is too low!
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 45.00, battery level: 43.00
+	New preferred height: 45
+	Found height set in prefferedHeight with value: 45
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 41.00, battery level: 43.00
+	New preferred height: 41
+	Found height set in prefferedHeight with value: 41
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 49.00, battery level: 43.00
+	New preferred height: 49
+	Found height set in prefferedHeight with value: 49
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 71.00, battery level: 42.00
+	Front Camera: point found: y is too low!
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 100.00, battery level: 42.00
+	New preferred height: 100
+	Found height set in prefferedHeight with value: 100
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 115.00, battery level: 42.00
+	Front Camera: point found: y is too low!
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 122.00, battery level: 42.00
+	New preferred height: 122
+	Found height set in prefferedHeight with value: 122
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 122.00, battery level: 42.00
+	New preferred height: 122
+	Found height set in prefferedHeight with value: 122
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 121.00, battery level: 42.00
+	New preferred height: 121
+	Found height set in prefferedHeight with value: 121
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 141.00, battery level: 42.00
+	New preferred height: 141
+	Found height set in prefferedHeight with value: 141
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 129.00, battery level: 42.00
+	New preferred height: 129
+	Found height set in prefferedHeight with value: 129
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 138.00, battery level: 42.00
+	New preferred height: 138
+	Found height set in prefferedHeight with value: 138
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 149.00, battery level: 42.00
+	New preferred height: 149
+	Found height set in prefferedHeight with value: 149
+	Front Camera: flyin' towards the target!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 162.00, battery level: 42.00
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 166.00, battery level: 42.00
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 163.00, battery level: 42.00
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 164.00, battery level: 42.00
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 155.00, battery level: 42.00
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 141.00, battery level: 41.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 109.00, battery level: 41.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 74.00, battery level: 41.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: 22.00, battery level: 41.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too high
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: -35.00, battery level: 41.00
+	Front Camera: point found: x is too much to the left!
+	New preferred height: -35
+	Found height set in prefferedHeight with value: -35
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: -79.00, battery level: 41.00
+	Front Camera: point found: x is too much to the left!
+	Front Camera: point found: y is too low!
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: -131.00, battery level: 41.00
+	Front Camera: no point found, keep on turnin'!
+	Going from -131.00 to -35 with 0.16
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: -161.00, battery level: 41.00
+	Front Camera: no point found, keep on turnin'!
+	Going from -161.00 to -35 with 0.21
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: -181.00, battery level: 41.00
+	Front Camera: no point found, keep on turnin'!
+	Going from -181.00 to -35 with 0.24
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: -199.00, battery level: 41.00
+	Front Camera: no point found, keep on turnin'!
+	Going from -199.00 to -35 with 0.27
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: -204.00, battery level: 41.00
+	Front Camera: no point found, keep on turnin'!
+	Going from -204.00 to -35 with 0.28
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: -199.00, battery level: 41.00
+	Front Camera: no point found, keep on turnin'!
+	Going from -199.00 to -35 with 0.27
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: -186.00, battery level: 41.00
+	Front Camera: no point found, keep on turnin'!
+	Going from -186.00 to -35 with 0.25
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: -155.00, battery level: 41.00
+	Front Camera: no point found, keep on turnin'!
+	Going from -155.00 to -35 with 0.20
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: -108.00, battery level: 41.00
+	Front Camera: no point found, keep on turnin'!
+	Going from -108.00 to -35 with 0.12
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: -66.00, battery level: 41.00
+	Front Camera: no point found, keep on turnin'!
+	Going from -66.00 to -35 with 0.05
+finalMatchImage width: 320, finalMatchImage height: 240
+altitude: -8.00, battery level: 41.00
+	Front Camera: point found: x is too much to the right!
+	Front Camera: point found: y is too low!
+finalMatchImage width: 320, finalMatchImage height: 240
+	Python recognizes exit command
+	python exit called
+728
