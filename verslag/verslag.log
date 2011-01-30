@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.12.9)  31 JAN 2011 00:38
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.9.1)  31 JAN 2011 00:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -47,8 +47,7 @@ Package ifvtex Info: VTeX not detected.
 \Gm@odd@mp=\dimen105
 \Gm@even@mp=\dimen106
 \Gm@dimlist=\toks15
-
-(/usr/share/texmf-texlive/tex/xelatex/xetexconfig/geometry.cfg))
+)
 (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -64,7 +63,7 @@ File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
 (/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
+File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
 \Gread@gobject=\count90
 ))
 \Gin@req@height=\dimen107
@@ -101,7 +100,7 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )
-(/etc/texmf/tex/latex/config/hyperref.cfg
+(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 (/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
@@ -238,7 +237,7 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-(/usr/share/texmf/tex/context/base/supp-pdf.mkii
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count98
 \scratchdimen=\dimen112
@@ -282,31 +281,41 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 15.
+
+(./verslag.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 19.
+(Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 19.
+(Font)              <5> on input line 2.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 22.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 4.
+)
+\tf@toc=\write4
+\openout4 = `verslag.toc'.
+
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 28.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 29.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 28.
+(hyperref)                removing `math shift' on input line 29.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 28.
+(hyperref)                removing `superscript' on input line 29.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 28.
+(hyperref)                removing `math shift' on input line 29.
 
-<arDrone.jpg, id=57, 582.175pt x 288.07625pt>
+<arDrone.jpg, id=70, 582.175pt x 288.07625pt>
 File: arDrone.jpg Graphic file (type jpg)
- <use arDrone.jpg>
-(./controllingTheArDrone.tex
+ <use arDrone.jpg> [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./controllingTheArDrone.t
+ex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 1.
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <14.4> not available
@@ -324,40 +333,66 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-<pitchYawRoll.png, id=58, 439.6425pt x 395.4775pt>
+<pitchYawRoll.png, id=91, 439.6425pt x 395.4775pt>
 File: pitchYawRoll.png Graphic file (type png)
  <use pitchYawRoll.png>
-[1
+Underfull \hbox (badness 10000) in paragraph at lines 14--18
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./arDrone.jpg>])
-(./methodsUsed.tex <HSV.jpg, id=79, 642.4pt x 481.8pt>
+ []
+
+[2 <./arDrone.jpg> <./pitchYawRoll.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
+
+ []
+
+<mainloop.png, id=102, 590.205pt x 493.845pt>
+File: mainloop.png Graphic file (type png)
+ <use mainloop.png>
+Underfull \hbox (badness 10000) in paragraph at lines 46--50
+
+ []
+
+[3 <./mainloop.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 51--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--58
+
+ []
+
+) (./methodsUsed.tex <HSV.jpg, id=110, 642.4pt x 481.8pt>
 File: HSV.jpg Graphic file (type jpg)
  <use HSV.jpg>
-<processedImage.png, id=81, 328.22626pt x 246.9225pt>
+<processedImage.png, id=112, 328.22626pt x 246.9225pt>
 File: processedImage.png Graphic file (type png)
- <use processedImage.png>) [2 <./pitchYawRoll.png>] [3 <./HSV.jpg> <./processed
-Image.png>] (./verslag.aux) ) 
+
+<use processedImage.png>) [4] [5 <./HSV.jpg> <./processedImage.png>]
+(./verslag.aux) ) 
 Here is how much of TeX's memory you used:
- 4604 strings out of 495061
- 67284 string characters out of 1182621
- 139060 words of memory out of 3000000
- 7706 multiletter control sequences out of 15000+50000
- 9626 words of font info for 34 fonts, out of 3000000 for 9000
+ 4618 strings out of 495061
+ 67355 string characters out of 1182622
+ 141889 words of memory out of 3000000
+ 7713 multiletter control sequences out of 15000+50000
+ 10535 words of font info for 37 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 38i,11n,39p,711b,322s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfo
-nts/cm/cmbsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmb
-x12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texm
-f-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fo
-nts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/pub
-lic/amsfonts/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb><
-/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
-texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on verslag.pdf (3 pages, 256846 bytes).
+ 38i,11n,39p,711b,357s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbsy
+10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/tex
+mf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/f
+onts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/p
+ublic/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
+ts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pf
+b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texliv
+e/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/typ
+e1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/am
+sfonts/cm/cmti10.pfb>
+Output written on verslag.pdf (5 pages, 321643 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 22 named destinations out of 1000 (max. 500000)
- 125 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 172 PDF objects out of 1000 (max. 8388607)
+ 26 named destinations out of 1000 (max. 500000)
+ 130 words of extra memory for PDF output out of 10000 (max. 10000000)
 
