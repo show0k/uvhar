@@ -1,6 +1,7 @@
 \documentclass[a4paper,10pt]{article}
 \usepackage[margin=2.5cm, nohead]{geometry}
 \usepackage{graphicx}
+\usepackage{hyperref}
 \usepackage{verbatim}
 \newcommand{\Ardrone}{Ar Drone$^{\copyright}$ }
 
@@ -14,11 +15,27 @@
 
 \section{Introduction}
 
+\subsection{Our Goal}
+Our absolute goal, is winning in some subtasks of the Summer-IMAV 2011 Indoor competition \footnote{\href{http://www.imav2011.org/images/stories/documents/summerimav2011\%20indoor\%20challenges\%20v2.0.pdf}{This link} refers to a pdf file explaining the competition.}.
+This is a competition for flying radio controlled vehicles to autonomously solve some tasks. For this competition, we tried to solve the following sub-tasks:
+\begin{itemize}
+    \item Pick-up Object
+    \item Exit Building
+    \item Release Object
+\end{itemize}
+We used the Parrot \Ardrone to solve these problems.
+
 \subsection{The \Ardrone}
+\begin{figure}
+  \centering
+      \includegraphics[scale=0.5]{arDrone.jpg}
+  \caption{The \Ardrone}
+\end{figure}
+
 The \Ardrone is an over WiFi remote controlled quadrocopter that has several onboard sensors:
 \begin{itemize}
-	\item One vertical camera, pointing downwards
-	\item One horizontal camera, pointing forward 
+	\item One vertical camera, pointing downward \\ This is also used for stabilisation and calculating the speed. It has a 63$^{\circ}$ angle.
+	\item One horizontal camera, pointing forward \\ This is a 91$^{\circ}$ angle camera.
 	\item Ultrasound altimeter, to measure the altitude
     \item 3 axis accelerometer (measures propellor acceleration)
     \item 2 axis gyrometer 
@@ -26,21 +43,11 @@ The \Ardrone is an over WiFi remote controlled quadrocopter that has several onb
 \end{itemize}
 Furthermore, it has an onboard computer system running Linux. 
 
-
-\subsection{Our Goal}
-Summer-IMAV 2011 Indoor competition, some sub-tasks of the exploration challenge:
-\begin{itemize}
-    \item Pick-up Object
-    \item Exit Building
-    \item Release Object
-\end{itemize}
-
-
 \input{controllingTheArDrone}
 
 \input{methodsUsed}
 
-% In the presentation we had sections for problems and results, but I guess 
+% In the presentation we had sections for problems and solutions, but I guess 
 % we should just put that stuff in the other chapters (and as Arnoud said
 % make it more like "we tried this and this but discarded that because that 
 % and that)
