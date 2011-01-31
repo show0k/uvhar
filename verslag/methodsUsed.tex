@@ -20,7 +20,7 @@ The first step was to define the values that our color ranged from. We chose to 
 
 OpenCV placed the pixels that were in the right HSV range in a new picture. This picture had a value of 1 on the pixel where our color-values were good, and a value of 0 where they were bad. This resulted in a white blob where almost every white pixel was on our object. Something like figure \ref{processed}. Unfortunately the computer can not understand this. We still need to let the \Ardrone know where the object is in this picture. To find the centre of the object, we tried histogram backprojection.
 
-\begin{comment}
+\begin{comment}% persoonlijk vind ik dit mooier maar hij moet wel een wit randje ertussen bouwen 
 \begin{figure}
   \centering
   \subfloat[The image after the first processing.]{\label{fig:processed}\includegraphics[width=2.1in]{processedImage}}
@@ -30,7 +30,7 @@ OpenCV placed the pixels that were in the right HSV range in a new picture. This
 \end{figure}
 \end{comment}
 
-%\begin{comment} % als jij deze mooier is moet je em weer terug veranderen, maar wel ff erbij zetten wat dat vierkantje in de recht doet
+%\begin{comment} 
 \begin{figure}
   \centering$
   \begin{array}{cc}
