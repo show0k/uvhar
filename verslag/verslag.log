@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.9.1)  31 JAN 2011 22:09
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.9.1)  31 JAN 2011 22:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -424,10 +424,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 5693 strings out of 495061
- 86444 string characters out of 1182622
+ 5689 strings out of 495061
+ 86374 string characters out of 1182622
  172198 words of memory out of 3000000
- 8770 multiletter control sequences out of 15000+50000
+ 8766 multiletter control sequences out of 15000+50000
  10535 words of font info for 37 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  44i,13n,42p,711b,378s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -443,7 +443,7 @@ e/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1
 /public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
 nts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy
 7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on verslag.pdf (7 pages, 346785 bytes).
+Output written on verslag.pdf (7 pages, 346795 bytes).
 PDF statistics:
  214 PDF objects out of 1000 (max. 8388607)
  33 named destinations out of 1000 (max. 500000)
