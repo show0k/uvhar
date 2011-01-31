@@ -4,12 +4,23 @@ We divided the first subtask in three subgoals: Finding the object; tracking the
 \subsection{Finding The Object}
 To find the object we used a simple routine, in combination with a more complicated recognition. The routine is: Start flying at a low height, and then turn 360 degrees.
  While turning we constantly check the front camera (since we can only check one camera properly at the same time) for our object. If we had no indication of the object
-at this particular height we would increase the search height and begin again. If the object had been found we would store that height and go back to that height when 
-it was lost. This, in order to speed up the search process later on (it was not unknown for the \Ardrone to lose the object some times). \\
+at this particular height we would increase the search height and begin again.
+If the object had been found we would store that height and go back to that when
+the object was lost. This, in order to speed up the search process later on (it was not unknown for the \Ardrone to lose the object some times). \\
 
-We chose to make an object that had a bright pink color. This simplified things for us: We only had to recognize a big enough surface of our color. We tried a couple of things to recognize our color:
+We chose to make an object that had a bright pink color. This simplified things
+for us: We only had to recognize a big enough surface of our color. We tried a
+	couple of things to recognize our color:\\
 
-The first step was to define the values that our color ranged from. We chose to divide our image in HSV values. This divides the image in 3 different layers: Hue, Saturation and Value. These layers represent the values of the image's ``Hue, Saturation and Value'' as shown in figure \ref{HSV}. OpenCV changes these values to a range of 0 to 255 (to create images it can show) by dividing the Hue by 2, and the saturation and value by $\frac{100}{255}$. The advantage of HSV above RGB (Red Green Blue) values is that it is easier to recognize of your color needs to be a bit lighter (thus, increasing the Value) than that your color needs to be a bit greener.
+The first step was to define the values that our color ranged from. We chose to
+divide our image in HSV values. This divides the image in 3 different layers:
+Hue, Saturation and Value. These layers represent the values of the image's
+``Hue, Saturation and Value'' as shown in figure \ref{HSV}. OpenCV changes these
+values to a range of 0 to 255 (to create images it can show) by dividing the Hue
+by 2, and the saturation and value by $\frac{100}{255}$. The advantage of HSV
+above RGB (Red Green Blue) values is that it is easier to recognize of your
+color needs to be a bit lighter (thus, increasing the Value) than that your
+color needs to be a bit greener.\\
 
 \begin{figure}
   \centering
@@ -18,29 +29,25 @@ The first step was to define the values that our color ranged from. We chose to 
   \label{HSV}
 \end{figure}
 
-OpenCV placed the pixels that were in the right HSV range in a new picture. This picture had a value of 1 on the pixel where our color-values were good, and a value of 0 where they were bad. This resulted in a white blob where almost every white pixel was on our object. Something like figure \ref{processed}. Unfortunately the computer can not understand this. We still need to let the \Ardrone know where the object is in this picture. To find the centre of the object, we tried histogram backprojection.
+OpenCV placed the pixels that were in the right HSV range in a new picture. This
+picture had a value of 1 on the pixel where our color-values were good, and a
+value of 0 where they were bad. This resulted in a white blob where almost every
+white pixel was on our object. Something like figure \ref{processed}.
+Unfortunately the computer can not understand this. We still need to let the
+\Ardrone know where the object is in this picture. To find the centre of the
+object, we tried histogram backprojection.
 
-\begin{comment}% persoonlijk vind ik dit mooier maar hij moet wel een wit randje ertussen bouwen 
+% persoonlijk vind ik dit mooier maar hij moet wel een wit randje ertussen bouwen 
+% Je hebt gelijk. Ik had die andere manier als eerst gevonden op google, maar
+% zocht eigenlijk deze. De whitespace zit er nou tussen.
 \begin{figure}
   \centering
   \subfloat[The image after the first processing.]{\label{fig:processed}\includegraphics[width=2.1in]{processedImage}}
+  \hspace{1cm}
   \subfloat[The image after the second processing.]{\label{fig:processed2}\includegraphics[width=2.1in]{processedImage2}}
   \caption{Results of processing a frame, the square in the right image debug-output.}
   \label{processed}
 \end{figure}
-\end{comment}
-
-%\begin{comment} 
-\begin{figure}
-  \centering$
-  \begin{array}{cc}
-      \includegraphics[width=2.5in]{processedImage.png} &
-      \includegraphics[width=2.5in]{processedImage2.png}
-  \end{array}$
-  \caption{Left: An example of our image after the first processing. Right: After the second processing. The square is just debug output.}
-  \label{processed}
-\end{figure}
-%\end{comment}
 
 \subsection{Tracking The Object}
 Histogram backprojection is a technique that takes a histogram (a representation of the distribution of the colors in an image) of your target, and matches it for the
@@ -107,7 +114,9 @@ drifting off quite a bit even if we only want to rotate it 360 degrees. However,
 the \Ardrone has positioned itself in front of the object it will overshoot with the
 corrections if it drifts of. To compensate for this effect we made sure the strength
 of the steering values are lower as the \Ardrone is closer towards the target. This
-is the case for pitch, yaw, roll and even the gaz commands. 
+is the case for pitch, roll and even the gaz commands. For the yaw, we did
+almost the same, but in stead of letting it depend on the object distance, we
+let that depend on the place of the object in the picture. 
 
 \subsubsection{Blind Flight}
 The \Ardrone can only send one of the two video-streams over the network to our application. 
