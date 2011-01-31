@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.12.9)  31 JAN 2011 01:10
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.12.9)  31 JAN 2011 16:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -369,31 +369,52 @@ File: HSV.jpg Graphic file (type jpg)
 <processedImage.png, id=113, 328.22626pt x 246.9225pt>
 File: processedImage.png Graphic file (type png)
 
-<use processedImage.png>) [4] [5 <./HSV.jpg> <./processedImage.png>]
-(./verslag.aux) ) 
+<use processedImage.png>
+<processedImage2.png, id=114, 308.15125pt x 229.85875pt>
+File: processedImage2.png Graphic file (type png)
+
+<use processedImage2.png> [4] [5 <./HSV.jpg> <./processedImage.png> <./processe
+dImage2.png>]
+
+Package hyperref Warning: Empty destination name,
+(hyperref)                using `UNDEFINED' on input line 55.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--57
+
+ []
+
+) [6] (./verslag.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4624 strings out of 495061
- 67517 string characters out of 1182621
- 142264 words of memory out of 3000000
- 7716 multiletter control sequences out of 15000+50000
+ 4636 strings out of 495061
+ 67729 string characters out of 1182621
+ 143357 words of memory out of 3000000
+ 7721 multiletter control sequences out of 15000+50000
  10535 words of font info for 37 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  38i,11n,39p,711b,357s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbsy
-10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/tex
-mf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/f
-onts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/p
-ublic/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
-ts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pf
-b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share
-/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/typ
-e1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/am
-sfonts/cm/cmti10.pfb>
-Output written on verslag.pdf (5 pages, 322153 bytes).
+pdfTeX warning (dest): name{UNDEFINED} has been referenced but does not exist
+, replaced by a fixed one
+
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/shar
+e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public
+/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
+/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></
+usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/tex
+mf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fo
+nts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
+s/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.
+pfb>
+Output written on verslag.pdf (6 pages, 330718 bytes).
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
- 26 named destinations out of 1000 (max. 500000)
- 130 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 190 PDF objects out of 1000 (max. 8388607)
+ 32 named destinations out of 1000 (max. 500000)
+ 135 words of extra memory for PDF output out of 10000 (max. 10000000)
 

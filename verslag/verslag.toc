@@ -8,6 +8,9 @@
 \contentsline {section}{\numberline {3}Methods Used}{4}{section.3}
 \contentsline {subsection}{\numberline {3.1}Finding The Object}{4}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Tracking The Object}{4}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Picking Up The Object}{4}{subsection.3.3}
-\contentsline {section}{\numberline {4}Results}{4}{section.4}
-\contentsline {section}{\numberline {5}Future Work}{4}{section.5}
+\contentsline {subsection}{\numberline {3.3}Picking Up The Object}{6}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Calculate Distance}{6}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Variable steering commands}{6}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}Blind flight}{6}{subsubsection.3.3.3}
+\contentsline {section}{\numberline {4}Results}{6}{section.4}
+\contentsline {section}{\numberline {5}Future Work}{6}{section.5}
