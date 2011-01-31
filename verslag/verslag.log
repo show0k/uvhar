@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.12.9)  31 JAN 2011 16:14
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.9.1)  31 JAN 2011 22:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -47,8 +47,7 @@ Package ifvtex Info: VTeX not detected.
 \Gm@odd@mp=\dimen105
 \Gm@even@mp=\dimen106
 \Gm@dimlist=\toks15
-
-(/usr/share/texmf-texlive/tex/xelatex/xetexconfig/geometry.cfg))
+)
 (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -64,7 +63,7 @@ File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
 (/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
+File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
 \Gread@gobject=\count90
 ))
 \Gin@req@height=\dimen107
@@ -101,7 +100,7 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )
-(/etc/texmf/tex/latex/config/hyperref.cfg
+(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 (/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
@@ -179,23 +178,55 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks17
 \verbatim@line=\toks18
 \verbatim@in@stream=\read1
+)
+(/usr/share/texmf-texlive/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/share/texmf-texlive/tex/latex/caption/caption.sty
+Package: caption 2009/10/09 v3.1k Customizing captions (AR)
+
+(/usr/share/texmf-texlive/tex/latex/caption/caption3.sty
+Package: caption3 2009/10/09 v3.1k caption3 kernel (AR)
+\captionmargin=\dimen112
+\captionmargin@=\dimen113
+\captionwidth=\dimen114
+\caption@indent=\dimen115
+\caption@parindent=\dimen116
+\caption@hangindent=\dimen117
+)
+\c@ContinuedFloat=\count98
+Package caption Info: hyperref package is loaded.
+)
+\c@KVtest=\count99
+\sf@farskip=\skip43
+\sf@captopadj=\dimen118
+\sf@capskip=\skip44
+\sf@nearskip=\skip45
+\c@subfigure=\count100
+\c@subfigure@save=\count101
+\c@lofdepth=\count102
+\c@subtable=\count103
+\c@subtable@save=\count104
+\c@lotdepth=\count105
+\sf@top=\skip46
+\sf@bottom=\skip47
 ) (./verslag.aux)
 \openout1 = `verslag.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
 
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
@@ -238,50 +269,54 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-(/usr/share/texmf/tex/context/base/supp-pdf.mkii
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count98
-\scratchdimen=\dimen112
+\scratchcounter=\count106
+\scratchdimen=\dimen119
 \scratchbox=\box26
-\nofMPsegments=\count99
-\nofMParguments=\count100
+\nofMPsegments=\count107
+\nofMParguments=\count108
 \everyMPshowfont=\toks19
-\MPscratchCnt=\count101
-\MPscratchDim=\dimen113
-\MPnumerator=\count102
+\MPscratchCnt=\count109
+\MPscratchDim=\dimen120
+\MPnumerator=\count110
 \everyMPtoPDFconversion=\toks20
 )
-Package hyperref Info: Link coloring OFF on input line 13.
+Package hyperref Info: Link coloring OFF on input line 14.
  (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
 (/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
 Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
-\c@section@level=\count103
+\c@section@level=\count111
 )
-LaTeX Info: Redefining \ref on input line 13.
-LaTeX Info: Redefining \pageref on input line 13.
+LaTeX Info: Redefining \ref on input line 14.
+LaTeX Info: Redefining \pageref on input line 14.
  (./verslag.out)
 (./verslag.out)
 \@outlinefile=\write3
 \openout3 = `verslag.out'.
 
 \AtBeginShipoutBox=\box27
+Package caption Info: Begin \AtBeginDocument code.
+Package caption3 Info: subfig package 1.2 or 1.3 is loaded.
+LaTeX Info: Redefining \subref on input line 14.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <17.28> on input line 15.
+(Font)              <17.28> on input line 16.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 15.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 15.
+(Font)              <12> on input line 16.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 16.
  (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <17.28> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 15.
+(Font)              <8> on input line 16.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 15.
+(Font)              <6> on input line 16.
 
 (./verslag.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -297,21 +332,21 @@ LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
 \openout4 = `verslag.toc'.
 
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 29.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 30.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 29.
+(hyperref)                removing `math shift' on input line 30.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 29.
+(hyperref)                removing `superscript' on input line 30.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 29.
+(hyperref)                removing `math shift' on input line 30.
 
-<arDrone.jpg, id=70, 582.175pt x 288.07625pt>
+<arDrone.jpg, id=85, 582.175pt x 288.07625pt>
 File: arDrone.jpg Graphic file (type jpg)
  <use arDrone.jpg> [1
 
@@ -334,7 +369,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-<pitchYawRoll.png, id=91, 439.6425pt x 395.4775pt>
+<pitchYawRoll.png, id=106, 439.6425pt x 395.4775pt>
 File: pitchYawRoll.png Graphic file (type png)
  <use pitchYawRoll.png>
 Underfull \hbox (badness 10000) in paragraph at lines 14--18
@@ -346,7 +381,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
 
-<mainloop.png, id=102, 590.205pt x 493.845pt>
+<mainloop.png, id=117, 590.205pt x 493.845pt>
 File: mainloop.png Graphic file (type png)
  <use mainloop.png>
 Underfull \hbox (badness 10000) in paragraph at lines 46--50
@@ -363,58 +398,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--58
 
  []
 
-) (./methodsUsed.tex <HSV.jpg, id=111, 642.4pt x 481.8pt>
-File: HSV.jpg Graphic file (type jpg)
- <use HSV.jpg>
-<processedImage.png, id=113, 328.22626pt x 246.9225pt>
-File: processedImage.png Graphic file (type png)
-
-<use processedImage.png>
-<processedImage2.png, id=114, 308.15125pt x 229.85875pt>
-File: processedImage2.png Graphic file (type png)
-
-<use processedImage2.png> [4] [5 <./HSV.jpg> <./processedImage.png> <./processe
-dImage2.png>]
-
-Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 55.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--57
+) (./methodsUsed.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--9
 
  []
 
-) [6] (./verslag.aux)
+<HSV.jpg, id=127, 642.4pt x 481.8pt>
+File: HSV.jpg Graphic file (type jpg)
+ <use HSV.jpg>
+<processedImage.png, id=129, 320.19624pt x 240.9pt>
+File: processedImage.png Graphic file (type png)
+ <use processedImage.png>
+<processedImage2.png, id=130, 308.15125pt x 229.85875pt>
+File: processedImage2.png Graphic file (type png)
+
+<use processedImage2.png>
+Underfull \hbox (badness 10000) in paragraph at lines 46--50
+
+ []
+
+[4] [5 <./HSV.jpg> <./processedImage.png> <./processedImage2.png>]) [6]
+[7] (./verslag.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 4636 strings out of 495061
- 67729 string characters out of 1182621
- 143357 words of memory out of 3000000
- 7721 multiletter control sequences out of 15000+50000
+ 5693 strings out of 495061
+ 86444 string characters out of 1182622
+ 172198 words of memory out of 3000000
+ 8770 multiletter control sequences out of 15000+50000
  10535 words of font info for 37 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 38i,11n,39p,711b,357s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{UNDEFINED} has been referenced but does not exist
-, replaced by a fixed one
-
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/shar
-e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-tex
-live/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/
-type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
-/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></
-usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/tex
-mf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fo
-nts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
-s/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.
-pfb>
-Output written on verslag.pdf (6 pages, 330718 bytes).
+ 44i,13n,42p,711b,378s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/sh
+are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-t
+exlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pf
+b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-texliv
+e/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1
+/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy
+7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on verslag.pdf (7 pages, 346785 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
- 32 named destinations out of 1000 (max. 500000)
- 135 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 214 PDF objects out of 1000 (max. 8388607)
+ 33 named destinations out of 1000 (max. 500000)
+ 159 words of extra memory for PDF output out of 10000 (max. 10000000)
 
