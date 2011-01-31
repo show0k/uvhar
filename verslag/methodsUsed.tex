@@ -110,8 +110,13 @@ of the steering values are lower as the \Ardrone is closer towards the target. T
 is the case for pitch, yaw, roll and even the gaz commands. 
 
 \subsubsection{Blind Flight}
-???
-
+The \Ardrone can only send one of the two video-streams over the network to our application. 
+When we decide it is time to fly over the object, to pick it up, we switch to the bottom 
+camera. This allows us to steer the \Ardrone in the right direction when we notice it drifting
+off but in the mean time we do not see any of the more interesting data (the front view). If
+we miss the object completely we might fly against a wall. To solve this we granted the
+\Ardrone a limited amount of time on the bottom camera to pick up the object before we switch
+back to the front camera and restore whatever it might have done. 
 
 \label{sec:pickingUp}
 
