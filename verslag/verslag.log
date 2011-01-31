@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.9.1)  31 JAN 2011 22:13
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.9.1)  31 JAN 2011 22:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -384,11 +384,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--27
 <mainloop.png, id=117, 590.205pt x 493.845pt>
 File: mainloop.png Graphic file (type png)
  <use mainloop.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 46--50
 
  []
 
-[3 <./mainloop.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 51--55
 
  []
@@ -398,18 +402,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--58
 
  []
 
-) (./methodsUsed.tex
+) (./methodsUsed.tex [3]
 Underfull \hbox (badness 10000) in paragraph at lines 5--9
 
  []
 
-<HSV.jpg, id=127, 642.4pt x 481.8pt>
+<HSV.jpg, id=126, 642.4pt x 481.8pt>
 File: HSV.jpg Graphic file (type jpg)
  <use HSV.jpg>
-<processedImage.png, id=129, 320.19624pt x 240.9pt>
+<processedImage.png, id=128, 320.19624pt x 240.9pt>
 File: processedImage.png Graphic file (type png)
  <use processedImage.png>
-<processedImage2.png, id=130, 308.15125pt x 229.85875pt>
+<processedImage2.png, id=129, 308.15125pt x 229.85875pt>
 File: processedImage2.png Graphic file (type png)
 
 <use processedImage2.png>
@@ -417,33 +421,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--50
 
  []
 
-[4] [5 <./HSV.jpg> <./processedImage.png> <./processedImage2.png>]) [6]
-[7] (./verslag.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[4 <./mainloop.png>] [5 <./HSV.jpg> <./processedImage.png> <./processedImage2.p
+ng>] [6]) [7] (./verslag.aux) ) 
 Here is how much of TeX's memory you used:
  5689 strings out of 495061
  86374 string characters out of 1182622
- 172198 words of memory out of 3000000
+ 173198 words of memory out of 3000000
  8766 multiletter control sequences out of 15000+50000
  10535 words of font info for 37 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  44i,13n,42p,711b,378s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/sh
-are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-t
-exlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/font
-s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
-/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pf
-b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share
-/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1
-/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy
-7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on verslag.pdf (7 pages, 346795 bytes).
+</usr/share/texmf-texlive/fonts/type1/public/ams
+fonts/cm/cmbsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
+mbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
+texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texliv
+e/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type
+1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
+fonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7
+.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sh
+are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public
+/amsfonts/cm/cmti10.pfb>
+Output written on verslag.pdf (7 pages, 347439 bytes).
 PDF statistics:
  214 PDF objects out of 1000 (max. 8388607)
  33 named destinations out of 1000 (max. 500000)

@@ -4,10 +4,10 @@
 \contentsline {section}{\numberline {2}Controlling the Ar Drone$^{\copyright }$ }{2}{section.2}
 \contentsline {subsection}{\numberline {2.1}ROS And AT Commands}{2}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Software Development Kit}{3}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Extending C With Python}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.3}Extending C With Python}{3}{subsection.2.3}
 \contentsline {section}{\numberline {3}Methods Used}{4}{section.3}
 \contentsline {subsection}{\numberline {3.1}Finding The Object}{4}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Tracking The Object}{4}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.2}Tracking The Object}{6}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Picking Up The Object}{6}{subsection.3.3}
 \contentsline {subsubsection}{\numberline {3.3.1}Calculate Distance}{6}{subsubsection.3.3.1}
 \contentsline {subsubsection}{\numberline {3.3.2}Variable Steering Commands}{6}{subsubsection.3.3.2}
