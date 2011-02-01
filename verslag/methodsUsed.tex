@@ -18,7 +18,7 @@ Hue, Saturation and Value. These layers represent the values of the image's
 ``Hue, Saturation and Value'' as shown in figure \ref{HSV}. OpenCV changes these
 values to a range of 0 to 255 (to create images it can show) by dividing the Hue
 by 2, and the saturation and value by $\frac{100}{255}$. The advantage of HSV
-above RGB (Red Green Blue) values is that it is easier to recognize of your
+above RGB (Red Green Blue) values is that it is easier to recognize if your
 color needs to be a bit lighter (thus, increasing the Value) than that your
 color needs to be a bit greener.\\
 
@@ -59,11 +59,21 @@ Therefore we tried a different, somewhat simpler method, called ``Template Match
 use a template of the object we wanted to see. This is is a somewhat less complicated method and it works a little bit less well but it did the trick. And 
 since we allready had an image that was only black or white (0 or 1), our template simply had to be a white square. This would match the white space in our image, but not a
  single white pixel. This resulted in an image like in figure \ref{processed}. As you can see, the edges are a bit fuzzy. Now we can use the OpenCV function ``minMaxLoc'' 
-to locate the centre of the object, which is the brightest pixel in the image. 
+to locate the centre of the object, which is the brightest pixel in the image.  \\
 % we zouden hier nog de mooie formule van de opencv api in kunnen stoppen: 
 % http://opencv.willowgarage.com/documentation/python/object_detection.html?highlight=template%20match
 
-At first the size of our template was fixed. It was a 10 by 10 pixels square. This resulted in our second image having too many pixels with a value of 1 (and thus being the brightest). When we were able to calculate the distance of the object (see section \ref{sec:pickingUp}), we made the template size variable, meaning that we always exactly found the centre of the object. 
+At first the size of our template was fixed. It was a 10 by 10 pixels square. This resulted in our second image having too many pixels with a value of 1 (and thus being 
+the brightest). When we were able to calculate the distance of the object (see section \ref{sec:pickingUp}), we made the template size variable, meaning that we always 
+exactly found the centre of the object. The result can be seen in figure \ref{fig:betterR}. 
+
+\begin{figure}
+  \centering
+      \includegraphics[scale=0.51]{betterR.png}
+  \caption{The result of scaling the template image to the distance.}
+  \label{fig:betterR}
+\end{figure}
+
 
 \subsection{Picking Up The Object}
 We chose an object with a handle, and a hook on our \Ardrone. The advantage of this is that we do not have to hover above, or land on our object, but we can simply fly over it, and pick it up with the hook. This is a lot easier, because the \Ardrone has a flying error, which complicates hovering above the object. 
@@ -84,7 +94,7 @@ from it. So all We had to do was to count the number of non-zero pixels in the s
 window. 
 We calibrated this by counting the amount of those pixels for a number of known distances and
 then used an online formula finder \footnote{\href{http://zunzun.com/FunctionFinder/2/}{Zunzun.com function finder}} to find the formula 
-that calculates the distance. See equation \ref{eq:distanceFormula}.
+that calculates the distance. %See equation \ref{eq:distanceFormula}.
 
 \begin{comment}
      # coefficients
@@ -99,12 +109,12 @@ that calculates the distance. See equation \ref{eq:distanceFormula}.
        temp = a * math.exp(b*x_in) + c * math.exp(d*x_in) + f * math.exp(g*x_in)
        temp = temp + Offset
        return temp
-\end{comment}
 
 \begin{equation}
 willen we deze formule er ECHT in hebben?
 \label{eq:distanceFormula}
 \end{equation}
+\end{comment}
 
 \subsubsection{Variable Steering Commands}
 Another important factor in moving towards the object were variable steering commands. 
