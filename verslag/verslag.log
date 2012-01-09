@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.12.9)  31 JAN 2011 23:14
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.12.15)  1 FEB 2011 11:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,7 +6,7 @@ entering extended mode
 (./verslag.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
+yphenation, dutch, loaded.
 (/usr/share/texmf-texlive/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texmf-texlive/tex/latex/base/size10.clo
@@ -444,12 +444,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--63
 
 [6] [7] (./verslag.aux) ) 
 Here is how much of TeX's memory you used:
- 5704 strings out of 495061
- 86701 string characters out of 1182621
- 173438 words of memory out of 3000000
- 8776 multiletter control sequences out of 15000+50000
+ 5704 strings out of 495006
+ 86701 string characters out of 1181409
+ 173555 words of memory out of 3000000
+ 8779 multiletter control sequences out of 15000+50000
  10535 words of font info for 37 fonts, out of 3000000 for 9000
- 28 hyphenation exceptions out of 8191
+ 68 hyphenation exceptions out of 8191
  44i,13n,45p,429b,378s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/
 cm/cmbsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.
@@ -464,7 +464,7 @@ xmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/
 public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
 nts/cm/cmti10.pfb>
-Output written on verslag.pdf (7 pages, 351919 bytes).
+Output written on verslag.pdf (7 pages, 351897 bytes).
 PDF statistics:
  217 PDF objects out of 1000 (max. 8388607)
  35 named destinations out of 1000 (max. 500000)
