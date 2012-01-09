@@ -580,7 +580,7 @@ if __name__ == "__main__":
      while (i < maxCounter):
          uvhar.update([i, 0, 0, 0, 0, 0, 0, 0, 0, 0])
          #time.sleep(0.0467)
-         time.sleep(0.04)
+         time.sleep(0.08)
          i = i + 1
      uvhar.exit()
 
