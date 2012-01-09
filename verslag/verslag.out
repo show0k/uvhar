@@ -1,0 +1,16 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}
+\BOOKMARK [2][-]{subsection.1.1}{Our Goal}{section.1}
+\BOOKMARK [2][-]{subsection.1.2}{The AR Drone\251 }{section.1}
+\BOOKMARK [1][-]{section.2}{Controlling the AR Drone\251 }{}
+\BOOKMARK [2][-]{subsection.2.1}{ROS And AT Commands}{section.2}
+\BOOKMARK [2][-]{subsection.2.2}{Software Development Kit}{section.2}
+\BOOKMARK [2][-]{subsection.2.3}{Extending C With Python}{section.2}
+\BOOKMARK [1][-]{section.3}{Methods Used}{}
+\BOOKMARK [2][-]{subsection.3.1}{Finding The Object}{section.3}
+\BOOKMARK [2][-]{subsection.3.2}{Tracking The Object}{section.3}
+\BOOKMARK [2][-]{subsection.3.3}{Picking Up The Object}{section.3}
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Calculate Distance}{subsection.3.3}
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Variable Steering Commands}{subsection.3.3}
+\BOOKMARK [3][-]{subsubsection.3.3.3}{Blind Flight}{subsection.3.3}
+\BOOKMARK [1][-]{section.4}{Results}{}
+\BOOKMARK [1][-]{section.5}{Future Work}{}

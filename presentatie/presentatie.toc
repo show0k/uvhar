@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.07pt}
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{How it's done}{5}{0}{2}
+\beamer@sectionintoc {3}{Problems \& Solutions}{9}{0}{3}
+\beamer@sectionintoc {4}{Results}{12}{0}{4}
+\beamer@sectionintoc {5}{Future Work}{13}{0}{5}

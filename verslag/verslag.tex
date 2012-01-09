@@ -1,0 +1,117 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=2.5cm, nohead]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{subfig}
+\newcommand{\Ardrone}{AR Drone$^{\copyright}$ }
+
+\title{Autonomous Flight With the \Ardrone}
+\author{Maarten Inja \& Maarten de Waard\\\small 5872464 \& 5894883}
+
+% The presentatie 
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Introduction}
+
+\subsection{Our Goal}
+Our absolute goal, is winning in some subtasks of the Summer-IMAV 2011 Indoor competition \footnote{\href{http://www.imav2011.org/images/stories/documents/summerimav2011\%20indoor\%20challenges\%20v2.0.pdf}{This link} refers to a pdf file explaining the competition.}.
+This is a competition for flying radio controlled vehicles to autonomously solve some tasks. For this competition, we tried to solve the following sub-tasks:
+\begin{itemize}
+    \item Pick-up Object
+    \item Exit Building
+    \item Release Object
+\end{itemize}
+We used the Parrot \Ardrone to solve these problems.
+
+\subsection{The \Ardrone}
+\begin{figure}
+  \centering
+      \includegraphics[scale=0.5]{arDrone.jpg}
+  \caption{The \Ardrone}
+\end{figure}
+
+The \Ardrone is an over WiFi remote controlled quadrocopter that has several onboard sensors:
+\begin{itemize}
+	\item One vertical camera, pointing downward \\ This is also used for stabilisation and calculating the speed. It has a 63$^{\circ}$ angle.
+	\item One horizontal camera, pointing forward \\ This is a 91$^{\circ}$ angle camera.
+	\item Ultrasound altimeter, to measure the altitude
+    \item 3 axis accelerometer (measures propellor acceleration)
+    \item 2 axis gyrometer 
+    \item 1 yaw precision gyrometer
+\end{itemize}
+Furthermore, it has an onboard computer system running Linux. 
+
+\input{controllingTheArDrone}
+
+\input{methodsUsed}
+
+\section{Results}
+We have not reached all of our goals. There were many problems that we encountered along the road that we were able to solve. We decreased the random flying errors
+of the \Ardrone by putting random stuff on the ground (even though it still
+flies into walls some times) and we were able to work with the complex SDK and work around
+malfunctioning OpenCV functions. But in the end the the flying errors of the
+\Ardrone proved fatal. The program we coded is able to successfully pick up the object,
+but not always, and then crashes into the nearest obstacle, hard. \\
+
+So we did accomplish the first sub-task, which was the hardest one. Furthermore we created a bridge between the SDK and Python, allowing any newcomer to simply use 
+that (albeit slower, much easier) from the start. Another valuable resource we coded is the option to replay any run, complete with navigation data. One can not understate
+how valuable that has been throughout the project. \\
+
+One can download our whole project from our Google Code \href{http://code.google.com/p/uvhar/}{repository}.
+
+\section{Future Work}
+Our project is officially finished, but there are fixes, some minor and other requiring a lot of work that could finish our other sub-tasks, easily. 
+\begin{itemize}
+    \item A different pick-up method, like magnets or velcro. When the \Ardrone picks up the object the object start swinging under the \Ardrone. This causes a lot of
+navigational troubles. Landing on the object, and picking it up using velcro might remove navigation troubles caused by a swinging object under the \Ardrone but it 
+also will take away the whole bottom camera, which the \Ardrone uses to stabilize itself.
+    \item A smaller object with less weight. Easier to pick up and to fly with. 
+    \item Something to keep the object from being blown away by the wind the
+    propellors of the \Ardrone create. If we make the object smaller and lighter
+    this will eventually
+become a problem.
+    \item Constant altitude when flying over objects. The altitude is measured to whatever is under the \Ardrone. If we tell the \Ardrone to fly at a height of 2 metres
+and it flies over, for example, a table, the \Ardrone will see that it's flying over a table (or rather something higher than the ground), and increase gaz to fly 2 metres above
+that. This shouldn't be too hard to fix, since we can access the navigation
+data. 
+    \item Small adjustments to the code to exit the building. We already have the complete code to recognize bright colors. We could easily put some markers on the
+exit of the building and have the \Ardrone fly through those markers. This would complete our second sub-task.
+\end{itemize}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

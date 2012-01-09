@@ -1,0 +1,5 @@
+int16 length
+---
+string data
+int16 bytesRead
+bool status

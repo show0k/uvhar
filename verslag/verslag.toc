@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Our Goal}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}The AR Drone$^{\copyright }$ }{1}{subsection.1.2}
+\contentsline {section}{\numberline {2}Controlling the AR Drone$^{\copyright }$ }{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}ROS And AT Commands}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Software Development Kit}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Extending C With Python}{3}{subsection.2.3}
+\contentsline {section}{\numberline {3}Methods Used}{4}{section.3}
+\contentsline {subsection}{\numberline {3.1}Finding The Object}{4}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Tracking The Object}{5}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Picking Up The Object}{6}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Calculate Distance}{6}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Variable Steering Commands}{6}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}Blind Flight}{6}{subsubsection.3.3.3}
+\contentsline {section}{\numberline {4}Results}{6}{section.4}
+\contentsline {section}{\numberline {5}Future Work}{7}{section.5}
