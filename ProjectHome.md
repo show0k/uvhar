@@ -1,0 +1,1 @@
+We are going to use a computer vision technique called visual homing to have an autonomous Ar Drone Parrot (quadricopter) pick up and release an object.
